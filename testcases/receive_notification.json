@@ -1,0 +1,27 @@
+{
+  "source": [
+    {
+      "id": "receive-task",
+      "name": "Receive Notification",
+      "type": "Task",
+      "notation": "BPMN"
+    }
+  ],
+  "dragged": "receive-task",
+  "targetDiagram": "Class Diagram",
+  "resolveAbbreviations": "true",
+  "transformationPatternSpecification": {
+     "mappingPattern": {
+       "name": "ActivityToClass_Pattern",
+       "$ref": "patterns/activity-to-class.json"
+     }
+  },
+  "output": [
+    {
+      "id": "notification",
+      "name": "Notification",
+      "type": "Class",
+      "notation": "UML"
+    }
+  ]
+}

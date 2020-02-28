@@ -1,0 +1,33 @@
+{
+  "mappingPattern": {
+    "name": "ActivityToGeneralConcept_Pattern",
+    "source": [
+      {
+        "id": "activity",
+        "type": "Activity",
+        "notation": "UML",
+        "inherited": [
+          {
+            "type": "Task",
+            "notation": "BPMN"
+          }
+        ]
+      }
+    ],
+    "target": [
+      {
+        "id": "general-concept",
+        "type": "general concept",
+        "notation": "SBVR"
+      }
+    ],
+    "mapping": [
+      {
+        "id": "connector1",
+        "source": "activity",
+        "target": "gneral-concept",
+        "condition": "EXTRACTNE"
+      }
+    ]
+  }
+}

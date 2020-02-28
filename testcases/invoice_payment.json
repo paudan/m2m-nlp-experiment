@@ -1,0 +1,24 @@
+{
+  "source": [
+    {
+      "id": "invoice-payment",
+      "name": "Invoice Payment",
+      "type": "Activity",
+      "notation": "UML"
+    }
+  ],
+  "dragged": "invoice-payment",
+  "targetDiagram": "Process Diagram",
+  "resolveAbbreviations": "true",
+  "transformationPatternSpecification": {
+    "$ref": "patterns/activity-to-task-conditional.json"
+  },
+  "output": [
+    {
+      "id": "perform-invoice-payment",
+      "name": "Perform Invoice Payment",
+      "type": "Task",
+      "notation": "BPMN"
+    }
+  ]
+}

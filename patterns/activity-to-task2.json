@@ -1,0 +1,32 @@
+{
+  "mappingPattern": {
+    "name": "ActivityToTask",
+    "source": [
+      {
+        "id": "activity",
+        "type": "Activity",
+        "notation": "UML"
+      }
+    ],
+    "target": [
+      {
+        "id": "task",
+        "type": "Task",
+        "notation": "BPMN"
+      }
+    ],
+    "mappingJoin": {
+      "id": "connector1",
+      "input": [
+        {
+          "source": "activity",
+          "condition": "@A"
+        }
+      ],
+      "target": {
+        "id": "task",
+        "condition": "CONCAT('Perform', ' ', @A)"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "mappingPattern": {
+    "name": "ClassToLane",
+    "description": "Transform UML Class element to BPMN Lane",
+    "source": [
+      {
+        "id": "class",
+        "type": "Class",
+        "notation": "UML"
+      }
+    ],
+    "target": [
+      {
+        "id": "lane",
+        "type": "Lane",
+        "notation": "BPMN"
+      }
+    ],
+    "mapping": [
+      {
+        "id": "connector1",
+        "source": "class",
+        "target": "lane"
+      }
+    ]
+  }
+}

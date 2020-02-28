@@ -1,0 +1,24 @@
+{
+  "source": [
+    {
+      "id": "invoice",
+      "name": "Invoice",
+      "type": "Class",
+      "notation": "UML"
+    }
+  ],
+  "dragged": "invoice-payment",
+  "targetDiagram": "Process Diagram",
+  "resolveAbbreviations": "true",
+  "transformationPatternSpecification": {
+    "$ref": "patterns/class-onto-process-diagram-conditional.json"
+  },
+  "output": [
+    {
+      "id": "manager",
+      "name": "Manager",
+      "type": "Lane",
+      "notation": "BPMN"
+    }
+  ]
+}

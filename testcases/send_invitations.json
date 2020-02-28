@@ -1,0 +1,33 @@
+{
+  "source": [
+    {
+      "id": "send-invitations",
+      "name": "Send Invitations To Customers",
+      "type": "Task",
+      "notation": "BPMN"
+    }
+  ],
+  "dragged": "send-invitations",
+  "targetDiagram": "Class Diagram",
+  "resolveAbbreviations": "true",
+  "transformationPatternSpecification": {
+    "mappingPattern": {
+      "name": "ActivityToClass_Pattern",
+      "$ref": "patterns/activity-to-class.json"
+    }
+  },
+  "output": [
+    {
+      "id": "invitation",
+      "name": "Invitation",
+      "type": "Class",
+      "notation": "UML"
+    },
+    {
+      "id": "customer",
+      "name": "Customer",
+      "type": "Class",
+      "notation": "UML"
+    }
+  ]
+}

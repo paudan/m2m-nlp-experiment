@@ -1,0 +1,34 @@
+{
+  "mappingPattern": {
+    "name": "ActivityToClass_Pattern",
+    "description": "Transform UML Activity element to UML class",
+    "source": [
+      {
+        "id": "activity",
+        "type": "Activity",
+        "notation": "UML",
+        "inherited": [
+          {
+            "type": "Task",
+            "notation": "BPMN"
+          }
+        ]
+      }
+    ],
+    "target": [
+      {
+        "id": "class",
+        "type": "Class",
+        "notation": "UML"
+      }
+    ],
+    "mapping": [
+      {
+        "id": "connector1",
+        "source": "activity",
+        "target": "class",
+        "condition": "EXTRACTNE"
+      }
+    ]
+  }
+}

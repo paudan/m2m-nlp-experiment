@@ -1,0 +1,27 @@
+{
+  "source": [
+    {
+      "id": "update-case-status",
+      "name": "Receive Notification",
+      "type": "Task",
+      "notation": "BPMN"
+    }
+  ],
+  "dragged": "update-case-status",
+  "targetDiagram": "Class Diagram",
+  "resolveAbbreviations": "true",
+  "transformationPatternSpecification": {
+    "mappingPattern": {
+      "name": "ActivityToClass_Pattern",
+      "$ref": "patterns/activity-to-class.json"
+    }
+  },
+  "output": [
+    {
+      "id": "case-status",
+      "name": "Case Status",
+      "type": "Class",
+      "notation": "UML"
+    }
+  ]
+}

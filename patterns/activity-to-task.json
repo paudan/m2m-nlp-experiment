@@ -1,0 +1,26 @@
+{
+  "mappingPattern": {
+    "name": "ActivityToTask",
+    "source": [
+      {
+        "id": "activity",
+        "type": "Activity",
+        "notation": "UML"
+      }
+    ],
+    "target": [
+      {
+        "id": "task",
+        "type": "Task",
+        "notation": "BPMN"
+      }
+    ],
+    "mapping": [
+      {
+        "id": "connector1",
+        "source": "activity",
+        "target": "task"
+      }
+    ]
+  }
+}

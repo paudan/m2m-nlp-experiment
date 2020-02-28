@@ -1,0 +1,32 @@
+{
+  "transformationPatternSpecification": {
+    "name": "ClassOntoBPD",
+    "description": "Conditional transformation, if UML Class element is dragged onto BPMN Process Diagram",
+    "isConditioned": "true",
+    "conditionedMappingPattern": [
+      {
+        "mappingPattern": {
+          "$ref": "patterns/class-to-lane.json"
+        },
+        "conditionalPredicate": "TYPENE(@source.name)[1].type in ('Person', 'Organization')"
+      },
+      {
+        "mappingPattern": {
+          "$ref": "patterns/class-to-lane.json"
+        },
+        "conditionalPredicate": "ISHYPONYM(@source.name, 'Person')"
+      },
+      {
+        "mappingPattern": {
+          "$ref": "patterns/class-to-lane.json"
+        },
+        "conditionalPredicate": "ISHYPONYM(@source.name, 'Organization')"
+      }
+    ],
+    "defaultMappingPattern": {
+      "mappingPattern": {
+        "$ref": "patterns/class-to-dataobject.json"
+      }
+    }
+  }
+}

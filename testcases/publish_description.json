@@ -1,0 +1,32 @@
+{
+  "source": [
+    {
+      "id": "publish-description",
+      "name": "Publish Seminar Description in Website",
+      "type": "Task",
+      "notation": "BPMN"
+    }
+  ],
+  "dragged": "publish-description",
+  "targetDiagram": "Business Vocabulary",
+  "resolveAbbreviations": "true",
+  "transformationPatternSpecification": {
+     "mappingPattern": {
+       "$ref": "patterns/activity-to-general-concept.json"
+    }
+  },
+  "output": [
+    {
+      "id": "seminar-description",
+      "name": "Seminar Description",
+      "type": "general concept",
+      "notation": "SBVR"
+    },
+    {
+      "id": "website",
+      "name": "Website",
+      "type": "general concept",
+      "notation": "SBVR"
+    }
+  ]
+}

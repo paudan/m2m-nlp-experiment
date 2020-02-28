@@ -1,0 +1,20 @@
+{
+  "transformationPatternSpecification": {
+    "name": "ActivityToTask_TSpec",
+    "description": "Transform UML activity to BPMN Task, using conditional processing (e.g. if the source name represents a noun phrase or verb phrase)",
+    "isConditioned": "true",
+    "conditionedMappingPattern": [
+      {
+        "mappingPattern": {
+          "$ref": "patterns/activity-to-task2.json"
+        },
+        "conditionalPredicate": "ISNOUNPHRASE(@source.name)"
+      }
+    ],
+    "defaultMappingPattern": {
+      "mappingPattern": {
+        "$ref": "patterns/activity-to-task.json"
+      }
+    }
+  }
+}
