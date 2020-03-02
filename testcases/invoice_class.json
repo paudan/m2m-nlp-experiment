@@ -15,9 +15,9 @@
   },
   "output": [
     {
-      "id": "manager",
-      "name": "Manager",
-      "type": "Lane",
+      "id": "invoice",
+      "name": "Invoice",
+      "type": "DataObject",
       "notation": "BPMN"
     }
   ]

@@ -20,7 +20,7 @@
       {
         "id": "connector1",
         "source": "class",
-        "target": "lane"
+        "target": "data-object"
       }
     ]
   }
