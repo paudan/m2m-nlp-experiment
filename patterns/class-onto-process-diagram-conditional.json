@@ -5,18 +5,21 @@
     "isConditioned": "true",
     "conditionedMappingPattern": [
       {
+        "id": "class-to-lane-1",
         "mappingPattern": {
           "$ref": "patterns/class-to-lane.json"
         },
         "conditionalPredicate": "TYPENE(@source.name)[1].type in ('Person', 'Organization')"
       },
       {
+        "id": "class-to-lane-2",
         "mappingPattern": {
           "$ref": "patterns/class-to-lane.json"
         },
         "conditionalPredicate": "ISHYPONYM(@source.name, 'Person')"
       },
       {
+        "id": "class-to-lane-3",
         "mappingPattern": {
           "$ref": "patterns/class-to-lane.json"
         },
@@ -24,6 +27,7 @@
       }
     ],
     "defaultMappingPattern": {
+      "id": "class-to-dataobject-default",
       "mappingPattern": {
         "$ref": "patterns/class-to-dataobject.json"
       }

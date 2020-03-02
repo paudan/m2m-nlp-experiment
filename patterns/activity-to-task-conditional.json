@@ -5,6 +5,7 @@
     "isConditioned": "true",
     "conditionedMappingPattern": [
       {
+        "id": "activity-to-task1",
         "mappingPattern": {
           "$ref": "patterns/activity-to-task2.json"
         },
@@ -12,6 +13,7 @@
       }
     ],
     "defaultMappingPattern": {
+      "id": "activity-to-task-default",
       "mappingPattern": {
         "$ref": "patterns/activity-to-task.json"
       }
