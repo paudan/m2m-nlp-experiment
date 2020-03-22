@@ -1,0 +1,30 @@
+{
+  "source": [
+    {
+      "id": "invoice",
+      "name": "Invoice",
+      "type": "DataObject",
+      "notation": "BPMN"
+    }
+  ],
+  "dragged": "invoice",
+  "targetDiagram": "Class Diagram",
+  "mergeSynonyms": "true",
+  "resolveAbbreviations": "true",
+  "existingElements": [
+    {
+      "id": "account",
+      "name": "Account",
+      "type": "Class",
+      "notation": "UML"
+    }
+  ],
+  "output": [
+    {
+      "id": "invoice",
+      "name": "Invoice",
+      "type": "Class",
+      "notation": "UML"
+    }
+  ]
+}

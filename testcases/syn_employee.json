@@ -1,0 +1,23 @@
+{
+  "source": [
+    {
+      "id": "employee",
+      "name": "Employee",
+      "type": "Actor",
+      "notation": "UML"
+    }
+  ],
+  "dragged": "employee",
+  "targetDiagram": "Class Diagram",
+  "mergeSynonyms": "true",
+  "resolveAbbreviations": "true",
+  "existingElements": [
+    {
+      "id": "worker",
+      "name": "Worker",
+      "type": "Class",
+      "notation": "UML"
+    }
+  ],
+  "output": []
+}

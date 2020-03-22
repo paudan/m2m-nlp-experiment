@@ -2,7 +2,7 @@
   "source": [
     {
       "id": "update-case-status",
-      "name": "Receive Notification",
+      "name": "Update Case Status",
       "type": "Task",
       "notation": "BPMN"
     }

@@ -1,0 +1,23 @@
+{
+  "source": [
+    {
+      "id": "invoice",
+      "name": "Invoice",
+      "type": "DataObject",
+      "notation": "BPMN"
+    }
+  ],
+  "dragged": "invoice",
+  "targetDiagram": "Class Diagram",
+  "mergeSynonyms": "true",
+  "resolveAbbreviations": "true",
+  "existingElements": [
+    {
+      "id": "bill",
+      "name": "Bill",
+      "type": "Class",
+      "notation": "UML"
+    }
+  ],
+  "output": []
+}
