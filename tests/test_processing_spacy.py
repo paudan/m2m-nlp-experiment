@@ -66,7 +66,7 @@ class ProcessingTestCase(unittest.TestCase):
         nouns = self.processor.extract_nouns('start invoice entry')
         self.assertListEqual(nouns, ['entry'])   # Failure!
         nouns = self.processor.extract_nouns('start at the beginning')
-        self.assertListEqual(nouns, ['the beginning'])
+        self.assertListEqual(nouns, ['beginning'])
         nouns = self.processor.extract_nouns('create from scratch')
         self.assertListEqual(nouns, ['scratch'])
 
@@ -81,6 +81,10 @@ class ProcessingTestCase(unittest.TestCase):
         self.assertEquals(verb, 'start at')
         verb = self.processor.extract_verb('create from scratch')
         self.assertEquals(verb, 'create from')
+
+    def test_extract_individual_concepts(self):
+        concepts = self.processor.extract_individual_concepts('visit America')
+        self.assertListEqual(concepts, ['America'])
 
 
 if __name__ == '__main__':
