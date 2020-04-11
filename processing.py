@@ -21,8 +21,9 @@ spacy.prefer_gpu()
 
 class AbstractNLPProcessor:
     grammar = """
-    NP: {<DET>?<JJ>*<NOUN>+}
+    NP: {<ADV|ADJ>*<NOUN>+}
     VP: {<VERB>+<ADP>?}
+    PNP: {<PROPN>+}
     """
 
     @abstractmethod
@@ -49,6 +50,9 @@ class AbstractNLPProcessor:
 
     def extract_nouns(self, token):
         return self.extract_phrase_by_type(token, "NP")
+
+    def extract_individual_concepts(self, token):
+        return self.extract_phrase_by_type(token, "PNP")
 
     def extract_verb(self, token):
         verbs = self.extract_phrase_by_type(token, "VP")
@@ -198,8 +202,9 @@ class FlairNLPProcessor(AbstractNLPProcessor):
 
 class CoreNLPProcessor(AbstractNLPProcessor):
     grammar = """
-    NP: {<DT>?<JJ>*<NN>+}
-    VP: {<VB>+<IN>?}
+    NP: {<JJ|ADJ>*<NN|VBG|POS|RBS|FW|NNS>+}
+    VP: {<VB*>+<RB|RBR|RP|TO|IN|PREP>?}
+    PNP: {<NNP|NNPS>+}
     """
 
     def __init__(self):
