@@ -1,0 +1,5 @@
+nltk
+spacy
+spacy-lookups-data
+stanza
+flair

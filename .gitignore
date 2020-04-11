@@ -132,3 +132,9 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+/flair/
+/stanza_resources/
+/stanford-corenlp-full-2018-10-05/
+*.tar.gz
+*.zip
+*.props
