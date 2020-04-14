@@ -185,13 +185,19 @@ def process_condition(source, condition, processor: AbstractNLPProcessor):
         if targets and len(targets) > 1:
             targets = list(map(lambda x: x.strip("()[]'\" "), targets[1].split(',')))
         return processor.get_named_entity_type(source) in targets
-    # Parse condition like ISHYPONYM(@source.name, 'Person')
+    # Parse semantic operators like ISHYPONYM(@source.name, 'Person')
     if condition.upper().startswith('ISHYPONYM'):
         target = re.findall(r"'(\w+)'", source)
         return processor.is_hyponym(source, target)
     if condition.upper().startswith('ISHYPERNYM'):
         target = re.findall(r"'(\w+)'", source)
         return processor.is_hypernym(source, target)
+    if condition.upper().startswith('ISMERONYM'):
+        target = re.findall(r"'(\w+)'", source)
+        return processor.is_meronym(source, target)
+    if condition.upper().startswith('ISHOLONYM'):
+        target = re.findall(r"'(\w+)'", source)
+        return processor.is_holonym(source, target)
     return source
 
 
