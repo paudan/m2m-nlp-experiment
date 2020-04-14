@@ -21,6 +21,8 @@ class StanzaProcessingTestcase(unittest.TestCase):
         entity = self.processor.get_named_entity('visit United States')
         self.assertIsNotNone(entity)
         self.assertEquals('United States', entity)
+        entity = self.processor.get_named_entity('visit united states')
+        self.assertIsNone(entity)   # Cannot deal with normalized lowercase entities!
 
     def test_get_named_entity_type(self):
         self.assertEquals('LOCATION', self.processor.get_named_entity_type('visit United States'))
@@ -55,6 +57,9 @@ class StanzaProcessingTestcase(unittest.TestCase):
     def test_extract_individual_concepts(self):
         concepts = self.processor.extract_individual_concepts('visit America')
         self.assertListEqual(concepts, ['America'])
+
+    def test_case(self):
+        verb = self.processor.extract_verb('Book Travel')
 
 
 if __name__ == '__main__':
