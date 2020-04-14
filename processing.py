@@ -16,7 +16,6 @@ FLAIR_POS_MODEL = 'flair/models/en-pos-ontonotes-v0.4.pt'
 FLAIR_NER_MODEL = 'flair/models/en-ner-conll03-v0.4.pt'
 
 nltk.data.path.append('/mnt/DATA/data/nltk')
-spacy.prefer_gpu()
 
 
 class AbstractNLPProcessor:
@@ -32,11 +31,11 @@ class AbstractNLPProcessor:
 
     def get_named_entity(self, token, index = 0):
         entities = self.extract_named_entities(token)
-        if entities is None or len(entities) + 1 < index: return None
+        if entities is None or len(entities) == 0 or len(entities) + 1 < index: return None
         return entities[index]
 
     @abstractmethod
-    def get_named_entity_type(self, token, index):
+    def get_named_entity_type(self, token, index=0):
         pass
 
     def _extract_phrase(self, tagged, chunk_label):
@@ -94,7 +93,7 @@ class AbstractNLPProcessor:
                          for sn in wn.synsets(second.replace(' ', '_'), 'n')]
             hypernyms = list(itertools.chain.from_iterable(hypernyms))
         else:
-            hypernyms = self._is_hypernym_full(first, second)
+            hypernyms = self._hypernyms_full(second)
         hypernyms = set(hypernyms)
         hypernyms = [s.replace('_', ' ') for s in hypernyms]
         return first in hypernyms
@@ -106,7 +105,7 @@ class AbstractNLPProcessor:
             else:
                 yield el
 
-    def _is_hypernym_full(self, first, second):
+    def _hypernyms_full(self, word):
         # Collect full hierarchy of possible hypernyms
         def collect_hypernyms(sn):
 
@@ -121,13 +120,14 @@ class AbstractNLPProcessor:
             hyplist = list()
             return add_hypernyms(hyplist, sn)
 
-        hypernyms = list(map(lambda x: collect_hypernyms(x.hypernyms()), wn.synsets(second.replace(' ', '_'), 'n')))
+        hypernyms = list(map(lambda x: collect_hypernyms(x.hypernyms()), wn.synsets(word.replace(' ', '_'), 'n')))
         return list(self._flatten(hypernyms))
 
 
 class SpacyNLPProcessor(AbstractNLPProcessor):
 
     def __init__(self):
+        spacy.prefer_gpu()
         self.tagger = spacy.load("en_core_web_sm")
 
     def extract_named_entities(self, token):
@@ -137,7 +137,7 @@ class SpacyNLPProcessor(AbstractNLPProcessor):
     def get_named_entity_type(self, token, index=0):
         doc = self.tagger(token)
         entities = doc.ents
-        if entities is None or len(entities)+1 < index: return None
+        if entities is None or len(entities) == 0 or len(entities)+1 < index: return None
         label_mapping = { 'GPE': 'LOCATION', 'ORG': 'ORGANIZATION', 'MONEY': 'MONEY'}
         return label_mapping.get(doc.ents[index].label_)
 
@@ -161,14 +161,15 @@ class StanzaNLPProcessor(AbstractNLPProcessor):
     def get_named_entity_type(self, token, index=0):
         doc = self.tagger(token)
         entities = doc.entities
-        if entities is None or len(entities)+1 < index: return None
+        if entities is None or len(entities) == 0 or len(entities)+1 < index: return None
         label_mapping = { 'GPE': 'LOCATION', 'ORG': 'ORGANIZATION'}
-        type = doc.entities[index].type
+        type = entities[index].type
         return label_mapping.get(type) or type
 
     def extract_phrase_by_type(self, token, type):
         doc = self.tagger(token)
         tagged = [(word.text, word.upos) for sent in doc.sentences for word in sent.words]
+        print(tagged)
         return self._extract_phrase(tagged, type)
 
 
@@ -188,7 +189,7 @@ class FlairNLPProcessor(AbstractNLPProcessor):
         sentence = Sentence(token)
         self.tagger.predict(sentence)
         entities = sentence.get_spans('ner')
-        if entities is None or len(entities)+1 < index: return None
+        if entities is None or len(entities) == 0 or len(entities)+1 < index: return None
         label_mapping = { 'LOC': 'LOCATION', 'ORG': 'ORGANIZATION', 'PER': 'PERSON'}
         type = entities[index].tag
         return label_mapping.get(type) or type
@@ -226,7 +227,7 @@ class CoreNLPProcessor(AbstractNLPProcessor):
 
     def get_named_entity_type(self, token, index=0):
         entities = self._extract_ner(token)
-        if entities is None or len(entities)+1 < index: return None
+        if entities is None or len(entities) == 0 or len(entities)+1 < index: return None
         return entities[index][1]
 
     def extract_phrase_by_type(self, token, type):
