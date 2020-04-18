@@ -19,11 +19,14 @@ nltk.data.path.append('/mnt/DATA/data/nltk')
 
 
 class AbstractNLPProcessor:
-    grammar = """
-    NP: {<ADV|ADJ>*<NOUN>+}
-    VP: {<VERB>+<ADP>?}
-    PNP: {<PROPN>+}
-    """
+
+    def grammar(self):
+        NP = '<ADV|ADJ>*<NOUN>+<NUM>?'
+        return """
+        NP: {{({NP})+<ADP>*<DET>?({NP})?}}
+        VP: {{<VERB>+<ADP>?}}
+        PNP: {{<PROPN>+}}
+        """.format(NP=NP)
 
     @abstractmethod
     def extract_named_entities(self, token):
@@ -39,7 +42,7 @@ class AbstractNLPProcessor:
         pass
 
     def _extract_phrase(self, tagged, chunk_label):
-        cp = nltk.RegexpParser(self.grammar)
+        cp = nltk.RegexpParser(self.grammar())
         tree = cp.parse(tagged)
         return [' '.join(s for s, t in subtree) for subtree in tree.subtrees() if subtree.label() == chunk_label]
 
@@ -169,7 +172,6 @@ class StanzaNLPProcessor(AbstractNLPProcessor):
     def extract_phrase_by_type(self, token, type):
         doc = self.tagger(token)
         tagged = [(word.text, word.upos) for sent in doc.sentences for word in sent.words]
-        print(tagged)
         return self._extract_phrase(tagged, type)
 
 
@@ -202,11 +204,15 @@ class FlairNLPProcessor(AbstractNLPProcessor):
 
 
 class CoreNLPProcessor(AbstractNLPProcessor):
-    grammar = """
-    NP: {<JJ|ADJ>*<NN|VBG|POS|RBS|FW|NNS>+}
-    VP: {<VB*>+<RB|RBR|RP|TO|IN|PREP>?}
-    PNP: {<NNP|NNPS>+}
-    """
+
+    def grammar(self):
+        ADP = '<RB|RBR|RP|TO|IN|PREP>'
+        NP = '<JJ|ADJ>*<NN|VBG|POS|RBS|FW|NNS>+<CD>?'
+        return """
+        NP: {{({NP})+{ADP}?<DT>?({NP})?}}
+        VP: {{<VB*>+{ADP}?}}
+        PNP: {{<NNP|NNPS>+}}        
+        """.format(NP=NP, ADP=ADP)
 
     def __init__(self):
         os.environ["CORENLP_HOME"] = os.path.join(os.getcwd(), 'stanford-corenlp-full-2018-10-05')

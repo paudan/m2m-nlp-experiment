@@ -58,8 +58,11 @@ class StanzaProcessingTestcase(unittest.TestCase):
         concepts = self.processor.extract_individual_concepts('visit America')
         self.assertListEqual(concepts, ['America'])
 
-    def test_case(self):
-        verb = self.processor.extract_verb('Book Travel')
+    def test_corner_case(self):
+        verb = self.processor.extract_verb('Review & Escalate')
+        self.assertEqual(verb, 'Escalate')
+        verb = self.processor.extract_verb('Review and Escalate')
+        self.assertEqual(verb, 'Escalate')
 
 
 if __name__ == '__main__':
