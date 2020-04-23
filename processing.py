@@ -10,6 +10,12 @@ from flair.models import SequenceTagger
 from flair.data import Sentence
 import nltk
 from nltk.corpus import wordnet as wn
+from nltk.corpus.reader import wordnet
+from nltk.stem import WordNetLemmatizer
+from simplenlg.features import Feature, Tense
+from simplenlg.framework import InflectedWordElement
+from simplenlg.lexicon import Lexicon, LexicalCategory
+from simplenlg.realiser.english import Realiser
 
 STANZA_DIR = 'stanza_resources'
 FLAIR_POS_MODEL = 'flair/models/en-pos-ontonotes-v0.4.pt'
@@ -21,9 +27,9 @@ nltk.data.path.append('/mnt/DATA/data/nltk')
 class AbstractNLPProcessor:
 
     def grammar(self):
-        NP = '<ADV|ADJ>*<NOUN>+<NUM>?'
+        NP = '<ADV|ADJ>*<NOUN|PROPN>+<PART>?<NUM>?'
         return """
-        NP: {{({NP})+<ADP>*<DET>?({NP})?}}
+        NP: {{(<ADV|ADJ>*<NOUN>+<PART>?<NUM>?)+(<ADP>*<DET>?{NP})*}}
         VP: {{<VERB>+<ADP>?}}
         PNP: {{<PROPN>+}}
         """.format(NP=NP)
@@ -44,23 +50,39 @@ class AbstractNLPProcessor:
     def _extract_phrase(self, tagged, chunk_label):
         cp = nltk.RegexpParser(self.grammar())
         tree = cp.parse(tagged)
-        return [' '.join(s for s, t in subtree) for subtree in tree.subtrees() if subtree.label() == chunk_label]
+        return [' '.join(s for s, t in subtree).replace(" '", "'") for subtree in tree.subtrees() if subtree.label() == chunk_label]
 
     @abstractmethod
     def extract_phrase_by_type(self, token, type):
         pass
 
-    def extract_nouns(self, token):
+    def extract_noun_phrases(self, token):
         return self.extract_phrase_by_type(token, "NP")
 
-    def extract_individual_concepts(self, token):
+    def extract_proper_nouns(self, token):
         return self.extract_phrase_by_type(token, "PNP")
 
-    def extract_verb(self, token):
+    def extract_verb_phrase(self, token):
         verbs = self.extract_phrase_by_type(token, "VP")
-        if len(verbs)  > 0:
+        if len(verbs) > 0:
             return verbs[0]
         return None
+
+    def normalize_verb(self, verb):
+        lexicon = Lexicon.getDefaultLexicon()
+        realiser = Realiser(lexicon)
+
+        def normalize(vb):
+            word = lexicon.getWord(self.lemma(vb, pos=wordnet.VERB), LexicalCategory.VERB)
+            infl = InflectedWordElement(word)
+            infl.setFeature(Feature.TENSE, Tense.PRESENT)
+            return realiser.realise(infl).getRealisation()
+
+        return ' '.join(normalize(t) if ind == 0 else t for ind, t in enumerate(verb.split()))
+
+    def lemma(self, token, pos=wordnet.NOUN):
+        lemmatizer = WordNetLemmatizer()
+        return lemmatizer.lemmatize(token, pos)
 
     def is_synonym(self, first, second):
         synonyms = [[l.name() for l in sn.lemmas()] for sn in wn.synsets(second.replace(' ', '_'), 'n')]
@@ -207,9 +229,9 @@ class CoreNLPProcessor(AbstractNLPProcessor):
 
     def grammar(self):
         ADP = '<RB|RBR|RP|TO|IN|PREP>'
-        NP = '<JJ|ADJ>*<NN|VBG|POS|RBS|FW|NNS>+<CD>?'
+        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS>+<POS>?<CD>?'
         return """
-        NP: {{({NP})+{ADP}?<DT>?({NP})?}}
+        NP: {{({NP})+({ADP}?<DT>?{NP})*}}
         VP: {{<VB*>+{ADP}?}}
         PNP: {{<NNP|NNPS>+}}        
         """.format(NP=NP, ADP=ADP)

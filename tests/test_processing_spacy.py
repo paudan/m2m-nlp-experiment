@@ -40,6 +40,15 @@ class ProcessingTestCase(unittest.TestCase):
         self.assertTrue(self.processor.is_synonym('president', 'chair'))
         self.assertTrue(self.processor.is_synonym('chair', 'president'))
 
+    def test_normalize_verb(self):
+        # Single verb
+        self.assertTrue(self.processor.normalize_verb('created'), 'creates')
+        self.assertTrue(self.processor.normalize_verb('create'), 'creates')
+        self.assertTrue(self.processor.normalize_verb('creating'), 'creates')
+        # Verb phrase
+        self.assertTrue(self.processor.normalize_verb('started with'), 'starts with')
+        self.assertTrue(self.processor.normalize_verb('starting with'), 'starts with')
+
     def test_extract_named_entities(self):
         entities = self.processor.extract_named_entities('visit United States')
         self.assertIsNotNone(entities)
@@ -59,32 +68,48 @@ class ProcessingTestCase(unittest.TestCase):
         self.assertIsNone(self.processor.get_named_entity_type('meet John Adams'))
 
     def test_extract_noun(self):
-        nouns = self.processor.extract_nouns('print invoice entry')
+        nouns = self.processor.extract_noun_phrases('print invoice entry')
         self.assertListEqual(nouns, ['print', 'entry'])  # Failure!
-        nouns = self.processor.extract_nouns('create invoice entry')
+        nouns = self.processor.extract_noun_phrases('create invoice entry')
         self.assertListEqual(nouns, ['invoice entry'])
-        nouns = self.processor.extract_nouns('start invoice entry')
+        nouns = self.processor.extract_noun_phrases('start invoice entry')
         self.assertListEqual(nouns, ['entry'])   # Failure!
-        nouns = self.processor.extract_nouns('start at the beginning')
+        nouns = self.processor.extract_noun_phrases('start at the beginning')
         self.assertListEqual(nouns, ['beginning'])
-        nouns = self.processor.extract_nouns('create from scratch')
+        nouns = self.processor.extract_noun_phrases('create from scratch')
         self.assertListEqual(nouns, ['scratch'])
+        nouns = self.processor.extract_noun_phrases("box's office")
+        self.assertListEqual(nouns, ["office"])  # Failure: box is recognized as proper noun PNP
+        nouns = self.processor.extract_noun_phrases("sign contract for customer")
+        self.assertListEqual(nouns, ["contract for customer"])
+        nouns = self.processor.extract_noun_phrases("sign contract of customer")
+        self.assertListEqual(nouns, ["sign contract of customer"])  # Failure!
+        nouns = self.processor.extract_noun_phrases("return invoice for reentry into SAP")
+        self.assertListEqual(nouns, ["invoice for reentry into SAP"])
+        nouns = self.processor.extract_noun_phrases("Return invoice for reentry into SAP")
+        self.assertListEqual(nouns, ["Return invoice for reentry into SAP"])
+        nouns = self.processor.extract_noun_phrases("property of the customer")
+        self.assertListEqual(nouns, ["property of the customer"])
 
     def test_extract_verb(self):
-        verb = self.processor.extract_verb('print invoice entry')
+        verb = self.processor.extract_verb_phrase('print invoice entry')
         self.assertEquals(verb, 'invoice')  # Failure!
-        verb = self.processor.extract_verb('create invoice entry')
+        verb = self.processor.extract_verb_phrase('create invoice entry')
         self.assertEquals(verb, 'create')
-        verb = self.processor.extract_verb('start invoice entry')
+        verb = self.processor.extract_verb_phrase('start invoice entry')
         self.assertEquals(verb, 'start invoice')  # Failure!
-        verb = self.processor.extract_verb('start at the beginning')
+        verb = self.processor.extract_verb_phrase('start at the beginning')
         self.assertEquals(verb, 'start at')
-        verb = self.processor.extract_verb('create from scratch')
+        verb = self.processor.extract_verb_phrase('create from scratch')
         self.assertEquals(verb, 'create from')
+        verb = self.processor.extract_verb_phrase('un-mute speakers')
+        self.assertIsNone(verb)  # Failure
 
-    def test_extract_individual_concepts(self):
-        concepts = self.processor.extract_individual_concepts('visit America')
+    def test_extract_proper_nouns(self):
+        concepts = self.processor.extract_proper_nouns('visit America')
         self.assertListEqual(concepts, ['America'])
+        concepts = self.processor.extract_proper_nouns('create BR')
+        self.assertListEqual(concepts, ['BR'])
 
 
 if __name__ == '__main__':

@@ -3,3 +3,4 @@ spacy
 spacy-lookups-data
 stanza
 flair
+simplenlg
