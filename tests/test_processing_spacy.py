@@ -1,3 +1,4 @@
+import os
 import unittest
 from processing import SpacyNLPProcessor
 
@@ -7,6 +8,7 @@ class ProcessingTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
+        os.chdir('..')
         cls.processor = SpacyNLPProcessor()
 
     def test_is_hypernym(self):
@@ -54,6 +56,8 @@ class ProcessingTestCase(unittest.TestCase):
         self.assertIsNotNone(entities)
         self.assertEquals(1, len(entities))
         self.assertEquals('United States', entities[0])
+        entities = self.processor.extract_named_entities('iTunes system')
+        self.assertEquals(0, len(entities))  # Does mpt recognize iTunes
 
     def test_get_named_entity(self):
         entity = self.processor.get_named_entity('visit United States')
@@ -104,6 +108,11 @@ class ProcessingTestCase(unittest.TestCase):
         self.assertEquals(verb, 'create from')
         verb = self.processor.extract_verb_phrase('un-mute speakers')
         self.assertIsNone(verb)  # Failure
+
+    def test_extract_verb_phrases(self):
+        verbs = self.processor.extract_verb_phrases('Get M2 Center Position')
+        self.assertListEqual(verbs, ["Get"])
+
 
     def test_extract_proper_nouns(self):
         concepts = self.processor.extract_proper_nouns('visit America')

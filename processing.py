@@ -25,6 +25,10 @@ nltk.data.path.append('/mnt/DATA/data/nltk')
 
 
 class AbstractNLPProcessor:
+    
+    def __init__(self):
+        self.lexicon = Lexicon.getDefaultLexicon()
+        self.realiser = Realiser(self.lexicon)
 
     def grammar(self):
         NP = '<ADV|ADJ>*<NOUN|PROPN>+<PART>?<NUM>?'
@@ -39,13 +43,22 @@ class AbstractNLPProcessor:
         pass
 
     def get_named_entity(self, token, index = 0):
+        if token is None:
+            return token
         entities = self.extract_named_entities(token)
         if entities is None or len(entities) == 0 or len(entities) + 1 < index: return None
         return entities[index]
 
     @abstractmethod
-    def get_named_entity_type(self, token, index=0):
+    def get_named_entity_types(self, token):
         pass
+
+    def get_named_entity_type(self, token, index=0):
+        if token is None:
+            return token
+        types = self.get_named_entity_types(token)
+        if types is None or len(types) == 0 or len(types) + 1 < index: return None
+        return types[index]
 
     def _extract_phrase(self, tagged, chunk_label):
         cp = nltk.RegexpParser(self.grammar())
@@ -57,30 +70,41 @@ class AbstractNLPProcessor:
         pass
 
     def extract_noun_phrases(self, token):
+        if token is None:
+            return None
         return self.extract_phrase_by_type(token, "NP")
 
     def extract_proper_nouns(self, token):
+        if token is None:
+            return None
         return self.extract_phrase_by_type(token, "PNP")
 
+    def extract_verb_phrases(self, token):
+        if token is None:
+            return None
+        return self.extract_phrase_by_type(token, "VP")
+
     def extract_verb_phrase(self, token):
-        verbs = self.extract_phrase_by_type(token, "VP")
-        if len(verbs) > 0:
+        verbs = self.extract_verb_phrases(token)
+        if verbs is not None and len(verbs) > 0:
             return verbs[0]
         return None
 
     def normalize_verb(self, verb):
-        lexicon = Lexicon.getDefaultLexicon()
-        realiser = Realiser(lexicon)
+        if verb is None:
+            return verb
 
         def normalize(vb):
-            word = lexicon.getWord(self.lemma(vb, pos=wordnet.VERB), LexicalCategory.VERB)
+            word = self.lexicon.getWord(self.lemma(vb, pos=wordnet.VERB), LexicalCategory.VERB)
             infl = InflectedWordElement(word)
             infl.setFeature(Feature.TENSE, Tense.PRESENT)
-            return realiser.realise(infl).getRealisation()
+            return self.realiser.realise(infl).getRealisation()
 
         return ' '.join(normalize(t) if ind == 0 else t for ind, t in enumerate(verb.split()))
 
     def lemma(self, token, pos=wordnet.NOUN):
+        if token is None:
+            return token
         lemmatizer = WordNetLemmatizer()
         return lemmatizer.lemmatize(token, pos)
 
@@ -152,19 +176,18 @@ class AbstractNLPProcessor:
 class SpacyNLPProcessor(AbstractNLPProcessor):
 
     def __init__(self):
+        super().__init__()
         spacy.prefer_gpu()
-        self.tagger = spacy.load("en_core_web_sm")
+        self.tagger = spacy.load("spacy/en_core_web_sm/en_core_web_sm/en_core_web_sm")
 
     def extract_named_entities(self, token):
         doc = self.tagger(token)
         return [ent.text for ent in doc.ents]
 
-    def get_named_entity_type(self, token, index=0):
+    def get_named_entity_types(self, token):
         doc = self.tagger(token)
-        entities = doc.ents
-        if entities is None or len(entities) == 0 or len(entities)+1 < index: return None
         label_mapping = { 'GPE': 'LOCATION', 'ORG': 'ORGANIZATION', 'MONEY': 'MONEY'}
-        return label_mapping.get(doc.ents[index].label_)
+        return [label_mapping.get(entity.label_)  or entity.label_ for entity in doc.ents]
 
     def extract_phrase_by_type(self, token, type):
         doc = self.tagger(token)
@@ -175,6 +198,7 @@ class SpacyNLPProcessor(AbstractNLPProcessor):
 class StanzaNLPProcessor(AbstractNLPProcessor):
 
     def __init__(self):
+        super().__init__()
         torch.set_default_tensor_type(torch.FloatTensor)
         stanza.download('en', dir=STANZA_DIR)
         self.tagger = stanza.Pipeline('en', dir=STANZA_DIR)
@@ -183,13 +207,10 @@ class StanzaNLPProcessor(AbstractNLPProcessor):
         doc = self.tagger(token)
         return [ent.text for ent in doc.entities]
 
-    def get_named_entity_type(self, token, index=0):
+    def get_named_entity_types(self, token):
         doc = self.tagger(token)
-        entities = doc.entities
-        if entities is None or len(entities) == 0 or len(entities)+1 < index: return None
         label_mapping = { 'GPE': 'LOCATION', 'ORG': 'ORGANIZATION'}
-        type = entities[index].type
-        return label_mapping.get(type) or type
+        return [label_mapping.get(entity.type) or entity.type for entity in doc.entities]
 
     def extract_phrase_by_type(self, token, type):
         doc = self.tagger(token)
@@ -200,6 +221,7 @@ class StanzaNLPProcessor(AbstractNLPProcessor):
 class FlairNLPProcessor(AbstractNLPProcessor):
 
     def __init__(self):
+        super().__init__()
         torch.set_default_tensor_type(torch.FloatTensor)
         self.tagger = SequenceTagger.load(FLAIR_NER_MODEL)
         self.pos_tagger = SequenceTagger.load(FLAIR_POS_MODEL)
@@ -209,14 +231,12 @@ class FlairNLPProcessor(AbstractNLPProcessor):
         self.tagger.predict(sentence)
         return [' '.join([t.text for t in entity.tokens]) for entity in sentence.get_spans('ner')]
 
-    def get_named_entity_type(self, token, index=0):
+    def get_named_entity_types(self, token):
         sentence = Sentence(token)
         self.tagger.predict(sentence)
         entities = sentence.get_spans('ner')
-        if entities is None or len(entities) == 0 or len(entities)+1 < index: return None
         label_mapping = { 'LOC': 'LOCATION', 'ORG': 'ORGANIZATION', 'PER': 'PERSON'}
-        type = entities[index].tag
-        return label_mapping.get(type) or type
+        return [label_mapping.get(entity.tag) or entity.tag for entity in entities]
 
     def extract_phrase_by_type(self, token, type):
         sentence = Sentence(token)
@@ -237,6 +257,7 @@ class CoreNLPProcessor(AbstractNLPProcessor):
         """.format(NP=NP, ADP=ADP)
 
     def __init__(self):
+        super().__init__()
         os.environ["CORENLP_HOME"] = os.path.join(os.getcwd(), 'stanford-corenlp-full-2018-10-05')
         self.tagger = CoreNLPClient(annotators=['tokenize', 'pos', 'ner'], timeout=30000, memory='4G')
 
@@ -253,10 +274,8 @@ class CoreNLPProcessor(AbstractNLPProcessor):
         entities = list(set(map(lambda x: x[0], entities)))
         return entities
 
-    def get_named_entity_type(self, token, index=0):
-        entities = self._extract_ner(token)
-        if entities is None or len(entities) == 0 or len(entities)+1 < index: return None
-        return entities[index][1]
+    def get_named_entity_types(self, token):
+        return [entity[1] for entity in self._extract_ner(token)]
 
     def extract_phrase_by_type(self, token, type):
         ann = self.tagger.annotate(token)

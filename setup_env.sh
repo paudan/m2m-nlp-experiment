@@ -2,7 +2,11 @@
 
 python3 -m pip install -r requirements.txt
 # Spacy setup
-python3 -m spacy download en_core_web_sm
+# python3 -m spacy download en_core_web_sm
+mkdir spacy
+wget -O - https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz | tar xzf - -C spacy
+mv spacy/en_core_web_sm-* spacy/en_core_web_sm
+mv spacy/en_core_web_sm/en_core_web_sm/en_core_web_sm-* spacy/en_core_web_sm/en_core_web_sm/en_core_web_sm
 # Stanford Stanza and CoreNLP
 python3 -c "import stanza; stanza.download('en', dir='stanza_resources')"
 wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip | unzip
