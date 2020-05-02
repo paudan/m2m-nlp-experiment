@@ -1,0 +1,2002 @@
+Subject;Activity;VerbPhrases;NounPhrases;ProperNouns
+User;Open Enclosure;;Open Enclosure;
+Liquid Cooling Module;Monitor LCM Status;Monitors;;LCM Status
+TRS;Periodic Set Reference Temperature;;;Set Reference Temperature
+User;Get M10 Tilt Angles;;Angles;M10 Tilt
+Translation Stage Drive;Preset FSS Translation Stage;;Preset FSS Translation Stage;
+M2 Mirror;Set M2 Tilt Angles;;Angles;Set M2 Tilt
+FAS TCCD;Send FAS Setup;Sends;Setup;FAS
+User;Prepare for VLTI Focus Adjustment;Prepares for;;VLTI Focus Adjustment
+TRS;Monitor Temperature data;Monitors;data;Temperature
+Catalogs;Preset Telescope to Catalogue Object;;;Preset Telescope|Catalogue Object
+User;Stop Pupil Alignment;Stops;;Pupil Alignment
+User;Offset Guide Probe on Beacon;;;Offset Guide Probe|Beacon
+M2 Mirror;Set M2 Focus Position;;;Set M2 Focus Position
+M6 Mirror;Get M6 Tilt Angles;;Tilt Angles;M6
+M6 Mirror;Calibrate Az axis;;;Calibrate Az
+User;Set Remaining Tracking Time Limit;Sets Remaining;Tracking Time Limit;
+FSS STRAP;Do one star analysis;;star analysis;
+TRS;Monitor LCM Status;Monitors;;LCM Status
+Air Conditioning;Get Enclosure Temperature;;Enclosure Temperature;
+User;Get Tracking Remaining Time;Trackings Remaining;Time;
+User;Stop Chopping;Stops Chopping;;
+Power Module;Monitor Power Status;Monitors;;Power Status
+User;Stop Image Alignment;Stops;Image Alignment;
+User;Do one star analysis;;star analysis;
+User;Stop FAS Acquisition;Stops;Acquisition;FAS
+User;Check STRAP Pupil Alignment;Checks;Pupil Alignment;STRAP
+User;Set M2 Pupil Beacon Light Level;;Level;Set M2 Pupil Beacon Light
+Air Conditioning;Set Reference Temperature;;Reference Temperature;Set
+User;Calibrate M6 versus Coude Sensors;Calibrates;M6 versus Coude Sensors;
+TRS;Monitor HPS Status;;Monitor HPS Status;
+User;Get M2 Focus Position;;;M2 Focus Position
+User;Set Nasmyth Beacon Light Level;;Light Level;Set Nasmyth Beacon
+Nasmyth Wheel;Set Nasmyth Beacon Light Level;;Light Level;Set Nasmyth Beacon
+User;Stop Telescope Motion;Stops;Motion;Telescope
+User;Start cyclic calibrated corrections;Starts|calibrates;corrections;cyclic
+DewPoint Sensor;Set Dew Point Margin;;;Set Dew Point Margin
+TRS;Monitor Cooling Flow;Monitors Cooling;Flow;
+Probe;Preset FSS Translation Stage;;Preset FSS Translation Stage;
+User;Display Guide Detector Signals;;;Display Guide Detector Signals
+User;Get M2 Tilt Angles;;Angles;M2 Tilt
+ASM;Close Enclosure On Bad Meteo Conditions;;Close Enclosure On Bad Meteo Conditions;
+Air Conditioning;Check Status Air Conditioning;Checks;Air Conditioning;Status
+TRS;Monitor Power Status;Monitors;;Power Status
+User;Get Guide Star Data;Guides;;Star Data
+Nasmyth Wheel;Set Nasmyth Wheel;Sets;;Nasmyth Wheel
+M2 Mirror;Get M2 Center Position;;;M2 Center Position
+User;Set Guide Parameters;;Parameters;Set Guide
+User;Prepare for Delay Constant Alignment;Prepares for;;Delay Constant Alignment
+TRS;Monitor Telescope Temperature;;Temperature;Monitor Telescope
+User;Set Guide Window Size;;Size;Set Guide Window
+User;Center M10;;;Center M10
+Coude Beam Switching Device;Set Coude Beam Switching Device;Switchings;Device;Set Coude Beam
+Telescope Temperature Sensors;Monitor Temperature data;Monitors;data;Temperature
+User;Stop Air Conditioning;Stops;Air Conditioning;
+User;Get M6 Tilt Angles;;Tilt Angles;M6
+User;Start Chopping;Starts Chopping;;
+User;Check Status Enclosure;Checks;Status Enclosure;
+FSS STRAP;Optimize Field Stabilisation;;Field Stabilisation;Optimize
+Azimuth Drive;Calibrate Az axis;;;Calibrate Az
+DewPoint Sensor;Monitor Environmental data;Monitors;Environmental data;
+Air Conditioning;Monitor Telescope Temperature;;Temperature;Monitor Telescope
+User;Power On FAS;;Power On FAS;
+FAS TCCD;Calibrate Az axis;;;Calibrate Az
+M2 Mirror;Get M2 Focus Position;;;M2 Focus Position
+User;Adjust Pointing Axis Reference Points;Adjusts Pointing;Reference Points;Axis
+User;Set M6 Tilt Angles;Sets;Tilt Angles;M6
+User;Make Pointing Error Measurement;Makes;Error Measurement;Pointing
+TRS;Power On/Off M6;;Power|Off M6;
+Tracking Axis Drive;Preset Telescope;;;Preset Telescope
+FSS Field Diaphragm;Set FSS Field Diaphragm;;;Set FSS Field Diaphragm
+TRS;Stop Autoguiding;Stops Autoguiding;;
+User;Probe to Next Guide Star;Probes to;;Next Guide Star
+FAS TCCD;Power On FAS;;Power On FAS;
+User;Set M2 Tilt Angles;;Angles;Set M2 Tilt
+User;Offset Guide Probe on star;;star;Offset Guide Probe
+User;Get M2 Center Position;;;M2 Center Position
+M6 Mirror;Center M6;;M6;Center
+User;Cyclic closed loop active optics corrections;closes;loop active optics corrections;Cyclic
+Enclosure;Close Enclosure;;Close Enclosure;
+M10 Mirror;Center M10;;;Center M10
+M6 Mirror;Monitor M6 Status;Monitors;M6 Status;
+Tracking Axis Drive;Preset Telescope to Named Position;Nameds;Position;Preset Telescope
+TRS;Monitor M6 Status;Monitors;M6 Status;
+User;Prepare for Pupil Alignment;Prepares for;;Pupil Alignment
+TRS;Monitor Cabinet Cooling;;;Monitor Cabinet Cooling
+User;Measure and Install POM;Installs;Measure|POM;
+TRS;Get Tracking Remaining Time;Trackings Remaining;Time;
+FSS Filter Wheel;Set FSS Filter Wheel;;Set FSS Filter Wheel;
+User;Adjust Coude Focus;Adjusts;Coude Focus;
+Altitude Cabinet;Monitor Cabinet Cooling;;;Monitor Cabinet Cooling
+User;Combined Offset;;;Combined Offset
+Transporter;Check Status Anchors;Checks;Anchors;Status
+User;Set M10 Tilt Angles;;Angles;Set M10 Tilt
+User;Read Telescope Temperature Sensors;;Temperature Sensors;Read Telescope
+User;Set M2 Focus Position;;;Set M2 Focus Position
+User;Stop Field Stabilization;Stops;Field Stabilization;
+User;Calibrate Az axis;;;Calibrate Az
+FSS Filter Wheel;Get FSS Filter Wheel;;Filter Wheel;FSS
+M2 Mirror;Do one M2 position setting;;M2 position setting;
+User;Stop Autoguiding;Stops Autoguiding;;
+Tracking Axis Drive;Stop Telescope Motion;Stops;Motion;Telescope
+Catalogs;Probe to Next Guide Star;Probes to;;Next Guide Star
+User;Stop VLTI Focus Adjustment;Stops;;VLTI Focus Adjustment
+User;Install POM;Installs;POM;
+User;Set Reference Temperature;;Reference Temperature;Set
+M10 Mirror;Set M10 Tilt Angles;;Angles;Set M10 Tilt
+User;Modify POM term;Modifies;POM term;
+ASM;Monitor Environmental data;Monitors;Environmental data;
+User;Get Enclosure Temperature;;Enclosure Temperature;
+User;Set Tracking Wavelength;;Set Tracking Wavelength;
+TRS;Control FS Corrections;;Control FS Corrections;
+TRS;Stop Chopping;Stops Chopping;;
+User;Switch On/Off Nasmyth Beacon Light Source;Switches On;Light Source;Off Nasmyth Beacon
+TRS;Monitor Environmental data;Monitors;Environmental data;
+FSS STRAP;Set FSS Filter Wheel;;Set FSS Filter Wheel;
+Tracking Axis Drive;Offset Alt/Az;;;Offset Alt|Az
+FSS STRAP;Stop FSS Acquisition;Stops;Acquisition;FSS
+Nasmyth Beacon Light Sources;Set Nasmyth Beacon Light Level;;Light Level;Set Nasmyth Beacon
+User;Set FSS Field Diaphragm;;;Set FSS Field Diaphragm
+User;Preset Telescope to Astronomical Coordinates;;Astronomical Coordinates;Preset Telescope
+User;Prepare FAS Setup;Prepares;Setup;FAS
+User;Control FS Corrections;;Control FS Corrections;
+User;Preset Telescope in Alt/Az Coordinates;;Coordinates;Preset Telescope|Alt|Az
+FSS STRAP;Send FSS Setup;Sends;Setup;FSS
+User;Do one calibrated correction;calibrates;correction;
+User;Close Enclosure;;Close Enclosure;
+User;Offset Alt/Az;;;Offset Alt|Az
+M6 Mirror;Set M6 Tilt Angles;Sets;Tilt Angles;M6
+User;Check Status Air Conditioning;Checks;Air Conditioning;Status
+FSS STRAP;Start FSS Acquisition;Starts;Acquisition;FSS
+M6 Mirror;Monitor Power Status;Monitors;;Power Status
+Tracking Axis Drive;Preset Telescope in Alt/Az Coordinates;;Coordinates;Preset Telescope|Alt|Az
+TRS;Start Autoguiding;Starts Autoguiding;;
+ASM;Periodic Set Reference Temperature;;;Set Reference Temperature
+TRS;Start Field Stabilization;Starts;Field Stabilization;
+M10 Mirror;Get M10 Tilt Angles;;Angles;M10 Tilt
+User;Save Guide Detector Image;Saves;Detector Image;Guide
+Air Conditioning;Monitor Temperature data;Monitors;data;Temperature
+User;Set M2 Center Position;;;Set M2 Center Position
+User;Telescope Offset;;;Telescope Offset
+FSS STRAP;Calibrate M6 versus Coude Sensors;Calibrates;M6 versus Coude Sensors;
+Hydraulic & Pneumatic Systems;Monitor HPS Status;;Monitor HPS Status;
+Telescope Temperature Sensors;Read Telescope Temperature Sensors;;Temperature Sensors;Read Telescope
+User;Switch On/Off Pupil Beacon Light Source;Switches On;Light Source;Off Pupil Beacon
+Enclosure;Open Enclosure;;Open Enclosure;
+User;Center Guide Star;;;Center Guide Star
+User;Prepare for Image Alignment;Prepares for;Image Alignment;
+User;Set Storage Mode for Pointing Measurements;Pointings;Measurements;Set Storage Mode
+User;Configure Chopping;;Configure Chopping;
+M2 Beacon;Switch On/Off Pupil Beacon Light Source;Switches On;Light Source;Off Pupil Beacon
+User;Center Object;;;Center Object
+M1 Temperature;Monitor Temperature data;Monitors;data;Temperature
+Tracking Axis Drive;Make Pointing Error Measurement;Makes;Error Measurement;Pointing
+User;Store POM Measure;;Store POM Measure;
+FAS TCCD;Stop FAS Acquisition;Stops;Acquisition;FAS
+User;Get FSS Field Diaphragm;;Field Diaphragm;FSS
+User;Set Dew Point Margin;;;Set Dew Point Margin
+User;Check Status Anchors;Checks;Anchors;Status
+Flow Meter;Monitor Cooling Flow;Monitors Cooling;Flow;
+User;Center M6;;M6;Center
+User;Optimize Field Stabilisation;;Field Stabilisation;Optimize
+TRS;Start Chopping;Starts Chopping;;
+User;Set Nasmyth Wheel;Sets;;Nasmyth Wheel
+Air Conditioning;Stop Air Conditioning;Stops;Air Conditioning;
+User;Start Autoguiding;Starts Autoguiding;;
+Enclosure Anemometer;Monitor Enclosure Anemometer;Monitors;;Enclosure Anemometer
+User;Set FAS Integration Time;;Integration Time;Set FAS
+Enclosure;Monitor Temperature data;Monitors;data;Temperature
+User;Make POM;Makes;POM;
+User;Set Tracking Additional Velocity;Trackings;Set|Additional Velocity;
+User;Set Coude Beam Switching Device;Switchings;Device;Set Coude Beam
+TRS;Stop Field Stabilization;Stops;Field Stabilization;
+User;Start Field Stabilization;Starts;Field Stabilization;
+M2 Mirror;Get M2 Tilt Angles;;Angles;M2 Tilt
+User;Get FSS Filter Wheel;;Filter Wheel;FSS
+TRS;Monitor Enclosure Anemometer;Monitors;;Enclosure Anemometer
+FAS TCCD;Start FAS Acquisition;Starts;Acquisition;FAS
+Enclosure Anemometer;Monitor Environmental data;Monitors;Environmental data;
+Nasmyth Beacon Light Sources;Switch On Nasmyth Beacon Light Source;Switches On;Beacon Light Source;Nasmyth
+M2 Mirror;Set M2 Center Position;;;Set M2 Center Position
+User;Start FAS Acquisition;Starts;Acquisition;FAS
+User;Stop Delay Constant Alignment;Stops;;Delay Constant Alignment
+User;Set FSS Filter Wheel;;Set FSS Filter Wheel;
+User;Stop current action;Stops;current action;
+User;Preset Telescope to Catalogue Object;;;Preset Telescope|Catalogue Object
+FSS Field Diaphragm;Get FSS Field Diaphragm;;Field Diaphragm;FSS
+Support Manager;Review & Escalate;;;Review|Escalate
+Employee;Enter Order;Enters;Order;
+Clerk;Fill a Post label;Fills;Post label;
+Business participant;Increment Tally;;Increment Tally;
+Hardware Retailer;Take out extra insurance;Takes out;extra insurance;
+2nd Level Support Agent;Ask developer;Asks;developer;
+Nobel Committee Medicine;Select Final Candidates and Their Works;;Works;Select|Candidates
+Order Process;Approve Order;Approves;Order;
+Candidate;Submit Application;Submits;Application;
+Travel Agent;Confirm Booking;;;Confirm Booking
+Expert;Assess Candidates Work;Works;;Assess Candidates
+Business participant;Check availability with supplier;Checks;availability with supplier;
+Online Shop;Check Stock Level;Checks;;Stock Level
+Candidate;Interview;;;Interview
+Business participant;Cancel Request;Cancels;Request;
+System Communication;Book Order;;Book Order;
+No Magic;Prepare Talk Presentation;Prepares;Talk Presentation;
+Seller;Send an offer to the client;Sends;offer to the client;
+Pizza Customer;Ask for the pizza;Asks for;pizza;
+Car House;Enter User and Dates;Enters;;User|Dates
+Logistics Manager;Take out extra insurance;Takes out;extra insurance;
+Sales Department;Prepare special terms;Prepares;special terms;
+Business participant;E-Mail Vote Deadline Warning;;Vote Deadline Warning;- Mail
+Seller;Develop proposal;Develops;proposal;
+Software developer;Provide feedback for 2nd level support;Provides;feedback for 2nd level support;
+Clerk;Assign carrier;;carrier;Assign
+Developer;Verify bug;;bug;Verify
+Bank;Assess risk;;Assess risk;
+1st level support;Edit 1st level ticket;Edits;1st level ticket;
+Travel Agent;Propose Booking Status;Proposes Booking;;Status
+Nobel Committee Medicine;Hold Nobel Price Ceremony;Holds;;Nobel Price Ceremony
+Warehouse;Ship Goods;;Ship Goods;
+Trouble Ticket System;edit 1st level ticket;edits;1st level ticket;
+Trouble Ticket System;Edit account manager;;Edit account manager;
+Customer;Confirm Interest;Confirms;Interest;
+Hardware Retailer;Decide if normal post or special shipment;Decides;normal post|special shipment;
+No Magic;Publish Seminar Description in Website;;;Publish Seminar Description|Website
+Vacation Request Approval Process;Mark vacation in Calendar;;vacation in Calendar;Mark
+User;report bug;;bug;report
+Customer;Place Order;;Place Order;
+Marketing Manager;Publish Seminar Description in Website;;;Publish Seminar Description|Website
+Customer;Select Travel;;Select Travel;
+Trouble Ticket System;Add to backlog;Adds|backlogs;;
+Administrator;Notify user;Notifies;user;
+1st level support;Edit account manager;;Edit account manager;
+Librarian;Register Reservation;;;Register Reservation
+1st Level Support Agent;Classify ticket;Classifies;ticket;
+Business participant;Send Results Via E-Mail;Sends;Results Via E - Mail;
+Business participant;Request Hold;Requests;;Hold
+Technician;Receive Notification;Receives;Notification;
+Risk Analyst;Assess risks;;Assess risks;
+Car House;Select Car;;Select Car;
+No Magic;Welcome Participants;;;Participants
+Seller;Change the terms of the offer;Changes;terms of the offer;
+Business participant;Get Book Status;;;Book Status
+No Magic;Evaluate Participants Number;Evaluates;Participants Number;
+Manager;Approve Order;Approves;Order;
+Business participant;Reply On Loan ;Replies On;Loan;
+Cab Driver;Pickup Customer;;;Pickup Customer
+Business participant;Send Registered Warning Letter;Sends Registered;;Warning Letter
+Support Department;Work Offline;Works;;Offline
+Organization;Initiate File;;File;Initiate
+Nobel Committee Medicine;Select Preliminary Candidates;Selects;Preliminary Candidates;
+Nobel Assembly;Announce Nobel Prize Laureates;;;Announce Nobel Prize Laureates
+Pizza Customer;Eat the pizza;Eats;pizza;
+Firm;Reject Application;Rejects;Application;
+Candidate;Review Offer;;;Review Offer
+Trouble Ticket System;Send Mail to Account Manager;Sends|Accounts;;Mail|Manager
+Business participant;Receive Issue List;Receives;Issue List;
+Warehouse Worker;Package goods;;Package goods;
+Business participant;Process Payment;;Process Payment;
+No Magic;Register Participant;;;Register Participant
+Hardware Retailer;Request quotes from carriers;;Request quotes from carriers;
+1st Level Support Agent;Handle 1st level issue;Handles;1st level issue;
+No Magic;Give talk;Gives;talk;
+Online Shop;Suggest Change;Suggests;Change;
+Recruiter;Schedule Interview;;Schedule Interview;
+Car House;Show Reservation;Shows;;Reservation
+pizza chef;Bake the pizza;Bakes;pizza;
+Administrative Department;Bill;;;Bill
+Hardware Retailer;Fill a Post label;Fills;Post label;
+1st level support;Open Ticket;Opens;Ticket;
+System Communication;Store in Marketing System Client 100;;Store in Marketing System Client 100;
+Nobel Committee Medicine;Send Nomination Form;Sends;Nomination Form;
+Business participant;Moderate Conference Call Discussion;;Call Discussion;Moderate Conference
+Technician;Work Offline;Works;;Offline
+Hardware Retailer;Add paperwork;Adds;paperwork;
+2nd level support;Edit 2nd level ticket;Edits;2nd level ticket;
+Marketing Manager;Collect Questionnaries;;;Collect Questionnaries
+Reader;Return Item;;Return Item;
+Trouble Ticket System;Edit 2nd level ticket;Edits;2nd level ticket;
+Marketing Manager;Make Internal Seminar Anoucement;Makes;;Internal Seminar Anoucement
+Business participant;Register Order in Manufacturing System;Registers;Order in Manufacturing System;
+Aqua Distilled Water Company;Verify Customer Identity;;Customer Identity;Verify
+2nd level support;Add to backlog;Adds|backlogs;;
+Seminar Coordinator;Make Internal Seminar Anoucement;Makes;;Internal Seminar Anoucement
+Nobel Committee Medicine;Submit Report with Recommendations;Submits;Recommendations;Report
+Reservation;Submit Car Reservation;Submits;Car Reservation;
+Nobel Committee Medicine;Send list of Selected Preliminary Candidates;Sends;list of Selected Preliminary Candidates;
+2nd level support;edit 2nd level ticket;edits;2nd level ticket;
+Nominator;Identify Potential Nominee(s);Identifies;;Potential Nominee(s
+Travel Agent;Get Alternative Time;;Alternative Time;
+Organization;Check Solvency;Checks;Solvency;
+Order Process;Enter Order;Enters;Order;
+Employee;Update Vacation Request;;Vacation Request;Update
+Organization;Bill;;;Bill
+Trouble Ticket System;Insert issue into product backlog;;Insert issue into product backlog;
+Organization;Book Travel;;;Book Travel
+Candidate;Fill out Employment Froms;Fills out;Employment Froms;
+Customer;Request Booking;;;Request Booking
+Trouble Ticket System;edit 2nd level ticket;edits;2nd level ticket;
+Business participant;Moderate E-mail Discussion;;Moderate E - mail Discussion;
+Developer;Notify administrator;Notifies;administrator;
+Trouble Ticket System;Send mail to account manager;Sends|accounts;mail to|manager;
+Sales Department;Prepare contract;Prepares;contract;
+Seminar Speaker;Give talk;Gives;talk;
+Aqua Distilled Water Company;Deliver Water;Delivers;Water;
+Firm;Review Application;;;Review Application
+Logistic Department Worker;Deliver Water;Delivers;Water;
+No Magic;Arrange Facilities and Meals;;;Arrange Facilities|Meals
+Travel Agent;Check Availability;Checks;Availability;
+Business participant;Reduce Number of Voting Members and Recalculate Votes;Reduces|Votings|Recalculates;Number|Votes;Members
+Bank;Send quote;Sends;;
+Administrator;Install new version;Installs;new version;
+Clerk;Decide if normal post or special shipment;Decides;normal post|special shipment;
+Nobel Committee Medicine;Determine Need for Expert Assistance;;Expert Assistance;Determine Need
+Seller;Consider the proposal;Considers;proposal;
+No Magic;Send Invitations to Customers;Sends;Invitations to Customers;
+Sales Representative;Suggest Change;Suggests;Change;
+Front Desk;Review & Escalate;;;Review|Escalate
+Clerk;Check if extra insurance is necessary;Checks;extra insurance;
+System Communication;Store in Statistical System;;Store in Statistical System;
+CRM;Get Client Information;;;Client Information
+Support Department;Receive Notification;Receives;Notification;
+Vacation Request Approval Process;Approve Vacation Request;Approves;Vacation Request;
+Marketing Manager;Welcome Participants;;;Participants
+2nd level support;edit 2nd level ticket;edits;2nd level ticket;
+Customer Service Assistant;Forward Order;;Forward Order;
+Sales rep;Calculate terms;;Calculate terms;
+Trouble Ticket System;Open ticket;Opens;ticket;
+Business participant;Receive Book Request;;;Receive Book Request
+Support Manager;Receive Notification;Receives;Notification;
+Nobel Assembly;Discuss Nominators (Meeting 1);;Meeting 1;Discuss Nominators
+No Magic;Prepare Seminar Description;;;Prepare Seminar Description
+Firm;Prepare Offer;Prepares;Offer;
+Sales Department;Indicate Price;Indicates;;Price
+Reader;Find Wanted Title;;Wanted Title;Find
+Business participant;Post Results on Web Site;;Results on Web Site;Post
+Sales manager;Consider the proposal;Considers;proposal;
+Librarian;Notify First Waiting Reader;Notifies;Reader;Waiting
+Service Contract Implementation Layer;Store in Marketing System Client 200;;Store in Marketing System Client 200;
+Marketing Manager;Arrange Facilities and Meals;;;Arrange Facilities|Meals
+Recruiter;Prepare Offer;Prepares;Offer;
+1st level support;Send Mail to Account Manager;Sends|Accounts;;Mail|Manager
+2nd level support;Insert issue into product backlog;;Insert issue into product backlog;
+Vacation Request Approval Process;Book Vacation;;;Book Vacation
+Nobel Committee Medicine;Collect Candidates Work Assessment Reports;Reportses;;Collect Candidates Work Assessment
+Travel Agent;Get Booking Request;Bookings;Request;
+Nominator;Send Nominee Completed Form(s);Sends|Completeds;;Nominee
+Reservation;Get Confirmation;;Confirmation;
+Key account manager;Get problem description;;problem description;
+Business participant;Check Calendar for Conference Call;Checks;Conference Call;Calendar
+Sales Department;Send quote;Sends;;
+Manager;Approve Vacation Request;Approves;Vacation Request;
+Employee;Mark vacation in Calendar;;vacation in Calendar;Mark
+Trouble Ticket System;Close Ticket;Closes;Ticket;
+Technician;Acknowledge;;;Acknowledge
+Hardware Retailer;Package goods;;Package goods;
+Sales Department;Initiate File;;File;Initiate
+Sales manager;Prepare special terms;Prepares;special terms;
+Order Process;Book Order;;Book Order;
+Pizza Customer;Select a pizza;Selects;pizza;
+Bank;Prepare special terms;Prepares;special terms;
+Support Department;Update Client on Delay;;;Update Client|Delay
+Vacation Request Approval Process;Update Vacation Request;;Vacation Request;Update
+Sales Department;Calculate terms;;Calculate terms;
+ERP Expert;Resolve Communication Problem and Book Order;;Order;Resolve Communication Problem|Book
+Business participant;Hold Reply;Holds;;Reply
+Car House;Set Available Cars;;Available Cars;Set
+2nd Level Support Agent;Document 2nd level result;;Document 2nd level result;
+Car House;Get Confirmation;;Confirmation;
+Trouble Ticket System;Open Ticket;Opens;Ticket;
+Organization;Indicate Price;Indicates;;Price
+Trouble Ticket System;Insert Issue into Product Backlog;;Insert Issue into Product Backlog;
+Seminar Coordinator;Open Seminar;;Open Seminar;
+Business participant;Prepare Invoice;Prepares;;Invoice
+Service Contract Implementation Layer;Book Order;;Book Order;
+Service Contract Implementation Layer;Store in Marketing System Client 100;;Store in Marketing System Client 100;
+Technician;Connect Remotely to Client;Connects;Client;
+Reader;Get Item;;Item;
+Administrative Department;Check Solvency;Checks;Solvency;
+Seminar Coordinator;Send Invitations to Customers;Sends;Invitations to Customers;
+Support Department;Acknowledge;;;Acknowledge
+Aqua Distilled Water Company;Forward Order;;Forward Order;
+1st level support;Edit 1st Level Ticket;;1st Level Ticket;Edit
+Software developer;Examine problem;Examines;problem;
+Seller;Close an offer;Closes;offer;
+Seminar Coordinator;Publish Seminar Description in Website;;;Publish Seminar Description|Website
+Business participant;Start Investigation;Starts;Investigation;
+Firm;Schedule Interview;;Schedule Interview;
+No Magic;Send Reminder to Participants;Sends;Participants;Reminder
+Seminar Coordinator;Prepare Seminar Description;;;Prepare Seminar Description
+Key account manager;Send mail to support system;Sends|supports;mail to|system;
+Marketing Manager;Prepare Seminar Description;;;Prepare Seminar Description
+Customer;Send credit request;Sends;credit request;
+Sales rep;Review request;;request;Review
+Reader;Make Reservation;Makes;Reservation;
+Nobel Committee Medicine;Write Recommendations Report;;;Write Recommendations Report
+Sales staff;Develop proposal;Develops;proposal;
+Trouble Ticket System;Edit 2nd level ticket;Edits;2nd level ticket;
+2nd Level Support Agent;Handle 2nd level issue;Handles;2nd level issue;
+No Magic;Make Internal Seminar Anoucement;Makes;;Internal Seminar Anoucement
+Business participant;Order from supplier;;Order from supplier;
+Organization;Check Availability;Checks;Availability;
+Warehouse;Pack Goods;;Goods;Pack
+1st level support;Close Ticket;Closes;Ticket;
+Business participant;Checkout Book;;;Checkout Book
+Firm;Interview;;;Interview
+No Magic;Prepare Handouts;Prepares;;Handouts
+Client;Select Car;;Select Car;
+Hardware Retailer;Check if extra insurance is necessary;Checks;extra insurance;
+Bank;Review request;;request;Review
+Recruiter;Submit Offer;Submits;Offer;
+Marketing Manager;Prepare Handouts;Prepares;;Handouts
+1st level support;edit 1st level ticket;edits;1st level ticket;
+Business participant;Prepare Results;Prepares;Results;
+Client;Enter User and Dates;Enters;;User|Dates
+Sales rep;Prepare contract;Prepares;contract;
+Business participant;Update Invoice;;Update Invoice;
+Recruiter;Reject Application;Rejects;Application;
+Nobel Committee Medicine;Collect Completed Forms;Completeds;Forms;Collect
+Business participant;Checkout Reply;;;Checkout Reply
+1st Level Support Agent;Note 1st level result;Notes;1st level result;
+Business participant;Email Voters that have to Change Votes;Changes;Voters|Votes;Email
+Marketing Manager;Evaluate Participants Number;Evaluates;Participants Number;
+Marketing Manager;Send Reminder to Participants;Sends;Participants;Reminder
+Service Contract Implementation Layer;Store in Statistical System;;Store in Statistical System;
+Sales staff;Change the terms of the offer;Changes;terms of the offer;
+2nd level support;Insert Issue into Product Backlog;;Insert Issue into Product Backlog;
+User;Use application;Uses;application;
+Support Department;Connect Remotely to Client;Connects;Client;
+1st Level Support Agent;Document 1st level result;;Document 1st level result;
+Bank;Assess risks;;Assess risks;
+Trouble Ticket System;Edit 1st level ticket;Edits;1st level ticket;
+Seminar Speaker;Prepare Talk Presentation;Prepares;Talk Presentation;
+Sales Department;Book Travel;;;Book Travel
+1st level support;Close ticket;Closes;ticket;
+No Magic;Open Seminar;;Open Seminar;
+Sales rep;Send quote;Sends;;
+Business participant;Reduce to Two Solutions;Reduces to;Solutions;
+Pizza Customer;Order a pizza;Orders;pizza;
+No Magic;Collect Questionnaries;;;Collect Questionnaries
+Online Shop;Ship Goods;;Ship Goods;
+Customer;Provide Customer Data;Provides;Customer Data;
+Bank;Calculate terms;;Calculate terms;
+Bank;Prepare contract;Prepares;contract;
+No Magic;Close Seminar;;;Close Seminar
+Business participant;Re-Announce Vote with Warning to Voting members;Votings;Re - Announce Vote with Warning|members;
+Librarian;Put Reservation to the Waiting List;Puts;List;Reservation|Waiting
+Sales Representative;Check Stock Level;Checks;;Stock Level
+Recruiter;Collect Feedback;;Feedback;Collect
+Joan Doe;Assess risk;;Assess risk;
+Cab Driver;Complete Assignment;;;Complete Assignment
+Librarian;Register Loan;Registers;;Loan
+Customer Service Assistant;Create Customer Account;Creates;Customer Account;
+Technician;Update Case Status;;Update Case Status;
+Sales Department;Review request;;request;Review
+Seller;Fullfil the order;Fullfils;order;
+Interviewer;Interview;;;Interview
+1st level support;Send mail to account manager;Sends|accounts;mail to|manager;
+Reservation;Set Available Cars;;Available Cars;Set
+Recruiter;Review Application;;;Review Application
+Business participant;Review Issue List;Reviews;Issue List;
+Key account manager;Explain solution;Explains;solution;
+Manager;Book Vacation;;;Book Vacation
+Service Contract Implementation Layer;Resolve Communication Problem and Book Order;;Order;Resolve Communication Problem|Book
+Nobel Assembly;Select Laureates (Meeting 2);;Meeting 2;Select Laureates
+Sales Department;Check Availability;Checks;Availability;
+Sales staff;Close an offer;Closes;offer;
+Marketing Manager;Send Invitations to Customers;Sends;Invitations to Customers;
+System Communication;Store in Marketing System Client 200;;Store in Marketing System Client 200;
+Client;Show Reservation;Shows;;Reservation
+Firm;Submit Offer;Submits;Offer;
+Sales Representative;Request Pack Goods;Requests;Pack Goods;
+Trouble Ticket System;Close ticket;Closes;ticket;
+Marketing Manager;Register Participant;;;Register Participant
+Aqua Distilled Water Company;Create Customer Account;Creates;Customer Account;
+2nd Level Support Agent;Note 2nd level result;Notes;2nd level result;
+2nd Level Support Agent;Handle 2nd Level Issue;Handles;2nd Level Issue;
+Car House;Get Client Information;;;Client Information
+Support Department;Review & Escalate;;;Review|Escalate
+Support Department;Update Case Status;;Update Case Status;
+Firm;Collect Feedback;;Feedback;Collect
+Business participant;Receive Vote;Receives;Vote;
+delivery boy;Deliver the pizza;Delivers;pizza;
+Seminar Coordinator;Close Seminar;;;Close Seminar
+Business participant;Send Invoice to Customer;Sends;Customer;Invoice
+Pizza Customer;Pay the pizza;Pays;pizza;
+Clerk;Request quotes from carriers;;Request quotes from carriers;
+clerk;Calm customer;;Calm customer;
+Business participant;Inform Customer about Overdue Payment;Informs;Customer about Overdue Payment;
+Online Shop;Request Pack Goods;Requests;Pack Goods;
+1st level support;Open ticket;Opens;ticket;
+Developer;Notify user;Notifies;user;
+Sales staff;Send an offer to the client;Sends;offer to the client;
+Trouble Ticket System;Edit 1st Level Ticket;;1st Level Ticket;Edit
+Sales staff;Fullfil the order;Fullfils;order;
+Reader;Use Item;Uses;Item;
+Car House;Submit Car Reservation;Submits;Car Reservation;
+Expert;Send Candidates Assessment Report;Sends;;Candidates Assessment Report
+Customer Service Assistant;Verify Customer Identity;;Customer Identity;Verify
+delivery boy;Receive payment;Receives;payment;
+Online Shop;Pack Goods;;Goods;Pack
+Business participant;Announce Issues;;;Announce Issues
+Support Manager;Update Client on Delay;;;Update Client|Delay
+Storyboard;Storyboard (full day);;full day;Storyboard
+Building;Site is developed (2 days);develops;Site|days;
+Building;Site design (10 days);;Site design|days;
+Building;Building (3 days);;Building|days;
+review;review activity (1 day);;review activity|day;
+end;approval of the site (half a day);;approval of the site|day;
+Charles (admi);adds incoming mail date, records letter, archives it;adds|archives;incoming mail date|records letter;
+Charles (admi);tel call to sender to complete;calls|senders|completes;;tel
+Charles (admi);empties & checks the mails in the mailbox;checks;mails in the mailbox;empties
+Charles (admi);adds new member to the member register;adds;new member to the member register;
+Charles (admi);sends a letter to person and explaines why not;sends;letter to person|explaines;
+Charles (admi);adds in the member register;adds in;member register;
+Charles (admi);prepare invoices&send a letter to customer;prepares invoices&send;letter to customer;
+Charles (admi);prints a membership card&send to new customer;card&sends to;prints a membership|new customer;
+Miranda;will decide if member or not;wills decide;member;
+Miranda;stamps 'new member'&writes the date;;stamps' new member'&writes the date;
+Miranda;calculates fees for the new members;;calculates fees for the new members;
+customer;payments will transfer;wills transfer;payments;
+customer;Receive membership card;Receives;membership card;
+Customer;Inquire about availability of products;;Inquire about availability of products;
+Customer;Submit purchase order;Submits;purchase order;
+Customer;Send payment;Sends;payment;
+Accounting;Prepare invoice;Prepares;invoice;
+Accounting;Process payment;;Process payment;
+Accounting;Send reminder to customer;Sends;reminder to customer;
+Sales;Create and submit the quotation;Creates|submits;quotation;
+Sales;Create sales order;Creates;sales order;
+Warehouse;Backorder missing items;misses;items;Backorder
+Warehouse;Update sales order;;Update sales order;
+Supplier;Assemble shipment and packing list;Assembles;shipment|packing list;
+Accounting;Enter PO Information;Enters;PO Information;
+Accounting;Enter goods receipt information;Enters;goods receipt information;
+Accounting;Verify invoice accuracy;Verifies;invoice accuracy;
+Purchasing;Select a suitable vendor and send purchase order;Selects|sends;suitable vendor|purchase order;
+Warehouse;Request for more stock;Requests for;more stock;
+Customer;Send inquiry;Sends;inquiry;
+Customer;Fill out application form;Fills out;application form;
+Customer;Process documents;;Process documents;
+Supervisor;Expedite the assessment process;Expedites;assessment process;
+CSR;Send mortgage application form;Sends;mortgage application form;
+CSR;Review application form;Reviews;application form;
+CSR;Send a reminder to customer;Sends;reminder to customer;
+CSR;Inform customer and close transaction;Informs;customer|close transaction;
+Mortgage Specialist;Inform customer of rejection;Informs;customer of rejection;
+Mortgage Specialist;Archive details;;Archive details;
+Customer;Submit insurance claim;Submits;insurance claim;
+Customer;Supply more information;;Supply more information;
+Supervisor;Review the claim;Reviews;claim;
+Supervisor;Decide to accept or reject claim;Decides|accepts|rejects;claim;
+Claim Adjuster;Review the claim;Reviews;claim;
+Claim Adjuster;Decide to accept or reject claim;Decides|accepts|rejects;claim;
+Claim Adjuster;Send to supervisor for review;Sends to;supervisor for review;
+Claim Adjuster;Inform customer of rejection reasons;Informs;customer of rejection reasons;
+Claim Adjuster;Send claim payment to customer;Sends;claim payment to customer;
+Customer Service;Review the claim;Reviews;claim;
+Customer Service;Contact customer for details;;Contact customer for details;
+Customer Service;Forward claim to claim adjuster;claims;Forward claim to|adjuster;
+Customer;Bring computer to ACM and describe problem;Brings|describes;computer to ACM|problem;
+Customer;Authorize the repair;Authorizes;repair;
+Customer;Take computer back;Takes;computer;
+Technician;Diagnose the problem;Diagnoses;problem;
+Technician;Ask Store Owner to complete the repair;Asks|completes;repair;Store Owner
+Technician;Complete the repair and test computer;Completes;repair|test computer;
+Technician;File a report about the repair;Files;report about the repair;
+Store Owner;Create estimate of repair time and cost;Creates;estimate of repair time|cost;
+Store Owner;Assign a technician to repair the problem;Assigns|repairs;technician to|problem;
+Store Owner;Complete repair and test computer;;Complete repair|test computer;
+Store Owner;File a report about the repair;Files;report about the repair;
+Store Owner;Inform customer of repair completion;Informs;customer of repair completion;
+Store Owner;Inform customer of inability to fix;Informs|fixes;customer of inability to;
+lecturer;check process model;checks;process model;
+lecturer;assign negative points;;assign negative points;
+lecturer;check the process and assign points;checks;process|assign points;
+lecturer;check the progress and consult problems;checks|consults;progress|problems;
+team;agree on team domain;agrees on;team domain;
+team;analyse the field of study;;field of study;analyse
+team;assign roles in the tem;;assign roles in the tem;
+team;present the project;presents;project;
+student;join team;joins;team;
+student;create one process model;creates;process model;
+student;fix the problem at the next seasion;fixes;problem at the next seasion;
+student;extend the process to L2,3;extends;process to L2,3;
+student;perform work according to role;performs|accords to;work|role;
+Checked department;hand in details of their work;;hand in details of their work;
+Auditor;Look for essential problems within company;Looks for;essential problems within company;
+Auditor;look fo preciese information;looks fo;preciese information;
+Auditor;statement of employees' work;;statement of employees' work;
+Auditor;consult with employes;consults with;employes;
+Auditor;general statement;;statement;general
+Auditor;deeper look into a company;looks into;company;
+examiner;get to know the case;knows;case;
+examiner;first evaluation;;first evaluation;
+examiner;contact insurer and consult the case;consults;contact insurer|case;
+examiner;final evaluation;;final evaluation;
+Insurance company;a shady incident;;shady incident;
+Insurance company;analyse details of the case;;details of the case;analyse
+Insurance company;report for insurer;;report for insurer;
+insurer;hand in details of an accident;;hand in details of an accident;
+insurer;enter a protest;enters;protest;
+Customer;Review the Venders;Reviews;;Venders
+Customer;Send the RFQ;Sends;;RFQ
+Customer;Review The Sales Quote;Reviews;Sales Quote;
+Sales;Communicate with the Customer;Communicates with;Customer;
+Sales;Review Pricing Options and Generate Sales Quote;;Sales Quote;Review Pricing Options|Generate
+Emgineering;Produce L&M Cost Estimates Laser tested;Produces|tests;Cost Estimates Laser;L&M
+Finance;Adding The Overhead Cost;Addings;Cost;Overhead
+Finance;Generate Pricing Options;;Pricing Options;Generate
+Customer;Create RFQ;Creates;;RFQ
+Customer;Review Sales Quote;;Sales Quote;Review
+Customer;Review the Vendors;Reviews;;Vendors
+Customer;Review the Sales Quote;Reviews;Sales Quote;
+Sales;Verify the RFQ;Verifies;;RFQ
+Engineering;Produce L&M Cost;Produces;Cost;L&M
+Finance;Adding the Overhead Cost;Addings;Overhead Cost;
+Reporter;Write Incident Report;;;Write Incident Report
+Analyst;Comment arrangements;;Comment arrangements;
+reporter;report incident;;;report incident
+reporter;note incident number and -code;notes;incident number;
+reporter;answer request;;request;answer
+agent;answer request provision;answers;request provision;
+activiti process engine;report incident;;;report incident
+activiti process engine;deidentify incident step 1;;incident step 1;deidentify
+activiti process engine;deidentifiy incident step 2;;step 2;deidentifiy incident
+activiti process engine;analyze incident;;;analyze incident
+activiti process engine;answer request by reporter;answers;request by reporter;
+activiti process engine;answered request by reporter (list);answers;request by reporter|list;
+activiti process engine;answer request by agent;answers;request by agent;
+activiti process engine;answered request by agent (list);answers;request by agent|list;
+analyst;analyze incident;;;analyze incident
+Customer;Review the sales quote;Reviews;sales quote;
+Sales;Review pricing options and generate sales quote;generates;Review pricing options|sales quote;
+Engineering;Produce L&M Cost Estimates;Produces;Cost Estimates;L&M
+Finance;Adding the Overhead cost;Addings;cost;Overhead
+Finance;Generate pricing options;;Generate pricing options;
+Customer;Submit the Insurance Claim;Submits;Insurance Claim;
+CSR;Review the claim;Reviews;claim;
+CSR;communicate with the customer;communicates with;customer;
+Claim Adjuster;Evaluate the claim;Evaluates;claim;
+Claim Adjuster;send payment;sends;payment;
+Claim Adjuster;send rejection letter with explanation;sends;rejection letter with explanation;
+Supervisor;evaluate the claim;evaluates;claim;
+PURCHASING AGENT;Create Purchase order  2x;Creates;Purchase order;
+FINANCE DEPARTMENT;Create Billing Document;Creates;Billing Document;
+FINANCE DEPARTMENT;Post Incoming Payment;;;Post Incoming Payment
+WAREHOUSE TEAM;Display stock/ Requirements list;lists;stock/ Requirements;Display
+WAREHOUSE TEAM;Create Transfer order for Delivery note;Creates;Transfer order for Delivery note;
+WAREHOUSE TEAM;Create Purchase requisition;Creates;Purchase requisition;
+WAREHOUSE TEAM;Goods Receipt for Purchase order;;Purchase order;Goods Receipt
+PRODUCTION PLANNER;MRP Run;;;MRP Run
+PRODUCTION PLANNER;Create Production order 2x;Creates;Production order;
+PRODUCTION PLANNER;Production Order confirmation & Production of motorcycle 2x;;Production Order confirmation|motorcycle;Production
+SALES & DISTRIBUTION DEPARTMENT;Create sales order;Creates;sales order;
+SALES & DISTRIBUTION DEPARTMENT;Outbound Delivery with order reference;;Outbound Delivery with order reference;
+SALES & DISTRIBUTION DEPARTMENT;Check inventory for finished goods;Checks;inventory for finished goods;
+sales;verify RFQ;verifies;;RFQ
+sales;Send to Customer;Sends to;Customer;
+sales;Generate sales Quotes;;Generate sales Quotes;
+Finance;Produced labor and materal costs;Produceds;labor|materal costs;
+Engineering;Add overhead cost;Adds|costs;;
+Customer;Generate RFQ;Generates;;RFQ
+Customer;Analyze Sales Quote;;Sales Quote;Analyze
+Volley Club;emptying the mailbox;empties;mailbox;
+Volley Club;Phonecall to complete data;completes;Phonecall to|data;
+Volley Club;Recording an archieving;Recordings;archieving;
+Volley Club;add to the register;adds to;register;
+Volley Club;write down member fee into register;writes down;member fee into register;
+Volley Club;letter with explanation of rejecting;;letter with explanation of rejecting;
+Volley Club;print membership cards;;membership cards;print
+Volley Club;send membership cards;sends;membership cards;
+Miranda;new member for the club?;;new member for the club;
+Miranda;stamp the letter;;letter;stamp
+Miranda;calculkate member fee;;calculkate member fee;
+candidate;sending letter;sends;letter;
+candidate;Phonecall with Charles;;Phonecall with Charles;
+candidate;get rejected;rejects;;
+candidate;is a new member of the club;;new member of the club;
+candidate;has to pay membership;pays;membership;
+candidate;pays the fee;pays;fee;
+candidate;does not pay the fee;pays;fee;
+Web Designer;First informational meeting;;First informational meeting;
+Web Designer;Design site;;Design site;
+Web Designer;Develop site;Develops;site;
+Web Designer;Prepare content;Prepares;content;
+Web Designer;Marketing review;;Marketing review;
+Web Designer;Final version of content;;Final version of content;
+Web Designer;Building the site;Buildings;site;
+Web Designer;Review activity;;Review activity;
+Web Designer;Approval of the site;;Approval of the site;
+Web Designer;Storyboard;;;Storyboard
+Miranda;emptying the letterbook;empties;letterbook;
+Miranda;rejecting the candidate;rejects;candidate;
+Miranda;accepting the candidate and sending the letter to Charles;accepts|sends;candidate|letter to Charles;
+Miranda;calculating the member fee for every person;calculates;member fee for every person;
+Miranda;giving the fee data to Charles;gives;fee data to Charles;
+Charles;Empties Mailbox and check for missing information;checks for|misses;information;Empties Mailbox
+Charles;Phonecall to complete data;completes;Phonecall to|data;
+Charles;recording and archiving;records;archiving;
+Charles;sending of rejection letter;sends of;rejection letter;
+Charles;add member to register;adds|registers;member to;
+Charles;sending the data to Miranda;sends;data to Miranda;
+Charles;writing the fees into the register;writes;fees into the register;
+Charles;preparing invoice for new candidates;prepares;invoice for new candidates;
+Charles;waiting for payment of the fees;waits for;payment of the fees;
+Charles;prints the membership card;;prints the membership card;
+Charles;send the membership cards to the new members;sends;membership cards to the new members;
+Backup;Backup of Database;;;Backup|Database
+Backup;Check the CRM for new registers;Checks;new registers;CRM
+Backup;write the registers into the existing table;writes|exists;registers|table;
+Backup;alert the supervisor;alerts;supervisor;
+Backup;Produce a new table;Produces;new table;
+Backup;send it to the account manager;sends;account manager;
+Backup;check CRM whether new returns are filled;checks|fills;new returns;CRM
+Backup;reconcile with the existing;reconciles with|exists;;
+Backup;message to the supervisor;;message to the supervisor;
+Backup;register;;;register
+Customer Service Representative;update case details;;update case details;
+Customer Service Representative;archive;;;archive
+Customer Service Representative;cancellation;;cancellation;
+Customer Service Representative;moved to administration for completion;moves to;administration for completion;
+Customer Service Representative;generate message for outstanding documents;generates;message for outstanding documents;
+commitee members;check diaries and for conflicts;checks;diaries|conflicts;
+support officer;check dates and suggest modifications;checks|suggests;dates|modifications;
+support officer;update group calendar;;;update group calendar
+support officer;create meeting folders;creates;meeting folders;
+support officer;ensure that all documents are uploaded;ensures;documents;
+coordination unit;schedule meetings;;schedule meetings;
+coordination unit;add draft dates;adds;draft dates;
+coordination unit;recheck all dates - potential conflicts?;rechecks;dates|potential conflicts;
+coordination unit;create final schedule;creates;final schedule;
+coordination unit;finalize schedule;;schedule;finalize
+Sales and Marketing;Check customer;Checks;customer;
+Sales and Marketing;Place order in ERP system;;Place order in ERP system;
+Sales and Marketing;Check product availability;Checks;product availability;
+Sales and Marketing;Reject the order;Rejects;order;
+Sales and Marketing;Invoice the customer;Invoices;customer;
+Sales and Marketing;Send Christmas card every year;Sends;card every year;Christmas
+Production;Start production;Starts;production;
+Logistics and Distribution;Take product from the warehouse;Takes;product from the warehouse;
+Logistics and Distribution;Prepare product for shipment;Prepares;product for shipment;
+Logistics and Distribution;Deliver the product;Delivers;product;
+Accounting;Check reminder >3;Checks;reminder;
+Accounting;Check bank account;Checks;bank account;
+Accounting;Send reminder;Sends;reminder;
+Legal department;Take legal actions;Takes;legal actions;
+Validation Department;Forward Validated Invoices to the Registry;;Registry;Forward Validated Invoices
+Validation Department;Update Status to Validated;Updates;Status to Validated;
+The Registry;Receiving Validated Invoices;Receivings;Validated Invoices;
+The Registry;Sorting by vendors;Sortings by;vendors;
+The Registry;Sorting by Payment Date;Sortings by;Payment Date;
+The Registry;Archiving Invoices;Archivings;Invoices;
+The Registry;Relocating an Archived Invoice;Relocatings;Invoice;Archived
+Payment Department;Process Weekly Payment;;Process Weekly Payment;
+Payment Department;Generate Payment Report;;Report;Generate Payment
+Payment Department;Send report to Client;Sends;report to Client;
+Payment Department;Send Report to the Registry;Sends;Registry;Report
+Payment Department;Send Report to Accounts Receivable Department;Sends;;Report|Accounts Receivable Department
+Account Receivable Department;Generate Monthly Invoices;;Monthly Invoices;Generate
+Account Receivable Department;Send Invoice to Client;Sends;Client;Invoice
+Account Receivable Department;Receive Payment from Client;Receives;Payment from Client;
+SSP Clients;Client sends invoice to SSP;sends;Client|invoice to SSP;
+Admin Department;Sort invoice by client;;client;
+Admin Department;Sub-Sort invoices by vendor;;invoices by vendor;Sub|Sort
+Admin Department;Attach Invoice Entry Form;;;Attach Invoice Entry Form
+Admin Department;Fill out Invoice Entry Form;Fills out;Entry Form;Invoice
+Admin Department;Check invoice for completeness;Checks;invoice;
+Admin Department;Allocate to Data Entry personel;Allocates to;Data Entry personel;
+Mail Centre;Categorise Mail;;Categorise Mail;
+Mail Centre;Return invoice to client to complete;completes;Return invoice to client to;
+Mail Centre;Return non-complaint invoice to client;Returns;non - complaint invoice to client;
+Validation Department;Sort invoices by client;;Sort invoices by client;
+Validation Department;Print invoice validation report sorted by client;sorts by;Print invoice validation report|client;
+Validation Department;Validate data entry for invoice;;Validate data entry for invoice;
+Validation Department;Update invoice batch to validated;batches to|validates;Update invoice;
+The Registry;Pay Invoice;Pays;;Invoice
+The Registry;Leave Invoice unpaid until next pay run;Leaves;next pay run;Invoice
+Payment Department;Generate monthly invoice report for Client;Generates;monthly invoice report for Client;
+Account Receivable Department;Sort by Vendor;Sorts by;Vendor;
+Account Receivable Department;Archive Invoice;;;Archive Invoice
+Vendor Master Record Data Entry Department;Create Vendor Master Record;Creates;;Vendor Master Record
+Admin Department;Recall Client's SLA;;;Recall Client|SLA
+Admin Department;Search Excel spreadsheet for SLA;;Search Excel spreadsheet for SLA;
+Admin Department;Write SLA on Invoice Entry form;Writes;SLA on Invoice Entry form;
+SSP Clients;Forward Invoice;;;Forward Invoice
+SSP Clients;Complete Invoice;Completes;;Invoice
+SSP Clients;Determine correct compliance information;Determines;correct compliance information;
+SSP Clients;Notify Vendor of Invoice Payment;;Payment;Notify Vendor|Invoice
+SSP Clients;Pay Monthly Invoice;Pays;;Invoice
+SSP Clients;Modify information for compliance;Modifies;information for compliance;
+Admin Department;Check if invoice is compliant with the SLA;Checks;invoice;SLA
+Admin Department;Return Invoice to Client;;Client;Return Invoice
+Admin Department;Send Reminder Letter;Sends;;Reminder Letter
+Admin Department;Phone client to request required information;requests required;Phone client to|information;
+Admin Department;Complete invoice entry form with compliance information;;Complete invoice entry form with compliance information;
+Data Entry Department;Enter Master Record Request Form;Enters;;Master Record Request Form
+Data Entry Department;Enter Vendor code on Invoice Entry form;Enters;code on Invoice Entry form;Vendor
+Data Entry Department;Sort Invoices by Vendor;;Sort Invoices by Vendor;
+Data Entry Department;Take Invoice batch to Outbox;Takes;batch to Outbox;Invoice
+Data Entry Department;Look up Vendor in SAP system;Looks up;system;Vendor|SAP
+Data Entry Department;Sort Invoices by Amount;;Sort Invoices by Amount;
+Validation Department;Send Validated Invoices to the Registry;Sends;Registry;Validated Invoices
+The Registry;Sort by Vendor;Sorts by;Vendor;
+The Registry;Sort by Payment Date;Sorts by;Payment Date;
+The Registry;Archive Invoices;;;Archive Invoices
+The Registry;File invoice payment report;;File invoice payment report;
+Payment Department;Pay Vendor;Pays;Vendor;
+Payment Department;Leave Invoice unpaid until next pay run;Leaves;next pay run;Invoice
+Payment Department;Generate invoice payment report per client;Generates;invoice payment report per client;
+Payment Department;Send invoice report to client;Sends;invoice report to client;
+Account Receivable Department;Generate monthly invoice for client;Generates;monthly invoice for client;
+Account Receivable Department;Monthly invoice marked as paid;marks|pays;Monthly invoice;
+Vendor;Issue Invoice;Issues;;Invoice
+Vendor;Mark invoice as paid;pays;invoice;Mark
+Sales;Check Customer;Checks;Customer;
+Sales;Check Solvency;Checks;Solvency;
+Sales;Check Intercooperability;Checks;;Intercooperability
+Sales;Apply to data base;Applies to;data base;
+Sales;Offer Prepayment;Offers;Prepayment;
+Sales;create offer for customer;creates;offer for customer;
+Sales;Recreate/negotioate offer;Recreates;negotioate offer;
+Sales;Send invoice;Sends;invoice;
+Sales;Send letter of refusal;Sends;letter of refusal;
+Sales;Check payment;Checks;payment;
+Sales;Send reminder;Sends;reminder;
+Sales;Close order;;Close order;
+Sales;Check number of reminders;Checks;number of reminders;
+Sales;Contact a lawyer;Contacts;lawyer;
+Logistics;Check capacity;Checks;capacity;
+Logistics;Send inquiry for goods to supplier;Sends;inquiry for goods to supplier;
+Logistics;Receive suppliers offer;offers;Receive suppliers;
+Logistics;preparing the order;prepares;order;
+Logistics;Send goods;Sends;goods;
+Logistics;start production;starts;production;
+Italian Restaurant;ask for menu;asks for;;menu
+Italian Restaurant;check available dishes;checks;available dishes;
+Italian Restaurant;order tiramisu;;;order tiramisu
+Italian Restaurant;order a glass of red wine;orders;glass of red wine;
+Italian Restaurant;consume your dishes;consumes;dishes;
+Italian Restaurant;ask for check;asks for;check;
+Italian Restaurant;waiter was nice;;;waiter
+Italian Restaurant;waiter was not nice;;;waiter
+Italian Restaurant;pay bill and tip;pays;bill|tip;
+Italian Restaurant;pay the bill;pays;bill;
+Italian Restaurant;skip dessert;;;skip dessert
+Italian Restaurant;order salad;;;order salad
+Italian Restaurant;ask for tiramisu;asks for;;tiramisu
+Part Provision Team;Identify parts;Identifies;parts;
+Part Provision Team;Elicit information from customer;;Elicit information from customer;
+Part Provision Team;Check availability;Checks;availability;
+Part Provision Team;supplied to customer;supplies to;customer;
+Part Provision Team;Record customer detail;;Record customer detail;
+Part Provision Team;Contract customer;;Contract customer;
+Part Provision Team;Parts Collected;Collecteds;Parts;
+Part Provision Team;Payment;;Payment;
+Army;Hold physical exam;Holds;physical exam;
+Army;Shortlist application;Shortlists;application;
+Army;Hold mental exam;Holds;mental exam;
+Army;Hold interview;Holds;interview;
+Army;Recruit applicant;;applicant;Recruit
+Army;Notify failure;Notifies;failure;
+Army;Schedule exams and interview;;Schedule exams|interview;
+Sales & Distribution;Check stock availability;Checks;stock availability;
+Sales & Distribution;Confirm order;Confirms;order;
+Sales & Distribution;Archive order;;Archive order;
+Sales & Distribution;Send invoice;Sends;invoice;
+Warehouse;Send product;Sends;product;
+Warehouse;Manufacture product;Manufactures;product;
+Warehouse;Purchase raw materials from Supplier 1;Purchases;raw materials from Supplier 1;
+Warehouse;Purchase raw materials from Supplier 2;Purchases;raw materials from Supplier 2;
+Warehouse;Check raw materials availability;Checks;raw materials availability;
+Sales;Confirm order;Confirms;order;
+Sales;Emit invoice;;invoice;Emit
+Sales;Archive order;;Archive order;
+Cashier;Capture party details;;Capture party details;
+Cashier;Print file server;;Print file server;
+Cashier;Receive payment;Receives;payment;
+Small claims tribunal;Retrieve claim file;Retrieves;claim file;
+Small claims tribunal;Distribute warrant possession;Distributes;warrant possession;
+Small claims tribunal;Store claim file;;Store claim file;
+Small claims tribunal;Attach claim report;;claim report;Attach
+Small claims tribunal;Store expanded file;expands;Store|file;
+Small claims tribunal;Notify party;Notifies;party;
+Party;Archive claim;;Archive claim;
+Small claims tribunal;Distribute warrant possession coversheet;Distributes;warrant possession coversheet;
+Small claims tribunal;Store expanded claim file;expands;Store|claim file;
+Sales;Receive payment;Receives;payment;
+Assessment Manager;Store application;;Store application;
+Assessment Manager;Get initial validation;;initial validation;
+Assessment Manager;Check validation result;Checks;validation result;
+Assessment Manager;Check modifications to natural environment;Checks;modifications to natural environment;
+Assessment Manager;Apply additional fees;Applies;additional fees;
+Assessment Manager;Check environment protection laws;Checks;environment protection laws;
+Assessment Manager;Prepare final approval;Prepares;final approval;
+Cadastre;Retrieve geographical infromation;Retrieves;geographical infromation;
+DMR;Check for road conflicts;Checks for;road conflicts;
+Seller;Prepare registration information;Prepares;registration information;
+Seller;Request auction creation;;Request auction creation;
+Auctioning Service;Check registration status;Checks;registration status;
+Auctioning Service;Request account creation;;Request account creation;
+Auctioning Service;Confirm auction creation;Confirms;auction creation;
+Customer;Pay travel;Pays;travel;
+Customer;Check travel offer;Checks;travel offer;
+Customer;Reject offer;Rejects;offer;
+Customer;Book travel;;travel;Book
+Travel Agency;Make travel offer;Makes;travel offer;
+Travel Agency;Order ticket;;Order ticket;
+Travel Agency;Confirm booking;;booking;Confirm
+Airline;Handle payment;Handles;payment;
+Airline;Confirm payment;Confirms;payment;
+Airline;Refuse payment;Refuses;payment;
+Client;Submit request for quote;Submits;request for quote;
+Client;Check quote;Checks;;
+Client;Send order;Sends;order;
+Client;Send notification;Sends;notification;
+Seller;Prepare quote;Prepares;;
+Seller;Send quote;Sends;;
+Seller;Handle order;Handles;order;
+Seller;Organize shipment;Organizes;shipment;
+Seller;Assess request for merchandise return;;request for merchandise return;Assess
+Seller;Send rejection;Sends;rejection;
+Seller;Send acceptance;Sends;acceptance;
+Seller;Invoice customer;Invoices;customer;
+Seller;Receive merchandise;Receives;merchandise;
+Seller;Approve loss claim;Approves;loss claim;
+Customer;Sign delivery notice;;Sign delivery notice;
+Customer;Assess merchandise;;Assess merchandise;
+Customer;Lodge damage claim report;Lodges;damage claim report;
+Customer;Lodge request for merchandise return;;request for merchandise return;Lodge
+Customer;Lodge loss claim report;;loss claim report;Lodge
+Customer;Attempt suicide;;suicide;Attempt
+Customer;Return merchandise;;Return merchandise;
+Customer;Pay;Pays;;
+Risk Assessor;Assess loan risk;Assesses;loan risk;
+Loan Officer;Return application back to applicant;;Return application|applicant;
+Loan Officer;Check application form completeness;Checks;application form completeness;
+Loan Officer;Assess eligibility;;Assess eligibility;
+Loan Officer;Reject application;Rejects;application;
+Loan Officer;Send acceptance pack;Sends;acceptance pack;
+Loan Officer;Verify repayment agreement;Verifies;repayment agreement;
+Loan Officer;Prepare acceptance pack;Prepares;acceptance pack;
+Loan Officer;Check if home insurance quote is requested;Checks|requests;home insurance quote;
+Loan Officer;Cancel application;Cancels;application;
+Loan Officer;Notify cancelation;Notifies;cancelation;
+Loan Officer;Approve application;Approves;application;
+Loan Officer;Notify approval;Notifies;approval;
+Loan Officer;Receive updated application;Receives updated;application;
+Financial Officer;Check credit history;Checks;credit history;
+Insurance Sales Rep.;Send home insurance quote;Sends;home insurance quote;
+Listings;Change schedule;;Change schedule;
+Judicary;Resolve judge availability;Resolves;judge availability;
+Loan Provider;Return application back to applicant;;Return application|applicant;
+Loan Provider;Check application form completeness;Checks;application form completeness;
+Loan Provider;Receive updated application;Receives updated;application;
+Sales;Receive Payment;Receives;Payment;
+Customer;Provide shipping address;Provides;shipping address;
+Customer;Place purchase order;;Place purchase order;
+Customer;Make payment;Makes;payment;
+Seller;Confirm order;Confirms;order;
+Seller;Manufacture product;Manufactures;product;
+Seller;Check stock availability;Checks;stock availability;
+Seller;Retrieve product from warehouse;Retrieves;product from warehouse;
+Seller;Archive order;;Archive order;
+Insurance client;Lodge insurance claim;Lodges;insurance claim;
+Insurance client;Check witnesses;Checks;witnesses;
+Client;Prepare loan application;Prepares;loan application;
+Client;Check approval letter;Checks;approval letter;
+Client;Reject offer;Rejects;offer;
+Client;Accept offer;Accepts;offer;
+Mortgage department;Submit disbursement request;Submits;disbursement request;
+Mortgage department;Apply interest rate reduction;Applies;interest rate reduction;
+Mortgage department;Reject application;Rejects;application;
+Mortgage department;Approve application;Approves;application;
+Mortgage department;Check loan amount;Checks;loan amount;
+Mortgage department;Assess application;;Assess application;
+Insurance department;Prepare insurance offer;Prepares;insurance offer;
+Insurance department;Draw insurance contract;Draws;insurance contract;
+Financial department;Handle disbursement request;Handles;disbursement request;
+Broker;Forward application to BestLoans;;Forward application to BestLoans;
+Broker;Examine application;Examines;application;
+Broker;Assess application;;Assess application;
+Broker;Reject application;Rejects;application;
+Broker;Approve application;Approves;application;
+Mortgage department;Register loan application;Registers;loan application;
+Office;Notify employee;Notifies;employee;
+Office;Check expense report;Checks;expense report;
+Office;Create account;Creates;account;
+Office;Register amount rectification;Registers;amount rectification;
+Mortgage department;Annul deed;deeds;;Annul
+Insurance department;Annul insurance contract;;insurance contract;Annul
+Financial department;Recall loan;;loan;Recall
+Customer;Pay merchandise;Pays;merchandise;
+Carrier;Notify delivery;Notifies;delivery;
+Carrier;Transport freight;;Transport freight;
+Customer;Receive product;Receives;product;
+SSP (Mail Center);Contact client;;Contact client;
+SSP (Mail Center);Confirm payment of invoice;Confirms;payment of invoice;
+SSP (Mail Center);Request relevant info;Requests;relevant info;
+SSP (Mail Center);Receive conformation;Receives;conformation;
+Admin Office;Check completeness of invoices;Checks;completeness of invoices;
+Admin Office;Tick the relevant box on the invoice entry form;Ticks;relevant box on the invoice entry form;
+Admin Office;Return to client via postal mail;;Return to client via postal mail;
+Admin Office;Receive completed invoices;Receives completed;invoices;
+Mail Center;Open envelopes;;Open envelopes;
+Mail Center;Categorise invoices;;Categorise invoices;
+Admin Office;Check compliance;Checks;compliance;
+Admin Office;Attach invoice entry form to invoices;;invoice entry form to invoices;Attach
+Admin Office;Check priority;Checks;priority;
+Admin Office;Apply red stamp on invoice entry form;Applies;red stamp on invoice entry form;
+Admin Office;Sort invoices per client;;Sort invoices per client;
+Admin Office;Sort invoices per vendor;;Sort invoices per vendor;
+Admin Office;Send invoice to experienced staff;Sends;invoice to experienced staff;
+Admin Office;Call client for required information;Calls|requires;client|information;
+Admin Office;Enter client/vendor information on the invoice entry form;Enters;client|vendor information on the invoice entry form;
+Admin Office;Check service level agreements;Checks;service level agreements;
+Data Entry Office;Check priority;Checks;priority;
+Data Entry Office;Look up vendor in SAP;Looks up;vendor in SAP;
+Data Entry Office;Enter vendor number into invoice entry form;Enters;vendor number into invoice entry form;
+Data Entry Office;Resort invoices per Vendor;;Resort invoices per Vendor;
+Data Entry Office;Sort invoices based on invoice amount;bases on;Sort invoices|invoice amount;
+Data Entry Office;Enter invoice data;Enters;invoice data;
+Data Entry Office;Tick invoice entered box on the invoice entry form;Ticks|enters;invoice|box on the invoice entry form;
+Master Data Enter Department;Check priority;Checks;priority;
+Master Data Enter Department;Enter new vendor master record into SAP within 5days;Enters;new vendor master record into SAP within 5days;
+Master Data Enter Department;Enter new vendor master record into SAP within 24 hours;Enters;new vendor master record into SAP|hours;
+Validation Office;Check priority;Checks;priority;
+Validation Office;Sort invoices per client;;Sort invoices per client;
+Validation Office;Print invoices report from SAP;;Print invoices report from SAP;
+Validation Office;Login to SAP;;;SAP
+Validation Office;Change status to validated;validates;Change status;
+Validation Office;Send invoices to DEO;Sends;invoices to DEO;
+Registry;Pay invoices;Pays;invoices;
+Registry;Generate payment report;Generates;payment report;
+Registry;Send report to client;Sends;report to client;
+Registry;Send report to Registry Officer;Sends;report to Registry Officer;
+Registry;Select paid invoces;pays;invoces;Select
+Registry;Archive invoices per vendor;;Archive invoices per vendor;
+Registry;Archive invoices per payment date;;Archive invoices per payment date;
+Registry;Track original invoice;Tracks;original invoice;
+Registry;Compare invoice with invoice entry form;Compares;invoice with invoice entry form;
+Registry;Send report to Accounts Receivable Department;Sends;report to Accounts Receivable Department;
+Account Receivable Department;Generate monthly invoice;Generates;monthly invoice;
+Account Receivable Department;Charge flat fee;Charges;flat fee;
+Validation Office;Check invoice data for errors;Checks;invoice data for errors;
+Validation Office;Highlight errors on invoice entry form;;Highlight errors on invoice entry form;
+Validation Office;Keep performance record of DEO;Keeps;performance record of DEO;
+Admin Office;Return invoice to client via postal mail;;Return invoice to client via postal mail;
+Admin Office;Send reminder letter;Sends;reminder letter;
+Admin Office;Send 2nd reminder letter;Sends;2nd reminder letter;
+Data Entry Office;Generate Vendor master record request form;;master record request form;Generate Vendor
+Data Entry Office;Staple form to invoice;invoices;Staple form to;
+Data Entry Office;Place form to invoice;invoices;Place form to;
+Credit Company;Collect credit information;Collects;credit information;
+Credit Company;Assess risk;;Assess risk;
+Credit Company;Request approval;;Request approval;
+Credit Company;Accept credit;Accepts;credit;
+Credit Company;Reject credit;Rejects;credit;
+Order to Cash;Processing customer demand;Processings;customer demand;
+Order to Cash;Sell product to customer;Sells;product to customer;
+Make to Inventory;Determine demanded components according to planning;demands|accords to;components|planning;Determine
+Make to Inventory;Purchase missing parts and put on stock;misses|puts on;Purchase|parts|stock;
+Production;Perform production;Performs;production;
+Production;Perform quality checks;Performs;quality checks;
+Production;Fill product into a packaging;Fills;product into a packaging;
+Production;Pack and label product;Packs|labels;product;
+Production;Transport product to the warehouse;;Transport product to the warehouse;
+Production;Perform follow-up production;Performs follow;production;
+Teacher;Check process model;Checks;process model;
+Teacher;Assign penalty points;;Assign penalty points;
+Teacher;Check process assign points;Checks;process assign points;
+Teacher;Consult project, check progress;checks;project|progress;Consult
+Team;Agree on team field;Agrees on;team field;
+Team;Analyse field and identify process;identifies;field|process;Analyse
+Team;Assign roles in team;;Assign roles in team;
+Team;Present the project;Presents;project;
+Student;Join team;Joins;team;
+Student;Create one process model;Creates;process model;
+Student;Fix process until next session;Fixes;process until next session;
+Student;Extend their process to L 2,3;Extends;process to L 2,3;
+Student;perform work according to the role;performs|accords to;work|role;
+Client;Deposit amount of money;;Deposit amount of money;
+Client;Withdraw amount of money;Withdraws;amount of money;
+Client;Transfer amount of money;;Transfer amount of money;
+Client;Provide Further Information;Provides;Further Information;
+Client;Cancel the order;Cancels;order;
+Client;Receive invoice;Receives;invoice;
+Bank Agent;Enter the required transaction details;Enters;required transaction details;
+Bank Agent;Enter client's account details;Enters;client's account details;
+Bank Agent;Notify the client of problem;Notifies;client of problem;
+Bank Agent;Notify client of complete transaction;Notifies;client of complete transaction;
+Bank System;Check Client's account details;Checks;account details;Client
+Bank System;Add amount of money deposit to account;Adds|accounts;amount of money deposit to;
+Bank System;transfer amount of money to account;accounts;transfer amount of money to;
+Bank System;Check account balance;Checks;account balance;
+Bank System;Withdraw amount from account;Withdraws;amount from account;
+Bank System;Issue invoice;;Issue invoice;
+Business Analyst;Collect data conduct business analysis regarding customer feedback;Collects|regards;data conduct business analysis|customer feedback;
+Business Analyst;Check design and provide feedback;Checks|provides;design|feedback;
+Web Designer;Change design;;Change design;
+PHP/HTML/CSS Specialist;Integrate with the overall implemenation;Integrates with;overall implemenation;
+PHP/HTML/CSS Specialist;Adjust according to test results;Adjusts according to;test results;
+Tester;Test the final website to make sure everything is going well;Tests|makes|goes;final website to;
+Tester;provide test results;provides;test results;
+Business Analyst;Collect data conduct business analysis regarding customer service;Collects|regards;data conduct business analysis|customer service;
+Marketing Manager;Create and provide information about the company;Creates|provides;information about the company;
+IT Staff Member;Create community groups on Facebook, Twitter and Myspace;Creates;community groups on Facebook;Twitter|Myspace
+IT Staff Member;Add provided information to the created groups;provides|creates;Add|information|groups;
+IT Staff Member;Add the provided information to the community;Adds|provides;information to the community;
+IT Staff Member;Add new information as soon as Received;Adds|Receiveds;new information;
+Company's Spokesperson;Inquire about PRWeb press release services and prices for company's specific requirements;;Inquire about PRWeb press release services|prices for company's specific requirements;
+Company's Spokesperson;Make an order for the specific first run press release;Makes;order for the specific first run press release;
+PRWeb Representative;Send back information regarding the requested requirements;Sends|regards|requests;back information|requirements;
+PRWeb Representative;Place an order for a fist run press release with the detailed company info;Places;order for a fist run press release with the detailed company info;
+PRWeb Services Headquarters;Run the first press release for the company;Runs;first press release for the company;
+Business Analyst;Collect data about company's products conduct business analysis;Collects|conducts;data about company's products|business analysis;
+Web Designer;Integrate Design and decide where such data should be placed;Integrates|decides|shoulds|places;where such data;Design
+Marketing Manager;collect data and conduct business analysis covering all aspects about company's products;collects|conducts|covers;data|business analysis|aspects about company's products;
+Marketing Manager;create written material for the leaflet;creates written;material for the leaflet;
+Marketing Manager;create written material for the whitepaper;creates written;material for the whitepaper;
+Graphic Designer;create graphics and develop design for the leaflet;creates|develops;graphics|design for the leaflet;
+Graphic Designer;create graphics and develop design for the whitepaper;creates|develops;graphics|design for the whitepaper;
+Printing house;Print leaflets as ordered;orders;Print leaflets;
+IT Staff Member;Integrate the whitepaper with company's website;Integrates;whitepaper with company's website;
+Company Representative;Define the Audience;Defines;Audience;
+Company Representative;Develop a Concept;Develops;Concept;
+Company Representative;Upload to Youtube;Uploads to;;Youtube
+Camera man;Shoot Video;Shoots;;Video
+Graphic designer;Create Graphics;Creates;Graphics;
+Sound editor;Record Narration;;Record Narration;
+Sound editor;Find or create Music;Finds|creates;Music;
+Executive producer/Director;Capture Video to Computer;Captures;Video to Computer;
+Executive producer/Director;Import Audio: Narration, Music and Sound Effects;;Narration|Music|Effects;Import Audio|Sound
+Executive producer/Director;Import Graphics;;;Import Graphics
+Executive producer/Director;Create Titles, Subtitles, Credits;Creates;Credits;Titles|Subtitles
+Executive producer/Director;Edit it all together;Edits;;
+Advertisments Advisor;Determine the Form or Style;Determines;;Form|Style
+Advertisments Advisor;Write the Script;Writes;Script;
+Advertisments Advisor;Create a Storyboard;Creates;Storyboard;
+Customer;bring computer for checking;brings|checks;computer;
+Customer;deciding if the cost is low;decides;cost;
+Customer;Deciding to repair;Decidings|repairs;;
+Customer;going home without fixing the computer;goes|fixes;computer;
+Customer;Getting back computer;Gettings;back computer;
+Customer;Paying for the repair;Payings for;repair;
+Customer;GOING HOME;GOINGs;;
+CSR;Checking defecrive computer;Checkings;defecrive computer;
+CSR;calculate and send price offer;calculates|sends;price offer;
+CSR;getting computer for repairing;gets|repairs;computer;
+CSR;check and repair the hardware;checks|repairs;hardware;
+CSR;proper system functionality is tested;tests;proper system functionality;
+CSR;checks and configures the software;;checks|configures the software;
+CSR;repair is finished;finishes;repair;
+CSR;another arbitrary repair activity is executed;executes;arbitrary repair activity;
+Pit's Store;Update the online cataloge;Updates;online;
+Pit's Store;checks available bikes by the envisioned conf.;;checks available bikes by the envisioned conf;
+Pit's Store;Offer a test ride;Offers;test ride;
+Pit's Store;Don't offer a test ride;offers;test ride;
+Pit's Store;final configuration price offer;;final configuration price offer;
+Pit's Store;Close the deal;Closes;deal;
+Pit's Store;Don't close the deal;closes;deal;
+Pit's Store;Get customer concent;;customer concent;
+Pit's Store;Contact customer to pick up bike;picks up;Contact customer to|bike;
+Pit's Store;Give the customer the bike;Gives;customer the bike;
+Pit's Store;Get Bike;;Bike;
+Pit's Store;starting cancellation;starts;cancellation;
+Pit's Store;get refunds from Fami except of cancellation fee;;refunds from Fami|cancellation fee;
+Pit's Store;Returning payment to customer;Returnings;payment to customer;
+Fami;send payments;sends;payments;
+Customer;Intend to Order a bike;Intends|Orders;bike;
+Customer;Decide of final configuration;Decides of;final configuration;
+Customer;Don't want to Order from Pit;wants|Orders from;Pit;
+Customer;Accept price;Accepts;price;
+Customer;Bargain about price;;Bargain about price;
+Customer;stop negotiation and don't order;stops|orders;negotiation;
+Customer;Pick up bike;Picks up;bike;
+Customer;Get payment back;;payment;
+Pit's Store;accept the deal;accepts;deal;
+Fami;Update Website;;Update Website;
+Customer;test ride;;test ride;
+Pit's Store;waiting for new bike with updated conf.;waits for;new bike with updated conf;
+Pit's Store;Receive monthly payment;Receives;monthly payment;
+Pit's Store;checking if can be cancelled/ updated;checks|cans|updates;;cancelled/
+Teacher;Assign team to student;;team to student;Assign
+Teacher;Consult;;;Consult
+Teacher;Check progress;Checks;progress;
+Student;Fix the process until next session;Fixes;process until next session;
+Student;Extend their process to Level 2,3;Extends;process to Level 2,3;
+Student;Perform a work according to the role;Performs|accords to;work|role;
+Team;Analyse field and identify processes;identifies;field|processes;Analyse
+Team;present the project;presents;project;
+Marketing;Analyze market;Analyzes;market;
+Marketing;Send offer to potential client;Sends;offer to potential client;
+Marketing;Prepare portfolio presentation;Prepares;portfolio presentation;
+Marketing;Inform management about potential client's responses;Informs;management about potential client's responses;
+Management;New client needed;needs;New client;
+Management;Analyze responses and start negotiation;Analyzes|starts;responses|negotiation;
+Management;Prepare contract for sign;Prepares;contract for sign;
+Management;Analyze reasons and learn a lesson;Analyzes|learns;reasons|lesson;
+Management;Sign contract;;Sign contract;
+Management;Analyze request;;request;Analyze
+Finance;find finance resources;finds;finance resources;
+Finance;Pay invoice;Pays;invoice;
+IT Department;Analyze request;;request;Analyze
+IT Department;Edit and complete request;Edits;complete request;
+IT Department;fullfil form and send request to management;sends;fullfil form|request to management;
+IT Department;prepare order;prepares;order;
+IT Department;receive hw and invoice;receives|invoices;;hw
+Technician;travel by car;;travel by car;
+Technician;analyze problem;;problem;analyze
+Technician;fix problem;;fix problem;
+Technician;call operator;calls;operator;
+Technician;give customer invoice;gives;customer invoice;
+Technician;accept assignment;accepts;assignment;
+Technician;select car;;select car;
+Technician;travel by bus;;travel by bus;
+Operator;understand customers problem;understands;customers problem;
+Operator;select appropriate technician;selects;appropriate technician;
+Operator;check technicians report;checks|reports;technicians;
+Operator;close problem;;close problem;
+Operator;store problem details into database;;store problem details into database;
+Operator;arrange new meeting;arranges;new meeting;
+Finance;calculate reward;;calculate reward;
+Finance;pay reward;pays;reward;
+HR;Dismiss employee;;Dismiss employee;
+HR;provide training;provides;training;
+Management;Check employee performance;Checks;employee performance;
+Management;Suggest for reward;Suggests for;reward;
+Management;Suggest training;Suggests;training;
+Management;Suggest employee dismissal;Suggests;employee dismissal;
+Management;Choose appropriate benefit;Chooses;appropriate benefit;
+Management;Announce employee of the month;Announces;employee of the month;
+Management;Prepare timetable for next 2 weeks;Prepares;timetable|weeks;
+Management;check volume of work required;checks|requires;volume of work;
+Management;check workers availability;checks;workers availability;
+Management;publish timetable;;timetable;publish
+Management;fill shift sheet;fills;shift sheet;
+Management;publish shift schedule;publishes;shift schedule;
+Support line - part time workers;fullfil availability;;availability;fullfil
+Data entry officer;Process invoices;;Process invoices;
+Data entry officer;collect allocated invoices;allocates;invoices;collect
+Data entry officer;find out urgent invoice;finds out;urgent invoice;
+Data entry officer;Process immediately;;Process;
+Data entry officer;Put in high priority outbox;Puts in;high priority outbox;
+Data entry officer;Look up vendor in SAP;Looks up;vendor in SAP;
+Data entry officer;Complete vendor master record request form;;Complete vendor master record request form;
+Data entry officer;add vendor number to invoice;adds|invoices;vendor number to;
+Data entry officer;put in dedicatied boutbox for master record;puts in;dedicatied boutbox for master record;
+Data entry officer;staple the form to invoice;staples|invoices;form to;
+Data entry officer;Sort invoice;;;
+Data entry officer;Sort per vendor;;Sort per vendor;
+Data entry officer;Sort by amount;;Sort by amount;
+Data entry officer;Entry data;;Entry data;
+Data entry officer;Occasionally take invoice to outbox;takes;invoice to outbox;
+Mater data entry department;Check urgency;Checks;urgency;
+Mater data entry department;Create master data record;Creates;master data record;
+Mail center;Collect invoice with request;Collects;invoice with request;
+Mail center;collect urgent invoice every hour;collects;urgent invoice every hour;
+Mail center;take to mater record department;takes to|maters;record department;
+Mail center;Collect invoice every hour;Collects;invoice every hour;
+Registry;Achive paid invoice per vendor;pays;invoice per vendor;Achive
+Registry;archive paid invoice per payment data;pays;invoice per payment data;archive
+Registry;Receive request from client;Receives;request from client;
+Registry;Locate requested invoice;requests;invoice;Locate
+Accounts Receivable Department;Generate monthly invoice;Generates;monthly invoice;
+Payment office;automate pay;;pay;automate
+Payment office;Generate payment report;Generates;payment report;
+Payment office;sent to client, accouts receivable department and registry;sends to|accoutses;client|receivable department|registry;
+Admin Officer;sort invoice per client;invoices per;client;
+Admin Officer;Staple invoice entry form;invoices;Staple|entry form;
+Admin Officer;Entry information to invoice entry form;invoices;Entry information to|entry form;
+Admin Officer;check the completeness and tick relievant box;checks|ticks;box;relievant
+Admin Officer;Check in a Excel file;Checks in;file;Excel
+Admin Officer;entry date of processing;;entry date of processing;
+Admin Officer;Check if invoice is urgent;Checks;invoice;
+Admin Officer;Put a red stamp on invoice entry form;Puts;red stamp on invoice entry form;
+Admin Officer;Check compliance;Checks;compliance;
+Admin Officer;Check if knowS SLA;Checks;;knowS SLA
+Admin Officer;Batched invoices;;invoices;Batched
+Admin Officer;Consider to handle;Considers|handles;;
+Admin Officer;Sent back to client for completion;Sents;client for completion;
+Admin Officer;Call client;Calls;client;
+Admin Officer;sent to experienced SSP members;sends to;members;SSP
+Admin Officer;sent a remainder letter;sends;remainder letter;
+Admin Officer;follow-up by telephone;follows;up by telephone;
+Vaidation officer;sort invoice;invoices;;
+Vaidation officer;print a report;prints;report;
+Vaidation officer;Compare details of report with invoice;Compares;details of report with invoice;
+Vaidation officer;Highlight errors;;Highlight errors;
+Vaidation officer;sent back to the data entry officer;sends;data entry officer;
+Vaidation officer;keep a record of the officer's mistake number;keeps;record of the officer's mistake number;
+Vaidation officer;check box 'invoice entered corredtly;checks|enters;box|invoice;
+Vaidation officer;Check urgency;Checks;urgency;
+Vaidation officer;Process firstly;;Process;
+Mail center;Open envelopes;;Open envelopes;
+Mail center;Categorised invoices;;Categorised invoices;
+Parts Provision Team;Parts in Stock;;Parts in Stock;
+Parts Provision Team;PPT requests authorisation for extra Part(s);requests;authorisation for extra Part(s;PPT
+Parts Provision Team;Authorisation given;gives;Authorisation;
+Parts Provision Team;requested from stock;requests from;stock;
+Parts Provision Team;Request authorisation for additional part(s);Requests;authorisation for additional part(s;
+Parts Provision Team;Authorisation given;gives;Authorisation;
+Service Team;Request additional part(s);Requests;;part(s
+Service Team;Service the Vehicle;Services;Vehicle;
+Service Team;Stop Work;Stops;Work;
+Parts Provision Team;Customer details recorded;records;Customer details;
+Parts Provision Team;Part(s) available for collection;;collection;Part(s
+Parts Provision Team;Customer agrees to buy;agrees|buys;Customer;
+Parts Provision Team;PPT confirms / identifies the Part(s);confirms|identifies;Part(s;PPT
+Parts Provision Team;Check Stock;Checks;Stock;
+Teacher;check process;checks;process;
+Teacher;assign penalty points;;assign penalty points;
+Teacher;Check process;Checks;process;
+Teacher;Assign possitive reports;;Assign possitive reports;
+Teacher;Consult project;;project;Consult
+Student;fix the process;fixes;process;
+Student;extend process to level 2,3;extends|levels;process to;
+Student;Join Team;Joins;;Team
+Student;Create process model;Creates;process model;
+Student;Perform work according to role;Performs|accords to;work|role;
+Team;Agree to domain;Agrees|domains;;
+Team;Analyze domain;Analyzes;domain;
+Team;identify processes;identifies;processes;
+Team;Assign roles;;Assign roles;
+Team;present project;;present project;
+Administrative;Receive problem message;Receives;problem message;
+Administrative;Create report;Creates;report;
+Administrative;Contact customer;;Contact customer;
+Administrative;Receive answer;Receives;answer;
+Administrative;Close problem;;Close problem;
+Administrative;Send answer;Sends;answer;
+IT analyst;Analyze report;;report;Analyze
+IT analyst;Check ticket;Checks;ticket;
+IT analyst;Create ticket;Creates;ticket;
+IT specialist;Open ticket;Opens;ticket;
+IT specialist;Solve task;Solves;task;
+IT specialist;Testing;;Testing;
+IT specialist;Close ticket;Closes;ticket;
+IT specialist;Make documentation;Makes;documentation;
+Inspection team member;Prepare, read the materials;Prepares|reads;materials;
+Inspection team member;Exam product;;Exam product;
+Inspection team member;Send anomalies;Sends;anomalies;
+Inspection team member;Write down defect;Writes down;defect;
+Inspection team member;Defect summary;Defects;summary;
+Lead inspector;Receive inspection request;Receives;inspection request;
+Lead inspector;Plan inspection;;Plan inspection;
+Lead inspector;Select people;;Select people;
+Lead inspector;Distribute materials;;Distribute materials;
+Lead inspector;Create final report;Creates;final report;
+Lead inspector;Send final report;Sends;final report;
+Lead inspector;Receive new materials;Receives;new materials;
+Lead inspector;Report material anomalies;Reports;material anomalies;
+Finance;check solvency;checks;solvency;
+Finance;sending invoice;sends;invoice;
+Finance;check status of payment;checks;status of payment;
+Finance;check number of reminder;checks;number of reminder;
+Finance;close order;;close order;
+Finance;suing the customer;sues;customer;
+Finance;prepare a reminder;prepares;reminder;
+Finance;prepare letter of refusal;prepares;letter of refusal;
+Sales;check customer;checks;customer;
+Sales;create new customer ID;creates;new customer ID;
+Sales;check customer status;checks;customer status;
+Sales;prepare a letter;prepares;letter;
+Production;produce product;produces;product;
+Dispatch;sending products;sends;products;
+warehouse;check stock;checks;stock;
+warehouse;products will be packed;wills|packs;products;
+Sender;Maximize conference screen;Maximizes;conference screen;
+Sender;Adjust volume;Adjusts;volume;
+Sender;Stop video streaming;Stops;video streaming;
+Sender;Mute call;;Mute call;
+Sender;Un-mute call;;mute call;Un
+Sender;Minimize conference screen;;Minimize conference screen;
+Sender;Hang up;Hangs up;;
+Sender;Close the call window;Closes;call window;
+Sender;Cancel;Cancels;;
+Sender;Confirm;Confirms;;
+Sender;Start talking;Starts talking;;
+Sender;Send file;Sends;file;
+Sender;Chat;;Chat;
+Sender;Start file transfer;Starts;file transfer;
+Sender;Put call on hold;Puts;call on hold;
+Sender;Resume the call;Resumes;call;
+Receiver;Start talking;Starts talking;;
+Receiver;Accept file;Accepts;file;
+Receiver;Reject file;;Reject file;
+Receiver;Read chat message;Reads;message;
+Sender;Add Contact;Adds;;Contact
+Sender;Choose the contact;Chooses;contact;
+Sender;Start audio call;Starts;audio call;
+Sender;start video call;starts;video call;
+Sender;Start video streaming;Starts;video streaming;
+Receiver;Accept;Accepts;;
+Receiver;Reject;;Reject;
+Receiver;Start video streaming;Starts;video streaming;
+SAMA;Create Project Plan;Creates;Project Plan;
+SAMA;Verify Plan;;Plan;Verify
+SAMA;Create Package Instance for each Bank;Creates;Instance for each Bank;Package
+SAMA;Sign Package Instance;;Sign Package Instance;
+SAMA;Post Package Instance;;Package Instance;Post
+Bank;Verify BR;Verifies;;BR
+Bank;Sign BR by CFO;Signs;CFO;BR
+Bank;Edit Business Rules;;Business Rules;Edit
+SAMA;Validate BR;;Validate BR;
+SAMA;Simulate BR;Simulates;;BR
+SAMA;verify BR;verifies;;BR
+SAMA;Post BR;Posts;;BR
+SAMA;Lock BR;Locks;;BR
+Bank Package Processing;Package Receipt Acknowledgement;;Package Receipt Acknowledgement;
+Bank Package Processing;Auto data entry;;Auto data entry;
+Bank Package Processing;Manual data entry;;Manual data entry;
+Bank Package Processing;Process ESB Orchestra;;Process ESB Orchestra;
+Bank Package Processing;Verify and sign by CFO;Verifies|signs by;CFO;
+Bank Package Processing;Post bank package to SAMA;;bank package to SAMA;Post
+SAMA;Verify data;;data;Verify
+SAMA;Verify BR;Verifies;;BR
+SAMA;Simulate data;;Simulate data;
+SAMA;Reconciliation of Banking System;;Reconciliation of Banking System;
+SAMA;Generate ratio & KPI;;Generate ratio;KPI
+SAMA;Verify ratio & KPIs;Verifies;ratio|KPIs;
+SAMA;Post to data warehouse;Posts to;data warehouse;
+SAMA;Post data to EIS;;Post data to EIS;
+SAMA;Generate Statistical Reports;;Reports;Generate Statistical
+Management;Hire in-house Lawyer;Hires in;house Lawyer;
+Management;Buy License;Buys;License;
+Management;Design Around;;Design;
+Engineers;Product Review;;Product Review;
+Lawyer;Pre-markman Analysis;;;Pre|markman Analysis
+Lawyer;Determine amount of infringement;Determines;amount of infringement;
+Plaintiff;File Claim;Files;Claim;
+Defendant;Hire Law Firm;Hires;Law Firm;
+Defendant;Buy License;Buys;License;
+Defendant;Design Around;;Design;
+Law Firm;Determine amount of infringement;Determines;amount of infringement;
+Law Firm;Product Review;;Product Review;
+Law Firm;Pre-markman Analysis;;;Pre|markman Analysis
+Team;Agree on domain;Agrees on;domain;
+Team;Identify processes;Identifies;processes;
+Team;Defense project;;Defense project;
+Student;Extend process to level 2,3;Extends|levels;process to;
+Teacher;Check model process;Checks;model process;
+Teacher;Assign points;;points;Assign
+Teacher;Assign student manually;;student;Assign
+Patient;Waiting in waiting room;Waitings in|waits;room;
+Patient;Pickup medicine;;medicine;Pickup
+Doctor;Emergency problem solving;solves;Emergency problem;
+Doctor;Operate patient;Operates;;
+Doctor;Non operative help;;Non operative help;
+Doctor;Check patient health;Checks;patient health;
+Doctor;Assign medication;;medication;Assign
+Doctor;Fill in patient documentation;Fills in;patient documentation;
+Doctor;schedule next visit;;schedule next visit;
+Nurse;Urgent problem;;Urgent problem;
+Nurse;Check in patient;Checks in;patient;
+Nurse;Check insurance;Checks;insurance;
+Nurse;Apologize that hospital is not able to help;Apologizes|helps;hospital;
+Nurse;Check out patient;Checks out;;
+Event Administrator;Enter event name;Enters;event name;
+Event Administrator;Enter event date;Enters;event date;
+Event Administrator;Enter event time;Enters;event time;
+Event Administrator;Set privacy option;Sets;privacy option;
+Event Administrator;Set guest list view option;Sets;guest list view option;
+Event Administrator;Enter event location;Enters;event location;
+Event Administrator;Enter additional information;Enters;additional information;
+Event Administrator;Upload photo;;Upload photo;
+Event Administrator;Create event from application menu;Creates;event from application menu;
+Event Administrator;Create event from 'what are you planning' field;Creates|plans;event|field;
+Event Administrator;Add comment;Adds;comment;
+Event Administrator;Message guests;;Message guests;
+Event Administrator;Select guests;;Select guests;
+Event Administrator;Attach link;;link;Attach
+Event Administrator;Upload video;;Upload video;
+Event Administrator;Share event;;Share event;
+Event Administrator;Select Facebook friends;;friends;Facebook
+Event Administrator;Friends  e-mail address;;Friends|- mail address;
+Event Administrator;Add a personal message;Adds;personal message;
+Event Administrator;Send invitation;Sends;invitation;
+Customer;Issues Inquiry;;;Issues Inquiry
+Customer;receives quote;;receives;
+Customer;Kick off with Customer, PM and BDM;Kicks off;PM|BDM;Customer
+Business Development Manager;Define basic scope;Defines;basic scope;
+Business Development Manager;Look over quote before submitting to customer;Looks over|submits to;customer;
+Business Development Manager;Receive inquiry;Receives;inquiry;
+Brian's Team;Quote Project;;;Project
+Project Manager;Customer and Project Manager now interact;interacts;Customer;Project Manager
+Finance;check purchase invoice formally;checks;purchase invoice;
+Finance;trigger payment;;trigger payment;
+Department;check for factually correct purchase invoice;checks for;factually correct purchase invoice;
+Department head;approve purchase invoice;approves;purchase invoice;
+ACME Inc.;Ask the supplier;Asks;supplier;
+ACME Inc.;Check question with the ordering department;Checks|orders;question|department;
+ACME Inc.;Check quantity and quality;Checks;quantity|quality;
+Production;Check product availibility;Checks;product availibility;
+Production;Pick product from warehouse;Picks;product from warehouse;
+Production;start production;starts;production;
+Production;Pack product;Packs;product;
+Production;Check materials;;Check materials;
+Production;Order materials;;Order materials;
+Production;Product;;Product;
+Sales;Check customer;Checks;customer;
+Sales;Send product;Sends;product;
+Sales;Check reminders;Checks;reminders;
+Sales;Take legal actions;Takes;legal actions;
+Sales;Decline customer;;Decline customer;
+Umoja Change Management;Publish Deliverable;Publishes;;
+Umoja Change Management;Rename and Upload new file to indicate a release;indicates;new file to|release;Rename|Upload
+Umoja Change Management;Release to External Review;Releases to;;External Review
+Umoja Change Management;Reopen Deliverables in Rapport;;Rapport;Reopen Deliverables
+Umoja Change Management;Rapport Process Deliverables to be set to In Progress;Deliverableses|sets to;Rapport Process|Progress;
+Umoja Workstream Member;Update Map Version to the next Detailed Design release version;;Version to the next Detailed Design release version;Update Map
+Umoja Workstream Member;Update Map Design;;;Update Map Design
+Umoja Workstream Member;Update Map version to the final design version vCxx;;version to the final design version vCxx;Update Map
+Umoja Workstream Member;Upload New Deliverable Version to Rapport;Rapports;Upload New Deliverable Version to;
+2nd level issue;Insert issue in product backlog;;Insert issue in product backlog;
+2nd level issue;Edit 2nd level ticket;Edits;2nd level ticket;
+1st level issue;Send mail to Account Manager;Sends;mail to Account Manager;
+1st level issue;Close ticket;Closes;ticket;
+1st level issue;Open Ticket;Opens;Ticket;
+1st level issue;Edit 1st level ticket;Edits;1st level ticket;
+Key Account Manager;Get problem description;;problem description;
+Key Account Manager;Send mail to support system;Sends|supports;mail to|system;
+Key Account Manager;Explain Solution;;Solution;Explain
+1st Level support agent;Classify Ticket;Classifies;Ticket;
+1st Level support agent;Handle 1st level issue;Handles;1st level issue;
+1st Level support agent;Document 1st level result;;Document 1st level result;
+2nd level support agent;Handle 2nd level issue;Handles;2nd level issue;
+2nd level support agent;Document 2nd level result;;Document 2nd level result;
+2nd level support agent;Ask Developer;Asks;Developer;
+Software Developer;Examine problem;Examines;problem;
+Software Developer;Provide feedback for 2nd level support;Provides;feedback for 2nd level support;
+Trouble Tracking System;Open ticket;Opens;ticket;
+Trouble Tracking System;Edit 1st level ticket;Edits;1st level ticket;
+Trouble Tracking System;Insert issue into product back log;;Insert issue into product back log;
+Trouble Tracking System;Edit 2nd level ticket;Edits;2nd level ticket;
+Trouble Tracking System;Send mail to Account Manager;Sends;mail to Account Manager;
+Trouble Tracking System;Close Ticket;Closes;Ticket;
+DMS;Enquiry of details;;Enquiry of details;
+Management;Determination of rent conditions;;Determination of rent conditions;
+Management;Deposit payment;;Deposit payment;
+Management;Contract with supplier;;Contract with supplier;
+Employer;Finding of space;Findings of;space;
+Employer;Learning the price;Learnings;price;
+Employer;Learning the measurements;Learnings;measurements;
+Employer;Reservation request;;Reservation request;
+Employer;Ensurance of food supplier;;Ensurance of food supplier;
+Employer;Ensurance of water resources;;Ensurance of water resources;
+State / Offices;Learning availability;Learnings;availability;
+State / Offices;Area reservation;;Area reservation;
+State / Offices;Rent contract;Rents;contract;
+Finance/Accounting;send letter of refusal;sends;letter of refusal;
+Finance/Accounting;order approved;approves;;order
+Finance/Accounting;check number of reminder;checks;number of reminder;
+Finance/Accounting;write off payment;writes off;payment;
+Finance/Accounting;send last reminder;sends;last reminder;
+Sales Department;check customer database;checks;customer database;
+Sales Department;check customers solvency;;check customers solvency;
+Sales Department;Check customer typ;Checks;customer typ;
+Sales Department;order confimation;;order confimation;
+Sales Department;Check stock;Checks;stock;
+Sales Department;production of the goods;;production of the goods;
+Logistic department;prepare order;prepares;order;
+Logistic department;deliver order;delivers;order;
+ABC Bank;Check customer ID;Checks;customer ID;
+ABC Bank;Enter new customer data;Enters;new customer data;
+ABC Bank;Check data base;Checks;data base;
+ABC Bank;Check customer needs;Checks;customer needs;
+ABC Bank;Check age;Checks;age;
+ABC Bank;ask for credit;asks for;credit;
+ABC Bank;deny request;;;deny request
+ABC Bank;accept;accepts;;
+ABC Bank;check credit standing;checks;credit standing;
+ABC Bank;set up account without credit;sets up;account without credit;
+Storehouse;Quantity check;;Quantity check;
+Storehouse;Reserve;;Reserve;
+Storehouse;Backorder;;;Backorder
+Sales dep.;Check order;Checks;order;
+Sales dep.;Inform others;Informs;others;
+Sales dep.;Ship bike;;Ship bike;
+Engineering dep.;Prepares assembly;;assembly;Prepares
+Engineering dep.;Assemble product;Assembles;product;
+Catering;Go online;Gos;;
+Catering;edit profile;edits;profile;
+Catering;Cancel order;Cancels;order;
+Order;Cold goods;;Cold goods;
+Order;Warm goods;;Warm goods;
+Order;Checkout;;Checkout;
+Order;Select customer profile;Selects;customer profile;
+Order;Delivery time;;Delivery time;
+Order;Credit card number;;Credit card number;
+Order;Save order;Saves;order;
+Delivery;Check order;Checks;order;
+Delivery;Prepare goods;Prepares;goods;
+Delivery;Deliver;Delivers;;
+Delivery;Ask feedback;Asks;feedback;
+Travel agency;Check request;Checks;request;
+Travel agency;Handle manually;Handles;;
+Travel agency;Book bus;;Book bus;
+Travel agency;Book hotel;;Book hotel;
+Travel agency;Booking Cancelled;Bookings Cancelled;;
+Travel agency;Send unavailability message;Sends;unavailability message;
+Travel agency;Book attraction;;Book attraction;
+Travel agency;Confirmation send;sends;Confirmation;
+Agency;Sends message to banks;Sendses;message to banks;
+Agency;Send awnser back to customer;Sends;awnser|customer;
+Customer;Fill in request;Fills in;request;
+Bank A;Propose loan;;loan;Propose
+Bank A;Write decline letter;Writes;decline letter;
+Bank B;Declined;Declineds;;
+Bank B;Check with customer;Checks with;customer;
+Bank B;Send to external;Sends to;;
+External credit rating company;Check loan;Checks;loan;
+Seller;Create auction request;Creates;auction request;
+Seller;Register request;;Register request;
+A;Create M1;Creates;;M1
+A;handle all info;handles;info;
+Traveller;Order Trip;;Order Trip;
+Traveller;Change Itinerary;Changes;;Itinerary
+Traveller;Cancel Itinerary;Cancels;;Itinerary
+Traveller;Reserve Ticket;;Ticket;Reserve
+;Receive Order;Receives;Order;
+;Verify Seats;;Seats;Verify
+;Change Itinerary;Changes;;Itinerary
+;Cancel Itinerary;Cancels;;Itinerary
+Sales;Authorize Payment;;Payment;Authorize
+Distribution;Pack Goods;;Goods;Pack
+Distribution;Ship Goods;;Ship Goods;
+Tour Company;Check Tour Availability;Checks;Tour Availability;
+Tour Company;Register Customer;;Customer;Register
+Tour Company;Print Invoice;;;Print Invoice
+design and implement a webpage;informational meeting;;informational meeting;
+design and implement a webpage;storyboard meeting;;storyboard meeting;
+design and implement a webpage;design site;;design site;
+design and implement a webpage;develop site;develops;site;
+design and implement a webpage;prepare content;prepares;content;
+design and implement a webpage;complete initial draft;;complete initial draft;
+design and implement a webpage;marketing review;;marketing review;
+design and implement a webpage;complete final version;completes;final version;
+design and implement a webpage;building;;building;
+design and implement a webpage;review activity;;review activity;
+design and implement a webpage;approval;;approval;
+Applicant;write letter;writes;;letter
+Applicant;pay fee;pays;fee;
+Charles;add information;adds;information;
+Charles;call applicant;calls;applicant;
+Charles;take letters to Miranda;takes;letters to Miranda;
+Charles;add new member;adds;new member;
+Charles;write fee in register;writes;register;fee
+Charles;write letter to applicant;writes;letter to applicant;
+Charles;write and send letters for fee;writes|sends;letters for fee;
+Charles;create and send cards;creates|sends;cards;
+Miranda;decision about applicant;;decision about applicant;
+Miranda;stamp and write date;writes;stamp|date;
+Miranda;give Charles the information;gives;information;Charles
+Miranda;calculate fee;;;calculate fee
+Miranda;give it to Charles;gives;;Charles
+Costumer Service Representative;update details;;update details;
+Costumer Service Representative;wait for receiving answer;waits for|receives;answer;
+Administration;complete offer;;complete offer;
+Support Officer;check dates;;check dates;
+Support Officer;suggest modifications;suggests;modifications;
+Support Officer;update group calendars;;;update group calendars
+Support Officer;create meeting folders;creates;meeting folders;
+Support Officer;upload appropriate documents;uploads;appropriate documents;
+Coordination Unit;draft schedule;;draft schedule;
+Coordination Unit;add to calender;adds|calenders;;
+Coordination Unit;recheck dates;;recheck dates;
+Coordination Unit;look for conflicts;looks for;conflicts;
+Coordination Unit;send final schedule;sends;final schedule;
+Coordination Unit;finalize dates;;dates;finalize
+Committee Members;check diaries;;check diaries;
+Committee Members;report conflicts;;report conflicts;
+Support Officer;advise members to read documents;reads;members to|documents;advise
+Support Officer;produce minutes;;produce minutes;
+Support Officer;update records;;update records;
+Committee Members;hold meeting;holds;meeting;
+Coordination Unit;conduct a QA check;conducts;check;QA
+Coordination Unit;send to members;sends to;members;
+Order Management;Collect order;Collects;order;
+Order Management;Check Validity / Bonität;Checks;Validity;Bonität
+Order Management;Cancellation of Order;;Cancellation of Order;
+Order Management;Check Stock;Checks;Stock;
+Order Management;Confirmation of Order;;Confirmation of Order;
+Stock;Remove from stock;Removes from;stock;
+Production;Produce;Produces;;
+Logistic;Shipping;;Shipping;
+Controlling;Invoice;;;Invoice
+Controlling;Check incoming payments;Checks;incoming payments;
+Dunning Process;Dunning letter;;letter;Dunning
+SWIM User;Send User Credentials: Username, Password, Role (RBAC);Sends;;User Credentials|Username|Password|Role|RBAC
+SWIM User;Request Publication Service;;;Request Publication Service
+SWIM User;Request Subscription Service;;;Request Subscription Service
+SWIM User;Use Service;Uses;Service;
+PEP;Grant Access to Requested Service;;;Grant Access|Requested Service
+Security Services;Validate Assertion;Validates;;Assertion
+Customer;Review Suppliers;;;Review Suppliers
+Customer;Provide More Information;Provides;More Information;
+Customer;Review Sales Quote;;Sales Quote;Review
+Engineering;Analyze the RFQ;Analyzes;;RFQ
+Finance;Add Overhead Costs;Adds;Overhead Costs;
+Finance;Produce Pricing Options;Produces;Pricing Options;
+Sales Manager;Verify RFQ;Verifies;;RFQ
+Sales Manager;Review Pricing Options;;Pricing Options;Review
+Sales Manager;Create Sales Qoute;Creates;Sales Qoute;
+Supplier;Shipment Sent;Sents;;Shipment
+Purchasing;Consolidate Purchase Request;Consolidates;Purchase Request;
+Purchasing;Select Suitable Supplier;;Select Suitable Supplier;
+Purchasing;Submit purchase order;Submits;purchase order;
+Warehouse;Create Purchase Order;Creates;Purchase Order;
+Warehouse;Receive and inspect materials;Receives|inspects;materials;
+Accounting;verify the documents;verifies;documents;
+Accounting;Submit Payment;Submits;Payment;
+Customer;Send Inquiry;Sends;;Inquiry
+Customer;Fill out Application Form;Fills out;Application Form;
+Customer;Process the Documents;Processes;Documents;
+Mortgage Specialist;Inform Customer of Rejection;;Customer of Rejection;Inform
+Mortgage Specialist;Achieve Details;Achieves;Details;
+Customer Service Rep;Send Mortgage Application Form;Sends;Mortgage Application Form;
+Customer Service Rep;Review Application Form;;;Review Application Form
+Customer Service Rep;Send a customer reminder;Sends;customer reminder;
+Customer Service Rep;Inform Customer of close transaction;Informs;Customer of close transaction;
+Customer;Customer Accident;;Customer Accident;
+Customer;Fill out Claim Form & Send to CSR;Fills out|Sends to;;Claim Form|CSR
+Customer Service Rep;Gather Customer Insurance Information;Gathers;Customer Insurance Information;
+Customer Service Rep;Review Customer Claim;;;Review Customer Claim
+Customer Service Rep;Request more information from customer;Requests;more information from customer;
+Customer Service Rep;Confirm Reception to customer;Confirms;customer;Reception
+Customer;reconfigure bike;;reconfigure bike;
+FeelWheel;updates the online catalogue for parts produced by Fami;updates|produces by;online catalogue for parts;Fami
+FeelWheel;checks which of the available bikes close to envisioned configuration;envisions;checks|available bikes|configuration;
+Customer;ask for an offer;asks for;offer;
+Customer;get new bike;;new bike;
+FeelWheel;calculate new price for bike;calculates;new price for bike;
+FeelWheel;give new bike to customer;gives;new bike to customer;
+Fami;Deliver new bike to Pit;Delivers;new bike to Pit;
+Customer;Call the room service;Calls;room service;
+Hotel;takes the order;takes;order;
+Hotel;order to fetch wine and prepare any other alcoholic beverages;fetches|prepares;order to|wine|other alcoholic beverages;
+Costumer Services;Check audience;Checks;audience;
+Costumer Services;Check solvency;Checks;solvency;
+Costumer Services;integrate into database;integrates into;database;
+Costumer Services;Check Costumer;Checks;;Costumer
+Costumer Services;cancel order;cancels;order;
+Sales & Logistics;Check Stock;Checks;Stock;
+Sales & Logistics;Send goods;Sends;goods;
+Accountig Office;Send invoice;Sends;invoice;
+Accountig Office;Check payment;Checks;payment;
+Accountig Office;close order;;close order;
+Accountig Office;Check number of reminders;Checks;number of reminders;
+Accountig Office;Send reminder;Sends;reminder;
+Accountig Office;contact lawyer;;contact lawyer;
+Manufactoring;Produce goods;;Produce goods;
+Logistics;Prepare Goods;;Goods;Prepare
+Logistics;Pack Goods;;Goods;Pack
+Logistics;Deliver Goods;Delivers;Goods;
+Finance;Send invoice;Sends;invoice;
+Finance;Check incoming payment;Checks;incoming payment;
+Finance;Finish the order;Finishes;order;
+Finance;Check number of reminders;Checks;number of reminders;
+Finance;Send reminder;Sends;reminder;
+Finance;Start Dunning Process (write of);Starts Dunning|writes of;Process;
+Sales;Check Customer Type;Checks;Customer Type;
+Sales;Check solvency;Checks;solvency;
+Sales;Check type of ordered goods;Checks|orders;type|goods;
+Sales;Send order status information;Sends;order status information;
+Sales;Check Stock Inventory;Checks;;Stock Inventory
+Sales Department;check customer data;checks;customer data;
+Sales Department;choose customer data;chooses;customer data;
+Sales Department;check kind of customer;checks;kind of customer;
+Sales Department;check solvency of customer;checks;solvency of customer;
+Sales Department;offer prepayment;offers;prepayment;
+Sales Department;check inventory;checks;inventory;
+Logistics Department;pack goods;;pack goods;
+Logistics Department;check payment agreement;checks;payment agreement;
+Logistics Department;deliver goods;delivers;goods;
+Financial Department;check delivery status;checks;delivery status;
+Financial Department;monitor in-payment;monitors in;payment;
+Financial Department;close order;;close order;
+Financial Accounting;Send invoice;Sends;invoice;
+Financial Accounting;Check Payment;Checks;Payment;
+Financial Accounting;Close Order;;Close Order;
+Financial Accounting;Check number of reminders;Checks;number of reminders;
+Financial Accounting;Start dunning process;Starts dunning;process;
+Financial Accounting;Send reminder;Sends;reminder;
+Sales;Check Costumer;Checks;;Costumer
+Sales;Check if Costumer is a wholesaler;Checks;wholesaler;Costumer
+Sales;Save Data;;;Save Data
+Sales;Cancel Order;Cancels;Order;
+Production;Produce goods;;Produce goods;
+Logistic;Send goods;Sends;goods;
+Warehouse;Check Stock;Checks;Stock;
+Service Center;Welcome the customer and ask for his wants;Welcomes|asks for;customer|wants;
+Service Center;Send him to the advisery service;Sends;service;advisery
+Advisery Service;Welcome the customer and ask what type of account he wants;Welcomes|asks|wants;customer|type of account;
+Advisery Service;Open Saving Account;Opens;Account;Saving
+Advisery Service;Ask if he wants something else;Asks|wants;;
+Advisery Service;Ask for his Age;Asks for;Age;
+Advisery Service;Open Time Deposit;;Open Time Deposit;
+Advisery Service;Tell him that he is too young and ask if he wants another type;Tells|asks|wants;type;
+Advisery Service;Open Credit;;Open Credit;
+Advisery Service;Tell him that he is tot young and ask if he wants another type;Tells|tots|asks|wants;type;young
+Advisery Service;Thank him and bring him back to the foyer;Thanks|brings;foyer;
+Production;Production;;Production;
+Sales;Check Customer's Availabilities;Checks;Customer's Availabilities;
+Sales;Enroll Customer;;Customer;Enroll
+Sales;Check Stock;Checks;Stock;
+Sales;Send Invoice;Sends;;Invoice
+Sales;Prepare Shipment;Prepares;;Shipment
+Sales;Packing Products;Packings;Products;
+Sales;Reject;;Reject;
+Finance;Check Credit;Checks;Credit;
+Finance;Check Payment;Checks;Payment;
+Finance;Reject;;Reject;
+Customer Management;check customer;checks;customer;
+Customer Management;check customer status;checks;customer status;
+Customer Management;enter customer data;enters;customer data;
+Customer Management;reject order;rejects;order;
+Customer Management;check credit bureau entries;checks;bureau entries;credit
+Sales & Logistics;collect order data;collects;order data;
+Sales & Logistics;send order confirmation;sends;order confirmation;
+Sales & Logistics;deliver article;delivers;article;
+Sales & Logistics;close order;;close order;
+Warehousing;check availability;checks;availability;
+Warehousing;take article;takes;article;
+Accounting;check payment morale;checks;payment morale;
+Accounting;send invoice;sends;;invoice
+Accounting;check payment;checks;payment;
+Accounting;check reminders;checks;reminders;
+Accounting;send reminder;sends;;reminder
+Accounting;engage a lawayer;engages;lawayer;
+Accounting;reject order;rejects;order;
+Production;produce article;;article;produce
+help desk;check purpose of visit;checks;purpose of visit;
+help desk;inform the account manager;informs;account manager;
+account manager;create client account;creates;client account;
+account manager;create personal data;creates;personal data;
+account manager;create savings account;creates;account;savings
+account manager;check needs;;check needs;
+Sales;confirm Order;confirms;;Order
+Sales;Create Order Denial;Creates;Denial;Order
+Sales;Price Negotiation;;Price Negotiation;
+Sales;Send offer;Sends;offer;
+Sales;Order Negotiation;;Negotiation;Order
+Sales;check database;checks;database;
+Logistics;Check Availability in Stock;Checks;Availability in Stock;
+Logistics;Pack articles;;Pack articles;
+Logistics;Send articles;Sends;articles;
+Logistics;take out of stock;takes;stock;
+Finance Department;Generate Invoice;Generates;;Invoice
+Finance Department;Check payment;Checks;payment;
+Finance Department;Send Payment Confirmation;Sends;Payment Confirmation;
+Finance Department;send new reminder;sends;new reminder;
+Finance Department;Send invoice;Sends;invoice;
+Sales;check customers;;check customers;
+Sales;check customers age;checks;customers age;
+Sales;save customer data;saves;customer data;
+Sales;check credit status;checks;credit status;
+Sales;create customer account;creates;customer account;
+Sales;do not create an account;creates;account;
+Sales;create a saving account;creates;saving account;
+Sales;create a time desposit;creates;time desposit;
+Sales;create a current account;creates;current account;
+Sales;check customer type;checks;customer type;
+Sales;refuse order;refuses;order;
+Sales;apply customer to database;applies|databases;customer to;
+Sales;send offer;sends;offer;
+Sales;customer refueses offer;offers;customer refueses;
+Sales;send confirmation of payment;sends;confirmation of payment;
+Warehouse;check stock;checks;stock;
+Financing;check solvency;checks;solvency;
+Financing;refuse order;refuses;order;
+Financing;check payment;checks;payment;
+Financing;prepare invoice;prepares;;invoice
+Logistics;deliver invoice;delivers;;invoice
+Logistics;deliver goods;delivers;goods;
+Logistics;prepare order;prepares;order;
+Logistics;deliver order;delivers;order;
+Customer service;ask for customers needs;asks for;customers needs;
+Customer service;send to customer advisory;sends to;customer;
+Customer advisory;ask for kind of account;asks for;kind of account;
+Customer advisory;check age of customer;checks;age of customer;
+Customer advisory;ask for customer data;asks for;customer data;
+Customer advisory;open account;;open account;
+Customer advisory;advice other account type;;advice other account type;
+Customer advisory;ask for further needs;asks for;further needs;
+ABC Bank;Client enters bank;;Client enters bank;
+ABC Bank;current account;;current account;
+ABC Bank;age?;;age;
+ABC Bank;Declinement the inquiry;Declinements;inquiry;
+ABC Bank;close inquiry;;;close inquiry
+ABC Bank;save client data;saves;client data;
+Accounting;start production;starts;production;
+Accounting;take article;takes;article;
+Accounting;deliver product;delivers;product;
+Accounting;close order;;close order;
+Accounting;check number of reminders;checks;number of reminders;
+Accounting;engage a lawyer;engages;lawyer;
+Sales;reject order;rejects;order;
+Sales;collect order data;collects;order data;
+Sales;send order confirmation;sends;order confirmation;
+Sales;send invoice;sends;;invoice
+Sales;check payment;checks;payment;
+Warehousing;check availability;checks;availability;
+Sales depatrtment;Check if customer already exists;Checks|exists;customer;
+Sales depatrtment;Check credit status;Checks;credit status;
+Sales depatrtment;Check customer requiremets;Checks;customer requiremets;
+Sales depatrtment;Create customer in database;Creates;customer in database;
+Sales depatrtment;Deny customer;Denies;customer;
+Sales depatrtment;Deny order;Denies;order;
+Sales depatrtment;Check availability;Checks;availability;
+Sales depatrtment;Generate order confirmation;;Generate order confirmation;
+Sales depatrtment;Generate invoice;;Generate invoice;
+Sales depatrtment;Send invoice;Sends;invoice;
+Sales depatrtment;Check payment;Checks;payment;
+Sales depatrtment;Check no. of reminders;Checks;reminders;
+Sales depatrtment;Send reminder;Sends;reminder;
+Sales depatrtment;Confirm payment;Confirms;payment;
+Warehouse;Pick articles from storage;Picks;articles from storage;
+Warehouse;Pack articles;;Pack articles;
+Warehouse;Send articles;Sends;articles;
+Sales;Check Customer Data;Checks;Customer Data;
+Sales;Check customer requirements;Checks;customer requirements;
+Sales;deny customer;denies;customer;
+Sales;create customer;creates;customer;
+Sales;generate order confirmation;generates;order confirmation;
+Accounting;check solvency;checks;solvency;
+Accounting;generate Invoice;generates;;Invoice
+Accounting;send Invoice;sends;;Invoice
+Accounting;check No. of reminders;checks;reminders;
+Accounting;finish order;;finish order;
+Dispositon;check availability;checks;availability;
+Logistics;pick order;picks;order;
+Logistics;pack articles;;pack articles;
+Logistics;handover to express company;expresses;handover to|company;
+Logistics;send shipping information;sends shipping;information;
+Sales;enter customer data;enters;customer data;
+Warehousing;deliver product;delivers;product;
+bank;contact client;;contact client;
+bank;check client pers. data;checks;client pers|data;
+bank;offer savings account;;account;offer savings
+bank;offer time desposits;;offer time desposits;
+bank;offer current account;offers;current account;
+bank;ask desired accounts;asks desired;accounts;
+bank;open selected accounts;selects;accounts;
+Finance;Check solvency;Checks;solvency;
+Finance;accepting order;accepts;order;
+Finance;Cancel the order;Cancels;order;
+Finance;check the reminder;checks;reminder;
+Finance;send reminder;sends;;reminder
+Finance;go to court;goes to;court;
+Finance;finish the order;finishes;order;
+Sales;Save customer data;Saves;customer data;
+Sales;Cancel the order;Cancels;order;
+Sales;Check customer status;Checks;customer status;
+Sales;Create order confirmation;Creates;order confirmation;
+Sales;prepare invoice;prepares;;invoice
+Sales;check for payment;checks for;payment;
+Warehouse;Check stock;Checks;stock;
+Warehouse;production;;production;
+Warehouse;get articels;;articels;
+Warehouse;deliver goods;delivers;goods;
+Logistic;take goods;takes;goods;
+restaurant;Ask for free table;Asks for;free table;
+restaurant;take a seat;takes;seat;
+restaurant;leave the restaurant;leaves;restaurant;
+restaurant;look at the menu;looks at;menu;
+restaurant;order a salad;orders;salad;
+restaurant;order a tiramisu;orders;tiramisu;
+restaurant;order red wine;orders;wine;red
+restaurant;eat;eats;;
+restaurant;ask for bill;asks for;;bill
+restaurant;pay the bill;pays;bill;
+Itlian Restaurant;Take a seat and ask for the menu;Takes|asks for;seat|menu;
+Itlian Restaurant;Order a glass of red wine;Orders;glass of red wine;
+Itlian Restaurant;Order a salad;Orders;salad;
+Itlian Restaurant;Ask for kinds of desserts;Asks for;kinds of desserts;
+Itlian Restaurant;Order a desert;Orders;desert;
+Itlian Restaurant;Do not order a desert;orders;desert;
+Itlian Restaurant;Ask for the bill;Asks for;bill;
+Itlian Restaurant;Pay the bill;Pays;bill;
+Client;check desert menu;checks;desert menu;
+Client;take seat;takes;seat;
+Client;order salad;;;order salad
+Client;order wine;;;order wine
+Client;order tiramisu;;;order tiramisu
+Client;order no desert;orders;desert;
+Client;have dinner;;dinner;
+Client;ask for bill;asks for;;bill
+Client;pay bill;pays;bill;
+Client;get wine;;wine;
+Client;get dinner;;dinner;
+Restaurant;Ask for free table;Asks for;free table;
+Restaurant;take a seat;takes;seat;
+Restaurant;leave restaurant;;restaurant;leave
+Restaurant;take a look at the menu;takes;look at the menu;
+Restaurant;order red wine;orders;wine;red
+Restaurant;order tiramisu;;;order tiramisu
+Restaurant;order salad;;;order salad
+Restaurant;eat;eats;;
+Restaurant;pay the bill;pays;bill;
+Restaurant;leave;;;leave
+Manager;Check Alternative Arrangement;Checks;;Alternative Arrangement
+PayPal Client;Access PayPal Sign Up Page;;Page;Access PayPal Sign
