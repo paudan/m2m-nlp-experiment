@@ -1,187 +1,187 @@
-Actor;UseCase;Verb;NounPhrases;Entities;EntityType
-User;Open Enclosure;;Open Enclosure;;
-Liquid Cooling Module;Monitor LCM Status;Monitor;Status;Monitor LCM;ORGANIZATION
-TRS;Periodic Set Reference Temperature;;Periodic Set Reference Temperature;;
-User;Get M10 Tilt Angles;Get;Angles;;
-Translation Stage Drive;Preset FSS Translation Stage;;Preset FSS Translation Stage;;
-M2 Mirror;Set M2 Tilt Angles;Set;M2 Tilt Angles;;
-FAS TCCD;Send FAS Setup;Send;Setup;FAS;ORGANIZATION
-User;Prepare for VLTI Focus Adjustment;Prepare for;VLTI Focus Adjustment;;
-TRS;Monitor Temperature data;Monitor;Temperature data;;
-Catalogs;Preset Telescope to Catalogue Object;;Preset Telescope|Catalogue Object;;
-User;Stop Pupil Alignment;Stop;Pupil Alignment;;
-User;Offset Guide Probe on Beacon;;Offset Guide Probe|Beacon;Beacon;ORGANIZATION
-M2 Mirror;Set M2 Focus Position;Set;M2 Focus Position;;
-M6 Mirror;Get M6 Tilt Angles;Get;Tilt Angles;;
-M6 Mirror;Calibrate Az axis;Calibrate;axis;;
-User;Set Remaining Tracking Time Limit;Set Remaining;Tracking Time Limit;;
-FSS STRAP;Do one star analysis;Do;star analysis;one;CARDINAL
-TRS;Monitor LCM Status;Monitor;Status;Monitor LCM;ORGANIZATION
-Air Conditioning;Get Enclosure Temperature;Get;Enclosure Temperature;;
-User;Get Tracking Remaining Time;Get;Tracking|Time;;
-User;Stop Chopping;Stop;Chopping;Chopping;PERSON
-Power Module;Monitor Power Status;Monitor;Power Status;;
-User;Stop Image Alignment;Stop;Image Alignment;;
-User;Do one star analysis;Do;star analysis;one;CARDINAL
-User;Stop FAS Acquisition;Stop;FAS Acquisition;;
-User;Check STRAP Pupil Alignment;Check;STRAP Pupil Alignment;;
-User;Set M2 Pupil Beacon Light Level;Set;Pupil Beacon Light Level;;
-Air Conditioning;Set Reference Temperature;Set;Reference Temperature;;
-User;Calibrate M6 versus Coude Sensors;Calibrate;M;Coude Sensors;ORGANIZATION
-TRS;Monitor HPS Status;Monitor;HPS Status;;
-User;Get M2 Focus Position;Get;M2 Focus Position;;
-User;Set Nasmyth Beacon Light Level;Set;Level;;
-Nasmyth Wheel;Set Nasmyth Beacon Light Level;Set;Level;;
-User;Stop Telescope Motion;Stop;Telescope Motion;;
-User;Start cyclic calibrated corrections;Start;corrections;;
-DewPoint Sensor;Set Dew Point Margin;Set;Dew Point Margin;;
-TRS;Monitor Cooling Flow;Monitor;Cooling Flow;;
-Probe;Preset FSS Translation Stage;;Preset FSS Translation Stage;;
-User;Display Guide Detector Signals;;Display Guide Detector Signals;;
-User;Get M2 Tilt Angles;Get;M2 Tilt Angles;;
-ASM;Close Enclosure On Bad Meteo Conditions;;Close Enclosure|Conditions;;
-Air Conditioning;Check Status Air Conditioning;Check;Status Air Conditioning;;
-TRS;Monitor Power Status;Monitor;Power Status;;
-User;Get Guide Star Data;Get;Guide Star Data;;
-Nasmyth Wheel;Set Nasmyth Wheel;Set;;;
-M2 Mirror;Get M2 Center Position;Get;M2 Center Position;;
-User;Set Guide Parameters;Set;Guide Parameters;;
-User;Prepare for Delay Constant Alignment;Prepare for;Delay|Constant Alignment;;
-TRS;Monitor Telescope Temperature;Monitor;Telescope Temperature;;
-User;Set Guide Window Size;Set;Guide Window Size;;
-User;Center M10;;;;
-Coude Beam Switching Device;Set Coude Beam Switching Device;Set;Beam Switching Device;;
-Telescope Temperature Sensors;Monitor Temperature data;Monitor;Temperature data;;
-User;Stop Air Conditioning;Stop;Air Conditioning;;
-User;Get M6 Tilt Angles;Get;Tilt Angles;;
-User;Start Chopping;Start;Chopping;;
-User;Check Status Enclosure;Check;Status Enclosure;;
-FSS STRAP;Optimize Field Stabilisation;Optimize;Field Stabilisation;;
-Azimuth Drive;Calibrate Az axis;Calibrate;axis;;
-DewPoint Sensor;Monitor Environmental data;Monitor;Environmental data;;
-Air Conditioning;Monitor Telescope Temperature;Monitor;Telescope Temperature;;
-User;Power On/Off FAS;;Power|FAS;;
-FAS TCCD;Calibrate Az axis;Calibrate;axis;;
-M2 Mirror;Get M2 Focus Position;Get;M2 Focus Position;;
-User;Adjust Pointing Axis Reference Points;Adjust Pointing;Axis Reference Points;;
-User;Set M6 Tilt Angles;Set;M6 Tilt Angles;;
-User;Make Pointing Error Measurement;Make Pointing;Error Measurement;;
-TRS;Power On/Off M6;;Power|M6;;
-Tracking Axis Drive;Preset Telescope to Astronomical Coordinates;;Preset Telescope|Astronomical Coordinates;;
-FSS Field Diaphragm;Set FSS Field Diaphragm;Set;Field Diaphragm;Field Diaphragm;PERSON
-TRS;Stop Autoguiding;Stop;;Autoguiding;PERSON
-User;Probe to Next Guide Star;;Probe;;
-FAS TCCD;Power On/Off FAS;;Power|FAS;;
-User;Set M2 Tilt Angles;Set;M2 Tilt Angles;;
-User;Offset Guide Probe on star;;Offset Guide Probe|star;;
-User;Get M2 Center Position;Get;M2 Center Position;;
-M6 Mirror;Center M6;;;;
-User;Cyclic closed loop active optics corrections;closed;loop|active optics corrections;;
-Enclosure;Close Enclosure;;Close Enclosure;;
-M10 Mirror;Center M10;;;;
-M6 Mirror;Monitor M6 Status;Monitor;M6 Status;;
-Tracking Axis Drive;Preset Telescope to Named Position;Named;Preset Telescope|Position;;
-TRS;Monitor M6 Status;Monitor;M6 Status;;
-User;Prepare for Pupil Alignment;Prepare for;Pupil Alignment;;
-TRS;Monitor Cabinet Cooling;Monitor;Cabinet Cooling;Cabinet Cooling;PERSON
-User;Measure and Install POM;Install;Measure|POM;;
-TRS;Get Tracking Remaining Time;Get;Tracking|Time;;
-FSS Filter Wheel;Set FSS Filter Wheel;Set;;;
-User;Adjust Coude Focus;Adjust;Focus;;
-Altitude Cabinet;Monitor Cabinet Cooling;Monitor;Cabinet Cooling;Cabinet Cooling;PERSON
-User;Combined Offset;Combined;Offset;;
-Transporter;Check Status Anchors;Check;Status Anchors;;
-User;Set M10 Tilt Angles;Set;Tilt Angles;;
-User;Read Telescope Temperature Sensors;Read;Telescope Temperature Sensors;;
-User;Set M2 Focus Position;Set;M2 Focus Position;;
-User;Stop Field Stabilization;Stop;Field Stabilization;;
-User;Calibrate Az axis;Calibrate;axis;;
-FSS Filter Wheel;Get FSS Filter Wheel;Get;;;
-M2 Mirror;Do one M2 position setting;Do;M|position setting;one;CARDINAL
-User;Stop Autoguiding;Stop;;Autoguiding;PERSON
-Tracking Axis Drive;Stop Telescope Motion;Stop;Telescope Motion;;
-Catalogs;Probe to Next Guide Star;;Probe;;
-User;Stop VLTI Focus Adjustment;Stop;VLTI Focus Adjustment;;
-User;Install POM;Install;;;
-User;Set Reference Temperature;Set;Reference Temperature;;
-M10 Mirror;Set M10 Tilt Angles;Set;Tilt Angles;;
-User;Modify POM term;Modify;POM term;;
-ASM;Monitor Environmental data;Monitor;Environmental data;;
-User;Get Enclosure Temperature;Get;Enclosure Temperature;;
-User;Set Tracking Wavelength;Set;Tracking Wavelength;;
-TRS;Control FS Corrections;;Control FS Corrections;;
-TRS;Stop Chopping;Stop;Chopping;Chopping;PERSON
-User;Switch On/Off Nasmyth Beacon Light Source;Switch On;Beacon Light Source;;
-TRS;Monitor Environmental data;Monitor;Environmental data;;
-FSS STRAP;Set FSS Filter Wheel;Set;;;
-Tracking Axis Drive;Offset Alt/Az;Offset;;;
-FSS STRAP;Stop FSS Acquisition;Stop;FSS Acquisition;;
-Nasmyth Beacon Light Sources;Set Nasmyth Beacon Light Level;Set;Level;;
-User;Set FSS Field Diaphragm;Set;Field Diaphragm;Field Diaphragm;PERSON
-User;Preset Telescope to Astronomical Coordinates;;Preset Telescope|Astronomical Coordinates;;
-User;Prepare FAS Setup;Prepare;Setup;FAS;ORGANIZATION
-User;Control FS Corrections;;Control FS Corrections;;
-User;Preset Telescope in Alt/Az Coordinates;;Preset Telescope|Alt|Coordinates;;
-FSS STRAP;Send FSS Setup;Send;FSS Setup;;
-User;Do one calibrated correction;Do;correction;one;CARDINAL
-User;Close Enclosure;;Close Enclosure;;
-User;Offset Alt/Az;Offset;;;
-M6 Mirror;Set M6 Tilt Angles;Set;M6 Tilt Angles;;
-User;Check Status Air Conditioning;Check;Status Air Conditioning;;
-FSS STRAP;Start FSS Acquisition;Start;Acquisition;FSS;ORGANIZATION
-M6 Mirror;Monitor Power Status;Monitor;Power Status;;
-Tracking Axis Drive;Preset Telescope in Alt/Az Coordinates;;Preset Telescope|Alt|Coordinates;;
-TRS;Start Autoguiding;Start;Autoguiding;;
-ASM;Periodic Set Reference Temperature;;Periodic Set Reference Temperature;;
-TRS;Start Field Stabilization;Start;Field Stabilization;;
-M10 Mirror;Get M10 Tilt Angles;Get;Angles;;
-User;Save Guide Detector Image;Save;Guide Detector Image;;
-Air Conditioning;Monitor Temperature data;Monitor;Temperature data;;
-User;Set M2 Center Position;Set;M2 Center Position;;
-User;Telescope Offset;;Telescope Offset;;
-FSS STRAP;Calibrate M6 versus Coude Sensors;Calibrate;M;Coude Sensors;ORGANIZATION
-Hydraulic & Pneumatic Systems;Monitor HPS Status;Monitor;HPS Status;;
-Telescope Temperature Sensors;Read Telescope Temperature Sensors;Read;Telescope Temperature Sensors;;
-User;Switch On/Off Pupil Beacon Light Source;Switch On;Pupil Beacon Light Source;;
-Enclosure;Open Enclosure;;Open Enclosure;;
-User;Center Guide Star;;;;
-User;Prepare for Image Alignment;Prepare for;Image Alignment;;
-User;Set Storage Mode for Pointing Measurements;Set;Storage Mode|Pointing Measurements;;
-User;Configure Chopping;Configure;Chopping;Chopping;PERSON
-M2 Beacon;Switch On/Off Pupil Beacon Light Source;Switch On;Pupil Beacon Light Source;;
-User;Center Object;;Object;;
-M1 Temperature;Monitor Temperature data;Monitor;Temperature data;;
-Tracking Axis Drive;Make Pointing Error Measurement;Make Pointing;Error Measurement;;
-User;Store POM Measure;;Store POM Measure;;
-FAS TCCD;Stop FAS Acquisition;Stop;FAS Acquisition;;
-User;Get FSS Field Diaphragm;Get;Field Diaphragm;FSS|Field Diaphragm;ORGANIZATION
-User;Set Dew Point Margin;Set;Dew Point Margin;;
-User;Check Status Anchors;Check;Status Anchors;;
-Flow Meter;Monitor Cooling Flow;Monitor;Cooling Flow;;
-User;Center M6;;;;
-User;Optimize Field Stabilisation;Optimize;Field Stabilisation;;
-TRS;Start Chopping;Start;Chopping;;
-User;Set Nasmyth Wheel;Set;;;
-Air Conditioning;Stop Air Conditioning;Stop;Air Conditioning;;
-User;Start Autoguiding;Start;Autoguiding;;
-Enclosure Anemometer;Monitor Enclosure Anemometer;Monitor;Enclosure Anemometer;;
-User;Set FAS Integration Time;Set;FAS Integration Time;;
-Enclosure;Monitor Temperature data;Monitor;Temperature data;;
-User;Make POM;Make;POM;;
-User;Set Tracking Additional Velocity;Set;Tracking|Additional Velocity;;
-User;Set Coude Beam Switching Device;Set;Beam Switching Device;;
-TRS;Stop Field Stabilization;Stop;Field Stabilization;;
-User;Start Field Stabilization;Start;Field Stabilization;;
-M2 Mirror;Get M2 Tilt Angles;Get;M2 Tilt Angles;;
-User;Get FSS Filter Wheel;Get;;;
-TRS;Monitor Enclosure Anemometer;Monitor;Enclosure Anemometer;;
-FAS TCCD;Start FAS Acquisition;Start;Acquisition;FAS;ORGANIZATION
-Enclosure Anemometer;Monitor Environmental data;Monitor;Environmental data;;
-Nasmyth Beacon Light Sources;Switch On/Off Nasmyth Beacon Light Source;Switch On;Beacon Light Source;;
-M2 Mirror;Set M2 Center Position;Set;M2 Center Position;;
-User;Start FAS Acquisition;Start;Acquisition;FAS;ORGANIZATION
-User;Stop Delay Constant Alignment;Stop;Delay|Constant Alignment;;
-User;Set FSS Filter Wheel;Set;;;
-User;Stop current action;Stop;current action;;
-User;Preset Telescope to Catalogue Object;;Preset Telescope|Catalogue Object;;
-FSS Field Diaphragm;Get FSS Field Diaphragm;Get;Field Diaphragm;FSS|Field Diaphragm;ORGANIZATION
+Actor,UseCase,Verb,NounPhrases
+User,Open Enclosure,Open,Enclosure
+Liquid Cooling Module,Monitor LCM Status,Monitor,Status
+TRS,Periodic Set Reference Temperature,,Periodic Set Reference Temperature
+User,Get M10 Tilt Angles,Get,M10 Tilt Angles
+Translation Stage Drive,Preset FSS Translation Stage,Preset,FSS Translation Stage
+M2 Mirror,Set M2 Tilt Angles,Set,M2 Tilt Angles
+FAS TCCD,Send FAS Setup,Send,Setup
+User,Prepare for VLTI Focus Adjustment,Prepare for,VLTI Focus Adjustment
+TRS,Monitor Temperature data,Monitor,Temperature data
+Catalogs,Preset Telescope to Catalogue Object,Preset,Telescope|Catalogue Object
+User,Stop Pupil Alignment,Stop,Pupil Alignment
+User,Offset Guide Probe on Beacon,Offset,Guide Probe on Beacon
+M2 Mirror,Set M2 Focus Position,Set,M2 Focus Position
+M6 Mirror,Get M6 Tilt Angles,Get,Tilt Angles
+M6 Mirror,Calibrate Az axis,Calibrate,axis
+User,Set Remaining Tracking Time Limit,Set,Remaining Tracking Time Limit
+FSS STRAP,Do one star analysis,Do,star analysis
+TRS,Monitor LCM Status,Monitor,Status
+Air Conditioning,Get Enclosure Temperature,Get,Enclosure Temperature
+User,Get Tracking Remaining Time,Get,Tracking Remaining Time
+User,Stop Chopping,Stop,Chopping
+Power Module,Monitor Power Status,Monitor,Power Status
+User,Stop Image Alignment,Stop,Image Alignment
+User,Do one star analysis,Do,star analysis
+User,Stop FAS Acquisition,Stop,FAS Acquisition
+User,Check STRAP Pupil Alignment,Check,STRAP Pupil Alignment
+User,Set M2 Pupil Beacon Light Level,Set,M2 Pupil Beacon Light Level
+Air Conditioning,Set Reference Temperature,Set,Reference Temperature
+User,Calibrate M6 versus Coude Sensors,Calibrate,M6|Coude Sensors
+TRS,Monitor HPS Status,Monitor,HPS Status
+User,Get M2 Focus Position,Get,M2 Focus Position
+User,Set Nasmyth Beacon Light Level,Set,Nasmyth Beacon Light Level
+Nasmyth Wheel,Set Nasmyth Beacon Light Level,Set,Nasmyth Beacon Light Level
+User,Stop Telescope Motion,Stop,Telescope Motion
+User,Start cyclic calibrated corrections,Start,corrections
+DewPoint Sensor,Set Dew Point Margin,Set,Dew Point Margin
+TRS,Monitor Cooling Flow,Monitor,Cooling Flow
+Probe,Preset FSS Translation Stage,Preset,FSS Translation Stage
+User,Display Guide Detector Signals,Display,Guide Detector Signals
+User,Get M2 Tilt Angles,Get,M2 Tilt Angles
+ASM,Close Enclosure On Bad Meteo Conditions,Close,Enclosure On Bad Meteo Conditions
+Air Conditioning,Check Status Air Conditioning,Check,Status Air Conditioning
+TRS,Monitor Power Status,Monitor,Power Status
+User,Get Guide Star Data,Get,Guide Star Data
+Nasmyth Wheel,Set Nasmyth Wheel,Set,Nasmyth Wheel
+M2 Mirror,Get M2 Center Position,Get,M2 Center Position
+User,Set Guide Parameters,Set,Guide Parameters
+User,Prepare for Delay Constant Alignment,Prepare for,Delay Constant Alignment
+TRS,Monitor Telescope Temperature,Monitor,Telescope Temperature
+User,Set Guide Window Size,Set,Guide Window Size
+User,Center M10,,
+Coude Beam Switching Device,Set Coude Beam Switching Device,Set,Beam Switching Device
+Telescope Temperature Sensors,Monitor Temperature data,Monitor,Temperature data
+User,Stop Air Conditioning,Stop,Air Conditioning
+User,Get M6 Tilt Angles,Get,Tilt Angles
+User,Start Chopping,Start,Chopping
+User,Check Status Enclosure,Check,Status Enclosure
+FSS STRAP,Optimize Field Stabilisation,Optimize,Field Stabilisation
+Azimuth Drive,Calibrate Az axis,Calibrate,axis
+DewPoint Sensor,Monitor Environmental data,Monitor,Environmental data
+Air Conditioning,Monitor Telescope Temperature,Monitor,Telescope Temperature
+User,Power On FAS,Power On,FAS
+FAS TCCD,Calibrate Az axis,Calibrate,axis
+M2 Mirror,Get M2 Focus Position,Get,M2 Focus Position
+User,Adjust Pointing Axis Reference Points,Adjust Pointing,Axis Reference Points
+User,Set M6 Tilt Angles,Set,M6 Tilt Angles
+User,Make Pointing Error Measurement,Make Pointing,Error Measurement
+TRS,Power On/Off M6,Power On,M6
+Tracking Axis Drive,Preset Telescope,Preset,Telescope
+FSS Field Diaphragm,Set FSS Field Diaphragm,Set,FSS Field Diaphragm
+TRS,Stop Autoguiding,Stop,Autoguiding
+User,Probe to Next Guide Star,Probe to,Next Guide Star
+FAS TCCD,Power On FAS,Power On,FAS
+User,Set M2 Tilt Angles,Set,M2 Tilt Angles
+User,Offset Guide Probe on star,Offset,Guide Probe on star
+User,Get M2 Center Position,Get,M2 Center Position
+M6 Mirror,Center M6,Center,M6
+User,Cyclic closed loop active optics corrections,,Cyclic closed loop active optics corrections
+Enclosure,Close Enclosure,Close,Enclosure
+M10 Mirror,Center M10,Center,M10
+M6 Mirror,Monitor M6 Status,Monitor,M6 Status
+Tracking Axis Drive,Preset Telescope to Named Position,Preset,Telescope|Named Position
+TRS,Monitor M6 Status,Monitor,M6 Status
+User,Prepare for Pupil Alignment,Prepare for,Pupil Alignment
+TRS,Monitor Cabinet Cooling,Monitor,Cabinet Cooling
+User,Measure and Install POM,Install,Measure|POM
+TRS,Get Tracking Remaining Time,Get,Tracking|Time
+FSS Filter Wheel,Set FSS Filter Wheel,Set,
+User,Adjust Coude Focus,Adjust,Focus
+Altitude Cabinet,Monitor Cabinet Cooling,Monitor,Cabinet Cooling
+User,Combined Offset,Combined,Offset
+Transporter,Check Status Anchors,Check,Status Anchors
+User,Set M10 Tilt Angles,Set,Tilt Angles
+User,Read Telescope Temperature Sensors,Read,Telescope Temperature Sensors
+User,Set M2 Focus Position,Set,M2 Focus Position
+User,Stop Field Stabilization,Stop,Field Stabilization
+User,Calibrate Az axis,Calibrate,axis
+FSS Filter Wheel,Get FSS Filter Wheel,Get,
+M2 Mirror,Do one M2 position setting,Do,M|position setting
+User,Stop Autoguiding,Stop,
+Tracking Axis Drive,Stop Telescope Motion,Stop,Telescope Motion
+Catalogs,Probe to Next Guide Star,,Probe to
+User,Stop VLTI Focus Adjustment,Stop,VLTI Focus Adjustment
+User,Install POM,Install,
+User,Set Reference Temperature,Set,Reference Temperature
+M10 Mirror,Set M10 Tilt Angles,Set,Tilt Angles
+User,Modify POM term,Modify,POM term
+ASM,Monitor Environmental data,Monitor,Environmental data
+User,Get Enclosure Temperature,Get,Enclosure Temperature
+User,Set Tracking Wavelength,Set,Tracking Wavelength
+TRS,Control FS Corrections,,Control FS Corrections
+TRS,Stop Chopping,Stop,Chopping
+User,Switch On/Off Nasmyth Beacon Light Source,Switch On,Beacon Light Source
+TRS,Monitor Environmental data,Monitor,Environmental data
+FSS STRAP,Set FSS Filter Wheel,Set,FSS Filter Wheel
+Tracking Axis Drive,Offset Alt/Az,Offset,Alt/Az
+FSS STRAP,Stop FSS Acquisition,Stop,FSS Acquisition
+Nasmyth Beacon Light Sources,Set Nasmyth Beacon Light Level,Set,Level
+User,Set FSS Field Diaphragm,Set,Field Diaphragm
+User,Preset Telescope to Astronomical Coordinates,Preset,Telescope|Astronomical Coordinates
+User,Prepare FAS Setup,Prepare,FAS Setup
+User,Control FS Corrections,Control,FS Corrections
+User,Preset Telescope in Alt/Az Coordinates,Preset,Telescope in Alt/Az Coordinates
+FSS STRAP,Send FSS Setup,Send,FSS Setup
+User,Do one calibrated correction,Do,correction
+User,Close Enclosure,Close,Enclosure
+User,Offset Alt/Az,Offset,Alt/Az
+M6 Mirror,Set M6 Tilt Angles,Set,M6 Tilt Angles
+User,Check Status Air Conditioning,Check,Status Air Conditioning
+FSS STRAP,Start FSS Acquisition,Start,Acquisition
+M6 Mirror,Monitor Power Status,Monitor,Power Status
+Tracking Axis Drive,Preset Telescope in Alt/Az Coordinates,Preset,Telescope in Alt/Az Coordinates
+TRS,Start Autoguiding,Start,Autoguiding
+ASM,Periodic Set Reference Temperature,,Periodic Set Reference Temperature
+TRS,Start Field Stabilization,Start,Field Stabilization
+M10 Mirror,Get M10 Tilt Angles,Get,Angles
+User,Save Guide Detector Image,Save,Guide Detector Image
+Air Conditioning,Monitor Temperature data,Monitor,Temperature data
+User,Set M2 Center Position,Set,M2 Center Position
+User,Telescope Offset,,Telescope Offset
+FSS STRAP,Calibrate M6 versus Coude Sensors,Calibrate,M6|Coude Sensors
+Hydraulic & Pneumatic Systems,Monitor HPS Status,Monitor,HPS Status
+Telescope Temperature Sensors,Read Telescope Temperature Sensors,Read,Telescope Temperature Sensors
+User,Switch On/Off Pupil Beacon Light Source,Switch On,Pupil Beacon Light Source
+Enclosure,Open Enclosure,Open,Enclosure
+User,Center Guide Star,Center,Guide Star
+User,Prepare for Image Alignment,Prepare for,Image Alignment
+User,Set Storage Mode for Pointing Measurements,Set,Storage Mode for Pointing Measurements
+User,Configure Chopping,Configure,Chopping
+M2 Beacon,Switch On/Off Pupil Beacon Light Source,Switch On,Pupil Beacon Light Source
+User,Center Object,Center,Object
+M1 Temperature,Monitor Temperature data,Monitor,Temperature data
+Tracking Axis Drive,Make Pointing Error Measurement,Make,Pointing Error Measurement
+User,Store POM Measure,Store,POM Measure
+FAS TCCD,Stop FAS Acquisition,Stop,FAS Acquisition
+User,Get FSS Field Diaphragm,Get,FSS Field Diaphragm
+User,Set Dew Point Margin,Set,Dew Point Margin
+User,Check Status Anchors,Check,Status Anchors
+Flow Meter,Monitor Cooling Flow,Monitor,Cooling Flow
+User,Center M6,Center,M6
+User,Optimize Field Stabilisation,Optimize,Field Stabilisation
+TRS,Start Chopping,Start,Chopping
+User,Set Nasmyth Wheel,Set,Nasmyth Wheel
+Air Conditioning,Stop Air Conditioning,Stop,Air Conditioning
+User,Start Autoguiding,Start,Autoguiding
+Enclosure Anemometer,Monitor Enclosure Anemometer,Monitor,Enclosure Anemometer
+User,Set FAS Integration Time,Set,FAS Integration Time
+Enclosure,Monitor Temperature data,Monitor,Temperature data
+User,Make POM,Make,POM
+User,Set Tracking Additional Velocity,Set,Tracking Additional Velocity
+User,Set Coude Beam Switching Device,Set,Coude Beam Switching Device
+TRS,Stop Field Stabilization,Stop,Field Stabilization
+User,Start Field Stabilization,Start,Field Stabilization
+M2 Mirror,Get M2 Tilt Angles,Get,M2 Tilt Angles
+User,Get FSS Filter Wheel,Get,FSS Filter Wheel
+TRS,Monitor Enclosure Anemometer,Monitor,Enclosure Anemometer
+FAS TCCD,Start FAS Acquisition,Start,FAS Acquisition
+Enclosure Anemometer,Monitor Environmental data,Monitor,Environmental data
+Nasmyth Beacon Light Sources,Switch On Nasmyth Beacon Light Source,Switch On,Beacon Light Source
+M2 Mirror,Set M2 Center Position,Set,M2 Center Position
+User,Start FAS Acquisition,Start,FAS Acquisition
+User,Stop Delay Constant Alignment,Stop,Delay Constant Alignment
+User,Set FSS Filter Wheel,Set,FSS Filter Wheel
+User,Stop current action,Stop,current action
+User,Preset Telescope to Catalogue Object,Preset,Telescope|Catalogue Object
+FSS Field Diaphragm,Get FSS Field Diaphragm,Get,FSS Field Diaphragm
