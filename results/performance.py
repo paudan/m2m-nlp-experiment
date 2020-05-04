@@ -80,8 +80,23 @@ def calculate_extraction_performance(file, original):
         'F1ScoreOutputBoth_Verbs': f1_score_(prec_outputv_vp, recall_outputv_vp)        
     }
 
+
+def remove_other_ner(x):
+    if pd.isnull(x['Entities']) or pd.isnull(x['Entities']):
+        return x
+    entities = x['Entities'].split('|')
+    types = x['EntityType'].split('|')
+    entities = [x for ind, x in enumerate(entities) if types[ind] in ['PERSON', 'ORGANIZATION', 'LOCATION']]
+    types = [x for x in types if x in ['PERSON', 'ORGANIZATION', 'LOCATION']]
+    x['Entities'] = '|'.join(entities)
+    x['EntityType'] = '|'.join(types)
+    if len(x['Entities']) == 0: x['Entities'] = None
+    if len(x['EntityType']) == 0: x['EntityType'] = None
+    return x
+
 def calculate_ner_performance(file, original):
     ner_pred = pd.read_csv(file, sep=';')
+    ner_pred = ner_pred.apply(remove_other_ner, axis=1)
     ind_has_entity = ~pd.isnull(original['Entities'])
     original['HasEntity'] = ind_has_entity.astype(int)
     ner_pred['HasEntity'] = (~pd.isnull(ner_pred['Entities'])).astype(int)
