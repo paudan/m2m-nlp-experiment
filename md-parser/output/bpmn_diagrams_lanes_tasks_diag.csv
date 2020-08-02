@@ -1,0 +1,341 @@
+1;Technician;Work Offline
+1;Technician;Update Case Status
+1;Front Desk;Review & Escalate
+1;Technician;Acknowledge
+1;Support Manager;Review & Escalate
+1;Support Department;Acknowledge
+1;Support Manager;Update Client on Delay &Escl.
+1;Support Department;Receive Notification
+1;Support Manager;Receive Notification
+1;Technician;Connect Remotely to Client
+1;Support Department;Review & Escalate
+1;Technician;Receive Notification
+1;Support Department;Work Offline
+1;Support Department;Connect Remotely to Client
+1;Support Department;Update Case Status
+1;Support Department;Update Client on Delay &Escl.
+12e;Key account manager;Send mail to support system
+12e;Key account manager;Get problem description
+12e;Key account manager;Explain solution
+8;Administrative Department;Check Solvency
+8;Sales Department;Initiate File
+8;Customer;Select Travel
+8;Customer;Provide Customer Data
+8;Organization;Check Solvency
+8;Organization;Check Availability
+8;Customer;Confirm Interest
+8;Organization;Initiate File
+8;Sales Department;Book Travel
+8;Organization;Book Travel
+8;Sales Department;Indicate Price
+8;Organization;Indicate Price
+8;Administrative Department;Bill
+8;Sales Department;Check Availability
+8;Organization;Bill
+
+11a;Bank;Review request
+11a;Bank;Prepare contract
+11a;Bank;Send quote
+11a;Sales rep;Calculate terms
+11a;Sales rep;Review request
+11a;Bank;Assess risks
+11a;Bank;Prepare special terms
+11a;Sales manager;Prepare special terms
+11a;Risk Analyst;Assess risks
+11a;Sales rep;Prepare contract
+11a;Bank;Calculate terms
+11a;Sales rep;Send quote
+6e;Business participant;Check Calendar for Conference Call
+6e;Business participant;E-Mail Vote Deadline Warning
+6e;Business participant;Receive Vote
+6e;Business participant;Moderate Conference Call Discussion
+6e;Business participant;Moderate E-mail Discussion
+6e;Business participant;Incremet Tally
+3b;Business participant;Prepare Invoice
+3b;Business participant;Send Invoice to Customer
+3b;Business participant;Register Order in Manufacturing System
+3b;Business participant;Update Invoice
+3b;Business participant;Process Payment
+10b;Vacation Request Approval Process;Mark vacation in Calendar
+10b;Vacation Request Approval Process;Book Vacation
+10b;Vacation Request Approval Process;Update Vacation Request
+10b;Employee;Update Vacation Request
+10b;Employee;Mark vacation in Calendar
+10b;Manager;Book Vacation
+10b;Manager;Approve Vacation Request
+10b;Vacation Request Approval Process;Approve Vacation Request
+2c;Marketing Manager;Make Internal Seminar Anoucement
+2c;No Magic;Send Invitations to Customers
+2c;No Magic;Make Internal Seminar Anoucement
+2c;Marketing Manager;Publish Seminar Description in Website
+2c;No Magic;Prepare Seminar Description
+2c;No Magic;Publish Seminar Description in Website
+2c;Seminar Coordinator;Send Invitations to Customers
+2c;Seminar Coordinator;Prepare Seminar Description
+
+2d;Business participant;Inform Customer about Overdue Payment
+2d;Business participant;Send Registered Warning Letter
+2d;Business participant;Start Investigation
+6f;Business participant;Review Issue List
+6f;Business participant;Send Results Via E-Mail
+6f;Business participant;Email Voters that have to Change Votes
+6f;Business participant;Announce Issues
+6f;Business participant;Reduce Number of Voting Members and Recalculate Votes
+6f;Business participant;Receive Issue List
+6f;Business participant;Re-Announce Vote with Warning to Voting members
+6f;Business participant;Post Results on Web Site
+6f;Business participant;Prepare Results
+6f;Business participant;Reduce to Two Solutions
+2a;Seminar Coordinator;Close Seminar
+2a;No Magic;Publish Seminar Description in Website
+2a;Seminar Speaker;Prepare Talk Presentation
+2a;Seminar Coordinator;Open Seminar
+2a;No Magic;Close Seminar
+2a;No Magic;Send Invitations to Customers
+2a;No Magic;Register Participant
+2a;Marketing Manager;Prepare Seminar Description
+2a;No Magic;Give talk
+2a;Marketing Manager;Welcome Participants
+2a;No Magic;Prepare Seminar Description
+2a;No Magic;Evaluate Participants Number
+2a;Seminar Coordinator;Publish Seminar Description in Website
+2a;No Magic;Open Seminar
+2a;No Magic;Arrange Facilities and Meals
+2a;Marketing Manager;Send Invitations to Customers
+2a;Marketing Manager;Collect Questionnaries
+2a;Marketing Manager;Prepare Handouts
+2a;Seminar Speaker;Give talk
+2a;No Magic;Prepare Handouts
+2a;Seminar Coordinator;Make Internal Seminar Anoucement
+2a;No Magic;Send Reminder to Participants
+2a;No Magic;Welcome Participants
+2a;No Magic;Prepare Talk Presentation
+2a;Marketing Manager;Arrange Facilities and Meals
+2a;No Magic;Make Internal Seminar Anoucement
+2a;Marketing Manager;Send Reminder to Participants
+2a;No Magic;Collect Questionnaries
+2a;Marketing Manager;Register Participant
+2a;Marketing Manager;Evaluate Participants Number
+6d;Business participant;Receive Book Request
+6d;Business participant;On Loan Reply
+6d;Business participant;Hold Reply
+6d;Business participant;Get Book Status
+6d;Business participant;Cancel Request
+6d;Business participant;Request Hold
+6d;Business participant;Checkout Book
+6d;Business participant;Checkout Reply
+6b;1st level support;Send Mail to Account Manager
+6b;2nd level support;Esit 2nd Level Ticket
+6b;Trouble Ticket System;Open Ticket
+6b;Trouble Ticket System;Insert Issue into Product Backlog
+6b;1st level support;Close Ticket
+6b;1st level support;Edit 1st Level Ticket
+6b;1st level support;Open Ticket
+6b;Trouble Ticket System;Esit 2nd Level Ticket
+6b;Trouble Ticket System;Send Mail to Account Manager
+6b;Trouble Ticket System;Close Ticket
+6b;2nd level support;Insert Issue into Product Backlog
+6b;Trouble Ticket System;Edit 1st Level Ticket
+6c;Candidate;Interview
+6c;Recruiter;Review Application
+6c;Recruiter;Prepare Offer
+6c;Firm;Collect Feedback
+6c;Recruiter;Collect Feedback
+6c;Recruiter;Schedule Interview
+6c;Firm;Reject Application
+6c;Firm;Review Application
+6c;Candidate;Fill out Employment Froms
+6c;Candidate;Review Offer
+6c;Candidate;Submit Application
+6c;Recruiter;Reject Application
+6c;Recruiter;Interview
+6c;Recruiter;Submit Offer
+6c;Firm;Schedule Interview
+6c;Interviewer;Interview
+6c;Firm;Submit Offer
+6c;Firm;Prepare Offer
+6c;Firm;Interview
+9c;Nobel Committee Medicine;Screen & Select Preliminary Candidates
+9c;Nobel Committee Medicine;Send Nomination Form
+9c;Nobel Committee Medicine;Submit Report with Recommendations
+9c;Nobel Committee Medicine;Send list of Selected Preliminary Candidates
+9c;Nobel Committee Medicine;Select Final Candidates and Their Works
+9c;Nominator;Identify Potential Nominee(s)
+9c;Nobel Assembly;Discuss Nominators (Meeting 1)
+9c;Expert;Send Candidates Assessment Report
+9c;Nobel Committee Medicine;Write Recommendations Report
+9c;Nobel Committee Medicine;Determine Need for Expert Assistance
+9c;Nominator;Send Nominee Completed Form(s)
+9c;Nobel Committee Medicine;Collect Candidates Work Assessment Reports
+9c;Nobel Assembly;Select Laureates (Meeting 2)
+9c;Expert;Assess Candidates Work
+9c;Nobel Committee Medicine;Collect Completed Forms
+9c;Nobel Assembly;Announce Nobel Prize Laureates
+9c;Nobel Committee Medicine;Hold Nobel Price Ceremony
+10a;Service Contract Implementation Layer;Resolve Communication Problem and Book Order
+10a;Service Contract Implementation Layer;Store in Statistical System
+10a;System Communication;Store in Marketing System Client 200
+10a;Order Process;Book Order
+10a;System Communication;Store in Marketing System Client 100
+10a;Employee;Book Order
+10a;Order Process;Approve Order
+10a;System Communication;Store in Statistical System
+10a;Employee;Enter Order
+10a;Service Contract Implementation Layer;Store in Marketing System Client 200
+10a;Service Contract Implementation Layer;Store in Marketing System Client 100
+10a;Manager;Approve Order
+10a;Service Contract Implementation Layer;Book Order
+10a;Order Process;Enter Order
+10a;System Communication;Book Order
+10a;ERP Expert;Resolve Communication Problem and Book Order
+5;1st level support;Close ticket
+5;2nd Level Support Agent;Ask developer
+5;1st level support;Edit account manager
+5;Trouble Ticket System;Edit 2nd level ticket
+5;Trouble Ticket System;Open ticket
+5;2nd level support;Add to backlog
+5;1st level support;Open ticket
+5;Trouble Ticket System;Edit account manager
+5;2nd level support;Edit 2nd level ticket
+5;2nd Level Support Agent;Handle 2nd Level Issue
+5;1st Level Support Agent;Note 1st level result
+5;1st Level Support Agent;Classify ticket
+5;2nd Level Support Agent;Note 2nd level result
+5;Trouble Ticket System;Close ticket
+5;1st Level Support Agent;Handle 1st level issue
+5;Trouble Ticket System;Edit 1st level ticket
+5;1st level support;Edit 1st level ticket
+5;Trouble Ticket System;Add to backlog
+12a;Warehouse Worker;Package goods
+12a;Hardware Retailer;Decide if normal post or special shipment
+12a;Hardware Retailer;Take out extra insurance
+12a;Hardware Retailer;Request quotes from carriers
+12a;Clerk;Check if extra insurance is necessary
+12a;Clerk;Fill a Post label
+12a;Clerk;Assign  carrier & prepare paperwork
+12a;Hardware Retailer;Assign  carrier & prepare paperwork
+12a;Hardware Retailer;Check if extra insurance is necessary
+12a;Warehouse Worker;Add paperwork and move package to pick area
+12a;Clerk;Decide if normal post or special shipment
+12a;Logistics Manager;Take out extra insurance
+12a;Hardware Retailer;Add paperwork and move package to pick area
+12a;Hardware Retailer;Package goods
+12a;Hardware Retailer;Fill a Post label
+12a;Clerk;Request quotes from carriers
+9b;Warehouse;Pack Goods
+9b;Sales Representative;Request Pack Goods
+9b;Sales Representative;Suggest Change
+9b;Warehouse;Ship Goods
+9b;Sales Representative;Check Stock Level
+9b;Online Shop;Pack Goods
+9b;Online Shop;Suggest Change
+9b;Online Shop;Check Stock Level
+9b;Online Shop;Request Pack Goods
+9b;Online Shop;Ship Goods
+12c;Business participant;Check availability with supplier
+12c;Business participant;Order from supplier
+
+6a;Cab Driver;Complete Assignment
+6a;Travel Agent;Check Availability
+6a;Cab Driver;Pickup Customer
+6a;Travel Agent;Get Alternative Time
+6a;Travel Agent;Get Booking Request
+6a;Travel Agent;Propose Booking Status
+6a;Travel Agent;Confirm Booking
+6a;Customer;Request Booking
+12b;clerk;Calm customer
+12b;delivery boy;Receive payment
+12b;Pizza Customer;Eat the pizza
+12b;pizza chef;Bake the pizza
+12b;Pizza Customer;Order a pizza
+12b;Pizza Customer;Ask for the pizza
+12b;Pizza Customer;Pay the pizza
+12b;Pizza Customer;Select a pizza
+12b;delivery boy;Deliver the pizza
+7;Developer;Verify bug
+7;User;Use application
+7;User;report bug
+7;Administrator;Notify user
+7;Administrator;Install new version
+7;Developer;Notify administrator
+7;Developer;Notify user
+6g;Seller;Develop proposal
+6g;Seller;Close an offer
+6g;Seller;Consider the proposal
+6g;Seller;Fullfil the order
+6g;Sales staff;Change the terms of the offer
+6g;Sales staff;Send an offer to the client
+6g;Sales staff;Develop proposal
+6g;Seller;Send an offer to the client
+6g;Sales staff;Close an offer
+6g;Seller;Change the terms of the offer
+6g;Sales staff;Fullfil the order
+6g;Sales manager;Consider the proposal
+4;Reader;Return Item
+4;Librarian;Put Reservation to the Waiting List
+4;Librarian;Register Loan
+4;Reader;Make Reservation
+4;Reader;Get Item
+4;Reader;Find Wanted Title
+4;Reader;Use Item
+4;Librarian;Notify First Waiting Reader
+4;Librarian;Register Reservation
+12d;1st level support;Close ticket
+12d;1st Level Support Agent;Handle 1st level issue
+12d;1st Level Support Agent;Document 1st level result
+12d;Trouble Ticket System;Send mail to account manager
+12d;1st level support;Send mail to account manager
+12d;1st level support;edit 1st level ticket
+12d;2nd Level Support Agent;Ask developer
+12d;2nd Level Support Agent;Handle 2nd level issue
+12d;Trouble Ticket System;edit 1st level ticket
+12d;Software developer;Examine problem
+12d;1st level support;Open ticket
+12d;1st Level Support Agent;Classify ticket
+12d;Trouble Ticket System;Insert issue into product backlog
+12d;2nd level support;edit 2nd level ticket
+12d;Key account manager;Explain solution
+12d;Key account manager;Send mail to support system
+12d;Software developer;Provide feedbck for 2nd level support
+12d;Trouble Ticket System;Close ticket
+12d;Key account manager;Get problem description
+12d;Trouble Ticket System;Open ticket
+12d;2nd level support;Insert issue into product backlog
+12d;2nd Level Support Agent;Document 2nd level result
+12d;Trouble Ticket System;edit 2nd level ticket
+9e;Aqua Distilled Water Company;Create Customer Account
+9e;Customer;Place Order
+9e;Customer Service Assistant;Forward Order
+9e;Aqua Distilled Water Company;Verify Customer Identity
+9e;Logistic Department Worker;Deliver Water
+9e;Customer Service Assistant;Verify Customer Identity
+9e;Aqua Distilled Water Company;Deliver Water
+9e;Aqua Distilled Water Company;Forward Order
+9e;Customer Service Assistant;Create Customer Account
+11b;Bank;Prepare contract
+11b;Bank;Prepare special terms
+11b;Customer;Send credit request
+11b;Sales Department;Prepare special terms
+11b;Joan Doe;Assess risk
+11b;Sales Department;Calculate terms
+11b;Bank;Review request
+11b;Sales Department;Review request
+11b;Bank;Calculate terms
+11b;Sales Department;Send quote
+11b;Bank;Assess risk
+11b;Sales Department;Prepare contract
+11b;Bank;Send quote
+9a;Car House;Set Available Cars
+9a;Reservation;Submit Car Reservation
+9a;Car House;Enter User and Dates
+9a;Car House;Get Confirmation
+9a;CRM;Get Client Information
+9a;Car House;Select Car
+9a;Reservation;Set Available Cars
+9a;Car House;Get Client Information
+9a;Car House;Show Reservation
+9a;Client;Enter User and Dates
+9a;Client;Show Reservation
+9a;Client;Select Car
+9a;Reservation;Get Confirmation
+9a;Car House;Submit Car Reservation

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CheckStyle-IDEA">
+    <option name="configuration">
+      <map>
+        <entry key="checkstyle-version" value="8.20" />
+        <entry key="copy-libs" value="false" />
+        <entry key="location-0" value="BUNDLED:(bundled):Sun Checks" />
+        <entry key="location-1" value="BUNDLED:(bundled):Google Checks" />
+        <entry key="scan-before-checkin" value="false" />
+        <entry key="scanscope" value="JavaOnly" />
+        <entry key="suppress-errors" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ClojureProjectResolveSettings">
+    <currentScheme>IDE</currentScheme>
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
+  </component>
+  <component name="ProjectCodeStyleConfiguration">
+    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
+    <code_scheme name="Project" version="173">
+      <DBN-PSQL>
+        <case-options enabled="false">
+          <option name="KEYWORD_CASE" value="lower" />
+          <option name="FUNCTION_CASE" value="lower" />
+          <option name="PARAMETER_CASE" value="lower" />
+          <option name="DATATYPE_CASE" value="lower" />
+          <option name="OBJECT_CASE" value="preserve" />
+        </case-options>
+        <formatting-settings enabled="false" />
+      </DBN-PSQL>
+      <DBN-SQL>
+        <case-options enabled="false">
+          <option name="KEYWORD_CASE" value="lower" />
+          <option name="FUNCTION_CASE" value="lower" />
+          <option name="PARAMETER_CASE" value="lower" />
+          <option name="DATATYPE_CASE" value="lower" />
+          <option name="OBJECT_CASE" value="preserve" />
+        </case-options>
+        <formatting-settings enabled="false">
+          <option name="STATEMENT_SPACING" value="one_line" />
+          <option name="CLAUSE_CHOP_DOWN" value="chop_down_if_statement_long" />
+          <option name="ITERATION_ELEMENTS_WRAPPING" value="chop_down_if_not_single" />
+        </formatting-settings>
+      </DBN-SQL>
+      <JavaCodeStyleSettings>
+        <option name="CLASS_NAMES_IN_JAVADOC" value="3" />
+        <option name="LAYOUT_STATIC_IMPORTS_SEPARATELY" value="false" />
+        <option name="INSERT_INNER_CLASS_IMPORTS" value="true" />
+        <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999999999" />
+        <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999999999" />
+        <option name="IMPORT_LAYOUT_TABLE">
+          <value>
+            <package name="" withSubpackages="true" static="false" />
+            <emptyLine />
+            <package name="javax" withSubpackages="true" static="false" />
+            <package name="java" withSubpackages="true" static="false" />
+            <emptyLine />
+          </value>
+        </option>
+      </JavaCodeStyleSettings>
+      <ScalaCodeStyleSettings>
+        <option name="MULTILINE_STRING_CLOSING_QUOTES_ON_NEW_LINE" value="true" />
+      </ScalaCodeStyleSettings>
+      <codeStyleSettings language="JAVA">
+        <option name="ALIGN_MULTILINE_FOR" value="false" />
+      </codeStyleSettings>
+    </code_scheme>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/md-parser.iml" filepath="$PROJECT_DIR$/md-parser.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="NamesExtractionTest.testAtcsFile" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="md-parser" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ktu.mdextract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ktu.mdextract" />
+      <option name="MAIN_CLASS_NAME" value="org.ktu.mdextract.NamesExtractionTest" />
+      <option name="METHOD_NAME" value="testAtcsFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Xmx3072M -Xss1024K -Dinstall.root=&quot;$MAGICDRAW19_DIR$&quot; -Dmd.plugins.dir=&quot;$MAGICDRAW19_DIR$/plugins&quot; -DLOCALCONFIG=true -jar &quot;$MAGICDRAW19_DIR$/openapi/ide/lib/com.nomagic.magicdraw.intellij.launcher.jar&quot;" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="NamesExtractionTest.testAtcsFileByDiagram" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="md-parser" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ktu.mdextract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ktu.mdextract" />
+      <option name="MAIN_CLASS_NAME" value="org.ktu.mdextract.NamesExtractionTest" />
+      <option name="METHOD_NAME" value="testAtcsFileByDiagram" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Xmx3072M -Xss1024K -Dinstall.root=&quot;$MAGICDRAW19_DIR$&quot; -Dmd.plugins.dir=&quot;$MAGICDRAW19_DIR$/plugins&quot; -DLOCALCONFIG=true -jar &quot;$MAGICDRAW19_DIR$/openapi/ide/lib/com.nomagic.magicdraw.intellij.launcher.jar&quot;" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="NamesExtractionTest.testBpmnDiagramsFile" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="md-parser" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ktu.mdextract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ktu.mdextract" />
+      <option name="MAIN_CLASS_NAME" value="org.ktu.mdextract.NamesExtractionTest" />
+      <option name="METHOD_NAME" value="testBpmnDiagramsFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Xmx3072M -Xss1024K -Dinstall.root=&quot;$MAGICDRAW19_DIR$&quot; -Dmd.plugins.dir=&quot;$MAGICDRAW19_DIR$/plugins&quot; -DLOCALCONFIG=true -jar &quot;$MAGICDRAW19_DIR$/openapi/ide/lib/com.nomagic.magicdraw.intellij.launcher.jar&quot;" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="cbm">
+      <CLASSES>
+        <root url="jar://$MAGICDRAW19_DIR$/plugins/com.nomagic.magicdraw.cbm/lib/bpmn20_api.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/plugins/com.nomagic.magicdraw.cbm/lib/commons-lang-2.6.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/plugins/com.nomagic.magicdraw.cbm/lib/xpdl_api.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/plugins/com.nomagic.magicdraw.cbm/cbm.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/plugins/com.nomagic.magicdraw.cbm/cbm_api.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Eclipse">
+      <CLASSES>
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.core.contenttype_3.6.0.v20170207-1037.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.core.jobs_3.9.2.v20171030-1027.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.core.runtime_3.13.0.v20170207-1030.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.emf.common_2.13.0.v20170609-0707.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.equinox.app_1.3.400.v20150715-1528.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.equinox.common_3.9.0.v20170207-1454.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.equinox.ds_1.5.0.v20170307-1429.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.equinox.preferences_3.7.0.v20170126-2132.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.equinox.registry_3.7.0.v20170222-1344.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.osgi.services_3.6.0.v20170228-1906.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.osgi.util_3.4.0.v20170111-1608.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.osgi_3.12.50.v20170928-1321.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.eclipse.uml2.common_1.5.0.v200905041045.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/cmof_1.4.0.201811041524/tas.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/cmof_1.4.0.201811041524/cmof14.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="lib">
+      <CLASSES>
+        <root url="jar://$MAGICDRAW19_DIR$/lib/activation.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/annotation.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/batik.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bridj-0.7.0.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/commons-compress-1.3.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/commons-httpclient-3.1.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/commons-logging-1.0.4.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/concurrent.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/EccpressoAll.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/ehcache-2.10.1.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/flexlm.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/gson-2.2.4.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/HTMLEditorLight.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/hunspell-bridj-1.0.5-SNAPSHOT.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/javassist.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jhall.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jimi.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jna.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jnp-client.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jsr250-api-1.0.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jsr305.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jtidy.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/JUnitParams-1.0.1.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/launcher.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/lucene-analyzers-common-4.10.3.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/lucene-core-4.10.3.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/md.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/md_api.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/md_common.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/md_common_api.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/md_common_test.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/tw_common.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/tw_common_api.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/xalan.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/xmlbeans-2.6.0.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/y.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/slf4j.api_1.7.25.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.hamcrest.core_1.3.0.v201303031735.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/javax.jmi_1.0.0.201811041524/javax_jmi-1_0-fr.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/org.apache.log4j_1.2.15.v201005080500.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/com.nomagic.osgi.launcher-17.0.5-SNAPSHOT.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/webservice/axis-config.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/webservice/axis.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/webservice/commons-discovery-0.2.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/webservice/jaxrpc.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/webservice/mdserviceclient.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/webservice/rsclient.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/webservice/wsdl4j-1.5.1.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-action.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-charts.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-common.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-components.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-diff.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-dock.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-editor.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-gantt.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-grids.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jide-shortcut.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/poi-3.14-20160307.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/poi-ooxml-3.14-20160307.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/poi-ooxml-schemas-3.14-20160307.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/graphics/clibwrapper_jiio.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/graphics/freehep-base.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/graphics/freehep-graphics2d.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/graphics/freehep-graphicsio-emf.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/graphics/freehep-graphicsio-ps.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/graphics/freehep-graphicsio.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/graphics/jai_imageio.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <NATIVE>
+        <root url="file://$MAGICDRAW19_DIR$/lib" />
+      </NATIVE>
+      <SOURCES>
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jsr305.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jtidy-sources.zip!/src/main/java" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/jtidy-sources.zip!/src/test/java" />
+      </SOURCES>
+    </library>
+    <library name="MagicDraw">
+      <CLASSES>
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.ci.binary_17.0.5.v20181104-1514.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.magicdraw.core_1.0.0.201811041524.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.magicdraw_17.0.5.201811041524.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.magicdraw.foundation_2.0.0.201811041524.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.magicdraw.core.diagram_18.1.0.201811041524.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.magicdraw.osgi.fragment_1.0.0.201811041524.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.magicdraw.security_18.3.0.201811041524.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.magicdraw.core.project.options_18.1.0.201811041524.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.magicdraw.uml2_2.5.1.201811041524.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.magicdraw.ce_18.1.0.201811041524.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.ci.services_17.0.5.v20181104-1514.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.ci_17.0.5.v20181104-1514.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.ci.persistence.local_17.0.5.v20181104-1514.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.ci.metamodel.project_17.0.5.v20181104-1514.jar!/" />
+        <root url="jar://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.ci.persistence_17.0.5.v20181104-1514.jar!/" />
+        <root url="file://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.annotations_1.0.0" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAGICDRAW19_DIR$/openapi/docs/javadoc.zip!/" />
+      </JAVADOC>
+      <SOURCES />
+      <jarDirectory url="file://$MAGICDRAW19_DIR$/lib/bundles/com.nomagic.annotations_1.0.0" recursive="false" />
+    </library>
+  </component>
+</project>

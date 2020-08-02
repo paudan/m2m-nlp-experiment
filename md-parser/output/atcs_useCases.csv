@@ -1,0 +1,123 @@
+Get Enclosure Temperature
+Probe to Next Guide Star
+Start Autoguiding
+AT System Stop
+Prepare for Pupil Alignment
+Get FSS Filter Wheel
+Preset Telescope to Catalogue Object
+Measure and Install POM
+Guide Probe to Beacon
+Start cyclic calibrated corrections
+Close Enclosure On Bad Meteo Conditions
+Monitor HPS Status
+Switch On/Off Nasmyth Beacon Light Source
+Stop VLTI Focus Adjustment
+Combined Offset
+Get M2 Focus Position
+Install POM
+Set M2 Tilt Angles
+Set FSS Filter Wheel
+Stop FSS Acquisition
+Cyclic closed loop active optics corrections
+Preset Telescope to Astronomical Coordinates
+Set M6 Tilt Angles
+Get Guide Star Data
+Prepare for Image Alignment
+Get Tracking Remaining Time
+Make POM
+AT System Start
+Monitor M6 Status
+Start Chopping
+Center Object
+Telescope Offset
+Monitor Cabinet Cooling
+Open Enclosure
+Set Dew Point Margin
+Monitor Telescope Temperature
+Stop current action
+Send FSS Setup
+Save Guide Detector Image
+Disable FIeld Stabilisation
+Get M2 Tilt Angles
+Set Guide Parameters
+Calibrate M6 versus Coude Sensors
+Get M6 Tilt Angles
+Set Nasmyth Wheel
+Monitor Temperature data
+Set Coude Beam Switching Device
+Stop Air Conditioning
+Preset Telescope to Named Position
+Set Nasmyth Beacon Light Level
+Adjust Coude Focus
+Set Remaining Tracking Time Limit
+Stop Pupil Alignment
+Preset Telescope in Alt/Az Coordinates
+Do one calibrated correction
+Prepare FSS Setup
+Offset Guide Probe on star
+Check Status Air Conditioning
+Center M6
+Get Dew Point Temperature
+Switch On/Off Pupil Beacon Light Source
+Stop Field Stabilization
+Start FAS Acquisition
+Read Telescope Temperature Sensors
+Monitor Environmental data
+Prepare for Delay Constant Alignment
+Monitor Power Status
+Prepare FAS Setup
+Set FSS Field Diaphragm
+Periodic Set Reference Temperature
+Store POM Measure
+Do one star analysis
+Offset Alt/Az
+Monitor Enclosure Anemometer
+ATCS Shutdown
+Center Guide Star
+Do one M2 position setting
+Stop Delay Constant Alignment
+Start Field Stabilization
+Set Guide Window Size
+Do one correction
+Calibrate Az axis
+Adjust Pointing Axis Reference Points
+Monitor LCM Status
+Stop Telescope Motion
+Set FAS Integration Time
+Offset Guide Probe on Beacon
+Monitor Cooling Flow
+Stop Chopping
+Modify POM term
+Set M2 Focus Position
+Set M10 Tilt Angles
+Get FSS Field Diaphragm
+Check STRAP Pupil Alignment
+Prepare for VLTI Focus Adjustment
+Display Guide Detector Signals
+Set Tracking Additional Velocity
+Set M2 Center Position
+Check Status Enclosure
+Power On/Off FAS
+Close Enclosure
+Check Status Anchors
+Get M10 Tilt Angles
+Get M2 Center Position
+Configure Chopping
+Control FS Corrections
+Set Storage Mode for Pointing Measurements
+Stop Autoguiding
+Preset FSS Translation Stage
+Make Pointing Error Measurement
+Send FAS Setup
+Start FSS Acquisition
+Set Tracking Wavelength
+Set M2 Pupil Beacon Light Level
+Power On/Off M6
+Stop Image Alignment
+Set Reference Temperature
+Enable Field Stabilisation
+Set Guide Reference Point
+Control HPS
+Center M10
+Optimize Field Stabilisation
+Stop FAS Acquisition
