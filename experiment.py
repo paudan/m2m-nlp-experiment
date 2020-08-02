@@ -2,16 +2,24 @@ import os
 from collections.abc import Iterable
 import argparse
 import pandas as pd
+from tqdm import tqdm
 from processing import StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor, CoreNLPProcessor
 
+tqdm.pandas()
 
-def tag_activity_dataset(df, processor):
+def tag_activity_dataset(df, processor, column=1):
     def extract_verbs(x):
         return '|'.join([processor.normalize_verb(phrase) for phrase in processor.extract_verb_phrases(x)])
 
-    df['VerbPhrases'] = df.iloc[:, 1].apply(extract_verbs)
-    df['NounPhrases'] = df.iloc[:, 1].apply(processor.extract_noun_phrases).apply(lambda x: '|'.join(x))
-    df['ProperNouns'] = df.iloc[:, 1].apply(processor.extract_proper_nouns).apply(lambda x: '|'.join(x))
+    df['VerbPhrases'] = df.iloc[:, column].progress_apply(extract_verbs)
+    df['NounPhrases'] = df.iloc[:, column].progress_apply(processor.extract_noun_phrases).apply(lambda x: '|'.join(x))
+    df['ProperNouns'] = df.iloc[:, column].progress_apply(processor.extract_proper_nouns).apply(lambda x: '|'.join(x))
+    return df
+
+def tag_activity_dataset_default(df, column=1):
+    df['VerbPhrases'] = df.iloc[:, column].apply(lambda x: x.split()[0])
+    df['NounPhrases'] = df.iloc[:, column].apply(lambda x: ' '.join(x.split()[1:]))
+    df['ProperNouns'] = None
     return df
 
 def tag_ner_dataset(df, processor):
@@ -27,9 +35,10 @@ def tag_ner_dataset(df, processor):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--processor", help="Text processor which is used", choices=['spacy', 'stanza', 'flair', 'corenlp'], default='spacy')
+    parser.add_argument("--processor", help="Text processor which is used", choices=['spacy', 'stanza', 'flair', 'corenlp', 'simple'], default='spacy')
     parser.add_argument("--input-file", help="Input dataset file which will be processed", required=True)
     parser.add_argument("--task", help="Task type", choices=['phrases', 'ner'], default='phrases')
+    parser.add_argument("--column", help="Column index for processing")
     parser.add_argument("--output-file", help="Output file")
     args = parser.parse_args()
     input_file = args.input_file
@@ -52,13 +61,18 @@ if __name__ == '__main__':
         processor = FlairNLPProcessor()
     elif args.processor == 'corenlp':
         processor = CoreNLPProcessor()
+    elif args.processor == 'simple':
+        processor = None
     else:
         raise Exception('Invalid processor option')
     if args.task == 'phrases':
-        data_df = data_df.iloc[:, :2]
-        data_df = tag_activity_dataset(data_df, processor)
+        column = int(args.column) or 1
+        if args.processor == 'simple':
+            data_df = tag_activity_dataset_default(data_df, column=column)
+        else:
+            data_df = tag_activity_dataset(data_df, processor, column=column)
     elif args.task == 'ner':
-        data_df = data_df[['Entry']]
+        data_df = data_df.iloc[:, int(args.column) or 0].to_frame()
         data_df = tag_ner_dataset(data_df, processor)
     else:
         raise Exception('Invalid task option')
