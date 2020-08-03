@@ -66,13 +66,14 @@ if __name__ == '__main__':
     else:
         raise Exception('Invalid processor option')
     if args.task == 'phrases':
-        column = int(args.column) or 1
+        column = int(args.column) if args.column is not None else None or 1
         if args.processor == 'simple':
             data_df = tag_activity_dataset_default(data_df, column=column)
         else:
             data_df = tag_activity_dataset(data_df, processor, column=column)
     elif args.task == 'ner':
-        data_df = data_df.iloc[:, int(args.column) or 0].to_frame()
+        column = int(args.column) if args.column is not None else None or 0
+        data_df = data_df.iloc[:, column].to_frame()
         data_df = tag_ner_dataset(data_df, processor)
     else:
         raise Exception('Invalid task option')
