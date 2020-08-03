@@ -64,7 +64,7 @@ def calculate_extraction_performance(file, original):
         # Metrics depicting if verb presence was successfully detected
         'AccuracyVerbRequired': accuracy_score(original['VerbRequired'], df_pred['VerbRequired']),
         'F1ScoreVerbRequired': f1_score(original['VerbRequired'], df_pred['VerbRequired']),
-        # Metrics depicting if verb presence was successfully detected
+        # Metrics depicting if noun presence was successfully detected
         'AccuracyNounRequired': accuracy_score(original['NounRequired'], df_pred['NounRequired']),
         'F1ScoreNounRequired': f1_score(original['NounRequired'], df_pred['NounRequired']),
         # Metrics depicting performance when transformation output will use only noun phrases
@@ -82,7 +82,7 @@ def calculate_extraction_performance(file, original):
 
 
 def remove_other_ner(x):
-    if pd.isnull(x['Entities']) or pd.isnull(x['Entities']):
+    if pd.isnull(x['Entities']) or pd.isnull(x['EntityType']):
         return x
     entities = x['Entities'].split('|')
     types = x['EntityType'].split('|')
