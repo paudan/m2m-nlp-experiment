@@ -26,17 +26,25 @@ nltk.data.path.append('/mnt/DATA/data/nltk')
 
 class AbstractNLPProcessor:
     
-    def __init__(self):
+    def __init__(self, process_proper_nouns=False):
         self.lexicon = Lexicon.getDefaultLexicon()
         self.realiser = Realiser(self.lexicon)
+        self.process_proper_nouns = process_proper_nouns
 
     def grammar(self):
         NP = '<ADV|ADJ>*<NOUN|PROPN>+<PART>?<NUM>?'
-        return """
-        NP: {{(<ADV|ADJ>*<NOUN>+<PART>?<NUM>?)+(<ADP>*<DET>?{NP})*}}
-        VP: {{<VERB>+<ADP>?}}
-        PNP: {{<PROPN>+}}
-        """.format(NP=NP)
+        if self.process_proper_nouns is True:
+            return """
+            NP: {{(<ADV|ADJ>*<NOUN>+<PART>?<NUM>?)+(<ADP>*<DET>?{NP})*}}
+            VP: {{<VERB>+<ADP>?}}
+            PNP: {{<PROPN>+}}
+            """.format(NP=NP)
+        else:
+            return """
+            NP: {{({NP})+(<ADP>*<DET>?{NP})*}}
+            VP: {{<VERB>+<ADP>?}}
+            PNP: {{<PROPN>+}}
+            """.format(NP=NP)
 
     @abstractmethod
     def extract_named_entities(self, token):
@@ -175,8 +183,8 @@ class AbstractNLPProcessor:
 
 class SpacyNLPProcessor(AbstractNLPProcessor):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, process_proper_nouns=False):
+        super().__init__(process_proper_nouns)
         spacy.prefer_gpu()
         self.tagger = spacy.load("spacy/en_core_web_sm/en_core_web_sm/en_core_web_sm")
 
@@ -197,8 +205,8 @@ class SpacyNLPProcessor(AbstractNLPProcessor):
 
 class StanzaNLPProcessor(AbstractNLPProcessor):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, process_proper_nouns=False):
+        super().__init__(process_proper_nouns)
         torch.set_default_tensor_type(torch.FloatTensor)
         stanza.download('en', dir=STANZA_DIR)
         self.tagger = stanza.Pipeline('en', dir=STANZA_DIR)
@@ -220,8 +228,8 @@ class StanzaNLPProcessor(AbstractNLPProcessor):
 
 class FlairNLPProcessor(AbstractNLPProcessor):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, process_proper_nouns=False):
+        super().__init__(process_proper_nouns)
         torch.set_default_tensor_type(torch.FloatTensor)
         self.tagger = SequenceTagger.load(FLAIR_NER_MODEL)
         self.pos_tagger = SequenceTagger.load(FLAIR_POS_MODEL)
