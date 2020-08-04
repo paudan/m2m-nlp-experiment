@@ -7,9 +7,14 @@ from processing import StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor,
 
 tqdm.pandas()
 
-def tag_activity_dataset(df, processor, column=1):
+def tag_activity_dataset(df, processor, column=1, normalize=True, set_default_verb=False):
+    default_verb = 'perform'
+
     def extract_verbs(x):
-        return '|'.join([processor.normalize_verb(phrase) for phrase in processor.extract_verb_phrases(x)])
+        verb_phrases =  processor.extract_verb_phrases(x)
+        if (verb_phrases is None or len(verb_phrases) == 0) and set_default_verb is True:
+            return processor.normalize_verb(default_verb) if normalize is True else default_verb
+        return '|'.join([processor.normalize_verb(phrase) if normalize is True else phrase for phrase in verb_phrases])
 
     df['VerbPhrases'] = df.iloc[:, column].progress_apply(extract_verbs)
     df['NounPhrases'] = df.iloc[:, column].progress_apply(processor.extract_noun_phrases).apply(lambda x: '|'.join(x))
@@ -38,7 +43,8 @@ if __name__ == '__main__':
     parser.add_argument("--processor", help="Text processor which is used", choices=['spacy', 'stanza', 'flair', 'corenlp', 'simple'], default='spacy')
     parser.add_argument("--input-file", help="Input dataset file which will be processed", required=True)
     parser.add_argument("--task", help="Task type", choices=['phrases', 'ner'], default='phrases')
-    parser.add_argument("--column", help="Column index for processing")
+    parser.add_argument("--column", help="Column index for processing", type=int)
+    parser.add_argument("--normalize-verbs", help="Use verb normalization", dest='normalize', action='store_true', default=False)
     parser.add_argument("--output-file", help="Output file")
     args = parser.parse_args()
     input_file = args.input_file
@@ -66,14 +72,13 @@ if __name__ == '__main__':
     else:
         raise Exception('Invalid processor option')
     if args.task == 'phrases':
-        column = int(args.column) if args.column is not None else None or 1
+        column = args.column or 1
         if args.processor == 'simple':
             data_df = tag_activity_dataset_default(data_df, column=column)
         else:
-            data_df = tag_activity_dataset(data_df, processor, column=column)
+            data_df = tag_activity_dataset(data_df, processor, column=column, normalize=args.normalize)
     elif args.task == 'ner':
-        column = int(args.column) if args.column is not None else None or 0
-        data_df = data_df.iloc[:, column].to_frame()
+        data_df = data_df.iloc[:, args.column or 0].to_frame()
         data_df = tag_ner_dataset(data_df, processor)
     else:
         raise Exception('Invalid task option')
