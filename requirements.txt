@@ -4,3 +4,4 @@ spacy-lookups-data
 stanza
 flair
 simplenlg
+py_stringmatching

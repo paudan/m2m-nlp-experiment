@@ -3,9 +3,13 @@
 
 import os
 import re
+import warnings
 import pandas as pd
 import numpy as np
+from py_stringmatching.similarity_measure.jaccard import Jaccard
+from py_stringmatching.similarity_measure.overlap_coefficient import OverlapCoefficient
 
+warnings.simplefilter(action='ignore', category=FutureWarning)
 EXPERIMENT_DIR = '.'
 
 # Results table
@@ -20,30 +24,40 @@ def process_results(file, dragged_element_col):
     results['OutputDiff'] = np.abs(results['ExpectedOutput'] - results['ActualOutput'])
     return results
 
-def create_stats(manual_df, nlp_df, model_col, dragged_element_col):
+
+def df_results_stats(results_df, model_col, dragged_element_col):
 
     def generate_elements(xv, xn):
         return ([('Association', x.lower().strip()) for x in xv.split('|')] if isinstance(xv, str) else []) \
             + ([('Class', x.lower().strip()) for x in xn.split('|')] if isinstance(xn, str) else [])
 
-    def evaluation_scores(x, model_col):
+    def evaluation_scores(x):
         elements_generated = list(map(generate_elements, x['VerbPhrases'], x['NounPhrases']))
         elements_truth = list(map(generate_elements, x['Verb Phrases'], x['Noun Phrases']))
         elements_eq = list(map(lambda x, y: sorted(x) == sorted(y), elements_generated, elements_truth))
-        return sum(elements_eq)/len(elements_eq)
+        jaccard = Jaccard()
+        jaccard = list(map(jaccard.get_raw_score, elements_generated, elements_truth))
+        overlap = OverlapCoefficient()
+        overlap = list(map(overlap.get_raw_score, elements_generated, elements_truth))
+        return sum(elements_eq)/len(elements_eq), np.mean(jaccard), np.mean(overlap)
 
+    manual_stats = results_df.groupby(model_col).agg({'ExpectedOutput': 'sum', 'ActualOutput': 'sum', 'OutputDiff': 'mean'})
+    manual_stats.columns = ['ExpectedElements', 'OutputElements', 'MeanDiff']
+    measures_stats = results_df.groupby(model_col).apply(evaluation_scores)
+    measures_stats = pd.DataFrame([[*a] for a in measures_stats.values], index=measures_stats.index,
+                                  columns=['Accuracy', 'MeanJaccard', 'MeanOverlap'])
+    return manual_stats.join(measures_stats)
+
+
+def create_stats(manual_df, nlp_df, model_col, dragged_element_col):
     stats = pd.concat([manual_df[[model_col, dragged_element_col]].drop_duplicates().groupby([model_col])[model_col].count(),
                        manual_df.groupby([model_col])[model_col].count()], axis=1)
-    stats.columns = ['NumTransformations', 'AtomicTransformations']
-    manual_stats = manual_df.groupby(model_col).agg({'ExpectedOutput': 'sum', 'ActualOutput': 'sum', 'OutputDiff': 'mean'})
-    manual_stats.columns = ['ExpectedElements', 'OutputElementsManual', 'MeanDiffManual']
-    manual_scores = manual_df.groupby(model_col).apply(evaluation_scores, model_col=model_col).rename('AccuracyManual')
-    manual_stats = manual_stats.join(manual_scores)
-    nlp_stats = nlp_df.groupby(model_col).agg({'ExpectedOutput': 'sum', 'ActualOutput': 'sum', 'OutputDiff': 'mean'})
-    nlp_stats.columns = ['ExpectedElements', 'OutputElementsNLP', 'MeanDiffNLP']
-    nlp_scores = nlp_df.groupby(model_col).apply(evaluation_scores, model_col=model_col).rename('AccuracyNLP')
-    nlp_stats = nlp_stats.join(nlp_scores)
-    final_stats = stats.join(manual_stats).join(nlp_stats, rsuffix='_y').drop(labels='ExpectedElements_y', axis=1)
+    stats.columns = ['Num Transformations', 'Atomic Transformations']
+    manual_stats = df_results_stats(manual_df, model_col, dragged_element_col)
+    nlp_stats = df_results_stats(nlp_df, model_col, dragged_element_col)
+    final_stats = stats.join(manual_stats).join(nlp_stats, lsuffix='Manual', rsuffix='NLP')\
+        .drop(labels='ExpectedElementsNLP', axis=1)\
+        .rename({'ExpectedElementsManual': 'Expected Elements'}, axis=1)
     final_stats = final_stats.reset_index()
     final_stats[model_col] = ['Model '+str(i) for i in range(1, final_stats.shape[0] + 1)]
     return final_stats
