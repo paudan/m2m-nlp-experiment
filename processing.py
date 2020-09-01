@@ -20,7 +20,7 @@ from simplenlg.realiser.english import Realiser
 STANZA_DIR = 'stanza_resources'
 FLAIR_POS_MODEL = 'flair/models/en-pos-ontonotes-v0.4.pt'
 FLAIR_NER_MODEL = 'flair/models/en-ner-conll03-v0.4.pt'
-
+SPACY_MODEL = "spacy/en_core_web_lg/en_core_web_lg/en_core_web_lg"
 nltk.data.path.append('/mnt/DATA/data/nltk')
 
 
@@ -186,7 +186,7 @@ class SpacyNLPProcessor(AbstractNLPProcessor):
     def __init__(self, process_proper_nouns=False):
         super().__init__(process_proper_nouns)
         spacy.prefer_gpu()
-        self.tagger = spacy.load("spacy/en_core_web_sm/en_core_web_sm/en_core_web_sm")
+        self.tagger = spacy.load(SPACY_MODEL)
 
     def extract_named_entities(self, token):
         doc = self.tagger(token)
@@ -228,11 +228,11 @@ class StanzaNLPProcessor(AbstractNLPProcessor):
 
 class FlairNLPProcessor(AbstractNLPProcessor):
 
-    def __init__(self, process_proper_nouns=False):
+    def __init__(self, process_proper_nouns=False, ner_model=FLAIR_NER_MODEL, pos_model=FLAIR_POS_MODEL):
         super().__init__(process_proper_nouns)
         torch.set_default_tensor_type(torch.FloatTensor)
-        self.tagger = SequenceTagger.load(FLAIR_NER_MODEL)
-        self.pos_tagger = SequenceTagger.load(FLAIR_POS_MODEL)
+        self.tagger = SequenceTagger.load(ner_model)
+        self.pos_tagger = SequenceTagger.load(pos_model)
 
     def extract_named_entities(self, token):
         sentence = Sentence(token)
