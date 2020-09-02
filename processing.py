@@ -1,4 +1,5 @@
 import os
+import re
 from abc import abstractmethod
 from collections import Iterable
 import itertools
@@ -16,11 +17,16 @@ from simplenlg.features import Feature, Tense
 from simplenlg.framework import InflectedWordElement
 from simplenlg.lexicon import Lexicon, LexicalCategory
 from simplenlg.realiser.english import Realiser
+from transformers import AutoTokenizer, AutoModelForTokenClassification, BertConfig
+from transformers.pipelines import pipeline
 
 STANZA_DIR = 'stanza_resources'
 FLAIR_POS_MODEL = 'flair/models/en-pos-ontonotes-v0.4.pt'
 FLAIR_NER_MODEL = 'flair/models/en-ner-conll03-v0.4.pt'
 SPACY_MODEL = "spacy/en_core_web_lg/en_core_web_lg/en_core_web_lg"
+BERT_POS_MODEL = "vblagoje/bert-english-uncased-finetuned-pos"
+BERT_NER_MODEL = 'wietsedv/bert-base-multilingual-cased-finetuned-conll2002-ner'
+BERT_MODEL_DIR = 'embeddings'
 nltk.data.path.append('/mnt/DATA/data/nltk')
 
 
@@ -290,3 +296,55 @@ class CoreNLPProcessor(AbstractNLPProcessor):
         sentence = ann.sentence[0]
         tagged = [(token.word, token.pos) for token in sentence.token]
         return self._extract_phrase(tagged, type)
+
+
+class BertNLPProcessor(AbstractNLPProcessor):
+
+    def __init__(self, process_proper_nouns=False):
+        super().__init__(process_proper_nouns)
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.pos_tokenizer = AutoTokenizer.from_pretrained(BERT_POS_MODEL, cache_dir=BERT_MODEL_DIR)
+        self.pos_model = AutoModelForTokenClassification.from_pretrained(BERT_POS_MODEL, cache_dir=BERT_MODEL_DIR).to(self.device)
+        self.pos_config = BertConfig.from_pretrained(BERT_POS_MODEL, cache_dir=BERT_MODEL_DIR)
+        self.ner_tokenizer = AutoTokenizer.from_pretrained(BERT_NER_MODEL, cache_dir=BERT_MODEL_DIR)
+        self.ner_model = AutoModelForTokenClassification.from_pretrained(BERT_NER_MODEL, cache_dir=BERT_MODEL_DIR).to(self.device)
+        self.ner_config = BertConfig.from_pretrained(BERT_NER_MODEL, cache_dir=BERT_MODEL_DIR)
+
+    def _run_bert_model(self, text, tokenizer, model, config):
+        if text is None or not isinstance(text, str) or len(text.strip()) == 0:
+            return None
+        tokens = tokenizer.tokenize(text)
+        encoded_sample = tokenizer.encode_plus(text, add_special_tokens=True, return_token_type_ids=True,
+                                               return_attention_mask=True, return_tensors='pt')
+        input_ids = encoded_sample['input_ids'].to(self.device)
+        attention_mask = encoded_sample['attention_mask'].to(self.device)
+        output = model(input_ids, attention_mask)
+        _, prediction = torch.max(output[0], dim=2)
+        labels = [config.id2label[label] for label in prediction[0].cpu().numpy()]
+        labels = labels[1:-1]  # Remove special tokens
+        return list(zip(tokens, labels))
+
+    def _extract_ner(self, token):
+        if token is None or not isinstance(token, str) or len(token.strip()) == 0:
+            return None
+        nlp = pipeline('ner', model=self.ner_model, config=self.ner_config, tokenizer=self.ner_tokenizer,
+                       grouped_entities=True, device=0 if torch.cuda.is_available() else -1)
+        results = nlp(token)
+        label_mapping = { 'B-loc': 'LOCATION', 'B-org': 'ORGANIZATION', 'B-per': 'PERSON'}
+        return [(entity.get('word'), label_mapping.get(entity.get('entity_group')) or entity.get('entity_group')) for entity in results]
+
+    def extract_named_entities(self, token):
+        entities = self._extract_ner(token)
+        return list(set(map(lambda x: x[0], entities)))
+
+    def get_named_entity_types(self, token):
+        return [entity[1] for entity in self._extract_ner(token)]
+
+    def extract_phrase_by_type(self, token, type):
+        tagged = self._run_bert_model(token, self.pos_tokenizer, self.pos_model, self.pos_config)
+        return self._extract_phrase(tagged, type)
+
+    def _extract_phrase(self, tagged, chunk_label):
+        phrases = super()._extract_phrase(tagged, chunk_label)
+        # Remove BERT masking symbols
+        return [re.sub(r"\s+#+", '', phrase) for phrase in phrases]

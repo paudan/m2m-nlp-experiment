@@ -3,7 +3,7 @@ from collections.abc import Iterable
 import argparse
 import pandas as pd
 from tqdm import tqdm
-from processing import StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor, CoreNLPProcessor
+from processing import StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor, CoreNLPProcessor, BertNLPProcessor
 
 tqdm.pandas()
 
@@ -40,7 +40,8 @@ def tag_ner_dataset(df, processor):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--processor", help="Text processor which is used", choices=['spacy', 'stanza', 'flair', 'corenlp', 'simple'], default='spacy')
+    parser.add_argument("--processor", help="Used extraction processor", default='stanza',
+                        choices=['spacy', 'stanza', 'flair', 'corenlp', 'bert', 'simple'])
     parser.add_argument("--input-file", help="Input dataset file which will be processed", required=True)
     parser.add_argument("--task", help="Task type", choices=['phrases', 'ner'], default='phrases')
     parser.add_argument("--column", help="Column index for processing", type=int)
@@ -67,6 +68,8 @@ if __name__ == '__main__':
         processor = FlairNLPProcessor()
     elif args.processor == 'corenlp':
         processor = CoreNLPProcessor()
+    elif args.processor == 'bert':
+        processor = BertNLPProcessor()
     elif args.processor == 'simple':
         processor = None
     else:

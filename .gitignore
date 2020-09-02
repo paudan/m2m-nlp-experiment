@@ -140,3 +140,4 @@ venv.bak/
 *.props
 /.run/
 /spacy/
+/embeddings/
