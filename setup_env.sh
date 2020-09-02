@@ -2,11 +2,7 @@
 
 python3 -m pip install -r requirements.txt
 # Spacy setup
-# python3 -m spacy download en_core_web_sm
 mkdir spacy
-wget -O - https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz | tar xzf - -C spacy
-mv spacy/en_core_web_sm-* spacy/en_core_web_sm
-mv spacy/en_core_web_sm/en_core_web_sm/en_core_web_sm-* spacy/en_core_web_sm/en_core_web_sm/en_core_web_sm
 wget -O - https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.3.1/en_core_web_lg-2.3.1.tar.gz | tar xzf - -C spacy
 mv spacy/en_core_web_lg-* spacy/en_core_web_lg
 mv spacy/en_core_web_lg/en_core_web_lg/en_core_web_lg-* spacy/en_core_web_lg/en_core_web_lg/en_core_web_lg
@@ -19,5 +15,3 @@ mkdir flair
 mkdir flair/models
 wget https://nlp.informatik.hu-berlin.de/resources/models/pos/en-pos-ontonotes-v0.4.pt -P flair/models
 wget https://nlp.informatik.hu-berlin.de/resources/models/ner/en-ner-conll03-v0.4.pt -P flair/models
-# Deep Pavlov
-python3 -m deeppavlov install ner_ontonotes_bert
