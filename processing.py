@@ -19,6 +19,7 @@ from simplenlg.lexicon import Lexicon, LexicalCategory
 from simplenlg.realiser.english import Realiser
 from transformers import AutoTokenizer, AutoModelForTokenClassification, BertConfig
 from transformers.pipelines import pipeline
+from allennlp.predictors.predictor import Predictor
 
 STANZA_DIR = 'stanza_resources'
 FLAIR_POS_MODEL = 'flair/models/en-pos-ontonotes-v0.4.pt'
@@ -27,7 +28,10 @@ SPACY_MODEL = "spacy/en_core_web_lg/en_core_web_lg/en_core_web_lg"
 BERT_POS_MODEL = "vblagoje/bert-english-uncased-finetuned-pos"
 BERT_NER_MODEL = 'wietsedv/bert-base-multilingual-cased-finetuned-conll2002-ner'
 BERT_MODEL_DIR = 'embeddings'
-nltk.data.path.append('/mnt/DATA/data/nltk')
+ALLENNLP_POS = 'allennlp/biaffine-dependency-parser-ptb-2020.04.06.tar.gz'
+ALLENNLP_NER = 'allennlp/ner-model-2020.02.10.tar.gz'
+NLTK_PATH = '/mnt/DATA/data/nltk'
+nltk.data.path.append(NLTK_PATH)
 
 
 class AbstractNLPProcessor:
@@ -348,3 +352,39 @@ class BertNLPProcessor(AbstractNLPProcessor):
         phrases = super()._extract_phrase(tagged, chunk_label)
         # Remove BERT masking symbols
         return [re.sub(r"\s+#+", '', phrase) for phrase in phrases]
+
+
+class AllenNLPProcessor(AbstractNLPProcessor):
+
+    def __init__(self, process_proper_nouns=False):
+        super().__init__(process_proper_nouns)
+        self.pos_tagger = Predictor.from_path(ALLENNLP_POS)
+        self.ner_tagger = Predictor.from_path(ALLENNLP_NER)
+
+    def _extract_ner(self, sentence):
+        outputs = list()
+        prediction = self.ner_tagger.predict(sentence=sentence)
+        inst = self.ner_tagger._json_to_instance({"sentence": sentence})
+        results = self.ner_tagger.predictions_to_labeled_instances(inst, prediction)
+        for result in results:
+            tokens = result['tokens']
+            tags = result['tags']
+            entity = ' '.join([tokens.tokens[i].__str__() for i in range(len(tags.labels)) if tags.labels[i] != 'O'])
+            tag = set([tags.labels[i].split('-')[1] for i in range(len(tags.labels))
+                        if tags.labels[i] != 'O' and len(tags.labels[i].split('-')) > 1])
+            if len(tag) > 0:
+                outputs.append((entity, list(tag)[0]))
+        return outputs
+
+    def extract_named_entities(self, sentence):
+        entities = self._extract_ner(sentence)
+        return list(set(map(lambda x: x[0], entities)))
+
+    def get_named_entity_types(self, token):
+        types = [entity[1] for entity in self._extract_ner(token)]
+        label_mapping = { 'LOC': 'LOCATION', 'ORG': 'ORGANIZATION', 'PER': 'PERSON'}
+        return [label_mapping.get(type) or type for type in types]
+
+    def extract_phrase_by_type(self, token, type):
+        prediction = self.pos_tagger.predict(sentence=token)
+        return self._extract_phrase(list(zip(prediction['words'], prediction['pos'])), type)

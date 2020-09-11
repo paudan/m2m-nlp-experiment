@@ -15,3 +15,7 @@ mkdir flair
 mkdir flair/models
 wget https://nlp.informatik.hu-berlin.de/resources/models/pos/en-pos-ontonotes-v0.4.pt -P flair/models
 wget https://nlp.informatik.hu-berlin.de/resources/models/ner/en-ner-conll03-v0.4.pt -P flair/models
+# AllenNLP
+mkdir allennlp
+wget https://storage.googleapis.com/allennlp-public-models/ner-model-2020.02.10.tar.gz -P allennlp
+wget https://storage.googleapis.com/allennlp-public-models/biaffine-dependency-parser-ptb-2020.04.06.tar.gz -P allennlp

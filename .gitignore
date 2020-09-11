@@ -141,3 +141,4 @@ venv.bak/
 /.run/
 /spacy/
 /embeddings/
+/allennlp/

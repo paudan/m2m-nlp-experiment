@@ -1,0 +1,2045 @@
+Entry;Entities;EntityType
+Storyboard;;
+Building;;
+review;;
+end;;
+Charles;Charles;PERSON
+Miranda;Miranda;PERSON
+Customer;;
+Accounting;;
+Sales;;
+Warehouse;;
+Supplier;;
+Purchasing;;
+Supervisor;;
+CSR;CSR;ORGANIZATION
+Mortgage Specialist;;
+Claim Adjuster;;
+Customer Service;Customer Service;ORGANIZATION
+Technician;;
+Store Owner;;
+lecturer;;
+team;;
+student;;
+Checked department;;
+Auditor;;
+examiner;;
+Insurance company;;
+insurer;;
+Finance;;
+Engineering;;
+Reporter;;
+Analyst;;
+reporter;;
+agent;;
+analyst;;
+sales;;
+Volley Club;Volley Club;ORGANIZATION
+candidate;;
+Web Designer;;
+Charles;Charles;PERSON
+Backup;;
+Customer Service Representative;;
+commitee members;;
+support officer;;
+coordination unit;;
+Sales and Marketing;;
+Production;;
+Logistics and Distribution;;
+Legal department;;
+Validation Department;Validation Department;ORGANIZATION
+The Registry;;
+Payment Department;Payment Department;ORGANIZATION
+Account Receivable Department;Account Receivable Department;ORGANIZATION
+SSP Clients;SSP Clients;ORGANIZATION
+Admin Department;Admin Department;ORGANIZATION
+Mail Centre;Mail Centre;ORGANIZATION
+Vendor Master Record Data Entry Department;;
+Data Entry Department;;
+Vendor;;
+Logistics;;
+Italian Restaurant;Italian;MISC
+Part Provision Team;;
+Army;;
+Sales & Distribution;;
+Cashier;;
+Small claims tribunal;;
+Party;;
+Assessment Manager;;
+Cadastre;;
+DMR;;
+Seller;;
+Auctioning Service;;
+Travel Agency;Travel Agency;ORGANIZATION
+Airline;;
+Client;;
+Risk Assessor;;
+Loan Officer;;
+Financial Officer;;
+Insurance Sales Rep.;;
+Listings;;
+Judicary;Judicary;MISC
+Loan Provider;;
+Insurance client;;
+Mortgage department;;
+Insurance department;;
+Financial department;;
+Broker;;
+Office;;
+Carrier;;
+SSP (Mail Center);Mail Center|SSP;ORGANIZATION|ORGANIZATION
+Admin Office;Admin Office;ORGANIZATION
+Mail Center;Mail Center;ORGANIZATION
+Data Entry Office;;
+Master Data Enter Department;;
+Validation Office;Validation Office;ORGANIZATION
+Registry;;
+Credit Company;Credit Company;ORGANIZATION
+Order to Cash;;
+Make to Inventory;;
+Teacher;;
+Team;;
+Student;;
+Bank Agent;Bank Agent;ORGANIZATION
+Bank System;Bank System;ORGANIZATION
+Business Analyst;;
+PHP/HTML/CSS Specialist;;
+Tester;Tester;PERSON
+Marketing Manager;;
+IT Staff Member;;
+Company's Spokesperson;;
+PRWeb Representative;;
+PRWeb Services Headquarters;PRWeb Services Headquarters;ORGANIZATION
+Graphic Designer;;
+Printing house;;
+Company Representative;;
+Camera man;;
+Graphic designer;;
+Sound editor;;
+Executive producer/Director;;
+Advertisments Advisor;;
+Pit's Store;Pit 's Store;ORGANIZATION
+Fami;Fami;PERSON
+Marketing;;
+Management;;
+IT Department;IT Department;ORGANIZATION
+Operator;;
+HR;;
+Support line - part time workers;;
+Data entry officer;;
+Master data entry department;;
+Mail center;;
+Accounts Receivable Department;Accounts Receivable Department;ORGANIZATION
+Payment office;;
+Admin Officer;;
+Vaidation officer;;
+Parts Provision Team;;
+Service Team;Service Team;ORGANIZATION
+Administrative;;
+IT analyst;;
+IT specialist;;
+Inspection team member;;
+Lead inspector;;
+Dispatch;;
+warehouse;;
+Sender;Sender;PERSON
+Receiver;;
+Bank;Bank;ORGANIZATION
+Bank Package Processing;;
+Engineers;;
+Lawyer;;
+Plaintiff;;
+Defendant;;
+Law Firm;Law Firm;ORGANIZATION
+Patient;;
+Doctor;;
+Nurse;;
+Event Administrator;;
+Business Development Manager;Business Development;ORGANIZATION
+Brian's Team;Brian 's;PERSON
+Project Manager;;
+Department;;
+Department head;;
+ACME Inc.;ACME Inc.;ORGANIZATION
+Umoja Change Management;Umoja Change Management;ORGANIZATION
+Umoja Workstream Member;Umoja Workstream Member;ORGANIZATION
+2nd level issue;;
+1st level issue;;
+Key Account Manager;;
+1st Level support agent;;
+2nd level support agent;;
+Software Developer;;
+Trouble Tracking System;;
+DMS;DMS;ORGANIZATION
+Employer;;
+Finance/Accounting;;
+Sales Department;;
+Logistic department;;
+ABC Bank;ABC Bank;ORGANIZATION
+Storehouse;;
+Sales dep.;;
+Catering;;
+Order;;
+Delivery;;
+Travel agency;;
+Agency;;
+Bank A;;
+Bank B;;
+External credit rating company;;
+Traveller;;
+Distribution;;
+Tour Company;Tour Company;ORGANIZATION
+design and implement a webpage;;
+Applicant;;
+Costumer Service Representative;;
+Administration;;
+Support Officer;;
+Coordination Unit;Coordination Unit;ORGANIZATION
+Committee Members;Committee Members;ORGANIZATION
+Order Management;Order Management;ORGANIZATION
+Stock;;
+Logistic;;
+Controlling;;
+Dunning Process;Dunning Process;ORGANIZATION
+SWIM User;;
+PEP;;
+Security Services;Security Services;ORGANIZATION
+Sales Manager;;
+Customer Service Rep;;
+FeelWheel;;
+Hotel;;
+Costumer Services;Costumer Services;ORGANIZATION
+Sales & Logistics;;
+Accountig Office;Accountig Office;ORGANIZATION
+Manufactoring;;
+Logistics Department;Logistics Department;ORGANIZATION
+Financial Department;Financial Department;ORGANIZATION
+Financial Accounting;;
+Service Center;Service Center;ORGANIZATION
+Advisery Service;Advisery Service;ORGANIZATION
+Customer Management;;
+Warehousing;;
+help desk;;
+account manager;;
+Finance Department;Finance Department;ORGANIZATION
+Financing;;
+Customer service;;
+Customer advisory;;
+Sales depatrtment;;
+Dispositon;;
+bank;;
+restaurant;;
+Italian Restaurant;Italian;MISC
+Restaurant;;
+Manager;;
+PayPal Client;;
+PayPal System;PayPal System;ORGANIZATION
+PayPal User;;
+Administration Department;Administration Department;ORGANIZATION
+Accounts Receivable;;
+Payment Office;Payment Office;ORGANIZATION
+Data Entry;;
+User;;
+The payment office;;
+Mail centre;;
+Validation office;;
+BCC;BCC;ORGANIZATION
+The User;;
+BCC Server;BCC Server;ORGANIZATION
+Company Server;;
+Features of the founded Software;Software;ORGANIZATION
+Business Location;;
+Business Name;;
+Choosing Software;;
+Legal structure;;
+Company legal structure;;
+Lease Option;;
+Protecting Your Business;;
+Setting Up a Bank Account;;
+Evaluate loan policies;;
+Insurance;;
+Business Licence;;
+Government Requirement;;
+Premises and Lease;;
+Legal Requirement;;
+Government Requirenment;;
+Legal Reuirement;;
+Promotion plan;;
+Financial Plan;;
+Marketing Plan;;
+Company;;
+Choosing the best business ISP;ISP;ORGANIZATION
+External Expert;;
+Referee;;
+Managing director;;
+Customers;;
+Web design team;;
+marketing team;;
+sales department;;
+engineering department;;
+storehouse;;
+Catering service;;
+Credit officer;;
+Senior credit officer;;
+Select forest plots;;
+Employee;;
+Supervisors;;
+Purchase Department;Purchase Department;ORGANIZATION
+Goods Receipt Department;;
+Accounts payable;;
+Tech;Tech;ORGANIZATION
+System;;
+Pharmacist;;
+Level-1 support staff (5p);;
+Level-2 support staff (3p);;
+Job Tracking System (JTS);Job Tracking System;ORGANIZATION
+Central procurement department;;
+Approver;;
+Specialist;;
+Storage;;
+Shop;;
+Subject;;
+PC-Operator;;
+Wellbeing Survey Software;;
+Mobile Unit;Mobile Unit;ORGANIZATION
+Communication Team;Communication Team;ORGANIZATION
+Wellbeing WebServer;;
+Movile Unit;Movile Unit;ORGANIZATION
+Order Process;;
+Missionary;Missionary;MISC
+Team Assistant;;
+Direction;;
+Team Assistant;;
+Team Leader;;
+Manufacturer;;
+QUT Administration;QUT Administration;ORGANIZATION
+QUT Virtual;;
+Unit Coordinator;;
+Pit;;
+employee;;
+finance team;;
+Wholesaler;;
+Distributor;;
+Manufacturing Department;Manufacturing Department;ORGANIZATION
+Inventory Department;Inventory Department;ORGANIZATION
+Procurement Department;Procurement Department;ORGANIZATION
+Student Engagement;;
+Faculty;;
+Facilities Department;Facilities Department;ORGANIZATION
+Data Entry Officer;;
+Mail centre Staff;;
+Master Data Entry Department;Master Data Entry Department;ORGANIZATION
+Validatoin Officer;;
+Mail Centre Staff;Mail Centre Staff;ORGANIZATION
+RM;;
+Student Engagement Department;Student Engagement Department;ORGANIZATION
+Student Engagement;;
+Student Volunteer;;
+Central purchase department;;
+Requestor;;
+Receipt department;;
+Pharmacy technicians;;
+Sales Assistant;;
+Engineering Department;Engineering Department;ORGANIZATION
+Loan Agency;Loan Agency;ORGANIZATION
+Prefect;;
+IRSN Scientific experts;IRSN Scientific;ORGANIZATION
+IRSN;IRSN;ORGANIZATION
+Firemen;;
+Police;;
+Meteo France;Meteo France;ORGANIZATION
+Radiation Survey Network;Radiation Survey Network;ORGANIZATION
+Office of infrastructures;Office of infrastructures;ORGANIZATION
+Media;;
+Hospitals;;
+MEMS;MEMS;ORGANIZATION
+Radiation survey network;;
+Office of infrastructure;Office of infrastructure;ORGANIZATION
+Representative of the local authority;;
+NWU CC CRC;NWU CC CRC;ORGANIZATION
+NWU CR Business Field;NWU CR Business Field;ORGANIZATION
+costume designer;;
+costume staff;;
+PhD Student;PhD Student;ORGANIZATION
+PhD Office;PhD Office;ORGANIZATION
+Administration office;;
+Advisor;;
+Phd office;;
+Phd student;;
+PhD office;PhD;ORGANIZATION
+Departement assistant;;
+PhD student;;
+Phd Office;Phd Office;ORGANIZATION
+PhD Central Office;PhD Central Office;ORGANIZATION
+Exam Commission;Exam Commission;ORGANIZATION
+Signatory;;
+Loan Order Process;;
+Booking service;;
+Booking Service;;
+Insurance Company;Insurance Company;ORGANIZATION
+Breakdown service company;;
+Clinic;Clinic;LOCATION
+Repair shop;;
+Registrar;;
+Professor;;
+Higher management;;
+Agent;;
+Offerer;;
+Real estate agent;;
+ABB Turbo System Service station;ABB Turbo System Service;ORGANIZATION
+ABB Turbo System Baden Warehouse;ABB Turbo System Baden Warehouse;ORGANIZATION
+Repair Department;Repair Department;ORGANIZATION
+Our Enterprise;;
+AMAG - central spare part warehouse;AMAG;ORGANIZATION
+Car manufacturer (VW and Porsche);VW|Porsche;ORGANIZATION|ORGANIZATION
+Regional Warehouse;Regional Warehouse;ORGANIZATION
+regional warehouse;;
+central warehouse;;
+Central Warehouse;Central Warehouse;ORGANIZATION
+5 Regional Warehouse;Regional Warehouse;ORGANIZATION
+36 distribution centers;;
+Call center;;
+AMAG;AMAG;ORGANIZATION
+Integrated Carrier;Integrated Carrier;ORGANIZATION
+Warehouse (Central / Regional);Central / Regional;ORGANIZATION
+Volkswagen / Porsche;Volkswagen / Porsche;ORGANIZATION
+Central warehouse;;
+sales level;;
+Import level;;
+Central System;Central System;ORGANIZATION
+Service Station;Service Station;ORGANIZATION
+AMAG - Central spare part Warehouse;AMAG;ORGANIZATION
+Car manufacturer;;
+Service stations, dealers and customers;;
+Central Warehouse Luzern;Central Warehouse Luzern;ORGANIZATION
+IT;;
+Logistics, Warehouse near to the customers;;
+Logistic, warehouse not near to the customer;;
+ABB Turbo Systems Baden (Switzerland);Switzerland|ABB Turbo Systems Baden;ORGANIZATION|LOCATION
+Secretariat;;
+Robert;Robert;PERSON
+Physician;;
+Secretary;;
+Store Manager;;
+Stock Manager;;
+Catalogue Browser;;
+Shopping Basket / Checkout;;
+Amazon Sub Seller;;
+Amazon;Amazon;LOCATION
+Used Book sellor on Amazon;Amazon;LOCATION
+Mail Staff;Mail Staff;ORGANIZATION
+Data Entry Staff;;
+Master Data Entry Staff;;
+Data Validation Officer;;
+Mark;Mark;PERSON
+Security Check;;
+Boarding Gate;Boarding Gate;ORGANIZATION
+CUSTOMER;;
+Order Management System;;
+CRM;CRM;ORGANIZATION
+Manufacturing;;
+Logistics Provider;;
+AVERS OEM - Raw Material Supply;AVERS OEM;ORGANIZATION
+Regional Headquarters, Singapore;Regional Headquarters|Singapore;ORGANIZATION|LOCATION
+Manufacturing Factory, Vietnam;Vietnam;LOCATION
+Regional Electronic Equipment Company;Regional Electronic Equipment Company;ORGANIZATION
+Distribution/Logistics Provider 05;;
+Regional Type Company;Type Company;ORGANIZATION
+Distribution/Logistics Provider 01;;
+Air Conditioner Company, Regional;Air Conditioner Company|Regional;ORGANIZATION|ORGANIZATION
+Distribution/Logistics Provider 02;;
+Car Upholstery Company, Regional;Regional|Car Upholstery Company;ORGANIZATION|ORGANIZATION
+Distribution/Logistics Provider 03;;
+Paint Company, Regional;Paint Company|Regional;ORGANIZATION|ORGANIZATION
+Distribution/Logistics Provider 04;;
+EU Headquarters;EU Headquarters;ORGANIZATION
+Retail Outlet;;
+Auto Inc HQ;Auto Inc;ORGANIZATION
+Factory Vietnam;Vietnam;LOCATION
+Regional Supplier 1;Regional Supplier;ORGANIZATION
+Logistics Provider 2;;
+Regional Supplier 2;Regional Supplier;ORGANIZATION
+EU HQ Supplier;EU;ORGANIZATION
+Logistics Provider 1;;
+Logistics Provider 3;;
+Warehouse 1;;
+Warehouse 2;;
+AVERS OEM - Production Control;AVERS OEM;ORGANIZATION
+Production Scheduling;;
+PVE;;
+PBPE;PBPE;ORGANIZATION
+Poultry and Eggs sector;;
+Government;;
+KIP;;
+Heffingen;Heffingen;PERSON
+Poultry/Egg Sector Company;Egg Sector Company;ORGANIZATION
+ITBP (Tier 2);;
+ITBP (Tier 1);;
+Business Controller;;
+IT Controller;;
+Portfolio Manager;;
+Philips IT - PSO (Project Support Office);Philips IT|PSO|Project Support Office;ORGANIZATION|ORGANIZATION|ORGANIZATION
+Logistic Provider;;
+ERP;ERP;ORGANIZATION
+Logistic provider;;
+AVERS OEM;AVERS OEM;ORGANIZATION
+bank a;;
+bank b;;
+Validity check;;
+Account Creation;;
+Role (Geoff Bourke);Geoff Bourke;PERSON
+Asset Manager(s);Asset Manager(s;ORGANIZATION
+IDM;IDM;ORGANIZATION
+Telstra;Telstra;ORGANIZATION
+Risk Manager;;
+Telstra Tecnical Team(s);Telstra Tecnical Team(s;ORGANIZATION
+NAB Asset Manager(s);NAB Asset Manager(s;ORGANIZATION
+NSTAF Facilitator;NSTAF Facilitator;ORGANIZATION
+Network Capacity Planner;;
+Asset Manager;;
+Nework Capacity Planner;;
+APCD;APCD;ORGANIZATION
+NAB;NAB;ORGANIZATION
+IBM;IBM;ORGANIZATION
+Telstra Capacity Team;Telstra Capacity Team;ORGANIZATION
+EMPLOYEES;;
+SUPERVISORS;SUPERVISORS;ORGANIZATION
+PURCHASE DEPARTMENT;PURCHASE DEPARTMENT;ORGANIZATION
+ACCOUNTS PAYABLE;;
+GOODS RECEIPT;;
+Drop off and data entry (technician);;
+Drug utilization review (DUR), incurance check, (pharmacist, pharmacy employees);;
+Production (certified pharmacy technician);;
+Pickup (Technician);;
+Helpdesk;Helpdesk;PERSON
+Sales team;;
+Accounts Department;Accounts Department;ORGANIZATION
+DMS Parts Provision Team;DMS Parts;ORGANIZATION
+Credit Check Authority;Credit Check Authority;ORGANIZATION
+Branch Office;Branch Office;ORGANIZATION
+Office branch;;
+System support;;
+User support;;
+Course;;
+Clerk;;
+Complaint Manager;;
+Helpdesk Operator;Helpdesk Operator;ORGANIZATION
+Product owner;;
+Scrum master;;
+Receiving;;
+Chustomer;Chustomer;PERSON
+Itunes;;
+customer service representative;;
+Development Director;;
+Research & Development;Research & Development;ORGANIZATION
+Quality Assurance;Quality Assurance;ORGANIZATION
+Development Team;Development Team;ORGANIZATION
+Supply Depot;;
+Requester;;
+Accounts Payable;;
+SUPPLIER;SUPPLIER;ORGANIZATION
+Cape Town Procurement;Cape Town Procurement;ORGANIZATION
+Ottawa;Ottawa;LOCATION
+Jakarta;Jakarta;LOCATION
+Procurement;;
+Assembly;Assembly;ORGANIZATION
+Sales Process;;
+Inventory Receiving Process;;
+Misc. Email Folders;;
+End of Day Process;;
+Kinshasa;Kinshasa;LOCATION
+Auckland;Auckland;LOCATION
+Purchasing/Shipping;;
+Cape Town Accounts Payable;Cape Town Accounts;ORGANIZATION
+Sales US;US;LOCATION
+Sales EMEA;;
+Provisioning;;
+Sephora;;
+Provisioning Trextel;;
+DSR;DSR;ORGANIZATION
+Window Migration route;Window Migration;MISC
+Business Units;;
+Line of Business Customer ;;
+Desktop Development Team;Desktop Development Team;ORGANIZATION
+IT Testing Team;;
+Global Packaging Services;Global Packaging Services;ORGANIZATION
+BRD Review Anaylysts;BRD Review Anaylysts;ORGANIZATION
+Developer;;
+Citi Market Place;Citi Market Place;ORGANIZATION
+Senior Management;;
+TSAM Provisoning;TSAM Provisoning;ORGANIZATION
+Application Portal;;
+CATE or Sector Architects;;
+CATE Labs Support Team;CATE Labs;ORGANIZATION
+Global Customer Service Center;Global Customer Service Center;ORGANIZATION
+Engineer;;
+Business;;
+System Admin;;
+Integration Team;;
+Level 1 Support;;
+Level 2 Support;;
+Quality Control;Quality Control;ORGANIZATION
+Line of Business User, Project Managers;Project Managers;ORGANIZATION
+Citi Technology Infrastructure (CTI);Citi Technology Infrastructure|CTI;ORGANIZATION|ORGANIZATION
+Data center Operation;;
+SA / SAN/Frame Support;SA|SAN;LOCATION|LOCATION
+Mail Room;Mail Room;ORGANIZATION
+Shareholder Services;Shareholder Services;ORGANIZATION
+Background Check Vendor;;
+Fund Accounting Team;;
+Accounts Receivables;;
+The Mail Room;The Mail Room;ORGANIZATION
+Accounting Department;Accounting Department;ORGANIZATION
+Shareholder Services Team;Shareholder Services Team;ORGANIZATION
+Shareholder Services Manager;;
+Private Investors;Private Investors;ORGANIZATION
+Accounting Team;;
+Background Vendor;;
+Superviser;;
+Support;;
+Acme Warehouse;Acme Warehouse;ORGANIZATION
+Sales & Dist.;;
+Sales & Dist;;
+Insurance Co.;Insurance Co.;ORGANIZATION
+Accounts Payable ;;
+Requester ;;
+Customer Actions;;
+Customer Service Representative Actions;;
+Application Manager;;
+EERS Feed Provider;EERS Feed Provider;ORGANIZATION
+EERS Integration Team;EERS Integration Team;ORGANIZATION
+Information Security Administration;Information Security Administration;ORGANIZATION
+Point Sec Administrator;;
+SA Managers;SA Managers;ORGANIZATION
+Market Place;Market Place;ORGANIZATION
+Command Center;Command Center;ORGANIZATION
+Users/Developers;;
+MQSeries Global Enterprise System Group;MQSeries Global Enterprise System Group;ORGANIZATION
+Global Business Integration Operational Group;Global Business Integration Operational Group;ORGANIZATION
+3rd Party Access Solutions Workgroup (3PASWG);Party Access Solutions Workgroup;ORGANIZATION
+Information Security Technology Group (ISTG);Information Security Technology Group|ISTG;ORGANIZATION|ORGANIZATION
+Kinsasha: Supplier;Kinsasha;LOCATION
+Level-01 Support;;
+Level-02 Support;;
+SME Support;SME Support;ORGANIZATION
+Release Management;;
+Citi Business User ;Citi Business User;ORGANIZATION
+Project Management Team;Project Management Team;ORGANIZATION
+Software Development Team;;
+Workflow Engine;;
+Call Center Agent;;
+ACME Employee;ACME Employee;ORGANIZATION
+Internal Client;;
+Desktop Support Team;Desktop Support Team;ORGANIZATION
+Desktop Support Services;Desktop Support Services;ORGANIZATION
+Retailer Order;;
+Visa;;
+WAREHOUSE;WAREHOUSE;ORGANIZATION
+REQUESTER;;
+ACME Warehouse;ACME Warehouse;ORGANIZATION
+R&D, KMS Management;R&D|KMS Management;PERSON|ORGANIZATION
+KMS Development;KMS Development;ORGANIZATION
+KMS Management;KMS Management;ORGANIZATION
+KMS Development Level 1;KMS Development Level;ORGANIZATION
+KMS Development Level 2;KMS Development Level;ORGANIZATION
+KMS MANAGEMENT;KMS MANAGEMENT;ORGANIZATION
+KMS DEVELOPMENT PROCESS;;
+KMS CLIENT;KMS CLIENT;ORGANIZATION
+Shareholder service Team;;
+Background check vendor;;
+Fund Accounting;;
+Director approval;;
+Manager Approver;;
+Financial Analyst;;
+Citi MarketPlace;Citi MarketPlace;ORGANIZATION
+Project Accounting;;
+Marketing Team;;
+Capacity Steering Committee;Steering Committee;ORGANIZATION
+Project Management;Project Management;ORGANIZATION
+Technology Management;Technology Management;ORGANIZATION
+New Employee;New Employee;ORGANIZATION
+Set Up Training;;
+Attend Training;;
+Set Up Access;;
+Warhouse;Warhouse;PERSON
+Accounts Pay;;
+Warehouse ;;
+Supervisor ;;
+Project Manager (PM);;
+MSSB CM Team;MSSB CM Team;ORGANIZATION
+CCR Team;CCR Team;ORGANIZATION
+Customer Request For Computing Capacity;;
+Finance Approval / Management Authorization;;
+REQUESTER ;;
+ACCOUNT PAYABLE;;
+ACME SUPPLIER;ACME SUPPLIER;ORGANIZATION
+Network Engineering;Network Engineering;ORGANIZATION
+CATE Engineer/Sector Architect;;
+CATE Labs Administrator;CATE Labs;ORGANIZATION
+External Connectivity Management;External Connectivity Management;ORGANIZATION
+Network Security Engineer;Network Security Engineer;ORGANIZATION
+Information Security Officer;;
+Operations & Technology Risk Management;;
+Perimeter Security Officer;;
+RFC Approvers;;
+Development Group;Development Group;ORGANIZATION
+Business Relation Group ( BRM);BRM|Business Relation Group;ORGANIZATION|ORGANIZATION
+App Support Group;App Support Group;ORGANIZATION
+Employee Requester;;
+Direct Manager;;
+Capacity Request Made;;
+Finance & Management Approval;Finance & Management Approval;ORGANIZATION
+Pharma Architecture;Pharma Architecture;ORGANIZATION
+Application Team;;
+Incident Management Team;;
+SA and DBA Teams;SA|DBA Teams;ORGANIZATION|ORGANIZATION
+AccountsPayable;;
+Various Utility Companies;Utility Companies;ORGANIZATION
+Le Pendez Dix;Le Pendez Dix;PERSON
+Grenoble;Grenoble;ORGANIZATION
+Accounts Payable (Haley);Haley;PERSON
+Sales (Nick);Nick;PERSON
+Procurement (Jane);Jane;PERSON
+Accounts Receivable (Sarah);Sarah;PERSON
+INVESTOR;;
+MAILROOM;MAILROOM;ORGANIZATION
+ACCTG TEAM;ACCTG TEAM;ORGANIZATION
+BACKGROUND SCREENING;;
+Business Architect;;
+Technology Architect;;
+Enterprise Architecture Council;Enterprise Architecture Council;ORGANIZATION
+Application Architect;;
+Chief Information security Officer;;
+CRS;CRS;ORGANIZATION
+director;;
+Mortgage application;;
+Ticket automat;;
+Program director;;
+get costumes ready for specific day;;
+Online retailer: Fulfill order;;
+costum usage;;
+ICT Logistics;ICT Logistics;ORGANIZATION
+Forwarder;;
+Cloud;;
+Production Planning;;
+OUR COMPANY;OUR COMPANY;ORGANIZATION
+CENTRAL IT;CENTRAL IT;ORGANIZATION
+DATA ENTRY;;
+PHARMACIST;PHARMACIST;ORGANIZATION
+DROP-OFF;;
+PICKUP;;
+PRODUCTION;;
+QUALITY ASSURANCE;;
+CVS - DATA ENTRY;CVS;ORGANIZATION
+CVS - CUSTOMER SERVICE;CUSTOMER SERVICE|CVS;ORGANIZATION|ORGANIZATION
+CUSTOMER SERVICE;CUSTOMER SERVICE;ORGANIZATION
+site engineer;;
+depot clerk;;
+works engineer;;
+Talent Seek - Recruitment Manager;;
+Talent Seek;;
+Recruitment Managers;;
+Admin and clerical staff;;
+Casual Admin Assistant;;
+HR Coordinator;;
+Check Deadlines;;
+Check Information (3a), (4a), (4b);;
+Check Registration (1);;
+Confirm Start of Delivery (4a);;
+New Supplier;New Supplier;ORGANIZATION
+Cancelation of delivery handling;;
+Service;;
+Schufa;Schufa;PERSON
+Academic senate;Academic senate;ORGANIZATION
+Candidate;;
+University;University;ORGANIZATION
+President;;
+Inspection crew;;
+Maintenance crew;;
+Business Process perspectine;;
+TS Recruitment Managers;TS Recruitment Managers;ORGANIZATION
+Client End Manager;;
+Client HR Representive;;
+TS HR;;
+GovSource;GovSource;ORGANIZATION
+Recruitment Panel;;
+Candidates;;
+TS Recruitment Manager;TS Recruitment;ORGANIZATION
+Administration department;Administration department;ORGANIZATION
+Mailing department;;
+Data Office;Data Office;ORGANIZATION
+Master Data Management;Master Data Management;ORGANIZATION
+Recruitment Manager;;
+TS HR Coordinator and their teams;TS HR Coordinator;ORGANIZATION
+Casual Admin Assisstant;;
+Trained specialist;;
+Account Provider;;
+Bank Customer;;
+Post Officer;;
+Bank Officer;;
+Purchase & Manufacturing;Purchase & Manufacturing;ORGANIZATION
+Accounting office;;
+Italian restaurant;Italian;MISC
+Informecial Meeting;;
+Drop-off tech;;
+Data entry tech;;
+Pick-up tech;;
+Producer;;
+CVS employee;CVS;ORGANIZATION
+CVS store;CVS;LOCATION
+CVS;CVS;ORGANIZATION
+CVS IT system;CVS IT;ORGANIZATION
+Transaction;;
+ABC Co. RFG Process;ABC Co. RFG Process;ORGANIZATION
+Passenger;;
+Virgin Airline Staff;Virgin Airline Staff;ORGANIZATION
+Passenger role;;
+SmartGate role;;
+USER;USER;ORGANIZATION
+Landlord/ Agent;Landlord/ Agent;ORGANIZATION
+Landlord/Agent;;
+Agencies & Landlords;Agencies & Landlords;ORGANIZATION
+Landlord / Agency;;
+Processing Officer;;
+Consultant;;
+Actuarial Officer;;
+Accountant;;
+Car Dealer;Car Dealer;ORGANIZATION
+Mechanic;;
+Salesman;;
+Patient (mother);;
+Pharmacy;;
+Creator;;
+Sales Officer;;
+Production Engineer;;
+Procurement Officer;;
+Admission office;;
+Academic recognition agency;;
+Level-1 staff;;
+Dispatcher;;
+Driver;;
+Storeman;Storeman;PERSON
+Tracking;;
+Customer(Newlyweds);;
+Guests;;
+Wedding Preparing Group;Wedding Preparing Group;ORGANIZATION
+Seamless Service Provision (SSP);;
+Incoming Mail Centre;Incoming Mail Centre;ORGANIZATION
+Validation Officer;;
+Payment Officer;;
+Accounts receivable Department;;
+Experienced SSP;;
+Internal Mail;Internal Mail;ORGANIZATION
+Master Data Entry Departement;;
+Incoming Mail Employee;;
+Internal Mail Employee;;
+Master Data Entry Officer;;
+Registry Employee;;
+Experienced SSP Employee;;
+Mail Centre employee;Mail Centre;ORGANIZATION
+superiisor;;
+Logistic Manager;;
+Warehouse Worker;Warehouse Worker;ORGANIZATION
+Person;;
+Market analyst;;
+Finance department;;
+Detective;;
+Target audience;;
+PR department;;
+Salesperson;;
+Risk analysis department;;
+Capitol;Capitol;LOCATION
+loan agency;;
+rating agency;;
+Operational Analyst;;
+Analyst Supervisor;;
+Customer Registration;;
+Billing form;;
+Designer;;
+Customer (business);;
+Librarian;;
+CO;;
+Used Book Buyer;;
+sales & distribution;;
+Beneficiary;;
+Regulatory Department (Clerk);Regulatory Department;ORGANIZATION
+Insurance Agent;;
+Check In Desk;In Desk;ORGANIZATION
+Customer Database;;
+Translator;;
+Local Demand Management;Local Demand Management;ORGANIZATION
+Requirements Manager;;
+Requirements Manager Gremium;;
+Business architect;;
+CAB;;
+Technical architect;;
+Budget- &amp;;
+Release Manager;;
+Release Gremium;;
+Flower Storage;Flower Storage;ORGANIZATION
+IITB student;IITB;ORGANIZATION
+Traveler;;
+Interested Parties;;
+Extract Photo information;;
+Manually Update Photo Information;;
+clerk;;
+pizza chef;;
+delivery boy;;
+Buy a car;;
+Instructor;;
+Researcher;;
+teacher;;
+Business support;;
+Technical support;;
+On call and email support;;
+Level 1 support staff;;
+Level 2 employee;;
+Business Architectural Team;Business Architectural Team;ORGANIZATION
+ISB Management;ISB Management;ORGANIZATION
+Stakeholders;;
+BPMC;BPMC;ORGANIZATION
+BPWG;BPWG;ORGANIZATION
+EMT;;
+Opportunity Initiator;;
+Process Owner;;
+Business Architecture;;
+Business Architecture Team;;
+Credit Division;Credit Division;ORGANIZATION
+Application processed;;
+Application lodgement;;
+Application investigation;;
+Views of stakeholders;;
+Financial;;
+Company (HR);;
+techGate;;
+TechGate;;
+techgate;;
+case-worker legal affairs;;
+warehouse worker;;
+case-worker organization;;
+requester;;
+service technician;;
+accountant;;
+SAP;SAP;ORGANIZATION
+Officer;;
+Customer on 'Your weight loss partner' website.;;
+Restaurant preparing and delivering food.;;
+Organization;;
+patient activities;;
+device;;
+Purchasing;;
+Mortgage specialist;;
+Claim Ajuster;Ajuster;PERSON
+Owner;;
+Ebay Seller;;
+Ebay Buyer;;
+Board;Board;ORGANIZATION
+CEO;;
+User Account Admin;;
+Buyer;;
+Shipping Company;Shipping Company;ORGANIZATION
+Mail Center Staff L1;;
+Admin Officers L2;;
+Data Entry Officers L5;;
+Agencies & Citizen;Agencies & Citizen;ORGANIZATION
+Service Officer;;
+Land Administration Officer;Land Administration;ORGANIZATION
+Agencies and citizens;;
+Stakeholder;;
+Minister’s Delegate;;
+Government Garzette;Garzette;PERSON
+Application and Internal System (DCS and ATS);DCS;MISC
+SAP Management;SAP Management;ORGANIZATION
+Validate Officer @ Level 7;;
+Validate Officer;;
+Account Receivable Dept. Level 4;;
+Minster's Delegate;;
+Land Administrative Officer;Land Administrative Officer;ORGANIZATION
+Service center officer;;
+Agencies and Citizens;Agencies and Citizens;ORGANIZATION
+SAP master entry department;SAP;ORGANIZATION
+Admin officer;;
+Validating Officer;;
+Accounts Receivable Department L4;;
+Master data entry department;;
+Account Receivable Department Level 4;;
+Mail Center Level 1;;
+Data Entry Office Level 5;;
+Subsidiary;;
+Screening staff;;
+Technical support staff;;
+Vladimir;Vladimir;PERSON
+Lauri;Lauri;PERSON
+Adoption coordinator & Process analysts;;
+Oganisation Managemnt;;
+Process participants;;
+Production with ERP-System;;
+Sales & Distribution with CRM-System;;
+Logistics with ERP-System;ERP;ORGANIZATION
+Finance & Accounting with ERP-System;ERP|Finance & Accounting;ORGANIZATION|ORGANIZATION
+Customer Service Department;Customer Service Department;ORGANIZATION
+Grid Operator;Grid Operator;ORGANIZATION
+Change Manager;;
+Agency Employee;Agency Employee;ORGANIZATION
+Department Employee;Department Employee;ORGANIZATION
+Admission Commission;Admission Commission;ORGANIZATION
+Uni-Assist;Uni;ORGANIZATION
+Online Registration Pool;;
+Studienabteilung (Study Department);Study Department;ORGANIZATION
+Customer service (TELECO);;
+Service management (TELECO);TELECO;ORGANIZATION
+Resource provisioning (TELECO);;
+Customer service dept.;;
+Quality Inspector;;
+QA Team Leader;;
+QA Engineer;QA Engineer;ORGANIZATION
+Level 1;;
+Level 2;;
+Role A;;
+Role C;;
+Role B;;
+Role E;;
+Role D;;
+insurance clerk;;
+Mr Franks;Mr Franks;PERSON
+Review clerk;;
+Attacker;;
+JodaEngine;JodaEngine;ORGANIZATION
+ENGINEERING;ENGINEERING;ORGANIZATION
+SALES;;
+FINANCE;FINANCE;ORGANIZATION
+hardware Retailer;;
+Hardware Retailer;Hardware Retailer;ORGANIZATION
+Flight Centre;Flight Centre;ORGANIZATION
+SSP Receivable Department;SSP Receivable Department;ORGANIZATION
+Board of Drectors;Board of Drectors;ORGANIZATION
+Service Desk;Service Desk;ORGANIZATION
+Incident Closure Responsible;;
+Suppliers Manager;;
+Technical Staff;;
+Administrator;;
+Engeneering department;;
+Sales ;;
+Services;;
+Klant;Klant;PERSON
+External Company;External Company;ORGANIZATION
+Process;;
+HR Representative;;
+Radiology;;
+Blood test department;;
+CT Scan Department;CT Scan Department;ORGANIZATION
+Recruiting Manager;;
+Manager/chairperson;;
+SPARQ HR;SPARQ HR;ORGANIZATION
+Manager/Chairperson;;
+Recruitment manager;;
+Co-Workers;;
+Phone clerk;;
+Home doctor;;
+product;;
+Personal Service Department;Personal Service Department;ORGANIZATION
+Thesis Director;;
+Finance Officer;;
+Administration Officer;;
+EC-Lille;Lille|EC;ORGANIZATION|ORGANIZATION
+boss;;
+humain resource;;
+Representative;;
+Claim adjuster;;
+Bill (Owner);;
+Illustration Creation Team;;
+Technical Team;;
+Admin Officers;Admin Officers;ORGANIZATION
+Cooking Area;Cooking Area;ORGANIZATION
+Packing Area;Packing Area;ORGANIZATION
+Lecture;;
+Real estate;;
+ordering;;
+purchasing;;
+manufacturing;;
+Validation Officers;;
+Data Entry Officers;;
+Master Data Entry;;
+Payment Officers;;
+Department XYZ;;
+Process 1;;
+Team work explorer;;
+meeting members;;
+meeting manager;;
+client;;
+Seamless Service Provision(SSP);Seamless Service Provision(SSP;ORGANIZATION
+internal mail center;;
+Validation Ofiicer;;
+Staff Member;;
+Internal Mail Centre;Internal Mail Centre;ORGANIZATION
+MetalWorks;MetalWorks;ORGANIZATION
+Level-1;;
+Level-2;;
+Job tracking system;;
+Store;;
+Headquarter;;
+Hermes;Hermes;PERSON
+Disposition;;
+Hub;Hub;ORGANIZATION
+Resourcing;;
+R&D;R&D;PERSON
+Investment Decision-making Commitee;Commitee;ORGANIZATION
+Pets@home;;
+Topup Method;Topup Method;ORGANIZATION
+Agency & Citizen;Agency & Citizen;ORGANIZATION
+Minister Delegate;;
+STUDENT;;
+PhD OFFICE;PhD OFFICE;ORGANIZATION
+ADMINISTRATION;;
+Sales Director;;
+Sales Executive;;
+Automatic procedure;;
+company;;
+secretary;;
+Secratory;;
+Administors;;
+Students;;
+students;;
+Doctor school;;
+Coordinator;;
+advisor;;
+PHD OFFICE;PHD OFFICE;ORGANIZATION
+Not EU;EU;ORGANIZATION
+EU;;
+Evaluation commission;;
+Member of evaluation commission;;
+PROFESSORS;;
+ADMINISTRATION OFFICE;;
+Secretatry;;
+Administrator Secretary;;
+Proponent;Proponent;PERSON
+non EU lecturer;EU;ORGANIZATION
+EU lecturers;EU;ORGANIZATION
+External Committee member;External Committee;ORGANIZATION
+PROPONENT;PROPONENT;ORGANIZATION
+Catering Service;;
+Store Warehouse;Store Warehouse;ORGANIZATION
+Store Front;;
+production;;
+logistic;;
+accounting;;
+Recruitment Department;Recruitment Department;ORGANIZATION
+HR Department;HR Department;ORGANIZATION
+Australian Agencies (Client);Australian Agencies;ORGANIZATION
+BIA;BIA;ORGANIZATION
+TS recruitment;;
+Course Facilitators;;
+Recruiter;;
+VIP Customer;;
+Software developer;;
+Support Team;;
+indoor service;;
+customer service;;
+Invoice data entry department;;
+Master data record department;;
+Payment Officer (Automated System);;
+reception;;
+Minister's Delegate;;
+new Member;;
+Office staff;;
+Lab;;
+CDSS;CDSS;ORGANIZATION
+Administrative staff;;
+Clinical Lab;Clinical Lab;ORGANIZATION
+Surgery dept.;;
+Primary care doctor;;
+Nurse specialist;;
+Surgical oncologist;;
+Radiologist;;
+Pathologist;;
+Managing Director;;
+SAP Dept.;SAP Dept;ORGANIZATION
+Validation officer;;
+Acc. receivable;Acc;ORGANIZATION
+Trademe;;
+Trademe system;;
+Trademe users;;
+Prcocess of creating Web site;;
+Administraor;;
+Catering company;;
+Owner (Bill);Bill;PERSON
+State;;
+AeroClub;AeroClub;ORGANIZATION
+Potential Customer;;
+customer service representive;;
+Application Division;;
+Papermill;;
+Logictics;Logictics;ORGANIZATION
+IDC;IDC;ORGANIZATION
+order department;;
+Kitchen;;
+Order prepare department;;
+Custom bike producer;;
+Barista;;
+Design;;
+Development;;
+Contents;;
+BVIS;BVIS;ORGANIZATION
+Checkfelix.com;;
+Seler;Seler;PERSON
+Provision Team;;
+Shipping;;
+Consumer;;
+Service Investor;Service Investor;ORGANIZATION
+Service Provider;;
+General Practitioner;;
+Diagnostic Testing;;
+Allied Health;Allied Health;ORGANIZATION
+seller;;
+amazon;amazon;LOCATION
+Shipment Company;Shipment Company;ORGANIZATION
+Amazon sales;Amazon;LOCATION
+Amazon Fulfilment;Amazon Fulfilment;ORGANIZATION
+Amazon services;Amazon;LOCATION
+meeting 1;;
+site design + content preperation;;
+meeting 2;;
+approval of the site;;
+building the site;;
+Bill Jobs;Bill Jobs;PERSON
+Service Technicians;Service Technicians;ORGANIZATION
+Claim Handling;;
+Operator of WF;WF;LOCATION
+Engine;;
+Application;;
+Product manager;;
+Country analyst;;
+local delivery employee;;
+central pick-up employee;;
+transporter;;
+Experienced SSP member;SSP;ORGANIZATION
+Master data entry staff;;
+Mail centre staff;;
+Admin officers;;
+Data entry officers;;
+Mail Centre Clerk;;
+Registry Officer;;
+Accounts Receivable Officer;;
+Experienced SSP Member;;
+Master Data Officer;;
+Mortgage Supervisor;;
+Online Retailer;;
+ServicingTeam;;
+engineering;;
+finance;;
+SAP Configuration;SAP Configuration;ORGANIZATION
+Buyer Party;Buyer Party;ORGANIZATION
+Seller Party;;
+Buyer party;;
+Seller party;;
+Mall;Mall;LOCATION
+Households;;
+CGPs;CGPs;ORGANIZATION
+Smart Gate Way;Smart Gate Way;ORGANIZATION
+Owner-Bill;Bill;PERSON
+Change Co-ordinator;Change Co;ORGANIZATION
+Manager, Application Support;;
+Manager, Enterprise Infrastructure;Enterprise Infrastructure;ORGANIZATION
+ITS Change Co-ordinator;ITS Change Co;ORGANIZATION
+Change Requester;;
+ITS Change Coordinator;;
+ITS Senior Management;Senior Management;ORGANIZATION
+ITS Senior Managers;;
+ITS Change Management Process;;
+IT Infrastructure;IT Infrastructure;ORGANIZATION
+Credit Broker;;
+IT System;IT System;ORGANIZATION
+HQ;;
+Sales representative;;
+Sales region;;
+Processing plant;;
+Purchasing Department;Purchasing Department;ORGANIZATION
+Accounting department;;
+Inventory Team;;
+Production Planning Team;;
+Manufacturing Team;;
+customser;;
+Customer Relationship Management;;
+Risk Assement Dept.;Assement Dept;ORGANIZATION
+Finance and Operations Dept;Finance and Operations Dept;ORGANIZATION
+Sales and CR Dept.;CR Dept;ORGANIZATION
+Service Department;Service Department;ORGANIZATION
+Warehouse Management;Warehouse Management;ORGANIZATION
+Level 2 - Admin Officers;Admin Officers;ORGANIZATION
+Ground Floor - Mail Center;Ground Floor|Mail Center;ORGANIZATION|ORGANIZATION
+External Reviewers;;
+Woman's Representative;;
+Board of trustees;Board of trustees;ORGANIZATION
+Dean;Dean;PERSON
+University Administration;University Administration;ORGANIZATION
+Faculty Board;Faculty Board;ORGANIZATION
+President of Humboldt University;Humboldt University;ORGANIZATION
+Academic Senate;Academic Senate;ORGANIZATION
+Selection Committee;Selection Committee;ORGANIZATION
+Human Resources;Human Resources;ORGANIZATION
+Kuratorium;Kuratorium;LOCATION
+Senator of Education in Berlin;Berlin;LOCATION
+Applicants;;
+Test Users;;
+President's office;;
+Search Committee;Search Committee;ORGANIZATION
+Board of Trustees;Board of Trustees;ORGANIZATION
+1st Level (Core Processes);;
+1st Level: Core Processes;;
+DMS(PARTS PROVISIONING TEAM);;
+SERVICE AND REPAIR TEAM;;
+PARTS PROVISIONING TEAM;;
+WAREHOUSE CLERK;WAREHOUSE CLERK;ORGANIZATION
+SHOP FLOOR SPECIALIST;;
+ACCOUNT MANAGER;;
+Sales Administrator;;
+Sales Billing;;
+Shipping Planning;;
+Account Receivable;;
+Mail staff member;;
+Finance & Accounting;Finance & Accounting;ORGANIZATION
+Payment Gateway;Payment Gateway;ORGANIZATION
+Flight Centre System;Flight Centre System;ORGANIZATION
+Credit Card Payment System;Credit Card Payment System;ORGANIZATION
+Travel management company;;
+Passenger - Team Leader;Team Leader;ORGANIZATION
+Airport;;
+ISS;ISS;ORGANIZATION
+Airline - Check in operator;;
+Airline - Departure control system;;
+Airline- service desk personnel;;
+Airport- service desk personnel;;
+Airport- Departure control system;;
+Airline- Check in supervisor;;
+Airport ISS security personnel;Airport ISS;ORGANIZATION
+Airport volunteer [PER, BNE];;
+Airport staff [MEL];MEL;ORGANIZATION
+BIA enrollment system;BIA;ORGANIZATION
+Production Department;Production Department;ORGANIZATION
+Marketing Management Dept.;Marketing Management Dept;ORGANIZATION
+PR Dept.;PR Dept;ORGANIZATION
+Top Management;Top Management;ORGANIZATION
+Highly creative part of Marketing Dept.;Marketing Dept;ORGANIZATION
+Lending Factory Incorperated;Lending Factory Incorperated;ORGANIZATION
+Claim Adjustor;;
+Repair Technician;;
+PhD secretary (Francesca);Francesca;PERSON
+Funder;;
+PhD Process Mgmt Platform;;
+Metal Works;Metal Works;ORGANIZATION
+Receiving technician;;
+Service technician;;
+Sales dept.;;
+Production dept.;;
+PR dept.;;
+IT dept.;;
+Production department;;
+Finance dept.;;
+Purchasing dept.;;
+HR dept.;;
+Marketing dept.;;
+R&D dept.;R&D;PERSON
+Dev. team;Dev;PERSON
+CDO;;
+evidence;;
+ambulance;;
+pacient;;
+patient;;
+surgery;;
+Previous or New Client;;
+Sales & Marketing Team;;
+Operations / Project Coordinator;;
+Creative Director;;
+Service Team Leader;;
+Production & Service Assistant;;
+eshop staff;;
+courier company;;
+SMTP server;SMTP;ORGANIZATION
+POP3 server;POP3;ORGANIZATION
+Expert;;
+Help desk center;;
+Grid Access Provider;;
+Metered Data Aggregator;;
+Analyst A;;
+Analyst B;;
+Analyst C;;
+Seminar;;
+Product Engineer;;
+Level-2 staff;;
+Search for Items;;
+Login;;
+Bidding;;
+Search for Item;;
+Logistic and Shipping;;
+referee;;
+manager;;
+Director;;
+Hospital Director;;
+expert;;
+UNION;UNION;ORGANIZATION
+Union;;
+Course Manager;;
+Citizen Service Center;Citizen Service Center;ORGANIZATION
+Citizen;;
+Back Office;Back Office;ORGANIZATION
+MD;;
+Prescription process;;
+Research Group;Research Group;ORGANIZATION
+Nurse/Patient;;
+Achat;Achat;PERSON
+University of Cologne;University of Cologne;ORGANIZATION
+Brokering Agency;;
+External Credit Company;External Credit Company;ORGANIZATION
+Mail staff;;
+Payment;;
+verfication Shipping Addr.;Shipping Addr;ORGANIZATION
+verfication billing Addr.;Addr;PERSON
+Verficationn types of payment;;
+Mailroom;;
+acounts Receivable Department;Receivable Department;ORGANIZATION
+Master Data entry Department;;
+Student Affairs;Student Affairs;ORGANIZATION
+Lecturer;;
+Trademan;Trademan;PERSON
+Cloud Technology;Cloud Technology;ORGANIZATION
+Record job activity;;
+Company Admin;;
+Accounting system;;
+Company scheduler;;
+Tradesman;;
+Job Scheduler;;
+Admin;;
+Accounting System;;
+Lecturer;;
+Check-in personel;;
+Flight Planning;Flight Planning;ORGANIZATION
+Crew Management;Crew Management;ORGANIZATION
+CENTRAL;CENTRAL;ORGANIZATION
+technician;;
+Volley tennis club;Volley;MISC
+committee members;;
+process;;
+Claim Supervisor;;
+Credit System;Credit System;ORGANIZATION
+Admin Officer (Level 2);;
+Data Entry (Level 5);;
+Master Data Entry Officer (Level 5);;
+Validation Officer (Level 7);;
+Logistics & Shipping;Logistics & Shipping;ORGANIZATION
+Sales department;;
+online ordering service;;
+cooks;;
+travel agency;;
+tourist;;
+Player 1;;
+Other player;;
+Tennis club;;
+Student Office;Student Office;ORGANIZATION
+Financial dept;;
+business partner;;
+university;;
+Accounting (WPLACM);;
+Phd Student;;
+Disi Department;Disi Department;ORGANIZATION
+Doctors commitment;;
+Advisor professor;;
+Administration Office;Administration Office;ORGANIZATION
+exam commission;;
+phd office;;
+GMNY;GMNY;ORGANIZATION
+Obtain Approval;;
+Charlse;Charlse;PERSON
+Melissa;Melissa;PERSON
+DB/CRM Process;;
+Technicians;;
+Material Warehouse stock;Material Warehouse;ORGANIZATION
+SALES DEPARTMENT;;
+Major-Incident Support;;
+IT-Manager;;
+Internal Third-Level Support;;
+Second-level support;;
+products;;
+HIJ-Department;;
+Sommelier;;
+Room service manager;;
+kitchen;;
+Waiter;;
+Logistics Service Provider;Logistics Service Provider;ORGANIZATION
+Expense Submitter;;
+Procure to Pay;;
+Executive Director;;
+Educational Institution;Educational Institution;ORGANIZATION
+Bob;Bob;PERSON
+Alice;Alice;PERSON
+agency;;
+Office for studies;;
+Engineering department;;
+Student partners;;
+Industry Partner;;
+Mater Data Entry Department;Mater Data Entry Department;ORGANIZATION
+Sale;;
+Account Receivable Dept.;;
+SSP Client;;
+Experienced SSP Staff;SSP Staff;ORGANIZATION
+SAP Master Data Entry Staff;SAP Master Data;ORGANIZATION
+Payment Office Staff;Payment Office Staff;ORGANIZATION
+stock;;
+parts provision;;
+provison teami;;
+Account Manager;;
+Talent Seek Human Resources;Seek Human Resources;ORGANIZATION
+Client End, Next Level Management;;
+Talent Seek Recruitment Manager;;
+Talent Seek Recruitment Managers;;
+Client End Managers;;
+Client End HR;;
+Selection Panel;Selection Panel;ORGANIZATION
+TS Casual Admin Assistant;TS Casual;ORGANIZATION
+HR Specialists;;
+Client HR;;
+Next Level Manager;;
+Supervisor 1;;
+Supervisor 2;;
+Account payable;;
+Employee`s organisational unit;;
+Purchase department;;
+Enterprise System;Enterprise System;ORGANIZATION
+Goods receipt department;;
+Accounts payable department;;
+Level-2 support staff;;
+Level-1 support staff;;
+Suport staff;;
+Accounting (backend);;
+Approver 1 (portal);;
+Approver 2-6 (portal);;
+Purchasing (backend);;
+Requisitioners (portal);;
+Lending Factory;Lending Factory;ORGANIZATION
+Delivery Staff;;
+Planning;;
+Procurement departement;;
+External experts;;
+Steering committee;;
+Industrial engineering;;
+Industrial actors;;
+Industrial engineering and industrial actors;;
+milk;;
+cream;;
+crates;;
+dispatch;;
+Shelf (Bin) Categorization;;
+Gourmet Gorilla;;
+Operations Supervisor;;
+Shift Supervisors;;
+Cooks;;
+Warehouse Step 1;;
+Warehouse Step 2;;
+Warehouse Step 3;;
+Batch Tracking;;
+Prep;;
+Cook;Cook;PERSON
+Package;;
+P2P;;
+Procure To Pay;;
+School;;
+Order Capture;;
+Parent;;
+Warehouse Step 2 (Shelves/Bins);;
+Shelf (Bin) Categorization Process;;
+School Warehouse step 1;School Warehouse;ORGANIZATION
+Warehouse Step 2( Shelves/Bins);;
+Planning and Production;;
+Vendor/Supplier;;
+GOURMET GORILLA - Current Ordering System;GOURMET GORILLA;ORGANIZATION
+Gourmet Gorilla Warehouse;Gourmet Gorilla Warehouse;ORGANIZATION
+Purchase Requisition;;
+Order Received;;
+construction worker;;
+remote engineer;;
+Sales and Distribution;;
+Inventory;;
+New Customer;;
+Pay Pal Website;;
+Admin Officer (AO) (level 2);AO;MISC
+Data Entry Officer (Level 5);;
+Master Data Entry Officer (MDEO);;
+Validation Officer (level 7);;
+PPS;;
+logistic system;;
+logistic department;;
+supplier;;
+warehouse manager;;
+Web Design;Web Design;ORGANIZATION
+Various Departments;Various Departments;ORGANIZATION
+Support officer;;
+Loading Clerk;;
+Dist Planner;Dist Planner;ORGANIZATION
+Shipping Clerk;;
+Receiver Office;;
+Destination office;;
+Developer Team;;
+Database Check;;
+Mortgage quote;;
+debt collection;;
+Administration Assistant;Administration Assistant;ORGANIZATION
+Client-end Manager;;
+HR Advisor;;
+Business User;;
+Personal User;;
+Customer Admin.;;
+Order Administration;Order Administration;ORGANIZATION
+Engineering Dept;Engineering Dept;ORGANIZATION
+Research group;;
+Brokering agency;;
+group leader;;
+developer;;
+Medical laboratory technician;;
+Medical Pathologist;Medical Pathologist;ORGANIZATION
+coordinator;;
+Community Manager;Community Manager;ORGANIZATION
+traffic warden;;
+Comuter System;Comuter System;ORGANIZATION
+Traffic warden;;
+BPMS;BPMS;ORGANIZATION
+Change Requestor;;
+Suppliers;;
+Services (logistic);;
+Department of Finance;Department of Finance;ORGANIZATION
+Assets;;
+Liabilities;;
+Equity;;
+Income;;
+Planning department;;
+designing and implementing a web site;;
+End user;;
+Office Management;Office Management;ORGANIZATION
+Claim handling department;;
+The Customer Service department;Customer Service department;ORGANIZATION
+Ianus;Ianus;PERSON
+Treasurer;;
+Translation Agency;Translation Agency;ORGANIZATION
+Rating company;;
+Author;;
+PC Chair;;
+Reviewer;;
+Key account manager;;
+1st Level Support Agent;;
+2nd Level Support Agent;;
+Reseller-B;;
+Payment Org;;
+Transporter;Transporter;LOCATION
+Government Authorities;Government Authorities;ORGANIZATION
+master data entry department;;
+Ground Floor;Ground Floor;ORGANIZATION
+level 2;;
+Level 5;;
+Level 7;;
+Paypal System;Paypal System;ORGANIZATION
+Booking agency;;
+TS Clerical Staff;TS Clerical Staff;ORGANIZATION
+Assistant Clerical Staff;Assistant Clerical Staff;ORGANIZATION
+TS Outsourced IT Department;TS Outsourced IT Department;ORGANIZATION
+Notification department;;
+Handling department;;
+Facebook User;;
+Facebook;;
+Scout Leader;;
+Group Scout Leaders;;
+Member;;
+Center Manager;;
+Medical Supervisor;;
+18+ Participant;;
+Main Scout Leader;;
+Scout Member;;
+Center Council;Center Council;ORGANIZATION
+Property manager;;
+Property Manager;;
+CRM department;CRM;ORGANIZATION
+IT Strategic Sourcing (J&J);J&J|IT Strategic Sourcing;ORGANIZATION|ORGANIZATION
+J&J local contacts;J&J;ORGANIZATION
+J&J Local Contact;J&J Local Contact;ORGANIZATION
+IT Strategic Sourcing;IT Strategic Sourcing;ORGANIZATION
+System Administrator;;
+IT Compliance;;
+Local Manager;;
+Local Human Resources;Local Human Resources;ORGANIZATION
+Accident;;
+ABC Company;ABC Company;ORGANIZATION
+Customer support section;;
+Business section;;
+Elevo developement division;Elevo;ORGANIZATION
+Marketing support;;
+Business analyst;;
+Sale manager;;
+CFO;;
+Team manager;;
+Tutor;Tutor;PERSON
+TS HR Coordinator;;
+TS Clerical/Admin Staff;Admin Staff|TS Clerical;ORGANIZATION|ORGANIZATION
+Staff personnel;;
+Attendant;;
+Nursing/ Medical Clinician;Nursing/ Medical Clinician;ORGANIZATION
+ Medical Clinician;Medical Clinician;ORGANIZATION
+Payment System;;
+Help Desk;Help Desk;ORGANIZATION
+Third party;;
+Field IT staff;;
+IT Manager;;
+Service Desk Staff;Service Desk Staff;ORGANIZATION
+Adminstrator Officer;;
+GP;;
+Ward;Ward;PERSON
+finance department;;
+supervisor;;
+Billing department;;
+Sales Person;;
+Computer repair process;;
+installation;;
+Expense Report;;
+booking hotel en bus;;
+booking extras;;
+Customize offer;;
+instllation;;
+sales person;;
+sales manager;;
+installation department;;
+billing department;;
+Expense report;;
+Sales person;;
+Sales manager;;
+computer repair;;
+sales departement;;
+Computer repair;;
+Installation department;;
+crs;;
+book vacation;;
+presenting offer;;
+create customized offer;;
+loan approvel;;
+Loan approval;;
+Data Entery Officer;;
+Validation;;
+Registery;;
+SSP (Validation);;
+Experience;;
+Next level manager;;
+HR coordinator;;
+Client-next level manager;;
+HR service;;
+TS recruitment manager;TS;ORGANIZATION
+Admin assistant;;
+TS - Recruitment manager;;
+Client-HR advisor;;
+transaction;;
+transactional sub-process;;
+SSP Admin Officer;;
+SSP Data Entry Officer;SSP Data;ORGANIZATION
+SSP Validation Officer;;
+Seventh Sense;;
+Payroll;;
+Acc Rec;Acc Rec;MISC
+SAP System;SAP System;ORGANIZATION
+Foreign University;Foreign University;ORGANIZATION
+Foreign studies department;;
+University IS;University IS;ORGANIZATION
+Postgraduate studies department;;
+Postgraduate students;;
+Graduates of master's degree;;
+Provide students with postgraduate studies;;
+International Student;International Student;ORGANIZATION
+International Office Employee;International Office Employee;ORGANIZATION
+Department Head;Department Head;ORGANIZATION
+Mentor;;
+Vice Dean;Vice Dean;PERSON
+Foreign Student;;
+ICT Team;ICT Team;ORGANIZATION
+UAT Key Stakeholders;UAT Key Stakeholders;ORGANIZATION
+Santa Claus;Santa Claus;PERSON
+Trustee;;
+Santa's Dwarfs;Santa 's Dwarfs;ORGANIZATION
+Presentee;;
+mortgage specialist;;
+E-payment provider;;
+Service Desk Level 1;;
+Service Desk Level 2;;
+Service Desk Chief;;
+RMA Employee;RMA Employee;ORGANIZATION
+webServices for storing data about attendance of employees;;
+IS operator;;
+Workshift supervisor;;
+Department manager;;
+Delivery company;;
+Main goods depot A;;
+Goods depot B;;
+store manager;;
+EVENT REGISTRATION;;
+Event Registration;;
+Event Regestration;;
+REGISTRATION PROCESS;;
+Request for Travel Approval;;
+Event registration;;
+Practice - Travel Authorization;;
+Registration for Travel Approval;;
+Individual;;
+Purchaser;;
+Online Business Broker;Business Broker;ORGANIZATION
+Seller (Private and Business Broker);;
+Payments;;
+Hospital Admission;Hospital Admission;ORGANIZATION
+Ambulance car service;;
+Hospital drugs store;;
+Drug store;;
+nurse;;
+doctor;;
+Repairer;;
+Inspector;;
+Equipment store;;
+Hospital management;;
+world market;;
+owner;;
+service designer;;
+project manager;;
+contractor;;
+marketing;;
+GoPay;;
+reader;;
+Registrars Office;Registrars Office;ORGANIZATION
+Call Center;;
+IST;IST;ORGANIZATION
+Financial accounting department;;
+Warehouse department;;
+Central Purchasing/Procurement department;Central Purchasing / Procurement;ORGANIZATION
+ACCOUNT PAYABLE MANAGER;;
+ACCOUNT PAYABLE CLERK;;
+ACCOUNTS RECEIVABLE;ACCOUNTS RECEIVABLE;ORGANIZATION
+SALES ADMINISTRATOR;;
+PLAN SHIPPING;PLAN SHIPPING;ORGANIZATION
+SALES BILLING;;
+Constultant;;
+Debit Card Department;Debit Card Department;ORGANIZATION
+Bank employee;;
+Bank manager;;
+Miranda (Secretary);Miranda;PERSON
+Charles (Administrator);Charles;PERSON
+1st level support;;
+2nd level support;;
+Chef;;
+Mail Centre Staffs (5 x S3 grade);;
+Admin Officers (4 x S5 grade);;
+Data Entry Officers (6 x S4 grade);;
+Master Data Entry Staff (1 x S5 grade);;
+Validation Officers (4 x S6 grade);;
+Accounts Receivable Staffs (4 x S6 grade);;
+Registry Staffs (4 x S4 grade);;
+Griffith University Library;Griffith University Library;ORGANIZATION
+Other Library Catalogues;Library Catalogues;ORGANIZATION
+Borrower;;
+Library returns personnel;;
+Web site;;
+Administrator (Charles);Charles;PERSON
+Secretary (Miranda);Miranda;PERSON
+Mortgage offer;;
+Head of Department;;
+Team Lead;;
+Information Requesters;;
+Information Providers;;
+Making queries of an object ID to ADS;ADS;ORGANIZATION
+Electronic Shopping Assistant;Electronic Shopping;ORGANIZATION
+Discovery Service;Discovery Service;ORGANIZATION
+Proxy;;
+Electronic shopping assistant;;
+Shop personal;;
+Clients;;
+EPCIS;EPCIS;ORGANIZATION
+Contact Node;Node;ORGANIZATION
+Storage Node;;
+Intermediate Node;;
+Authenticating and Authorizing Information Requesters;;
+Object Agents;Object Agents;ORGANIZATION
+Domain Name System (DNS);Domain Name System;ORGANIZATION
+Distributed Hash Table (DHT);;
+Finding a DS through ONS Bootstrapping;ONS Bootstrapping|DS;MISC|ORGANIZATION
+BRIDGE Discovery Services;BRIDGE Discovery Services;ORGANIZATION
+Contact Nodes;Nodes;PERSON
+Storage Nodes;;
+Intermediate Nodes;;
+Discovery Services;Discovery Services;ORGANIZATION
+Publishing the Basic Records to DS;DS;MISC
+Sending the Requested Detailed Info;;
+Registering the Object with DS;DS;MISC
+Retrieving the Results;;
+Sending a Full Query;;
+Authorizing Access Rights;Access Rights;MISC
+Returning the Results;;
+Sending a Query to an Information Provider;Information Provider;ORGANIZATION
+Connecting to an Object Agent;;
+Linking to a Designated DS and Sending the Query;Designated DS;MISC
+Preparing a DOCUMENT;;
+Publishing Key Events plus Security Options to ADS;;
+Requesting Detailed Info;;
+Retrieving the Pointer Info;Pointer Info;ORGANIZATION
+Returning the Detailed Info;;
+Sending a One-Off Query to DS;DS;MISC
+Sending the Results;;
+Logistic / Warehouse;Logistic / Warehouse;ORGANIZATION
+BCP;BCP;ORGANIZATION
+MS Outlook;;
+Project management;;
+Volunteer;;
+GUI Testing Consultant;;
+Testers;;
+Programmers;;
+Analysts;;
+Response;;
+Assessment;;
+Resource Evaluation;;
+Infrastructure evaluation;;
+Operational Plan;;
+Context;;
+Website;;
+Administration / Director;;
+Map 2D Website;;
+Student / Member of public;;
+Director / Administration staff;;
+Shared document;;
+Shared file;;
+Administration staff / Director;;
+Shared booking spreadsheet;;
+Student / public user;;
+Brisbane Institute of Art Staff;Brisbane Institute of Art Staff;ORGANIZATION
+Shared document's folder;;
+Brisbane Institute of Art;Brisbane Institute of Art;ORGANIZATION
+Brisbane Institute of Art Website;Brisbane Institute of Art Website;ORGANIZATION
+Wake up;;
+Student office worker;;
+HR Co-Ordinator;HR Co|Ordinator;ORGANIZATION|PERSON
+Clerical Staff;Clerical Staff;ORGANIZATION
+Cloud Source;Cloud Source;ORGANIZATION
+Main Process;Main Process;ORGANIZATION
+Corrdination Unit;Corrdination Unit;ORGANIZATION
+Commitee Members;;
+Ware House;Ware House;LOCATION
+Bill Jobs (Owner);Bill Jobs;PERSON
+Service Technician;;
+Data Operator;;
+Data Operator?;;
+Corporate Data Operator;;
+Prospect/Customer Data User;;
+Customer Data Requestor;;
+Business Data Steward;;
+Supplier Data Requestor;;
+Contact/Debtor Data User;;
+Supplier requestor;;
+Business data steward;;
+Shared service operator;;
+Data Governor;;
+Project Manager/Team;;
+Local Sales;;
+Global Master Data;Global Master Data;ORGANIZATION
+Local Service;Local Service;ORGANIZATION
+Supplier Data User;;
+Coprorate Data Operator;Coprorate Data Operator;ORGANIZATION
+Sales Partner Relatations Requestor;;
+Rating Agency;Rating Agency;ORGANIZATION
+Merchant;;
+PayPal;;
+HR Coordinator Team;;
+Miranda, Secretary;Miranda;PERSON
+Charles, Administrator;Charles;PERSON
+Amploeyy from Office for studies;Amploeyy;PERSON
+Education department;;
+ED of foreign country;;
+transaction system;;
+order management;;
+auctioning service;;
+Messaging Service;;
+Publisher;;
+Sigma Engineering Website;Sigma Engineering Website;ORGANIZATION
+Incoming mail center;;
+Deliver department;;
+Profile department;;
+SSP Admin office;SSP Admin;ORGANIZATION
+Experience SSP Members;;
+Master data management;;
+QAS Call Center;QAS Call Center;ORGANIZATION
+QAS Ambulance Medical Dispatcher;QAS Ambulance Medical Dispatcher;ORGANIZATION
+Brisbane Institute Of Art;Brisbane Institute Of Art;ORGANIZATION
+Receiving Depot;;
+Real Estate Agent;Real Estate Agent;ORGANIZATION
+Home Loan Department;Home Loan Department;ORGANIZATION
+Branch;Branch;LOCATION
+Property Assesment Department;Property Assesment Department;ORGANIZATION
+Lender;;
+Mortgage Broker;;
+Candidate for study;;
+Study Department;Study Department;ORGANIZATION
+Boss;Boss;ORGANIZATION
+Worker;;
+Connectivity Services;Connectivity Services;ORGANIZATION
+SSP Experienced Employee;;
+storage manager;;
+external vendor;;
+sales and distribution;;
+entrance room;;
+bar;;
+way;;
+Platform;;
+Crowd;;
+Project Board;Project Board;ORGANIZATION
+Advertising Agency;Advertising Agency;ORGANIZATION
+Organisational Unit;Organisational Unit;ORGANIZATION
+External Member;;
+Workshop Organizer;;
+Participant;;
+Backend;;
+Frontend;Frontend;PERSON
+Retail;;
+Legal;;
+Land or Right-of-Way;;
+Business Developement;Business Developement;ORGANIZATION
+Employee At-Large;;
+Technical/Admin staff;;
+Data entry department;;
+Product Manager;;
+Connectivity services;;
+Claimant;;
+Insurence Company;Insurence Company;ORGANIZATION
+Pizza Delivery Boy;;
+Hitman;;
+Cook Book;Cook Book;ORGANIZATION
+Bank clerk;;
+Bank IS;Bank IS;ORGANIZATION
+team leader;;
+designer;;
+programmers;;
+testers;;
+Policy Reviewer;;
+Process Manager;;
+Registration Department;Registration Department;ORGANIZATION
+FlightCentre;;
+Experienced SSP members;SSP;ORGANIZATION
+Master data entry officer;;
+Payment officer;;
+Accounts receivable department officer;;
+Call Centre;;
+Call centre;;
+SSP Payment Office;SSP Payment Office;ORGANIZATION
+SSP's Accounts Receivable Department;SSP|Accounts Receivable Department;ORGANIZATION|ORGANIZATION
+IN/OUT Patient Group;;
+Policy holder;;
+Claims;;
+Alarm Centre;Alarm Centre;ORGANIZATION
+Assistance Coordinator;;
+Interviewer;;
+HR manager (recruiter);;
+Moravia IT;Moravia IT;ORGANIZATION
+Terumo BCT;Terumo BCT;ORGANIZATION
+PayPal server;;
+Unique Identify information;;
+manager and waiter;;
+Advising Bank;;
+HR department;;
+Shipper;;
+SMRegistry;;
+Supermarket;;
+Caller;;

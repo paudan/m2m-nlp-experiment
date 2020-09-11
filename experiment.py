@@ -3,7 +3,8 @@ from collections.abc import Iterable
 import argparse
 import pandas as pd
 from tqdm import tqdm
-from processing import StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor, CoreNLPProcessor, BertNLPProcessor
+from processing import (StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor,
+                        CoreNLPProcessor, BertNLPProcessor, AllenNLPProcessor)
 
 tqdm.pandas()
 
@@ -28,20 +29,25 @@ def tag_activity_dataset_default(df, column=1):
     return df
 
 def tag_ner_dataset(df, processor):
-    def extract_entity_types(x):
-        types = processor.get_named_entity_types(x)
-        if types is None or not isinstance(x, Iterable):
-            return types
-        return '|'.join([x for x in types if x is not None])
 
-    df['Entities'] = df.iloc[:, 0].apply(processor.extract_named_entities).apply(lambda x: '|'.join(x))
-    df['EntityType'] = df.iloc[:, 0].apply(extract_entity_types)
+    def extract_entities(x, func=processor.get_named_entity_types):
+        try:
+            results = func(x)
+        except:
+            results = None
+        if results is None or not isinstance(x, Iterable):
+            return results
+        return '|'.join([x for x in results if x is not None])
+
+    df['Entities'] = df.iloc[:, 0].progress_apply(lambda x: extract_entities(x, func=processor.extract_named_entities))
+    df['EntityType'] = df.iloc[:, 0].progress_apply(lambda x: extract_entities(x, func=processor.get_named_entity_types))
     return df
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--processor", help="Used extraction processor", default='stanza',
-                        choices=['spacy', 'stanza', 'flair', 'corenlp', 'bert', 'simple'])
+                        choices=['spacy', 'stanza', 'flair', 'corenlp', 'bert', 'allen', 'simple'])
     parser.add_argument("--input-file", help="Input dataset file which will be processed", required=True)
     parser.add_argument("--task", help="Task type", choices=['phrases', 'ner'], default='phrases')
     parser.add_argument("--column", help="Column index for processing", type=int)
@@ -70,6 +76,8 @@ if __name__ == '__main__':
         processor = CoreNLPProcessor()
     elif args.processor == 'bert':
         processor = BertNLPProcessor()
+    elif args.processor == 'allen':
+        processor = AllenNLPProcessor()
     elif args.processor == 'simple':
         processor = None
     else:
