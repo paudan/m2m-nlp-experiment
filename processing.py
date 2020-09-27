@@ -9,10 +9,14 @@ import stanza
 from stanza.server import CoreNLPClient
 from flair.models import SequenceTagger
 from flair.data import Sentence
+from anago.models import load_model
+from anago.preprocessing import IndexTransformer
+from anago.tagger import Tagger
 import nltk
 from nltk.corpus import wordnet as wn
 from nltk.corpus.reader import wordnet
 from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import wordpunct_tokenize
 from simplenlg.features import Feature, Tense
 from simplenlg.framework import InflectedWordElement
 from simplenlg.lexicon import Lexicon, LexicalCategory
@@ -388,3 +392,36 @@ class AllenNLPProcessor(AbstractNLPProcessor):
     def extract_phrase_by_type(self, token, type):
         prediction = self.pos_tagger.predict(sentence=token)
         return self._extract_phrase(list(zip(prediction['words'], prediction['pos'])), type)
+
+
+# ElmoBiLSTMCRF
+class CustomNLPProcessor(AbstractNLPProcessor):
+
+    def grammar(self):
+        ADP = '<RB|RBR|RP|TO|IN|PREP>'
+        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS>+<POS>?<CD>?'
+        return """
+        NP: {{({NP})+({ADP}?<DT>?{NP})*}}
+        VP: {{<VB*>+{ADP}?}}
+        PNP: {{<NNP|NNPS>+}}        
+        """.format(NP=NP, ADP=ADP)
+
+    def __init__(self, process_proper_nouns=False):
+        super().__init__(process_proper_nouns)
+        model = load_model(os.path.join('custom', 'weights.h5'), os.path.join('custom', 'params.json'))
+        it = IndexTransformer.load(os.path.join('custom', 'preprocessor.pkl'))
+        self.pos_tagger = Tagger(model, preprocessor=it, tokenizer=wordpunct_tokenize)
+
+    def get_named_entity_type(self, token, index=0):
+        pass
+
+    def extract_named_entities(self, token):
+        pass
+
+    def get_named_entity(self, token, index = 0):
+        pass
+
+    def extract_phrase_by_type(self, token, type):
+        prediction = self.pos_tagger.predict(token)
+        return self._extract_phrase(list(zip(self.pos_tagger.tokenizer(token), self.pos_tagger.predict(token))), type)
+

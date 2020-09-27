@@ -3,8 +3,8 @@ from collections.abc import Iterable
 import argparse
 import pandas as pd
 from tqdm import tqdm
-from processing import (StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor,
-                        CoreNLPProcessor, BertNLPProcessor, AllenNLPProcessor)
+from processing import (StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor, CoreNLPProcessor,
+                        BertNLPProcessor, AllenNLPProcessor, CustomNLPProcessor)
 
 tqdm.pandas()
 
@@ -47,7 +47,7 @@ def tag_ner_dataset(df, processor):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--processor", help="Used extraction processor", default='stanza',
-                        choices=['spacy', 'stanza', 'flair', 'corenlp', 'bert', 'allen', 'simple'])
+                        choices=['spacy', 'stanza', 'flair', 'corenlp', 'bert', 'allen', 'custom', 'simple'])
     parser.add_argument("--input-file", help="Input dataset file which will be processed", required=True)
     parser.add_argument("--task", help="Task type", choices=['phrases', 'ner'], default='phrases')
     parser.add_argument("--column", help="Column index for processing", type=int)
@@ -66,6 +66,9 @@ if __name__ == '__main__':
     if output_file is None:
         fname =  '{}-{}.csv'.format(args.processor, args.task)
         output_file = os.path.join('results', fname)
+    if args.processor == 'custom' and args.task == 'ner':
+        print('NER processing is not supported for csutom NLP processor, skipping')
+        exit()
     if args.processor == 'spacy':
         processor = SpacyNLPProcessor()
     elif args.processor == 'stanza':
@@ -78,6 +81,8 @@ if __name__ == '__main__':
         processor = BertNLPProcessor()
     elif args.processor == 'allen':
         processor = AllenNLPProcessor()
+    elif args.processor == 'custom':
+        processor = CustomNLPProcessor()
     elif args.processor == 'simple':
         processor = None
     else:
