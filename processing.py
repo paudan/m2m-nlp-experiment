@@ -1,5 +1,9 @@
+import sys
+#sys.path.append('custom')
+
 import os
 import re
+import json
 from abc import abstractmethod
 from collections import Iterable
 import itertools
@@ -12,6 +16,9 @@ from flair.data import Sentence
 from anago.models import load_model
 from anago.preprocessing import IndexTransformer
 from anago.tagger import Tagger
+from transformers import AutoTokenizer, AutoModelForTokenClassification, BertConfig, BertTokenizer
+from transformers.pipelines import pipeline
+from allennlp.predictors.predictor import Predictor
 import nltk
 from nltk.corpus import wordnet as wn
 from nltk.corpus.reader import wordnet
@@ -21,9 +28,7 @@ from simplenlg.features import Feature, Tense
 from simplenlg.framework import InflectedWordElement
 from simplenlg.lexicon import Lexicon, LexicalCategory
 from simplenlg.realiser.english import Realiser
-from transformers import AutoTokenizer, AutoModelForTokenClassification, BertConfig
-from transformers.pipelines import pipeline
-from allennlp.predictors.predictor import Predictor
+from custom.bilstm_crf import BERT_BiLSTM_CRF, BertDataset
 
 STANZA_DIR = 'stanza_resources'
 FLAIR_POS_MODEL = 'flair/models/en-pos-ontonotes-v0.4.pt'
@@ -35,6 +40,8 @@ BERT_MODEL_DIR = 'embeddings'
 ALLENNLP_POS = 'allennlp/biaffine-dependency-parser-ptb-2020.04.06.tar.gz'
 ALLENNLP_NER = 'allennlp/ner-model-2020.02.10.tar.gz'
 NLTK_PATH = '/mnt/DATA/data/nltk'
+ELMO_TAGGER_PATH = 'custom/elmo_tagger'
+BERT_TAGGER_PATH = 'custom/roberta-pos-tagger'
 nltk.data.path.append(NLTK_PATH)
 
 
@@ -308,15 +315,15 @@ class CoreNLPProcessor(AbstractNLPProcessor):
 
 class BertNLPProcessor(AbstractNLPProcessor):
 
-    def __init__(self, process_proper_nouns=False):
+    def __init__(self, process_proper_nouns=False, pos_model=BERT_POS_MODEL, ner_model=BERT_NER_MODEL):
         super().__init__(process_proper_nouns)
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.pos_tokenizer = AutoTokenizer.from_pretrained(BERT_POS_MODEL, cache_dir=BERT_MODEL_DIR)
-        self.pos_model = AutoModelForTokenClassification.from_pretrained(BERT_POS_MODEL, cache_dir=BERT_MODEL_DIR).to(self.device)
-        self.pos_config = BertConfig.from_pretrained(BERT_POS_MODEL, cache_dir=BERT_MODEL_DIR)
-        self.ner_tokenizer = AutoTokenizer.from_pretrained(BERT_NER_MODEL, cache_dir=BERT_MODEL_DIR)
-        self.ner_model = AutoModelForTokenClassification.from_pretrained(BERT_NER_MODEL, cache_dir=BERT_MODEL_DIR).to(self.device)
-        self.ner_config = BertConfig.from_pretrained(BERT_NER_MODEL, cache_dir=BERT_MODEL_DIR)
+        self.pos_tokenizer = AutoTokenizer.from_pretrained(pos_model, cache_dir=BERT_MODEL_DIR)
+        self.pos_model = AutoModelForTokenClassification.from_pretrained(pos_model, cache_dir=BERT_MODEL_DIR).to(self.device)
+        self.pos_config = BertConfig.from_pretrained(pos_model, cache_dir=BERT_MODEL_DIR)
+        self.ner_tokenizer = AutoTokenizer.from_pretrained(ner_model, cache_dir=BERT_MODEL_DIR)
+        self.ner_model = AutoModelForTokenClassification.from_pretrained(ner_model, cache_dir=BERT_MODEL_DIR).to(self.device)
+        self.ner_config = BertConfig.from_pretrained(ner_model, cache_dir=BERT_MODEL_DIR)
 
     def _run_bert_model(self, text, tokenizer, model, config):
         if text is None or not isinstance(text, str) or len(text.strip()) == 0:
@@ -394,8 +401,7 @@ class AllenNLPProcessor(AbstractNLPProcessor):
         return self._extract_phrase(list(zip(prediction['words'], prediction['pos'])), type)
 
 
-# ElmoBiLSTMCRF
-class CustomNLPProcessor(AbstractNLPProcessor):
+class CustomProcessor(AbstractNLPProcessor):
 
     def grammar(self):
         ADP = '<RB|RBR|RP|TO|IN|PREP>'
@@ -406,12 +412,6 @@ class CustomNLPProcessor(AbstractNLPProcessor):
         PNP: {{<NNP|NNPS>+}}        
         """.format(NP=NP, ADP=ADP)
 
-    def __init__(self, process_proper_nouns=False):
-        super().__init__(process_proper_nouns)
-        model = load_model(os.path.join('custom', 'weights.h5'), os.path.join('custom', 'params.json'))
-        it = IndexTransformer.load(os.path.join('custom', 'preprocessor.pkl'))
-        self.pos_tagger = Tagger(model, preprocessor=it, tokenizer=wordpunct_tokenize)
-
     def get_named_entity_type(self, token, index=0):
         pass
 
@@ -421,7 +421,40 @@ class CustomNLPProcessor(AbstractNLPProcessor):
     def get_named_entity(self, token, index = 0):
         pass
 
+
+# ElmoBiLSTMCRF
+class ElmoBiLSTM_CRFProcessor(CustomProcessor):
+
+    def __init__(self, process_proper_nouns=False):
+        super().__init__(process_proper_nouns)
+        model = load_model(os.path.join(ELMO_TAGGER_PATH, 'weights.h5'), os.path.join(ELMO_TAGGER_PATH, 'params.json'))
+        it = IndexTransformer.load(os.path.join(ELMO_TAGGER_PATH, 'preprocessor.pkl'))
+        self.pos_tagger = Tagger(model, preprocessor=it, tokenizer=wordpunct_tokenize)
+
     def extract_phrase_by_type(self, token, type):
-        prediction = self.pos_tagger.predict(token)
         return self._extract_phrase(list(zip(self.pos_tagger.tokenizer(token), self.pos_tagger.predict(token))), type)
 
+# BertBiLSTMCRF
+class BertBiLSTM_CRFProcessor(CustomProcessor):
+
+    def __init__(self, process_proper_nouns=False):
+        super().__init__(process_proper_nouns)
+        model_config = {'tokenizer': 'BertTokenizer', 'config': 'BertConfig', 'model': 'BertModel'}
+        self.config = BertConfig.from_pretrained(BERT_TAGGER_PATH, cache_dir=BERT_MODEL_DIR)
+        with open(os.path.join(BERT_TAGGER_PATH, 'params.json'), 'r', encoding='utf-8') as f:
+            params = json.load(f)
+        self.pos_tagger = BERT_BiLSTM_CRF.from_pretrained(BERT_TAGGER_PATH, labels_map=self.config.id2label,
+                                                          use_bilstm=params['use_bilstm'], rnn_dim=params['rnn_dim'],
+                                                          model_config=model_config)
+        device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        self.pos_tagger.to(torch.device(device))
+        self.tokenizer = BertTokenizer.from_pretrained(BERT_TAGGER_PATH)
+        self.dst = BertDataset(self.tokenizer)
+
+    def extract_phrase_by_type(self, token, type):
+        words = wordpunct_tokenize(token)
+        input = self.dst.transform_input([words], self.config.label2id)
+        tags = self.pos_tagger.predict_tags(input)
+        if len(tags) == 0:
+            return None
+        return self._extract_phrase(list(zip(words, tags[0])), type)

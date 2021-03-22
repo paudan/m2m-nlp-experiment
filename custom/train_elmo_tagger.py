@@ -50,10 +50,9 @@ trainer.train(x_train, y_train, x_test, y_test,
                   TensorBoard(log_dir=log_dir, write_graph=False),
                   ModelCheckpoint(weights_path, save_weights_only=True),
                   ReduceLROnPlateau(),
-                  EarlyStopping(patience=EARLY_STOP)]
-              )
+                  EarlyStopping(patience=EARLY_STOP)])
 
 print('Saving the model...')
-save_model(model, 'weights.h5', 'params.json')
-p.save('preprocessor.pkl')
+save_model(model, os.path.join(log_dir, 'weights.h5'), os.path.join(log_dir, 'params.json'))
+p.save(os.path.join(log_dir, 'preprocessor.pkl'))
 # model.save('weights.h5', 'params.json')
