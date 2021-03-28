@@ -48,7 +48,7 @@ Production;;
 Logistics and Distribution;;
 Legal department;;
 Validation Department;Validation Department;ORGANIZATION
-The Registry;;
+The Registry;The Registry;ORGANIZATION
 Payment Department;Payment Department;ORGANIZATION
 Account Receivable Department;Account Receivable Department;ORGANIZATION
 SSP Clients;SSP Clients;ORGANIZATION
@@ -91,7 +91,7 @@ SSP (Mail Center);Mail Center|SSP;ORGANIZATION|ORGANIZATION
 Admin Office;Admin Office;ORGANIZATION
 Mail Center;Mail Center;ORGANIZATION
 Data Entry Office;;
-Master Data Enter Department;;
+Master Data Enter Department;Data Enter Department;ORGANIZATION
 Validation Office;Validation Office;ORGANIZATION
 Registry;;
 Credit Company;Credit Company;ORGANIZATION
@@ -129,7 +129,7 @@ Support line - part time workers;;
 Data entry officer;;
 Master data entry department;;
 Mail center;;
-Accounts Receivable Department;Accounts Receivable Department;ORGANIZATION
+Accounts Receivable Department;Receivable Department;ORGANIZATION
 Payment office;;
 Admin Officer;;
 Vaidation officer;;
@@ -155,7 +155,7 @@ Patient;;
 Doctor;;
 Nurse;;
 Event Administrator;;
-Business Development Manager;Business Development;ORGANIZATION
+Business Development Manager;;
 Brian's Team;Brian 's;PERSON
 Project Manager;;
 Department;;
@@ -368,7 +368,7 @@ Phd office;;
 Phd student;;
 PhD office;PhD;ORGANIZATION
 Departement assistant;;
-PhD student;;
+PhD student;PhD;ORGANIZATION
 Phd Office;Phd Office;ORGANIZATION
 PhD Central Office;PhD Central Office;ORGANIZATION
 Exam Commission;Exam Commission;ORGANIZATION
@@ -415,7 +415,7 @@ Central Warehouse Luzern;Central Warehouse Luzern;ORGANIZATION
 IT;;
 Logistics, Warehouse near to the customers;;
 Logistic, warehouse not near to the customer;;
-ABB Turbo Systems Baden (Switzerland);Switzerland|ABB Turbo Systems Baden;ORGANIZATION|LOCATION
+ABB Turbo Systems Baden (Switzerland);ABB Turbo Systems Baden|Switzerland;ORGANIZATION|LOCATION
 Secretariat;;
 Robert;Robert;PERSON
 Physician;;
@@ -424,7 +424,7 @@ Store Manager;;
 Stock Manager;;
 Catalogue Browser;;
 Shopping Basket / Checkout;;
-Amazon Sub Seller;;
+Amazon Sub Seller;Amazon Sub Seller;MISC
 Amazon;Amazon;LOCATION
 Used Book sellor on Amazon;Amazon;LOCATION
 Mail Staff;Mail Staff;ORGANIZATION
@@ -435,20 +435,20 @@ Mark;Mark;PERSON
 Security Check;;
 Boarding Gate;Boarding Gate;ORGANIZATION
 CUSTOMER;;
-Order Management System;;
+Order Management System;Order Management System;ORGANIZATION
 CRM;CRM;ORGANIZATION
 Manufacturing;;
 Logistics Provider;;
 AVERS OEM - Raw Material Supply;AVERS OEM;ORGANIZATION
-Regional Headquarters, Singapore;Regional Headquarters|Singapore;ORGANIZATION|LOCATION
+Regional Headquarters, Singapore;Singapore|Regional Headquarters;ORGANIZATION|LOCATION
 Manufacturing Factory, Vietnam;Vietnam;LOCATION
 Regional Electronic Equipment Company;Regional Electronic Equipment Company;ORGANIZATION
 Distribution/Logistics Provider 05;;
 Regional Type Company;Type Company;ORGANIZATION
 Distribution/Logistics Provider 01;;
-Air Conditioner Company, Regional;Air Conditioner Company|Regional;ORGANIZATION|ORGANIZATION
+Air Conditioner Company, Regional;Regional|Air Conditioner Company;ORGANIZATION|ORGANIZATION
 Distribution/Logistics Provider 02;;
-Car Upholstery Company, Regional;Regional|Car Upholstery Company;ORGANIZATION|ORGANIZATION
+Car Upholstery Company, Regional;Car Upholstery Company|Regional;ORGANIZATION|ORGANIZATION
 Distribution/Logistics Provider 03;;
 Paint Company, Regional;Paint Company|Regional;ORGANIZATION|ORGANIZATION
 Distribution/Logistics Provider 04;;
@@ -457,7 +457,7 @@ Retail Outlet;;
 Auto Inc HQ;Auto Inc;ORGANIZATION
 Factory Vietnam;Vietnam;LOCATION
 Regional Supplier 1;Regional Supplier;ORGANIZATION
-Logistics Provider 2;;
+Logistics Provider 2;Logistics Provider;ORGANIZATION
 Regional Supplier 2;Regional Supplier;ORGANIZATION
 EU HQ Supplier;EU;ORGANIZATION
 Logistics Provider 1;;
@@ -478,7 +478,7 @@ ITBP (Tier 1);;
 Business Controller;;
 IT Controller;;
 Portfolio Manager;;
-Philips IT - PSO (Project Support Office);Philips IT|PSO|Project Support Office;ORGANIZATION|ORGANIZATION|ORGANIZATION
+Philips IT - PSO (Project Support Office);Project Support Office|Philips IT|PSO;ORGANIZATION|ORGANIZATION|ORGANIZATION
 Logistic Provider;;
 ERP;ERP;ORGANIZATION
 Logistic provider;;
@@ -514,7 +514,7 @@ Pickup (Technician);;
 Helpdesk;Helpdesk;PERSON
 Sales team;;
 Accounts Department;Accounts Department;ORGANIZATION
-DMS Parts Provision Team;DMS Parts;ORGANIZATION
+DMS Parts Provision Team;;
 Credit Check Authority;Credit Check Authority;ORGANIZATION
 Branch Office;Branch Office;ORGANIZATION
 Office branch;;
@@ -582,7 +582,7 @@ Quality Control;Quality Control;ORGANIZATION
 Line of Business User, Project Managers;Project Managers;ORGANIZATION
 Citi Technology Infrastructure (CTI);Citi Technology Infrastructure|CTI;ORGANIZATION|ORGANIZATION
 Data center Operation;;
-SA / SAN/Frame Support;SA|SAN;LOCATION|LOCATION
+SA / SAN/Frame Support;SAN|SA;LOCATION|LOCATION
 Mail Room;Mail Room;ORGANIZATION
 Shareholder Services;Shareholder Services;ORGANIZATION
 Background Check Vendor;;
@@ -666,7 +666,7 @@ Accounts Pay;;
 Warehouse ;;
 Supervisor ;;
 Project Manager (PM);;
-MSSB CM Team;MSSB CM Team;ORGANIZATION
+MSSB CM Team;MSSB;ORGANIZATION
 CCR Team;CCR Team;ORGANIZATION
 Customer Request For Computing Capacity;;
 Finance Approval / Management Authorization;;
@@ -679,11 +679,11 @@ CATE Labs Administrator;CATE Labs;ORGANIZATION
 External Connectivity Management;External Connectivity Management;ORGANIZATION
 Network Security Engineer;Network Security Engineer;ORGANIZATION
 Information Security Officer;;
-Operations & Technology Risk Management;;
+Operations & Technology Risk Management;Technology Risk Management;ORGANIZATION
 Perimeter Security Officer;;
 RFC Approvers;;
 Development Group;Development Group;ORGANIZATION
-Business Relation Group ( BRM);BRM|Business Relation Group;ORGANIZATION|ORGANIZATION
+Business Relation Group ( BRM);Business Relation Group|BRM;ORGANIZATION|ORGANIZATION
 App Support Group;App Support Group;ORGANIZATION
 Employee Requester;;
 Direct Manager;;
@@ -692,7 +692,7 @@ Finance & Management Approval;Finance & Management Approval;ORGANIZATION
 Pharma Architecture;Pharma Architecture;ORGANIZATION
 Application Team;;
 Incident Management Team;;
-SA and DBA Teams;SA|DBA Teams;ORGANIZATION|ORGANIZATION
+SA and DBA Teams;DBA Teams|SA;ORGANIZATION|ORGANIZATION
 AccountsPayable;;
 Various Utility Companies;Utility Companies;ORGANIZATION
 Le Pendez Dix;Le Pendez Dix;PERSON
@@ -731,7 +731,7 @@ PICKUP;;
 PRODUCTION;;
 QUALITY ASSURANCE;;
 CVS - DATA ENTRY;CVS;ORGANIZATION
-CVS - CUSTOMER SERVICE;CUSTOMER SERVICE|CVS;ORGANIZATION|ORGANIZATION
+CVS - CUSTOMER SERVICE;CVS|CUSTOMER SERVICE;ORGANIZATION|ORGANIZATION
 CUSTOMER SERVICE;CUSTOMER SERVICE;ORGANIZATION
 site engineer;;
 depot clerk;;
@@ -948,7 +948,7 @@ Agencies and citizens;;
 Stakeholder;;
 Minister’s Delegate;;
 Government Garzette;Garzette;PERSON
-Application and Internal System (DCS and ATS);DCS;MISC
+Application and Internal System (DCS and ATS);;
 SAP Management;SAP Management;ORGANIZATION
 Validate Officer @ Level 7;;
 Validate Officer;;
@@ -976,14 +976,14 @@ Process participants;;
 Production with ERP-System;;
 Sales & Distribution with CRM-System;;
 Logistics with ERP-System;ERP;ORGANIZATION
-Finance & Accounting with ERP-System;ERP|Finance & Accounting;ORGANIZATION|ORGANIZATION
+Finance & Accounting with ERP-System;Finance & Accounting;ORGANIZATION
 Customer Service Department;Customer Service Department;ORGANIZATION
 Grid Operator;Grid Operator;ORGANIZATION
 Change Manager;;
 Agency Employee;Agency Employee;ORGANIZATION
 Department Employee;Department Employee;ORGANIZATION
 Admission Commission;Admission Commission;ORGANIZATION
-Uni-Assist;Uni;ORGANIZATION
+Uni-Assist;;
 Online Registration Pool;;
 Studienabteilung (Study Department);Study Department;ORGANIZATION
 Customer service (TELECO);;
@@ -1046,7 +1046,7 @@ boss;;
 humain resource;;
 Representative;;
 Claim adjuster;;
-Bill (Owner);;
+Bill (Owner);Bill;PERSON
 Illustration Creation Team;;
 Technical Team;;
 Admin Officers;Admin Officers;ORGANIZATION
@@ -1109,7 +1109,7 @@ EU;;
 Evaluation commission;;
 Member of evaluation commission;;
 PROFESSORS;;
-ADMINISTRATION OFFICE;;
+ADMINISTRATION OFFICE;ADMINISTRATION OFFICE;ORGANIZATION
 Secretatry;;
 Administrator Secretary;;
 Proponent;Proponent;PERSON
@@ -1117,7 +1117,7 @@ non EU lecturer;EU;ORGANIZATION
 EU lecturers;EU;ORGANIZATION
 External Committee member;External Committee;ORGANIZATION
 PROPONENT;PROPONENT;ORGANIZATION
-Catering Service;;
+Catering Service;Catering Service;ORGANIZATION
 Store Warehouse;Store Warehouse;ORGANIZATION
 Store Front;;
 production;;
@@ -1244,7 +1244,7 @@ ITS Change Co-ordinator;ITS Change Co;ORGANIZATION
 Change Requester;;
 ITS Change Coordinator;;
 ITS Senior Management;Senior Management;ORGANIZATION
-ITS Senior Managers;;
+ITS Senior Managers;Senior Managers;ORGANIZATION
 ITS Change Management Process;;
 IT Infrastructure;IT Infrastructure;ORGANIZATION
 Credit Broker;;
@@ -1311,7 +1311,7 @@ Airline- service desk personnel;;
 Airport- service desk personnel;;
 Airport- Departure control system;;
 Airline- Check in supervisor;;
-Airport ISS security personnel;Airport ISS;ORGANIZATION
+Airport ISS security personnel;;
 Airport volunteer [PER, BNE];;
 Airport staff [MEL];MEL;ORGANIZATION
 BIA enrollment system;BIA;ORGANIZATION
@@ -1323,7 +1323,7 @@ Highly creative part of Marketing Dept.;Marketing Dept;ORGANIZATION
 Lending Factory Incorperated;Lending Factory Incorperated;ORGANIZATION
 Claim Adjustor;;
 Repair Technician;;
-PhD secretary (Francesca);Francesca;PERSON
+PhD secretary (Francesca);PhD|Francesca;ORGANIZATION|PERSON
 Funder;;
 PhD Process Mgmt Platform;;
 Metal Works;Metal Works;ORGANIZATION
@@ -1439,7 +1439,7 @@ Financial dept;;
 business partner;;
 university;;
 Accounting (WPLACM);;
-Phd Student;;
+Phd Student;Phd Student;ORGANIZATION
 Disi Department;Disi Department;ORGANIZATION
 Doctors commitment;;
 Advisor professor;;
@@ -1494,7 +1494,7 @@ Talent Seek Recruitment Managers;;
 Client End Managers;;
 Client End HR;;
 Selection Panel;Selection Panel;ORGANIZATION
-TS Casual Admin Assistant;TS Casual;ORGANIZATION
+TS Casual Admin Assistant;;
 HR Specialists;;
 Client HR;;
 Next Level Manager;;
@@ -1655,7 +1655,7 @@ Center Council;Center Council;ORGANIZATION
 Property manager;;
 Property Manager;;
 CRM department;CRM;ORGANIZATION
-IT Strategic Sourcing (J&J);J&J|IT Strategic Sourcing;ORGANIZATION|ORGANIZATION
+IT Strategic Sourcing (J&J);IT Strategic Sourcing|J&J;ORGANIZATION|ORGANIZATION
 J&J local contacts;J&J;ORGANIZATION
 J&J Local Contact;J&J Local Contact;ORGANIZATION
 IT Strategic Sourcing;IT Strategic Sourcing;ORGANIZATION
@@ -1675,7 +1675,7 @@ CFO;;
 Team manager;;
 Tutor;Tutor;PERSON
 TS HR Coordinator;;
-TS Clerical/Admin Staff;Admin Staff|TS Clerical;ORGANIZATION|ORGANIZATION
+TS Clerical/Admin Staff;TS Clerical|Admin Staff;ORGANIZATION|ORGANIZATION
 Staff personnel;;
 Attendant;;
 Nursing/ Medical Clinician;Nursing/ Medical Clinician;ORGANIZATION
@@ -1858,13 +1858,13 @@ Authenticating and Authorizing Information Requesters;;
 Object Agents;Object Agents;ORGANIZATION
 Domain Name System (DNS);Domain Name System;ORGANIZATION
 Distributed Hash Table (DHT);;
-Finding a DS through ONS Bootstrapping;ONS Bootstrapping|DS;MISC|ORGANIZATION
+Finding a DS through ONS Bootstrapping;ONS Bootstrapping;ORGANIZATION
 BRIDGE Discovery Services;BRIDGE Discovery Services;ORGANIZATION
 Contact Nodes;Nodes;PERSON
 Storage Nodes;;
 Intermediate Nodes;;
 Discovery Services;Discovery Services;ORGANIZATION
-Publishing the Basic Records to DS;DS;MISC
+Publishing the Basic Records to DS;;
 Sending the Requested Detailed Info;;
 Registering the Object with DS;DS;MISC
 Retrieving the Results;;
@@ -1879,7 +1879,7 @@ Publishing Key Events plus Security Options to ADS;;
 Requesting Detailed Info;;
 Retrieving the Pointer Info;Pointer Info;ORGANIZATION
 Returning the Detailed Info;;
-Sending a One-Off Query to DS;DS;MISC
+Sending a One-Off Query to DS;;
 Sending the Results;;
 Logistic / Warehouse;Logistic / Warehouse;ORGANIZATION
 BCP;BCP;ORGANIZATION
@@ -1962,7 +1962,7 @@ SSP Admin office;SSP Admin;ORGANIZATION
 Experience SSP Members;;
 Master data management;;
 QAS Call Center;QAS Call Center;ORGANIZATION
-QAS Ambulance Medical Dispatcher;QAS Ambulance Medical Dispatcher;ORGANIZATION
+QAS Ambulance Medical Dispatcher;QAS Ambulance Medical;ORGANIZATION
 Brisbane Institute Of Art;Brisbane Institute Of Art;ORGANIZATION
 Receiving Depot;;
 Real Estate Agent;Real Estate Agent;ORGANIZATION
@@ -2024,7 +2024,7 @@ Accounts receivable department officer;;
 Call Centre;;
 Call centre;;
 SSP Payment Office;SSP Payment Office;ORGANIZATION
-SSP's Accounts Receivable Department;SSP|Accounts Receivable Department;ORGANIZATION|ORGANIZATION
+SSP's Accounts Receivable Department;Accounts Receivable Department|SSP;ORGANIZATION|ORGANIZATION
 IN/OUT Patient Group;;
 Policy holder;;
 Claims;;
