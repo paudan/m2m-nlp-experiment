@@ -41,7 +41,7 @@ ALLENNLP_POS = 'allennlp/biaffine-dependency-parser-ptb-2020.04.06.tar.gz'
 ALLENNLP_NER = 'allennlp/ner-model-2020.02.10.tar.gz'
 NLTK_PATH = '/mnt/DATA/data/nltk'
 ELMO_TAGGER_PATH = 'custom/elmo_tagger'
-BERT_TAGGER_PATH = 'custom/roberta-pos-tagger'
+BERT_TAGGER_PATH = 'custom/flair-tagger/best-model.pt'
 nltk.data.path.append(NLTK_PATH)
 
 
@@ -435,26 +435,39 @@ class ElmoBiLSTM_CRFProcessor(CustomProcessor):
         return self._extract_phrase(list(zip(self.pos_tagger.tokenizer(token), self.pos_tagger.predict(token))), type)
 
 # BertBiLSTMCRF
-class BertBiLSTM_CRFProcessor(CustomProcessor):
+class BertBiLSTM_CRFProcessor(FlairNLPProcessor):
+
+    def grammar(self):
+        ADP = '<RB|RBR|RP|TO|IN|PREP>'
+        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS>+<POS>?<CD>?'
+        return """
+        NP: {{({NP})+({ADP}?<DT>?{NP})*}}
+        VP: {{<VB*>+{ADP}?}}
+        PNP: {{<NNP|NNPS>+}}        
+        """.format(NP=NP, ADP=ADP)
 
     def __init__(self, process_proper_nouns=False):
-        super().__init__(process_proper_nouns)
-        model_config = {'tokenizer': 'BertTokenizer', 'config': 'BertConfig', 'model': 'BertModel'}
-        self.config = BertConfig.from_pretrained(BERT_TAGGER_PATH, cache_dir=BERT_MODEL_DIR)
-        with open(os.path.join(BERT_TAGGER_PATH, 'params.json'), 'r', encoding='utf-8') as f:
-            params = json.load(f)
-        self.pos_tagger = BERT_BiLSTM_CRF.from_pretrained(BERT_TAGGER_PATH, labels_map=self.config.id2label,
-                                                          use_bilstm=params['use_bilstm'], rnn_dim=params['rnn_dim'],
-                                                          model_config=model_config)
-        device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        self.pos_tagger.to(torch.device(device))
-        self.tokenizer = BertTokenizer.from_pretrained(BERT_TAGGER_PATH)
-        self.dst = BertDataset(self.tokenizer)
-
-    def extract_phrase_by_type(self, token, type):
-        words = wordpunct_tokenize(token)
-        input = self.dst.transform_input([words], self.config.label2id)
-        tags = self.pos_tagger.predict_tags(input)
-        if len(tags) == 0:
-            return None
-        return self._extract_phrase(list(zip(words, tags[0])), type)
+        super().__init__(process_proper_nouns, FLAIR_NER_MODEL, pos_model=BERT_TAGGER_PATH)
+# class BertBiLSTM_CRFProcessor(CustomProcessor):
+#
+#     def __init__(self, process_proper_nouns=False):
+#         super().__init__(process_proper_nouns)
+#         model_config = {'tokenizer': 'BertTokenizer', 'config': 'BertConfig', 'model': 'BertModel'}
+#         self.config = BertConfig.from_pretrained(BERT_TAGGER_PATH, cache_dir=BERT_MODEL_DIR)
+#         with open(os.path.join(BERT_TAGGER_PATH, 'params.json'), 'r', encoding='utf-8') as f:
+#             params = json.load(f)
+#         self.pos_tagger = BERT_BiLSTM_CRF.from_pretrained(BERT_TAGGER_PATH, labels_map=self.config.id2label,
+#                                                           use_bilstm=params['use_bilstm'], rnn_dim=params['rnn_dim'],
+#                                                           model_config=model_config)
+#         device = 'cuda' if torch.cuda.is_available() else 'cpu'
+#         self.pos_tagger.to(torch.device(device))
+#         self.tokenizer = BertTokenizer.from_pretrained(BERT_TAGGER_PATH)
+#         self.dst = BertDataset(self.tokenizer)
+#
+#     def extract_phrase_by_type(self, token, type):
+#         words = wordpunct_tokenize(token)
+#         input = self.dst.transform_input([words], self.config.label2id)
+#         tags = self.pos_tagger.predict_tags(input)
+#         if len(tags) == 0:
+#             return None
+#         return self._extract_phrase(list(zip(words, tags[0])), type)
