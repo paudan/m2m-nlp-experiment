@@ -7,11 +7,16 @@ import com.nomagic.magicdraw.tests.MagicDrawTestCase;
 import com.nomagic.magicdraw.uml.symbols.DiagramPresentationElement;
 import com.nomagic.uml2.ext.jmi.helpers.ModelHelper;
 import com.nomagic.uml2.ext.magicdraw.auxiliaryconstructs.mdmodels.Model;
+import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Element;
 import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package;
 import org.junit.Test;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Collection;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -99,6 +104,44 @@ public class NamesExtractionTest extends MagicDrawTestCase {
             Package root = project.getPrimaryModel();
             ElementNamesExtractor extractor = new BPMNElementNamesExtractor(root);
             extractor.extractByDiagram("bpmn_diagrams");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testUseCaseTestDiagram() {
+        try {
+            System.out.println("Processing Use Case KTU models file (by diagram)");
+            loadProjectFile(Paths.get("/mnt/DATA/Darbas/KTU/code", "UseCase test diagrams.mdzip"));
+            Package root = project.getPrimaryModel();
+            ElementNamesExtractor extractor = new ElementNamesExtractor(root);
+            String prefix = "test_diagrams";
+            extractor.extractDiagramsPerPackage(prefix);
+            Function<Entry<DiagramPresentationElement, Collection<Element>>, Set<String[]>> func = entry -> extractor.extractAssociations(entry.getValue());
+            extractor.extractByDiagram(prefix, "actors_useCases", func);
+            func = entry -> extractor.extractBoundaryAssociations(entry.getValue());
+            extractor.extractByDiagram(prefix, "boundaries_useCases", func);
+            func = entry -> extractor.extractExtensionPoints(entry.getValue());
+            extractor.extractByDiagram(prefix, "extensionPoints", func);
+            func = entry -> extractor.extractIncludeTuples(entry.getValue());
+            extractor.extractByDiagram(prefix, "includeTuples", func);
+            func = entry -> extractor.extractExtendTuples(entry.getValue());
+            extractor.extractByDiagram(prefix, "extendTuples", func);
+            func = entry -> extractor.extractUseCaseGeneralizationTuples(entry.getValue());
+            extractor.extractByDiagram(prefix, "generalizationTuples", func);
+            func = entry -> extractor.extractActorGeneralizations(entry.getValue());
+            extractor.extractByDiagram(prefix, "generalizationActors", func);
+            func = entry -> extractor.extractUseCaseGeneralizations(entry.getValue());
+            extractor.extractByDiagram(prefix, "generalizationUseCases", func);
+            func = entry -> extractor.extractIncludeRelations(entry.getValue());
+            extractor.extractByDiagram(prefix, "includeRelations", func);
+            func = entry -> extractor.extractExtendRelations(entry.getValue());
+            extractor.extractByDiagram(prefix, "extendRelations", func);
+            func = entry -> extractor.extractActors(entry.getValue());
+            extractor.extractByDiagram(prefix, "actors", func);
+            func = entry -> extractor.extractUseCases(entry.getValue());
+            extractor.extractByDiagram(prefix, "usecases", func);
         } catch (IOException e) {
             e.printStackTrace();
         }

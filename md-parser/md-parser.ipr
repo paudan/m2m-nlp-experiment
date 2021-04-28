@@ -262,6 +262,23 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="false" name="NamesExtractionTest.testUseCaseTestDiagram" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="md-parser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ktu.mdextract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ktu.mdextract" />
+      <option name="MAIN_CLASS_NAME" value="org.ktu.mdextract.NamesExtractionTest" />
+      <option name="METHOD_NAME" value="testUseCaseTestDiagram" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Xmx3072M -Xss1024K -Dinstall.root=&quot;$MAGICDRAW19_DIR$&quot; -Dmd.plugins.dir=&quot;$MAGICDRAW19_DIR$/plugins&quot; -DLOCALCONFIG=true -jar &quot;$MAGICDRAW19_DIR$/openapi/ide/lib/com.nomagic.magicdraw.intellij.launcher.jar&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
