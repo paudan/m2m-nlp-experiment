@@ -49,6 +49,7 @@ class SpacyParserTestCase(unittest.TestCase):
                             {('Implement', 'specification'), ('Implement', 'required software'), ('Implement', 'test items')})
 
     def test_case6(self):
+        # Fails to due "as well as improve" recognition as verb; works if ADP is removed from verb phrase pattern
         phrase = 'Create specification and develop software, as well as improve tools'
         doc = self.nlp(phrase)
         self.assertSetEqual(self.parser.process_parsed(doc),
@@ -58,13 +59,26 @@ class SpacyParserTestCase(unittest.TestCase):
         phrase = 'Create specification and develop software, start testing and deploying'
         doc = self.nlp(phrase)
         self.assertSetEqual(self.parser.process_parsed(doc),
-                            {('Create', 'specification'), ('develop', 'software')})
+                            {('Create', 'specification'), ('develop', 'software'), ('start testing', None)})
 
     def test_case8(self):
         phrase = 'Create specification and develop software, start tests, integration and deployment'
         doc = self.nlp(phrase)
         self.assertSetEqual(self.parser.process_parsed(doc),
                             {('Create', 'specification'), ('develop', 'software'), ('start', 'tests'), ('start', 'integration'), ('start', 'deployment')})
+
+    def test_case9(self):
+        # Fails to recognize conjunction
+        phrase = 'Evaluate your personnel and management relationship with the bank'
+        doc = self.nlp(phrase)
+        self.assertSetEqual(self.parser.process_parsed(doc),
+                            {('Evaluate', 'your personnel and management relationship')})
+
+    def test_case10(self):
+        # Fails to recognize two instances
+        phrase = "call applicant, ask for completion of data"
+        doc = self.nlp(phrase)
+        self.assertSetEqual(self.parser.process_parsed(doc), {('call', 'applicant')})
 
     def test_leftmost(self):
         phrase = 'Create specification and develop software, start tests, integration and deployment'
@@ -93,5 +107,3 @@ class SpacyParserTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
