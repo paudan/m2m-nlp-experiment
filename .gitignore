@@ -135,10 +135,12 @@ venv.bak/
 /flair/
 /stanza_resources/
 /stanford-corenlp-full-2018-10-05/
-*.tar.gz
-*.zip
-*.props
 /.run/
 /spacy/
 /embeddings/
 /allennlp/
+/acronyms/catboost_info/
+/acronyms/classifier-*/
+*.tar.gz
+*.zip
+*.props
