@@ -11,6 +11,7 @@ allennlp-models==2.1.0
 simplenlg
 pyenchant==3.2.0
 py_stringmatching
+spikex
 anago
 keras==2.2.5
 tensorflow-gpu==1.15.5
