@@ -37,9 +37,9 @@ BERT_NER_MODEL = 'wietsedv/bert-base-multilingual-cased-finetuned-conll2002-ner'
 BERT_MODEL_DIR = 'embeddings'
 ALLENNLP_POS = 'allennlp/biaffine-dependency-parser-ptb-2020.04.06.tar.gz'
 ALLENNLP_NER = 'allennlp/ner-model-2020.02.10.tar.gz'
-NLTK_PATH = '/mnt/DATA/data/nltk'
 ELMO_TAGGER_PATH = 'custom/elmo_tagger'
 BERT_TAGGER_PATH = 'custom/flair-tagger/best-model.pt'
+NLTK_PATH = '/mnt/DATA/data/nltk'
 nltk.data.path.append(NLTK_PATH)
 
 
@@ -51,7 +51,7 @@ class AbstractNLPProcessor:
         self.process_proper_nouns = process_proper_nouns
 
     def grammar(self):
-        NP = '<ADV|ADJ>*<NOUN|PROPN>+<PART>?<NUM>?'
+        NP = '<ADV|ADJ>*<NOUN|PROPN|PRP|PRP$>+<PART>?<NUM>?'
         if self.process_proper_nouns is True:
             return """
             NP: {{(<ADV|ADJ>*<NOUN>+<PART>?<NUM>?)+(<ADP>*<DET>?{NP})*}}
@@ -276,7 +276,7 @@ class CoreNLPProcessor(AbstractNLPProcessor):
 
     def grammar(self):
         ADP = '<RB|RBR|RP|TO|IN|PREP>'
-        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS>+<POS>?<CD>?'
+        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS|PRP|PRP$>+<POS>?<CD>?'
         return """
         NP: {{({NP})+({ADP}?<DT>?{NP})*}}
         VP: {{<VB*>+{ADP}?}}
@@ -403,7 +403,7 @@ class CustomProcessor(AbstractNLPProcessor):
 
     def grammar(self):
         ADP = '<RB|RBR|RP|TO|IN|PREP>'
-        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS>+<POS>?<CD>?'
+        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS|PRP|PRP$>+<POS>?<CD>?'
         return """
         NP: {{({NP})+({ADP}?<DT>?{NP})*}}
         VP: {{<VB*>+{ADP}?}}
@@ -437,7 +437,7 @@ class BertBiLSTM_CRFProcessor(FlairNLPProcessor):
 
     def grammar(self):
         ADP = '<RB|RBR|RP|TO|IN|PREP>'
-        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS>+<POS>?<CD>?'
+        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS|PRP|PRP$>+<POS>?<CD>?'
         return """
         NP: {{({NP})+({ADP}?<DT>?{NP})*}}
         VP: {{<VB*>+{ADP}?}}
