@@ -1,0 +1,411 @@
+Task;VerbPhrases;NounPhrases
+adds incoming mail date, records letter, archives it;"adds;adds";"incoming mail date;archives"
+empties  and  checks the mails in the mailbox;"empties;empties";"checks;mails"
+sends a letter to person and explaines why not;"sends;sends";"letter to person;explaines"
+prepare invoices and send a letter to customer;"prepare;send";"invoices;letter to customer"
+prints a membership card and send to new customer;prints;membership card
+stamps 'new member' and writes the date;"writes;writes";"date;new member"
+Create and submit the quotation;submit;quotation
+Assemble shipment and packing list;"Assemble;Assemble";"packing list;shipment"
+Select a suitable vendor and send purchase order;"Select;send";"suitable vendor;purchase order"
+Inform customer and close transaction;"Inform;Inform";"customer;close transaction"
+Decide to accept or reject claim;Decide to accept;claim
+Decide to accept or reject claim;Decide to accept;claim
+Bring computer to ACM and describe problem;"describe;Bring";"problem;computer to ACM"
+Complete the repair and test computer;"Complete;Complete";"test computer;repair"
+Create estimate of repair time and cost;"Create;Create";"estimate of repair time;cost"
+Complete repair and test computer;;
+check the process and assign points;"assign;check";"points;process"
+check the progress and consult problems;"check;consult";"progress;problems"
+extend the process to L2,3;extend;process to L2
+contact insurer and consult the case;"consult;contact";"case;insurer"
+Review Pricing Options and Generate Sales Quote;"Generate;Generate";"Review Pricing Options;Sales Quote"
+Produce Cost;Produce;Cost
+note incident number and code;;
+Review pricing options and generate sales quote;"generate;generate";"sales quote;Review pricing options"
+Produce Cost Estimates;Produce;Cost Estimates
+Production Order confirmation  and  Production of motorcycle;;
+Produced labor and materal costs;;
+accepting the candidate and sending the letter to Charles;"accepting;sending";"candidate;letter to Charles"
+Empties Mailbox and check for missing information;"Empties;Empties";"check;Mailbox"
+recording and archiving;;
+check diaries and for conflicts;"check;check";"conflicts;diaries"
+check dates and suggest modifications;"check;suggest";"dates;modifications"
+pay bill and tip;"pay;pay";"bill;tip"
+Schedule exams and interview;;
+Enter client/vendor information on the invoice entry form;"Enter;Enter";"client;vendor information"
+Purchase missing parts and put on stock;"put on;Purchase missing";"stock;parts"
+Pack and label product;;
+Consult project, check progress;"check;Consult";"progress;project"
+Analyse field and identify process;"Analyse;identify";"field;process"
+Extend their process to L 2,3;Extend;their process to L
+Check design and provide feedback;"Check;provide";"design;feedback"
+Create and provide information about the company;provide;information
+Inquire about PRWeb press release services and prices for company's specific requirements;"Inquire about;Inquire about";"prices for company;PRWeb press release services"
+Integrate Design and decide where such data should be placed;Integrate;Design
+collect data and conduct business analysis covering all aspects about company's products;"collect;collect;covering";"data;conduct business analysis;aspects about company"
+create graphics and develop design for the leaflet;"develop;create";"design;graphics"
+create graphics and develop design for the whitepaper;"develop;create";"design;graphics"
+Find or create Music;create;Music
+Import Audio: Narration, Music and Sound Effects;;
+Create Titles, Subtitles, Credits;"Create;Create;Create";"Titles;Credits;Subtitles"
+Determine the Form or Style;"Determine;Determine";"Form;Style"
+calculate and send price offer;send;price offer
+check and repair the hardware;repair;hardware
+checks and configures the software;configures;software
+stop negotiation and don't order;stop;negotiation
+Extend their process to Level 2,3;Extend;their process to Level
+Analyse field and identify processes;"Analyse;identify";"field;processes"
+Analyze responses and start negotiation;"start;Analyze";"negotiation;responses"
+Analyze reasons and learn a lesson;"Analyze;learn";"reasons;lesson"
+Edit and complete request;;
+fullfil form and send request to management;"send;send";"fullfil form;request to management"
+receive hw and invoice;"receive;receive";"hw;invoice"
+sent to client, accouts receivable department and registry;"sent to;sent to";"client;registry"
+check the completeness and tick relevant box;"check;check";"tick relevant box;completeness"
+extend process to level 2,3;extend;process to level
+Prepare, read the materials;read;materials
+Verify and sign by CFO;;
+Generate ratio  and  KPI;"Generate;Generate";"ratio;KPI"
+Verify ratio  and  KPIs;"Verify;Verify";"KPIs;ratio"
+Extend process to level 2,3;Extend;process to level
+Kick off with Customer, PM and BDM;"Kick off with;Kick off with";"Customer;PM"
+Check quantity and quality;"Check;Check";"quantity;quality"
+Rename and Upload new file to indicate a release;"indicate;Upload";"release;new file"
+write and send letters for fee;send;letters for fee
+create and send cards;send;cards
+stamp and write date;;
+Receive and inspect materials;inspect;materials
+Fill out Claim Form  and  Send to CSR;Fill out;Claim Form
+order to fetch wine and prepare any other alcoholic beverages;"order to fetch;prepare";"wine;other alcoholic beverages"
+Welcome the customer and ask for his wants;Welcome;customer
+Welcome the customer and ask what type of account he wants;"Welcome;ask";"customer;type of account"
+Take a seat and ask for the menu;Take;seat
+Define price list and conditions;"Define;Define";"price list;conditions"
+Compare the report and the invoices details;"Compare;Compare";"report;invoices details"
+Accept term and Condition;"Accept;Accept";"Condition;term"
+Enter user email, age and question;"Enter;Enter;Enter";"user email;age;question"
+Verify user email, age and question;"Verify;Verify;Verify";"user email;question;age"
+Download and install;;
+Batched and allocate invoice to DEO;allocate;invoice to DEO
+Enters date for completion and Check the priority;"Enters;Check";"date for completion;priority"
+Accept term and Condition;"Accept;Accept";"Condition;term"
+Enter user email and unique question;"Enter;Enter";"user email;unique question"
+Verify user email, and unique question;"Verify;Verify";"unique question;user email"
+Check Software Warranty, Support, and Update.;"Check;Check;Check";"Support;Update;Software Warranty"
+Evaluate the liabilities and risks;"Evaluate;Evaluate";"liabilities;risks"
+Fill and Attach all the required Documents;Attach;Documents
+Evaluate your personal and management relationship with the bank;Evaluate;personal and management relationship
+Evaluate the interest and fees of the loan;"Evaluate;Evaluate";"fees;interest"
+Review Suppliers and Send RFQ;"Send;Send";"RFQ;Review Suppliers"
+Verifies Pricing and terms of items;"Verifies;Verifies";"Pricing;terms of items"
+Waiting for purchase invoice and shipment;"Waiting for;Waiting for";"shipment;purchase invoice"
+Send the shipment and packing list;Send;packing list
+call applicant, ask for completion of data;call;applicant
+add incoming mail number, record letter in letter box, archive it;add;incoming mail number
+mark as withdrawn and file;withdrawn;file
+Check and Update vendor's details;Check;details
+Take payment, check id and hand over;"Take;check;check";"payment;hand;id"
+count and verify drugs;verify;drugs
+Seal in the bag and leave to pickup area;leave to;Seal
+Call and ask confirmation;ask;confirmation
+order drugs and notify customer;"notify;order";"customer;drugs"
+describe problem and assign to pharmacist;describe;problem
+Mark the script as invalid and return to customer;;
+Mark the script as invalid and send SMS to customer;"send;send";"SMS to customer;Mark the script"
+research and develop a resolution;develop;resolution
+write and send resolution;send;resolution
+Specify and quantify the demand;quantify;demand
+Approve  and  trigger order;trigger;order
+Follow up and restaging;Follow up;restaging
+fill and sign a state of expenses into to which supporting documents are attached;"supporting;sign";"documents;state of expenses"
+check the financial settlement and sign;"check;check";"sign;financial settlement"
+ask to sign the statement of liquidation to the direction and the missionary;"ask to sign;ask to sign;ask to sign";"direction;statement of liquidation;missionary"
+Make the approximation of the payment between the management tool and OSB;"Make;Make";"management tool;approximation"
+check the supporting documents and calculate the cost of refund;"check;calculate";"documents;cost of refund"
+send the dossier and copies (depending on institution);"send;send";"copies;dossier"
+check the financial settlement and sign;"check;check";"sign;financial settlement"
+check the relevancy and the cost of the mission;"check;check";"cost;relevancy"
+request quote for transportation and accommodation;;
+address the MOR and the quote to the assistant;"address;address";"MOR;quote"
+Select vendor and create purchase order;"create;Select";"purchase order;vendor"
+Determine date of goods delivery and inform customer;"Determine;inform";"date of goods delivery;customer"
+Accept payments and generate invoice;"Accept;generate";"payments;invoice"
+Open and categorise invoice;categorise;invoice
+Recommend  and  obtain approvals;obtain;approvals
+Make the PO copy and send to AP;Make;PO copy
+Ask for confinement and iodine treatment;"Ask for;Ask for";"iodine treatment;confinement"
+Regularly inform media and population about operations;"inform;inform";"population about operations;media"
+Study radiation and weather reports;;
+Study radiation and weather reports;;
+Ask for radiation and weather measures;"Ask for;Ask for";"radiation;weather measures"
+Ask for confinment and iodine treatment;"Ask for;Ask for";"confinment;iodine treatment"
+ensure and control confinment;control;confinment
+ensure and control evacuation;control;evacuation
+Assist and evacuate victims;Assist;victims
+receive and treat victims;treat;victims
+Assist victims and support psychologically;"Assist;Assist";"support;victims"
+Provide road signs and vehicles;"Provide;Provide";"road signs;vehicles"
+Provide additional road signs and vehicules;"Provide;Provide";"additional road signs;vehicules"
+compile and sign the documents;sign;documents
+pass the exam and upload thesis ond the website;"pass;upload";"exam;thesis"
+Prepare all the receipts and submit them;"submit;Prepare";";receipts"
+Review pricing options and generate sales quote;"generate;generate";"sales quote;Review pricing options"
+Review Process and Send RFQ;"Send;Send";"RFQ;Review Process"
+Check process, assign points;"Check;assign";"process;points"
+Analyse field and identify processes;"Analyse;identify";"field;processes"
+Check and improve current contract proposal;improve;current contract proposal
+Visit FI and propose cooperation;"Visit;propose";"FI;cooperation"
+Contact REA, provide basic information;"Contact;provide";"REA;basic information"
+Revise and correct sale expectations;Revise;correct sale expectations
+Analyze inspection and offerer's expectations;Analyze;expectations
+Contact bidder and check status of his Contract check;"check;Contact";"status of his Contract check;bidder"
+Send message to customer, that it can't be delivered;Send;message to customer
+Check quantity and quantity;Check;quantity
+Produce Cost Estimates Laser tested;Produce;Cost Estimates Laser
+Copy and send original discharge letter;"send;send";"original discharge letter;Copy"
+Produce labor and material costs estimate;"Produce;Produce";"labor;material costs estimate"
+Perform Catalogue Search and return results;"Perform;return";"Catalogue Search;results"
+Create and Update basket;Create;Update basket
+Retrieve and send shipping details;send;shipping details
+Select Book and Add to Cart;Select;Book
+Enter Valid eMail Address and Password;"Enter;Enter";"Password;Valid eMail Address"
+Write details (vendor name, client name, date);Write;details
+Calculate and write due date on Invoice Entry Form;write;due date on Invoice Entry Form
+Collect Master Record Requests from Data Entry / Deliver Mail from Master Data Entry Staff;"Collect;Collect";"Deliver Mail from Master Data Entry Staff;Master Record Requests from Data Entry"
+Check SLA and write date on Invoice Entry Form;"Check;write";"SLA;date on Invoice Entry Form"
+Check Customer Type - preferred, standard, individual;Check;Customer Type
+Request Monitoring  and  Reporting Status;;
+Receive Monitoring  and  Reporting Status;"Receive;Receive";"Monitoring;Reporting Status"
+Send Monitoring  and  Reporting Status;"Send;Send";"Reporting Status;Monitoring"
+Request CD Players  and  Electronic Equipment Supply;;
+Receive CD Players  and  Electronic Equipment;"Receive;Receive";"Electronic Equipment;CD Players"
+Supply CD Players  and  Electronic Equipment;;
+Transport CD Players  and  Electronic Equipment to Factory;;
+Send Chassis  and  Circuitry;"Send;Send";"Chassis;Circuitry"
+Request Chassis  and  Circuitry;;
+Receive Chassis and Circuitry;"Receive;Receive";"Chassis;Circuitry"
+Forecast Demand, target sales;;
+Send Price and Availability Request;Send;Availability Request
+Determine the sum of levies and the montly levie based on characteristics of the company;"Determine;Determine";"montly levie;sum of levies"
+Store in Connect, KIP and Heffingen system;;
+Fill in Business Case Financials  and  Risks;"Fill in;Fill in";"Risks;Business Case Financials"
+Review  and  Validate Business Risk Assessment, Business Costs;"Validate;Validate;Validate";"Business Risk Assessment;Business Costs;Review"
+Review  and  Validate Technical Risk Assessment, IT Costs;"Validate;Validate;Validate";"Technical Risk Assessment;IT Costs;Review"
+Review  and  Decide Budget Allocation;"Decide;Decide";"Budget Allocation;Review"
+Apply Discounts  and  Waivers;"Apply;Apply";"Discounts;Waivers"
+fill in loan request(with montly income and requested amount);"fill in;fill in;fill in";"amount;loan request;montly income"
+accept or reject;;
+investigate, resolve conflicts;resolve;conflicts
+Check quality, quantity;Check;quantity
+Dropping off the script and noticing about pickup;Dropping off;script
+Count and verify putting medicines ready;verify putting;medicines
+Control Right drugs and right quantity;"Control;Control";"Right drugs;right quantity"
+Count and verify script;"verify;verify";"Count;script"
+Post literature on price, availability and model details;;
+Show customer suitable options and answered queries;"Show;Show";"customer suitable options;queries"
+Gather information about the part from the customer (i.e, make, model, year);"make;Gather";"model;information"
+Check weight and height of shipment;"Check;Check";"height of shipment;weight"
+Analyze field and identify processes;"identify;Analyze";"processes;field"
+Extend the process to Level 2,3;Extend;process to Level
+Create business failure report and inform customer;"Create;inform";"business failure report;customer"
+check and Consolidate the Pallets and Rollcages;Consolidate;Pallets
+print membership card and send it to new members;"send;print";"it to new members;membership card"
+add an incoming mail number  and  date, records;"add;add;add";"records;incoming mail number;date"
+add new member to the member register  and  add the fee;"add;add";"fee;new member"
+gets colllected letters  and  member register;"gets colllected;gets colllected";"letters;member register"
+stamps new member on the letter and writes date below it;"writes;stamps";"date;new member"
+adding mail number and date;"adding;adding";"mail number;date"
+recording letter and archiving;;
+stamp new member and write new date below;"write;stamp";"new date;new member"
+update case details and archive;;
+Request Review by QA and Develpment;;
+Issue Invoice and packaging slip;;
+Send Technician for Installation of BB and Netgate;Send;Technician for Installation of BB
+send notification to MST and user;"send;send";"notification to MST;MST and user"
+Build servers with Operating system and business application;"Build;Build";"business application;servers with Operating system"
+Send Email to QC and inform costomer;"inform;Send";"costomer;Email to QC"
+Analyze Capital Expenditure process and approve;Analyze;Capital Expenditure process
+Design solution by NPI, SA and SAN team;;
+Complete provisioning by all team SA;;
+Calculate Share Volume and record purchase order in records system;"Calculate;Calculate";"Share Volume;record purchase order in records system"
+Construct or Rework Purchase Order;;
+Letter P.O. or Fax P.O. Sent Out;;
+Fill out Form and Send it back within 30 Days;"Fill out;Send";"Form;it back within 30 Days"
+Determine Letter or Fax P.O.;"Determine;Determine";"Letter;Fax P.O."
+Create Purchase Order (Letter or Fax;"Create;Create;Create";"Purchase Order;Fax;Letter"
+Receive Invoice and Shipment;"Receive;Receive";"Invoice;Shipment"
+Receive packing slip  and  Invoice;"Receive;Receive";"packing slip;Invoice"
+Receive Invoice, Packing Slip, and Shipment from Supplier;"Receive;Receive;Receive";"Shipment from Supplier;Packing Slip;Invoice"
+Draft email and send to SA managers about the new upp;send to;Draft email
+Remove and archive old upp on Point Sec NAS;Remove;archive old upp on Point Sec NAS
+Name and place new upp on Point Sec NAS share;"place;place";"new upp on Point Sec NAS share;Name"
+Receive email and notify staff;"notify;Receive";"staff;email"
+Submit Inquiries and Questions;"Submit;Submit";"Questions;Inquiries"
+Notify Requestor of B2B U-Turn Implementation Requirements and CCR Approval Process;"Notify;Notify;Notify";"Requestor of B2B U;CCR Approval Process;Turn Implementation Requirements"
+Receive Product Order Request, Analyze Requirements;"Receive;Analyze";"Product Order Request;Requirements"
+Proceed with Design and Implementation of B2B U-Turn;"Proceed with;Proceed with";"Implementation of B2B U;Design"
+Receive Approval Notification and Notify NE;"Notify;Receive";"NE;Approval Notification"
+Packing Slip and Invoice Received;;
+Receive and Use New Software;Use;New Software
+Review and Make Changes to Existing System;"Make;Make";"Changes;Review"
+Build and Integrate New Modules;Build;New Modules
+Complete provisioning by all team SA;;
+Browse pocket books and accessories to buy;"Browse;Browse";"accessories;pocket books"
+Choose style, color/pattern, and quantity;"Choose;Choose;Choose;Choose";"quantity;pattern;color;style"
+Prepare and send background check report;send;background check report
+Send request to subs for invoices and waivers;"Send;Send";"request to subs for invoices;waivers"
+Collect waiver  and  requisition for all subs;"Collect;Collect";"waiver;requisition"
+Sign report  and  give to AP;give to;Sign report
+Select and Schedule Project;Select;Schedule Project
+Finalize Project Deliverable and Priority;"Finalize;Finalize";"Priority;Project Deliverable"
+Request Prototype Implementation and testing;;
+File Issues or Pass Functional Test;;
+Pass or Reject Prototype Test;Pass;Prototype Test
+Fax waiver and check to sub;check to;Fax waiver
+Check for partial or final payment;;
+Receive and Review the request;Review;request
+Receive PV bucket and Review the CCR request from Tech view;"Review;Receive";"CCR request from Tech view;PV bucket"
+Construct or rework purchase order;Construct;purchase order
+Create Engineering Project in NPMS  and  Assign Network Engineer;"Assign;Create";"Network Engineer;Engineering Project in NPMS"
+Notify Requestor of B2B Uturn Implementation Requirements and CCR Approval Process;"Notify;Notify";"CCR Approval Process;Requestor of B2B Uturn Implementation Requirements"
+Receive Project Request, Analyze Requirements;"Analyze;Receive";"Requirements;Project Request"
+Proceed with Design and Implementation of B2B U-Turn;"Proceed with;Proceed with";"Implementation of B2B U;Design"
+Revise  and  Resubmit;;
+Receive BRD  and  Baseline Design;"Receive;Receive";"BRD;Baseline Design"
+Create web server and app server instances;Create;app server instances
+Update inventory and Request app instance;;
+Search Catalogue and select product;"select;Search";"product;Catalogue"
+Identify Business Domain  and  Capabilities;"Identify;Identify";"Business Domain;Capabilities"
+Send Packing Slip and Invoice;"Send;Send";"Invoice;Packing Slip"
+Send Invoice and Confirmation to Accounts Payable;"Send;Send";"Confirmation to Accounts Payable;Invoice"
+Write and Mail Check;Write;Mail Check
+Ship Crate and Bill;;
+Generate Purchase Order Documents and Specs;"Generate;Generate";"Purchase Order Documents;Specs"
+Enter billing and shipping info;"Enter;Enter";"billing;shipping info"
+Send image  and  PO to SHS Team;"Send;Send";"image;PO to SHS Team"
+Analyse team and identify processes;"identify;Analyse";"processes;team"
+consult project, check progress;"consult;check";"project;progress"
+extend their process to L 2,3;extend;their process to L
+check and repair hardware;check;repair hardware
+check and configure software;configure;software
+ordering, buying, lending, or manufacturing the costumes;"buying;manufacturing;manufacturing";"lending;lending;costumes"
+organizing and performing the fitting of the costume;organizing;fitting
+Check quantity and quality;"Check;Check";"quantity;quality"
+Receiving, inspecting and receipting goods;inspecting;goods
+Scan receipt number and mark status;;
+Call to doctor and ask about refill;;
+Call to customer and fix errors;fix;errors
+Call to doctor and fix errors;fix;errors
+Contact customer or insurer;"Contact;Contact";"insurer;customer"
+Contact doctor and try to solve problem;"Contact;try to solve";"doctor;problem"
+Print out ticket with order number and preferred return time to customer;"Print out;Print out";"return time to customer;ticket with order number"
+complete business case and paperwork;;
+Consult to create new position or develop business case;"Consult to create;develop";"new position;business case"
+Complete and create or change Position Form;create;change Position Form
+Review and determine Terms and Conditions;"determine;determine;determine";"Review;Conditions;Terms"
+Send Terms and Conditions for approval;"Send;Send";"Terms;Conditions for approval"
+Recommend and obtain approval;obtain;approval
+Decide terms and conditions of offer to candidate;"Decide;Decide";"conditions of offer to candidate;terms"
+Raise and send Appointment Approval form;send;Appointment Approval form
+Scan and record application in GovSource;;
+Liase with client manager and HR services;;
+promotes his or hers ideas to public;promotes;hers ideas to public
+Give figures to Finance and Manufacturing;"Give;Give";"Manufacturing;figures to Finance"
+Raise and send appointment;send;appointment
+Revise Profile and Role;"Revise;Revise";"Profile;Role"
+Setup Vacancy and Localise Server;;
+Create and Publish Advertisement;Publish;Advertisement
+Pack Applications and Documentation;;
+Evaluate and Rank Candidates;Evaluate;Rank Candidates
+Allocate invoices, batch per data officer;Allocate;batch per data officer
+Archive invoice, entry form and payment report;;
+Retrieve invoice and entry form;"Retrieve;Retrieve";"invoice;entry form"
+Recommend preferred candidate, assign candidate to position in BPM;"assign;Recommend preferred";"candidate to position in BPM;candidate"
+Proceed to the terms and conditions of the offer to the selected candidate;"Proceed to;Proceed to";"conditions;terms"
+Review and confirm all other allowances applicable;confirm;other allowances
+Determine relocation terms and conditions;"Determine;Determine";"conditions;relocation terms"
+Liaise with the manager and HR advisor;"Liaise with;Liaise with";"manager;HR advisor"
+Raise and send Appointment approval form to next level manager;send;Appointment approval form to next level manager
+Receive Appointment Approval, attach to applicants BMP record;Receive;Appointment Approval
+Send form and other mandatory documents to Client HR Services;"Send;Send";"other mandatory documents to Client HR Services;form"
+Receive confirmed information, stores date in BPM position profile;"Receive confirmed;Receive confirmed";"stores date in BPM position profile;information"
+Notify his/her team and the client HR Services of the outcome;"Notify;Notify";"client HR Services;her team"
+Renegotiate terms and conditions;"Renegotiate;Renegotiate";"terms;conditions"
+Liaise with client Manager and HR services;"Liaise with;Liaise with";"client Manager;HR services"
+Generate and print Pdf;;
+Meeting Customer and Web Design;;
+Check content, quantity, other details;"Check;Check;Check";"quantity;content;other details"
+Call doctor and ask the question;"ask;Call";"question;doctor"
+Approve offered time or suggest own;"Approve offered;suggest";"time;"
+Verify customer personal and job details;Verify;personal and job details
+Update script and IS about substitution;;
+Verify scripts and pills in bag;"Verify;Verify";"pills in bag;scripts"
+Enter script and order details;"order;Enter";"details;script"
+Recap total cost and pick-up time;Recap;time
+Proceed to Private Security and Immigration Point;Proceed to;Private Security
+Perform security and Immigration checking for passenger;"Perform;Perform";"Immigration checking for passenger;security"
+Enter email  and  password;"Enter;Enter";"password;email"
+Launch or download iTunes app;Launch;iTunes app
+Proceed to Electricity and Gas Connection Page;"Proceed to;Proceed to";"Electricity;Gas Connection Page"
+Update Agreement  and  Contract;;
+Review Agreement  and Contract;;
+Disagree with Agreement  and  Contract;"Disagree with;Disagree with";"Agreement;Contract"
+Agree with Agreement  and  Contract;"Agree with;Agree with";"Contract;Agreement"
+Sign Agreement  and Contract;;
+Pay Bond  and  Deposits;"Pay;Pay";"Bond;Deposits"
+Inquire about policy for renewal (existing vehicle) or second hand purchase;"Inquire about;Inquire about";"second hand purchase;policy for renewal"
+Record purchased vehicle model and registration;;
+Inform consultant and customer of non-compliance;"Inform;Inform";"consultant;customer of non-compliance"
+Get information about the fault and write a service contract;"write;Get";"service contract;information"
+Write contract number to sticer and attach to the machine;Write;contract number
+Give information about your contacts and fault of machine;"Give;Give";"fault of machine;information about your contacts"
+Confirm or reject warranty;reject;warranty
+Repair machine ASAP and enter data in the CDD;"enter;enter";"data;Repair machine"
+Prepare invoice and give to customer;Prepare;invoice
+Fill warranty form and return machine;"return;Fill";"machine;warranty form"
+Order spareparts and apologize to customer;Order;spareparts
+Clarify date of delivery and tell customer;"tell;Clarify";"customer;date of delivery"
+Pay or refuse to pay and make a written complaint;make;complaint
+Produce estimate of labor and material costs;"Produce;Produce";"estimate of labor;material costs"
+Submit and register request;Submit;register request
+Research and resolve a request;resolve;request
+create Event, save into calendar;;
+Enter Username, E-Mail Adress and Accept Terms  and  Conditions;"Enter;Accept;Accept";"E-Mail Adress;Conditions;Terms"
+Set and confirm password, choose language and upload picture;"confirm;choose;upload";"password;language;picture"
+Enter Username  and  Password;"Enter;Enter";"Username;Password"
+Extend the process to level 2, 3;Extend;process to level
+Open  and  Category incoming emails;;
+Sort invoices  and  Enter details on stapled entry forms;"Enter;Enter";"details;Sort invoices"
+Check SLAs  and  Enter data;"Check;Enter";"SLAs;data"
+Preparing Meals and Chairs, Tables;"Preparing;Preparing";"Meals;Chairs"
+Sending Wedding Cards to nearby Friends and Relatives;"Sending;Sending";"Wedding Cards to nearby Friends;Relatives"
+Enter the vendor,client names ,date of arrival;"Enter;Enter;Enter";"vendor;client names;date of arrival"
+send cancellation and resubmit request email;"send;resubmit";"cancellation;request email"
+Assign a carrier  and  prepare paperwork;"prepare;Assign";"paperwork;carrier"
+Review Pricing options and generate sales quote;"generate;generate";"sales quote;Review Pricing options"
+Assess market situation/offers and feelings;"Assess;Assess;Assess";"feelings;market situation;offers"
+Assess customers feelings and needs;"Assess;Assess";"customers feelings;needs"
+Monitor advertising outcome (impact, new customers, ...) and feelings;"Monitor;Monitor;Monitor;Monitor";"impact;advertising outcome;new customers;feelings"
+Add contract  and  start contract fulfilment;"Add;start";"contract;contract fulfilment"
+Deny insurance and make statement;"Deny;make";"insurance;statement"
+Grant benefits for employee and his family;;
+Create an Error report and request a new Bill;"Create;request";"Error report;new Bill"
+Consult project , check progress;"check;Consult";"progress;project"
+Analyze file and identify processes;"Analyze;identify";"file;processes"
+Review  and  Deliver Sales Quote;"Deliver;Deliver";"Sales Quote;Review"
+Design interface (WSDL, GUI, etc.);;
+Contact BPR and DCA;Contact;BPR and DCA
+Confirm to BPR and CDA;;
+Searches Air India database for ticket and customer details;"Searches;Searches";"customer details;Air India database for ticket"
+Logon to the system and change password;change;password
+Check demand for budget, architectural relevance and business criticality;"Check;Check;Check";"architectural relevance;business criticality;demand for budget"
+Consolidate demands (redundencies and conflicts);"Consolidate;Consolidate;Consolidate";"redundencies;conflicts;demands"
+categorize for granularity and prepare further processing;prepare;further processing
+Consolidate demands (redundencies and conflicts);"Consolidate;Consolidate;Consolidate";"redundencies;conflicts;demands"
+Decide for business criticallity, escalation and further processing;"Decide for;Decide for;Decide for";"business criticallity;escalation;further processing"
+Identify and document stakeholder;Identify;document stakeholder
+Analyse and document demand;Analyse;document demand
+Prioritize demand and assess business criticality;"assess;Prioritize";"business criticality;demand"
+Consolidate alternative solutions in IT project proposals and calculate business case;"calculate;Consolidate";"business case;alternative solutions in IT project proposals"
+Prioritize IT project proposals and release portfolio plan;"release;Prioritize";"portfolio plan;IT project proposals"

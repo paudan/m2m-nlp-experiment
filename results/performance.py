@@ -2,8 +2,14 @@
 # -*- coding: utf-8 -*-
 
 import itertools
+import logging
+import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score, f1_score
+from py_stringmatching.similarity_measure.dice import Dice
+from py_stringmatching.similarity_measure.jaccard import Jaccard
+
+logging.basicConfig(level=logging.INFO)
 
 
 def equal_verbs(verb1, verb2):
@@ -123,3 +129,54 @@ def calculate_ner_performance(file, original):
         'F1ScoreNEType': f1_score_(prec_ner_type, recall_ner_type) 
     }
 
+def create_phrase_pairs(data_df, verb_col='Verb', noun_col='NounPhrases'):
+
+    def create_pairs(ind, vph, nph):
+        if pd.isnull(vph) and pd.isnull(nph):
+            logging.debug(f'Empty record at index {ind}')
+            return None
+        split = lambda x, sep: x.split(sep) if pd.isnull(x) is not True else [None]
+        verbs = split(vph, ';')
+        nouns = split(nph, ';')
+        # No verbs or nouns are available as inputs
+        if len(verbs) == 1 and verbs[0] is None:
+            verbs = [None] * len(nouns)
+        if len(nouns) == 1 and nouns[0] is None:
+            nouns = [None] * len(verbs)
+        if len(verbs) != len(nouns):
+            logging.debug(f'Invalid entry at index {ind}')
+            return None
+        results = map(lambda _: list(itertools.product(split(_[0], '|'), split(_[1], '|'))), zip(verbs, nouns))
+        return list(itertools.chain(*results))
+
+    return list(map(lambda x: create_pairs(x[0], x[1][verb_col], x[1][noun_col]), data_df.iterrows()))
+
+
+def conjunctives_extraction_performance(standard, extracted, src_column='Task', verb_col='VerbPhrases', noun_col='NounPhrases'):
+    original = create_phrase_pairs(standard)
+    outputs = create_phrase_pairs(extracted, verb_col=verb_col, noun_col=noun_col)
+    dice = Dice()
+    jaccard = Jaccard()
+    results = pd.DataFrame(data = {
+        'input': standard[src_column],
+        'total_standard': list(map(len, original)),
+        'total_extracted': list(map(lambda x: len(x) if x is not None else 0, outputs)),
+        'matches': list(map(lambda x, y: len(set.intersection(set(x), set(y))) if y is not None else 0, original, outputs)),
+        'full_match': list(map(lambda x, y: x == y, original, outputs)),
+        'dice': list(map(lambda x, y: dice.get_raw_score(x, y) if y is not None else 0, original, outputs)),
+        'jaccard': list(map(lambda x, y: jaccard.get_raw_score(x, y) if y is not None else 0, original, outputs))
+    })
+    precision = results['matches'].sum() / results['total_extracted'].sum()
+    recall = results['matches'].sum() / results['total_standard'].sum()
+    return {
+        'Accuracy': sum(results['full_match']) / results.shape[0],
+        'Precision': precision,
+        'Recall': recall,
+        'F1-Score': (2 * precision * recall)/ (precision + recall),
+        'MeanDeviation': np.mean(np.abs(results['total_standard'] - results['matches'])/results['total_standard']),
+        'MedianDeviation': np.median(np.abs(results['total_standard'] - results['matches'])/results['total_standard']),
+        'MeanDice': results['dice'].mean(),
+        'MedianDice': results['dice'].median(),
+        'MeanJaccard': results['jaccard'].mean(),
+        'MedianJaccard': results['jaccard'].median()
+    }

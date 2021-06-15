@@ -14,9 +14,10 @@ class SpacyParserTestCase(unittest.TestCase):
         cls.parser = ConjunctiveParser(cls.nlp)
 
     def test_case1(self):
-        phrase = "Initiate, produce and test software"  # "test" is failed to be recognized as a verb
+        phrase = "Initiate, produce, prepare and test software"  # "test" is failed to be recognized as a verb
         doc = self.nlp(phrase)
-        self.assertSetEqual(self.parser.process_parsed(doc), {('produce', 'test software'), ('Initiate', 'test software')})
+        self.assertSetEqual(self.parser.process_parsed(doc),
+                            {('produce', 'test software'), ('Initiate', 'test software'), ('prepare', 'test software')})
 
     def test_case2(self):
         phrase = "Implement specification, software and tests"
@@ -27,7 +28,7 @@ class SpacyParserTestCase(unittest.TestCase):
     def test_case3(self):
         doc = self.nlp("Implement initial specification, required software or test items")
         self.assertSetEqual(self.parser.process_parsed(doc),
-                            {('Implement', 'initial specification'), ('Implement', 'required software'), ('Implement', 'test items')})
+                            {('Implement', 'initial specification'), ('Implement', 'software'), ('Implement', 'test items')})
 
     def test_case4(self):
         phrase = "Write specification, produce software and create tests"
@@ -36,20 +37,21 @@ class SpacyParserTestCase(unittest.TestCase):
                             {('Write', 'specification'), ('produce', 'software'), ('create', 'tests')})
 
     def test_case5(self):
-        phrase = 'Implement initial specification, required software or test items'
+        # "required" is recognized as a verb
+        phrase = 'Implement the initial specification, required software or test items'
         doc = self.nlp(phrase)
         self.assertSetEqual(self.parser.process_parsed(doc),
-                            {('Implement', 'initial specification'), ('Implement', 'required software'), ('Implement', 'test items')})
+                            {('Implement', 'initial specification'), ('Implement', 'software'), ('Implement', 'test items')})
 
     def test_case5a(self):
         # "required" is recognized as a verb
+        # Fails as multiple ROOT deps are identified by Spacy
         phrase = 'Implement specification, required software or test items'
         doc = self.nlp(phrase)
         self.assertSetEqual(self.parser.process_parsed(doc),
                             {('Implement', 'specification'), ('Implement', 'required software'), ('Implement', 'test items')})
 
     def test_case6(self):
-        # Fails to due "as well as improve" recognition as verb; works if ADP is removed from verb phrase pattern
         phrase = 'Create specification and develop software, as well as improve tools'
         doc = self.nlp(phrase)
         self.assertSetEqual(self.parser.process_parsed(doc),
@@ -59,7 +61,7 @@ class SpacyParserTestCase(unittest.TestCase):
         phrase = 'Create specification and develop software, start testing and deploying'
         doc = self.nlp(phrase)
         self.assertSetEqual(self.parser.process_parsed(doc),
-                            {('Create', 'specification'), ('develop', 'software'), ('start testing', None)})
+                            {('Create', 'specification'), ('develop', 'software')})
 
     def test_case8(self):
         phrase = 'Create specification and develop software, start tests, integration and deployment'
@@ -72,13 +74,24 @@ class SpacyParserTestCase(unittest.TestCase):
         phrase = 'Evaluate your personnel and management relationship with the bank'
         doc = self.nlp(phrase)
         self.assertSetEqual(self.parser.process_parsed(doc),
-                            {('Evaluate', 'your personnel and management relationship')})
+                            {('Evaluate', 'your personnel'), ('Evaluate', 'management relationship')})
 
     def test_case10(self):
-        # Fails to recognize two instances
         phrase = "call applicant, ask for completion of data"
         doc = self.nlp(phrase)
-        self.assertSetEqual(self.parser.process_parsed(doc), {('call', 'applicant')})
+        self.assertSetEqual(self.parser.process_parsed(doc), {('call', 'applicant'), ('ask for', 'completion of data')})
+
+    def test_case11(self):
+        phrase = 'Select a suitable vendor and send purchase order'
+        doc = self.nlp(phrase)
+        self.assertSetEqual(self.parser.process_parsed(doc),
+                            {('Select', 'suitable vendor'), ('send', 'purchase order')})
+
+    def test_case12(self):
+        phrase = 'create event, save into calendar'
+        doc = self.nlp(phrase)
+        self.assertSetEqual(self.parser.process_parsed(doc),
+                            {('create', 'event'), ('save into', 'calendar')})
 
     def test_leftmost(self):
         phrase = 'Create specification and develop software, start tests, integration and deployment'
