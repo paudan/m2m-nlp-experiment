@@ -227,7 +227,7 @@ class StanzaNLPProcessor(AbstractNLPProcessor):
     def __init__(self, process_proper_nouns=False):
         super().__init__(process_proper_nouns)
         torch.set_default_tensor_type(torch.FloatTensor)
-        stanza.download('en', dir=STANZA_DIR)
+        stanza.download('en', model_dir=STANZA_DIR)
         self.tagger = stanza.Pipeline('en', dir=STANZA_DIR)
 
     def extract_named_entities(self, token):
