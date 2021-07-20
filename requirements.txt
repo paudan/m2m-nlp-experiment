@@ -14,7 +14,7 @@ py_stringmatching
 spikex
 anago
 keras==2.2.5
-tensorflow-gpu==1.15.5
+tensorflow-gpu==2.4.2
 torch==1.7.1
 mxnet==1.8.0
 pytorch-crf
