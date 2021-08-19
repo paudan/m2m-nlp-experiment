@@ -81,7 +81,7 @@ if __name__ == '__main__':
         processor = BertNLPProcessor()
     elif args.processor == 'allen':
         processor = AllenNLPProcessor()
-    elif args.processor == 'custom1':
+    elif args.processor == 'custom':
         processor = ElmoBiLSTM_CRFProcessor()
     elif args.processor == 'custom2':
         processor = BertBiLSTM_CRFProcessor()
