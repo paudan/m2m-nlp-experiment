@@ -20,12 +20,16 @@ def equal_verbs(verb1, verb2):
 def equal_outputs(out1, out2):
     if pd.isnull(out1) & pd.isnull(out2): return True
     if (~pd.isnull(out1) & pd.isnull(out2)) | (pd.isnull(out1) & ~pd.isnull(out2)): return False
-    out1 = out1.split('|')
-    out2 = out2.split('|')
+    out1 = out1.replace(';', '|').split('|')
+    out2 = out2.replace(';', '|').split('|')
     return sorted(list(map(lambda x: x.lower(), out1))) == sorted(list(map(lambda x: x.lower(), out2)))
 
 def f1_score_(precision, recall):
-    return 2*precision*recall/(precision+recall)
+    try:
+        result = 2*precision*recall/(precision+recall)
+    except ZeroDivisionError:
+        result = np.nan
+    return result
 
 def single_verb(x):
     if pd.isnull(x):
