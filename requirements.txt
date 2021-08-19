@@ -5,6 +5,7 @@ spacy-transformers==1.0.1
 spacy-stanza
 stanza==1.1.1
 flair>=0.8
+gensim<4.0
 transformers==4.4.2
 allennlp==2.1.0
 allennlp-models==2.1.0
@@ -12,11 +13,14 @@ simplenlg
 pyenchant==3.2.0
 py_stringmatching
 spikex
-anago
 keras==2.2.5
-tensorflow-gpu==1.15.5
+tensorflow-gpu<2.0
 torch==1.7.1
 mxnet==1.8.0
 pytorch-crf
 scikit-learn==0.23.2
 catboost
+# Required to run anago
+git+https://github.com/paudan/anago.git
+overrides==3.1.0
+h5py<3.0
