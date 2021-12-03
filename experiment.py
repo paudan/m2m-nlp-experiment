@@ -3,8 +3,9 @@ from collections.abc import Iterable
 import argparse
 import pandas as pd
 from tqdm import tqdm
-from processing import (StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor, CoreNLPProcessor, BertNLPProcessor,
-                        AllenNLPProcessor, ElmoBiLSTM_CRFProcessor, BertBiLSTM_CRFProcessor)
+from custom_processing import ElmoBiLSTM_CRFProcessor, BertBiLSTM_CRFProcessor
+from processing import (StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor,
+                        CoreNLPProcessor, BertNLPProcessor, AllenNLPProcessor)
 
 tqdm.pandas()
 
@@ -47,7 +48,7 @@ def tag_ner_dataset(df, processor):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--processor", help="Used extraction processor", default='stanza',
-                        choices=['spacy', 'stanza', 'flair', 'corenlp', 'bert', 'allen', 'custom', 'custom2', 'simple'])
+                        choices=['spacy', 'stanza', 'flair', 'corenlp', 'bert', 'allen', 'simple', 'elmo-lstm', 'bert-lstm'])
     parser.add_argument("--input-file", help="Input dataset file which will be processed", required=True)
     parser.add_argument("--task", help="Task type", choices=['phrases', 'ner'], default='phrases')
     parser.add_argument("--column", help="Column index for processing", type=int)
@@ -81,9 +82,9 @@ if __name__ == '__main__':
         processor = BertNLPProcessor()
     elif args.processor == 'allen':
         processor = AllenNLPProcessor()
-    elif args.processor == 'custom':
+    elif args.processor == 'elmo-lstm':
         processor = ElmoBiLSTM_CRFProcessor()
-    elif args.processor == 'custom2':
+    elif args.processor == 'bert-lstm':
         processor = BertBiLSTM_CRFProcessor()
     elif args.processor == 'simple':
         processor = None

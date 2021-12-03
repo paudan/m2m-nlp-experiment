@@ -12,9 +12,6 @@ import stanza
 from stanza.server import CoreNLPClient
 from flair.models import SequenceTagger
 from flair.data import Sentence
-from anago.models import load_model
-from anago.preprocessing import IndexTransformer
-from anago.tagger import Tagger
 from transformers import AutoTokenizer, AutoModelForTokenClassification, BertConfig
 from transformers.pipelines import pipeline
 from allennlp.predictors.predictor import Predictor
@@ -22,7 +19,6 @@ import nltk
 from nltk.corpus import wordnet as wn
 from nltk.corpus.reader import wordnet
 from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import wordpunct_tokenize
 from simplenlg.features import Feature, Tense
 from simplenlg.framework import InflectedWordElement
 from simplenlg.lexicon import Lexicon, LexicalCategory
@@ -37,8 +33,6 @@ BERT_NER_MODEL = 'wietsedv/bert-base-multilingual-cased-finetuned-conll2002-ner'
 BERT_MODEL_DIR = 'embeddings'
 ALLENNLP_POS = 'allennlp/biaffine-dependency-parser-ptb-2020.04.06.tar.gz'
 ALLENNLP_NER = 'allennlp/ner-model-2020.02.10.tar.gz'
-ELMO_TAGGER_PATH = 'custom/elmo_tagger'
-BERT_TAGGER_PATH = 'custom/flair-tagger/best-model.pt'
 NLTK_PATH = '/mnt/DATA/data/nltk'
 nltk.data.path.append(NLTK_PATH)
 
@@ -398,51 +392,3 @@ class AllenNLPProcessor(AbstractNLPProcessor):
         prediction = self.pos_tagger.predict(sentence=token)
         return self._extract_phrase(list(zip(prediction['words'], prediction['pos'])), type)
 
-
-class CustomProcessor(AbstractNLPProcessor):
-
-    def grammar(self):
-        ADP = '<RB|RBR|RP|TO|IN|PREP>'
-        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS|PRP|PRP$>+<POS>?<CD>?'
-        return """
-        NP: {{({NP})+({ADP}?<DT>?{NP})*}}
-        VP: {{<VB*>+{ADP}?}}
-        PNP: {{<NNP|NNPS>+}}        
-        """.format(NP=NP, ADP=ADP)
-
-    def get_named_entity_type(self, token, index=0):
-        pass
-
-    def extract_named_entities(self, token):
-        pass
-
-    def get_named_entity(self, token, index = 0):
-        pass
-
-
-# ElmoBiLSTMCRF
-class ElmoBiLSTM_CRFProcessor(CustomProcessor):
-
-    def __init__(self, process_proper_nouns=False):
-        super().__init__(process_proper_nouns)
-        model = load_model(os.path.join(ELMO_TAGGER_PATH, 'weights.h5'), os.path.join(ELMO_TAGGER_PATH, 'params.json'))
-        it = IndexTransformer.load(os.path.join(ELMO_TAGGER_PATH, 'preprocessor.pkl'))
-        self.pos_tagger = Tagger(model, preprocessor=it, tokenizer=wordpunct_tokenize)
-
-    def extract_phrase_by_type(self, token, type):
-        return self._extract_phrase(list(zip(self.pos_tagger.tokenizer(token), self.pos_tagger.predict(token))), type)
-
-# BertBiLSTMCRF
-class BertBiLSTM_CRFProcessor(FlairNLPProcessor):
-
-    def grammar(self):
-        ADP = '<RB|RBR|RP|TO|IN|PREP>'
-        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS|PRP|PRP$>+<POS>?<CD>?'
-        return """
-        NP: {{({NP})+({ADP}?<DT>?{NP})*}}
-        VP: {{<VB*>+{ADP}?}}
-        PNP: {{<NNP|NNPS>+}}        
-        """.format(NP=NP, ADP=ADP)
-
-    def __init__(self, process_proper_nouns=False):
-        super().__init__(process_proper_nouns, FLAIR_NER_MODEL, pos_model=BERT_TAGGER_PATH)

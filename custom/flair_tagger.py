@@ -5,11 +5,17 @@ from flair.datasets.sequence_labeling import ColumnCorpus
 from flair.embeddings import TransformerWordEmbeddings
 from flair.models import SequenceTagger
 from flair.trainers import ModelTrainer
+from elmo_embeddings import ELMoEmbeddings
 
 CACHE_DIR = '../embeddings'
 OUTPUT_PATH = 'datasets'
 torch.set_default_tensor_type(torch.FloatTensor)
+# torch.backends.cudnn.enabled = False
 
+config = {
+#    'flair-bert-tagger': TransformerWordEmbeddings('bert-base-uncased', cache_dir=CACHE_DIR),
+    'flair-elmo-tagger': ELMoEmbeddings(model='medium')
+}
 
 def convert_data(input_path: str, output_path: str):
     with open(input_path, 'rb') as f:
@@ -31,9 +37,9 @@ def convert_dataset():
 columns = {0 : 'text', 1 : 'pos'}
 corpus = ColumnCorpus(OUTPUT_PATH, columns, train_file = 'data_train.txt',
                       test_file = 'data_test.txt', dev_file = 'data_valid.txt')
-tagger = SequenceTagger(hidden_size=128,
-        embeddings=TransformerWordEmbeddings('bert-large-uncased', cache_dir=CACHE_DIR),
-        tag_dictionary=corpus.make_tag_dictionary(tag_type='pos'),
-        tag_type='pos')
-trainer = ModelTrainer(tagger, corpus)
-trainer.train('flair-tagger', learning_rate=0.1, mini_batch_size=32, max_epochs=10, embeddings_storage_mode='gpu')
+for tagger_name, emb in config.items():
+    tagger = SequenceTagger(hidden_size=128, embeddings=emb,
+            tag_dictionary=corpus.make_tag_dictionary(tag_type='pos'),
+            tag_type='pos')
+    trainer = ModelTrainer(tagger, corpus)
+    trainer.train(tagger_name, learning_rate=0.1, mini_batch_size=8, max_epochs=10, embeddings_storage_mode='gpu')
