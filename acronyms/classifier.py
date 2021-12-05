@@ -20,7 +20,7 @@ def catboost_classifier(train_data, labels):
     return clf
 
 def random_forest_classifier(train_data, labels):
-    clf = RandomForestClassifier(n_estimators=200)
+    clf = RandomForestClassifier(n_estimators=200, class_weight='balanced')
     clf.fit(train_data, labels)
     return clf
 
@@ -67,7 +67,7 @@ def plain_catboost_classifier(train_data, y_train, weighted=False):
     return cb
 
 def xgb_classifier(train_data, labels):
-    clf = XGBClassifier(learning_rate=0.01, n_estimators=200, silent=True, nthread=1)
+    clf = XGBClassifier(learning_rate=0.01, n_estimators=100)
     params = {
         'min_child_weight': [1, 5, 10],
         'gamma': [0.5, 1, 1.5, 2, 5],
@@ -75,7 +75,7 @@ def xgb_classifier(train_data, labels):
         'colsample_bytree': [0.6, 0.8, 1.0],
         'max_depth': [3, 4, 5]
     }
-    search = GridSearchCV(clf, param_grid=params, cv=2, n_jobs=-1)
+    search = GridSearchCV(clf, param_grid=params, cv=2, n_jobs=1)
     search.fit(train_data, labels)
     return search.best_estimator_
 

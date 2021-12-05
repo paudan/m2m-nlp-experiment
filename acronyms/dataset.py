@@ -18,8 +18,8 @@ STANZA_DIR = os.path.join('..', 'stanza_resources')
 nltk.data.path.append(NLTK_PATH)
 tqdm.pandas()
 torch.set_default_tensor_type(torch.FloatTensor)
-stanza.download('en', dir=STANZA_DIR)
-tagger = stanza.Pipeline('en', dir=STANZA_DIR, processors='tokenize,pos', tokenize_pretokenized=True)
+stanza.download('en', model_dir=STANZA_DIR)
+tagger = stanza.Pipeline('en', dir=STANZA_DIR, processors='tokenize,pos,lemma,depparse', tokenize_pretokenized=True)
 wchecker = enchant.Dict("en_US")
 
 
@@ -40,7 +40,7 @@ def create_features(candidates, entries):
     def word_features(input_):
         tok, context = input_
         doc = tagger([context])
-        tagged = [(word.text, word.upos) for sent in doc.sentences for word in sent.words]
+        tagged = [(word.text, word.upos, word.deprel) for sent in doc.sentences for word in sent.words]
         tok_ind = [i for i, item in enumerate(tagged) if item[0] == tok]
         tok_ind = tok_ind[0]
         return {
@@ -58,13 +58,17 @@ def create_features(candidates, entries):
             'prev.pos': tagged[tok_ind-1][1] if tok_ind > 0 else None,
             'prev.pos2': tagged[tok_ind-2][1] if tok_ind > 1 else None,
             'next.pos': tagged[tok_ind+1][1] if tok_ind < len(tagged)-1 else None,
-            'next.pos2': tagged[tok_ind+2][1] if tok_ind < len(tagged)-2 else None
+            'next.pos2': tagged[tok_ind+2][1] if tok_ind < len(tagged)-2 else None,
+            'prev.dep': tagged[tok_ind-1][2] if tok_ind > 0 else None,
+            'prev.dep2': tagged[tok_ind-2][2] if tok_ind > 1 else None,
+            'next.dep': tagged[tok_ind+1][2] if tok_ind < len(tagged)-1 else None,
+            'next.dep2': tagged[tok_ind+2][2] if tok_ind < len(tagged)-2 else None
         }
 
     contexts = [(x,y) for y in entries for x in candidates if x in y]
     return pd.DataFrame(data=list(map(word_features, contexts)))
 
-data = pd.read_csv('bpmn_dataset_cleaned.csv', sep=';')
+data = pd.read_csv(os.path.join('..', 'datasets', 'bpmn_dataset_cleaned.csv'), sep=';')
 items = data.groupby('Model').agg({'Lane': list, 'Task': list})
 items['entries'] = items.apply(lambda row: set(row['Lane'] + row['Task']), axis=1)
 items['candidates'] = items['entries'].apply(abbrev_candidates)
@@ -74,4 +78,5 @@ features = features[~features['token'].str.match('^\w\d+$')]  # Remove entries l
 valid_token = lambda x: len(set(x) & set(string.ascii_letters)) > 1   # At least two letters
 features = features[features['token'].apply(valid_token)]
 features['label'] = np.where(features['all.upper'] == True, 1, 0)     # Initial labelling, remove from features during classification if not changed!
-features.to_csv('dataset.csv', index=False)
+features = features.drop_duplicates()
+features.to_csv(os.path.join('acronyms', 'dataset.csv'), index=False)
