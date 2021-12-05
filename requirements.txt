@@ -3,10 +3,10 @@ spacy==3.0.5
 spacy-lookups-data==0.2.0
 spacy-transformers==1.0.1
 spacy-stanza
-stanza==1.1.1
+stanza==1.2.0
 flair>=0.8
 gensim<4.0
-transformers==4.4.2
+transformers==4.3.3
 allennlp==2.1.0
 allennlp-models==2.1.0
 simplenlg
@@ -17,10 +17,9 @@ keras==2.2.5
 tensorflow-gpu<2.0
 torch==1.7.1
 mxnet==1.8.0
-pytorch-crf
 scikit-learn==0.23.2
+mlxtend==0.18.0
 catboost
-# Required to run anago
 git+https://github.com/paudan/anago.git
 overrides==3.1.0
 h5py<3.0
