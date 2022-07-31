@@ -100,25 +100,3 @@ class CustomBertProcessor(CustomProcessor):
                                         embed.segment_ids.unsqueeze(0)))[0]
         return self._extract_phrase(list(zip(tokens, tags)), type)
 
-
-# class ElmoBiLSTM_CRFProcessor(CustomElmoProcessor):
-#
-#     def __init__(self):
-#         super(ElmoBiLSTM_CRFProcessor, self).__init__(model_dir='custom/elmo-pos-tagger-lstm')
-#
-# class ElmoTransformer_CRFProcessor(CustomElmoProcessor):
-#
-#     def __init__(self):
-#         super(ElmoTransformer_CRFProcessor, self).__init__(model_dir='custom/elmo-pos-tagger-transformer')
-#
-#
-# class BertBiLSTM_CRFProcessor(CustomBertProcessor):
-#
-#     def __init__(self):
-#         super(BertBiLSTM_CRFProcessor, self).__init__(model_dir='custom/bert-pos-tagger-lstm')
-#
-#
-# class BertTransformer_CRFProcessor(CustomBertProcessor):
-#
-#     def __init__(self):
-#         super(BertTransformer_CRFProcessor, self).__init__(model_dir='custom/bert-pos-tagger-transformer')
