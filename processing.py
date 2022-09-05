@@ -12,7 +12,7 @@ import stanza
 from stanza.server import CoreNLPClient
 from flair.models import SequenceTagger
 from flair.data import Sentence
-from transformers import AutoTokenizer, AutoModelForTokenClassification, BertConfig
+from transformers import AutoTokenizer, AutoModelForTokenClassification, AutoConfig
 from transformers.pipelines import pipeline
 from allennlp.predictors.predictor import Predictor
 import nltk
@@ -25,12 +25,14 @@ from simplenlg.lexicon import Lexicon, LexicalCategory
 from simplenlg.realiser.english import Realiser
 
 STANZA_DIR = 'stanza_resources'
+CACHE_DIR = 'embeddings'
 FLAIR_POS_MODEL = 'flair/models/en-pos-ontonotes-v0.4.pt'
 FLAIR_NER_MODEL = 'flair/models/en-ner-conll03-v0.4.pt'
 SPACY_MODEL = "spacy/en_core_web_lg/en_core_web_lg/en_core_web_lg"
 BERT_POS_MODEL = "vblagoje/bert-english-uncased-finetuned-pos"
 BERT_NER_MODEL = 'wietsedv/bert-base-multilingual-cased-finetuned-conll2002-ner'
-BERT_MODEL_DIR = 'embeddings'
+XLM_ROBERTA_POS_MODEL = "KoichiYasuoka/xlm-roberta-base-english-upos"
+XLM_ROBERTA_NER_MODEL = "Davlan/xlm-roberta-base-ner-hrl"
 ALLENNLP_POS = 'allennlp/biaffine-dependency-parser-ptb-2020.04.06.tar.gz'
 ALLENNLP_NER = 'allennlp/ner-model-2020.02.10.tar.gz'
 NLTK_PATH = '/mnt/DATA/data/nltk'
@@ -196,10 +198,10 @@ class AbstractNLPProcessor:
 
 class SpacyNLPProcessor(AbstractNLPProcessor):
 
-    def __init__(self, process_proper_nouns=False):
+    def __init__(self, process_proper_nouns=False, model=SPACY_MODEL):
         super().__init__(process_proper_nouns)
         spacy.prefer_gpu()
-        self.tagger = spacy.load(SPACY_MODEL)
+        self.tagger = spacy.load(model)
 
     def extract_named_entities(self, token):
         doc = self.tagger(token)
@@ -213,6 +215,7 @@ class SpacyNLPProcessor(AbstractNLPProcessor):
     def extract_phrase_by_type(self, token, type):
         doc = self.tagger(token)
         tagged = [(token.text, token.pos_) for token in doc]
+        print(tagged)
         return self._extract_phrase(tagged, type)
 
 
@@ -310,12 +313,12 @@ class BertNLPProcessor(AbstractNLPProcessor):
     def __init__(self, process_proper_nouns=False, pos_model=BERT_POS_MODEL, ner_model=BERT_NER_MODEL):
         super().__init__(process_proper_nouns)
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.pos_tokenizer = AutoTokenizer.from_pretrained(pos_model, cache_dir=BERT_MODEL_DIR)
-        self.pos_model = AutoModelForTokenClassification.from_pretrained(pos_model, cache_dir=BERT_MODEL_DIR).to(self.device)
-        self.pos_config = BertConfig.from_pretrained(pos_model, cache_dir=BERT_MODEL_DIR)
-        self.ner_tokenizer = AutoTokenizer.from_pretrained(ner_model, cache_dir=BERT_MODEL_DIR)
-        self.ner_model = AutoModelForTokenClassification.from_pretrained(ner_model, cache_dir=BERT_MODEL_DIR).to(self.device)
-        self.ner_config = BertConfig.from_pretrained(ner_model, cache_dir=BERT_MODEL_DIR)
+        self.pos_tokenizer = AutoTokenizer.from_pretrained(pos_model, cache_dir=CACHE_DIR)
+        self.pos_model = AutoModelForTokenClassification.from_pretrained(pos_model, cache_dir=CACHE_DIR).to(self.device)
+        self.pos_config = AutoConfig.from_pretrained(pos_model, cache_dir=CACHE_DIR)
+        self.ner_tokenizer = AutoTokenizer.from_pretrained(ner_model, cache_dir=CACHE_DIR)
+        self.ner_model = AutoModelForTokenClassification.from_pretrained(ner_model, cache_dir=CACHE_DIR).to(self.device)
+        self.ner_config = AutoConfig.from_pretrained(ner_model, cache_dir=CACHE_DIR)
 
     def _run_bert_model(self, text, tokenizer, model, config):
         if text is None or not isinstance(text, str) or len(text.strip()) == 0:
@@ -345,7 +348,9 @@ class BertNLPProcessor(AbstractNLPProcessor):
         return list(set(map(lambda x: x[0], entities)))
 
     def get_named_entity_types(self, token):
-        return [entity[1] for entity in self._extract_ner(token)]
+        types = [entity[1] for entity in self._extract_ner(token)]
+        label_mapping = {'LOC': 'LOCATION', 'ORG': 'ORGANIZATION', 'PER': 'PERSON'}
+        return [label_mapping.get(type) or type for type in types]
 
     def extract_phrase_by_type(self, token, type):
         tagged = self._run_bert_model(token, self.pos_tokenizer, self.pos_model, self.pos_config)
@@ -355,6 +360,44 @@ class BertNLPProcessor(AbstractNLPProcessor):
         phrases = super()._extract_phrase(tagged, chunk_label)
         # Remove BERT masking symbols
         return [re.sub(r"\s+#+", '', phrase) for phrase in phrases]
+
+
+class XLMRobertaNLPProcessor(BertNLPProcessor):
+
+    def __init__(self, process_proper_nouns=False):
+        super().__init__(process_proper_nouns, XLM_ROBERTA_POS_MODEL, XLM_ROBERTA_NER_MODEL)
+
+    def _extract_phrase(self, tagged, chunk_label):
+        phrases = super()._extract_phrase(tagged, chunk_label)
+        return [phrase.replace("▁", "") for phrase in phrases]
+
+
+class ElectraNLPProcessor(AbstractNLPProcessor):
+
+    def grammar(self):
+        ADP = '<RB|RBR|RP|TO|IN|PREP>'
+        NP = '<JJ|ADJ>*<NN|VBG|RBS|FW|NNS|PRP|PRP$>+<POS>?<CD>?'
+        return """
+        NP: {{({NP})+({ADP}?<DT>?{NP})*}}
+        VP: {{<VB*>+{ADP}?}}
+        PNP: {{<NNP|NNPS>+}}        
+        """.format(NP=NP, ADP=ADP)
+
+    def __init__(self, process_proper_nouns=False):
+        AbstractNLPProcessor.__init__(self, process_proper_nouns)
+        spacy.prefer_gpu()
+        self.tagger = spacy.load("en_acnl_electra_pipeline")
+
+    def extract_named_entities(self, token):
+        raise NotImplementedError("Not implemented")
+
+    def get_named_entity_types(self, token):
+        raise NotImplementedError("Not implemented")
+
+    def extract_phrase_by_type(self, token, type):
+        doc = self.tagger(token)
+        tagged = [(token.text, token.tag_) for token in doc]
+        return self._extract_phrase(tagged, type)
 
 
 class AllenNLPProcessor(AbstractNLPProcessor):

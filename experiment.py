@@ -5,7 +5,8 @@ import pandas as pd
 from tqdm import tqdm
 from custom_processing import ElmoBiLSTM_CRFProcessor, BertBiLSTM_CRFProcessor
 from processing import (StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor,
-                        CoreNLPProcessor, BertNLPProcessor, AllenNLPProcessor)
+                        CoreNLPProcessor, BertNLPProcessor, AllenNLPProcessor,
+                        XLMRobertaNLPProcessor, ElectraNLPProcessor)
 
 tqdm.pandas()
 
@@ -48,7 +49,7 @@ def tag_ner_dataset(df, processor):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--processor", help="Used extraction processor", default='stanza',
-                        choices=['spacy', 'stanza', 'flair', 'corenlp', 'bert', 'allen', 'simple', 'elmo-lstm', 'bert-lstm'])
+                        choices=['spacy', 'stanza', 'flair', 'corenlp', 'bert', 'allen', 'simple', 'elmo-lstm', 'bert-lstm', 'xlm-roberta', 'electra'])
     parser.add_argument("--input-file", help="Input dataset file which will be processed", required=True)
     parser.add_argument("--task", help="Task type", choices=['phrases', 'ner'], default='phrases')
     parser.add_argument("--column", help="Column index for processing", type=int)
@@ -86,6 +87,10 @@ if __name__ == '__main__':
         processor = ElmoBiLSTM_CRFProcessor()
     elif args.processor == 'bert-lstm':
         processor = BertBiLSTM_CRFProcessor()
+    elif args.processor == 'xlm-roberta':
+        processor = XLMRobertaNLPProcessor()
+    elif args.processor == 'electra':
+        processor = ElectraNLPProcessor()
     elif args.processor == 'simple':
         processor = None
     else:
@@ -97,6 +102,8 @@ if __name__ == '__main__':
         else:
             data_df = tag_activity_dataset(data_df, processor, column=column, normalize=args.normalize)
     elif args.task == 'ner':
+        if args.processor == 'electra':
+            raise Exception('NER extraction is not implemented with ELECTRA model')
         data_df = data_df.iloc[:, args.column or 0].to_frame()
         data_df = tag_ner_dataset(data_df, processor)
     else:
