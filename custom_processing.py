@@ -3,8 +3,6 @@ sys.path.append('custom')
 
 import os
 import torch
-from custom.pytorch_tagger.datasets import ElmoDataset, BertDataset
-from custom.pytorch_tagger.utils import load_model
 from transformers import AutoTokenizer
 from nltk.tokenize import wordpunct_tokenize
 from processing import AbstractNLPProcessor

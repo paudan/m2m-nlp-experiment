@@ -35,9 +35,10 @@ XLM_ROBERTA_POS_MODEL = "KoichiYasuoka/xlm-roberta-base-english-upos"
 XLM_ROBERTA_NER_MODEL = "Davlan/xlm-roberta-base-ner-hrl"
 ALLENNLP_POS = 'allennlp/biaffine-dependency-parser-ptb-2020.04.06.tar.gz'
 ALLENNLP_NER = 'allennlp/ner-model-2020.02.10.tar.gz'
+
+#nltk.download('wordnet')
 NLTK_PATH = '/mnt/DATA/data/nltk'
 nltk.data.path.append(NLTK_PATH)
-
 
 class AbstractNLPProcessor:
     

@@ -3,7 +3,8 @@ from collections.abc import Iterable
 import argparse
 import pandas as pd
 from tqdm import tqdm
-from custom_processing import ElmoBiLSTM_CRFProcessor, BertBiLSTM_CRFProcessor
+from custom_processing import ElmoBiLSTM_CRFProcessor
+from custom_processing import BertBiLSTM_CRFProcessor
 from processing import (StanzaNLPProcessor, SpacyNLPProcessor, FlairNLPProcessor,
                         CoreNLPProcessor, BertNLPProcessor, AllenNLPProcessor,
                         XLMRobertaNLPProcessor, ElectraNLPProcessor)
