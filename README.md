@@ -8,7 +8,7 @@ Environment should be setup by simply running
 ```shell
 sh setup_env.sh
 ```
-It is recommende to install it into separate environment.
+It is recommended to install it into separate environment.
 
 ### Running the code
 
@@ -29,7 +29,7 @@ optional arguments:
   --output-file OUTPUT_FILE
                         Output file
 ```
-The dataset (input) files cane be found in the `datasets` folder.
+The dataset (input) files can be found in the `datasets` folder.
 
 ### Performance
 
